@@ -40,7 +40,7 @@ Projections are extracted from:
 
 Transition(s) 2050\
 ADEME\
-[`Website`]([https://www.rte-france.com/analyses-tendances-et-prospectives/bilan-previsionnel-2050-futurs-energetiques]) \
+[`Website`](https://www.rte-france.com/analyses-tendances-et-prospectives/bilan-previsionnel-2050-futurs-energetiques) \
 [`Full Report`](https://librairie.ademe.fr/recherche-et-innovation/5072-prospective-transitions-2050-rapport.html) \
 [`Data repository`](https://data-transitions2050.ademe.fr/)
 
