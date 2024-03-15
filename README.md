@@ -97,3 +97,76 @@ This pairing was done solely based on the author's opinions and does not reflect
 any official coupling between the two scenarios. This is to prevent coupling
 between scenarios that are not compatible (e.g. coupling between a global scenario with
 a high carbon price and a national scenario with a low carbon price).
+
+
+What does this do?
+------------------
+
+![map electricity markets](assets/map.png)
+
+This external scenario creates electricity and fuel markets for France listed below, according
+to the projections from the RTE's Energy Future 2050 (yellow boundaries in map above).
+Imports of electricity are provided by the regional IAM market for European electricity (blue boundaries in map above).
+
+Electricity
+***********
+
+The following market datasets are created:
+
+* `market for electricity, high voltage, EF2050` (FR)
+* `market for electricity, medium voltage, EF2050` (FR)
+* `market for electricity, medium voltage, EF2050` (FR)
+
+These markets are relinked to activities that consume electricity in France.
+
+Additionally, the French market relies to a varying extent on imports from
+neighboring countries. These imports are sourced from the rest of Europe, which is
+provided by the regional IAM market for European electricity (blue boundaries in map above).
+
+
+How are technologies mapped?
+---------------------------
+The tables below show how the mapping between reported technologies
+and LCI datasets is done. Unless specified otherwise, ecoinvent
+LCI datasets are used.
+
+Electricity
+***********
+
+Fuels
+*****
+
+
+Hydrogen
+********
+
+The following markets for hydrogen are created:
+* `market for hydrogen, gaseous, for transport - direct use of H2, Tr2050` (FR)
+* `market for hydrogen, gaseous, for fossil fuel refinery use, Tr2050` (FR)
+* `market for hydrogen, gaseous, for biofuel refinery use, Tr2050` (FR)
+* `market for hydrogen, gaseous, for power to liquid use, Tr2050` (FR)
+* `market for hydrogen, gaseous, for ammonia use, Tr2050` (FR)
+* `market for hydrogen, gaseous, for steel use, Tr2050` (FR)
+* `market for hydrogen, gaseous, for chemicals use, Tr2050` (FR)
+* `market for hydrogen, gaseous, for power to gaz, Tr2050` (FR)
+
+Specifications
+* The market for transport use includes only direct use of hydrogen for transportation. \
+* The market for power-to-liquid covers the hydrogen production that is then used to produce synthetic fuels / e-fuels. \
+* The market for power-to-gaz covers the hydrogen production that is then used to produce methane by methanation process that is then injected in the gaz grid.\
+* The only sector for which co-production is considered is refinery of fossil fuel. It means that for other sectors (such as ammonia, of chemicals) the market modeled includes only the hydrogen that is produced in addition to co-production from this sector.
+* The uses of hydrogen are explained in details in [`Full Report`](https://librairie.ademe.fr/recherche-et-innovation/5072-prospective-transitions-2050-rapport.html) , p. 520. 
+
+The datasets listed below are used to supply the above-listed markets:
+
+| Technologies in FE2050+       | LCI datasets used                                                       | 
+|-------------------------------|-------------------------------------------------------------------------|
+| Hydrogen, electrolysis        | hydrogen production, electrolysis, 25 bar, domestic                     |
+| Hydrogen, from coke gas + CCS | hydrogen, recovered from coke oven gas, with carbon capture and storage |
+| Hydrogen, from SMR of NG      | hydrogen production, steam reforming                                    |
+| Hydrogen, refinery            | hydrogen production, gaseous, petroleum refinery operation              |
+
+
+These markets are relinked to activities that consume hydrogen in France, 
+according to their area of application.
+
