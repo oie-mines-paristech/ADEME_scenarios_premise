@@ -1,4 +1,4 @@
-# Futurs énergétiques 2050 (Energy future 2050) / RTE
+# Transition(s) 2050 / ADEME
 Implementation of ADEME scenarios Transition(s) 2050 into ecoinvent database with premise
 
 
@@ -83,7 +83,7 @@ IAM scenario compatibility
 
 The following coupling is done between IAM and FE2050+ scenarios:
 
-| IAM scenario            | FE2050+ scenario                       |
+| IAM scenario            | Tr2050  scenario                       |
 |-------------------------|----------------------------------------|
 | IMAGE SSP2-Base         | TEND                                   |
 | IMAGE SSP2-Base         | S1                                     |
@@ -105,30 +105,8 @@ What does this do?
 ![map electricity markets](assets/map.png)
 
 This external scenario creates electricity and fuel markets for France listed below, according
-to the projections from the RTE's Energy Future 2050 (yellow boundaries in map above).
+to the projections from the ADEME's Transition(s) 2050 (yellow boundaries in map above).
 Imports of electricity are provided by the regional IAM market for European electricity (blue boundaries in map above).
-
-Electricity
-***********
-
-The following market datasets are created:
-
-* `market for electricity, high voltage, EF2050` (FR)
-* `market for electricity, medium voltage, EF2050` (FR)
-* `market for electricity, medium voltage, EF2050` (FR)
-
-These markets are relinked to activities that consume electricity in France.
-
-Additionally, the French market relies to a varying extent on imports from
-neighboring countries. These imports are sourced from the rest of Europe, which is
-provided by the regional IAM market for European electricity (blue boundaries in map above).
-
-
-How are technologies mapped?
----------------------------
-The tables below show how the mapping between reported technologies
-and LCI datasets is done. Unless specified otherwise, ecoinvent
-LCI datasets are used.
 
 Electricity
 ***********
@@ -139,6 +117,19 @@ Fuels
 
 Hydrogen
 ********
+
+**Input Data**
+
+Sources
+* Chapter 3 (production d'énergie) / section 5 of [`Full Report`](https://librairie.ademe.fr/recherche-et-innovation/5072-prospective-transitions-2050-rapport.html)
+* Excel files hydrogene-g1 to g8 from [`Data repository`](https://data-transitions2050.ademe.fr/)
+* Discussions with ADEME experts
+
+Remarks about input data :
+* All the quantities of hydrogen are given in TWh LHV (Low Heating Value)
+* The hydrogen imported (scenario S3) is produced by electrolysis using renewable electricity (solar, wind) [Full report, p.529]. It is modeled as the hydrogen produced by electrolysis using French electricity mix S3. This modeling is more representative for S3EnR than for S3nuc.
+* The hydrogen produced from gas in scenario S4 is produced by SMR coupled with Carbon Capture technology [Full report, p.530]
+* The efficiency considered for electrolysis is 0.65 in 2030 and 0.72 in 2050 [Source: ADEME experts]. 0.61% efficiency was chosen for 2019 (!!!!!!!!!!! to be discussed with Romain)
 
 The following markets for hydrogen are created:
 * `market for hydrogen, gaseous, for transport - direct use of H2, Tr2050` (FR)
@@ -151,22 +142,25 @@ The following markets for hydrogen are created:
 * `market for hydrogen, gaseous, for power to gaz, Tr2050` (FR)
 
 Specifications
-* The market for transport use includes only direct use of hydrogen for transportation. \
-* The market for power-to-liquid covers the hydrogen production that is then used to produce synthetic fuels / e-fuels. \
-* The market for power-to-gaz covers the hydrogen production that is then used to produce methane by methanation process that is then injected in the gaz grid.\
+* The market for transport use includes only direct use of hydrogen for transportation. 
+* The market for power-to-liquid covers the hydrogen production that is then used to produce synthetic fuels / e-fuels. 
+* The market for power-to-gaz covers the hydrogen production that is then used to produce methane by methanation process that is then injected in the gaz grid.
 * The only sector for which co-production is considered is refinery of fossil fuel. It means that for other sectors (such as ammonia, of chemicals) the market modeled includes only the hydrogen that is produced in addition to co-production from this sector.
-* The uses of hydrogen are explained in details in [`Full Report`](https://librairie.ademe.fr/recherche-et-innovation/5072-prospective-transitions-2050-rapport.html) , p. 520. 
+* The uses of hydrogen are explained in details in [Full Report, p. 520]. 
 
 The datasets listed below are used to supply the above-listed markets:
 
-| Technologies in FE2050+       | LCI datasets used                                                       | 
+| Technologies in Tr2050        | LCI datasets used                                                       | 
 |-------------------------------|-------------------------------------------------------------------------|
 | Hydrogen, electrolysis        | hydrogen production, electrolysis, 25 bar, domestic                     |
-| Hydrogen, from coke gas + CCS | hydrogen, recovered from coke oven gas, with carbon capture and storage |
 | Hydrogen, from SMR of NG      | hydrogen production, steam reforming                                    |
+| Hydrogen, from SMR of NG + CCS| hydrogen production, steam reforming x!!!!!!!!!!!!!!!!!!!!!!!           |
 | Hydrogen, refinery            | hydrogen production, gaseous, petroleum refinery operation              |
 
 
-These markets are relinked to activities that consume hydrogen in France, 
-according to their area of application.
+
+| Hydrogen, from coke gas + CCS | hydrogen, recovered from coke oven gas, with carbon capture and storage |
+
+
+These markets are relinked to activities that consume hydrogen in France, according to their area of application.
 
