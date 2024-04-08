@@ -127,11 +127,13 @@ Sources
 
 Remarks about input data :
 * All the quantities of hydrogen are given in TWh LHV (Low Heating Value)
-* The hydrogen imported (scenario S3) is produced by electrolysis using renewable electricity (solar, wind) [Full report, p.529]. It is modeled as the hydrogen produced by electrolysis using French electricity mix S3. This modeling is more representative for S3EnR than for S3nuc.
-* The hydrogen produced from gas in scenario S4 is produced by SMR coupled with Carbon Capture technology [Full report, p.530]
-* The efficiency considered for electrolysis is 0.65 in 2030 and 0.72 in 2050 [Source: ADEME experts]. 0.61% efficiency was chosen for 2019 (!!!!!!!!!!! to be discussed with Romain)
+* The hydrogen imported (scenario S3) is produced by electrolysis using renewable electricity (solar, wind) [Full report, p.529]. It is modeled as the hydrogen produced by electrolysis using French electricity mix S3. This modeling is more representative for S3 Renew than for S3 Nuc.
+* The hydrogen produced from gas in scenario S4 is produced by SMR coupled with Carbon Capture and Storage technology [Full report, p.530] In other scenarios, the hydrogen produced from gas is produced by SMR without Carbon Capture and Storage.
+* The efficiency considered for electrolysis changes over time (variable Efficiency|Hydrogen|Electrolyzer) is 0.65 in 2030 and 0.72 in 2050 [Source: ADEME experts]. An efficiency of 0.61 was chosen for 2019 [!!!!!!!!!!! to be discussed with Romain]
 
-The following markets for hydrogen are created:
+**Market created**
+
+The following markets for hydrogen are created :
 * `market for hydrogen, gaseous, for transport - direct use of H2, Tr2050` (FR)
 * `market for hydrogen, gaseous, for fossil fuel refinery use, Tr2050` (FR)
 * `market for hydrogen, gaseous, for biofuel refinery use, Tr2050` (FR)
@@ -140,27 +142,31 @@ The following markets for hydrogen are created:
 * `market for hydrogen, gaseous, for steel use, Tr2050` (FR)
 * `market for hydrogen, gaseous, for chemicals use, Tr2050` (FR)
 * `market for hydrogen, gaseous, for power to gaz, Tr2050` (FR)
+* `market for hydrogen, gaseous, Tr2050` (FR)
 
 Specifications
 * The market for transport use includes only direct use of hydrogen for transportation. 
 * The market for power-to-liquid covers the hydrogen production that is then used to produce synthetic fuels / e-fuels. 
 * The market for power-to-gaz covers the hydrogen production that is then used to produce methane by methanation process that is then injected in the gaz grid.
+* The market for hydrogen is an assembly of all the markets modeled and thus covers all the modeled sector.
 * The only sector for which co-production is considered is refinery of fossil fuel. It means that for other sectors (such as ammonia, of chemicals) the market modeled includes only the hydrogen that is produced in addition to co-production from this sector.
-* The uses of hydrogen are explained in details in [Full Report, p. 520]. 
+* The uses of hydrogen for each markets are explained in details in [Full Report, p. 520]. 
 
+**Hydrogen production inventories**
 The datasets listed below are used to supply the above-listed markets:
 
-| Technologies in Tr2050        | LCI datasets used                                                       | 
-|-------------------------------|-------------------------------------------------------------------------|
-| Hydrogen, electrolysis        | hydrogen production, electrolysis, 25 bar, domestic                     |
-| Hydrogen, from SMR of NG      | hydrogen production, steam reforming                                    |
-| Hydrogen, from SMR of NG + CCS| hydrogen production, steam reforming x!!!!!!!!!!!!!!!!!!!!!!!           |
-| Hydrogen, refinery            | hydrogen production, gaseous, petroleum refinery operation              |
+| Technologies in Tr2050                        | LCI datasets used                                                       | 
+|-----------------------------------------------|-------------------------------------------------------------------------|
+| Hydrogen, from electrolysis                   | hydrogen production, gaseous, 30 bar, from PEM electrolysis, from grid electricity, domestic |
+| Hydrogen, from SMR of NG                      | hydrogen production, steam methane reforming of natural gas, 25 bar     |
+| Hydrogen, from SMR of NG + CCS                | hydrogen production, steam reforming  [!!! Jo to update]                |
+| Hydrogen, co-product for fossil fuel refinery | hydrogen production, gaseous, petroleum refinery operation              |
 
 
+**Market inventories** 
+Each market inventory is composed of the following flows :
+* One or several hydrogen production inventories. These inventories and their amount are specific for each market based on shares provided in Transition(s) 2050.
+* 5 inventories modelling the transport (by pipeline) and the storage (geological). The electricity flow represents the electricity used to generate pressure in pipeline [!!! to be discussed with romain]. This activities are similar for each market.
+* A technosphere flow of itself and a hydrogen biosphere emission flow to model hydrogen losses among the distribution and storage value chain. This losses variable is static and considers 0.005% losses. 
 
-| Hydrogen, from coke gas + CCS | hydrogen, recovered from coke oven gas, with carbon capture and storage |
-
-
-These markets are relinked to activities that consume hydrogen in France, according to their area of application.
-
+[!!!!!!!!!!! to be discussed with Romain] These markets are relinked to activities that consume hydrogen in France, according to their area of application. 
