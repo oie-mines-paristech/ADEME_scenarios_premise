@@ -59,7 +59,7 @@ Funding
 -------
 
 This work is supported by the ADEME agency, in the context of
-the HYSPI project (https://www.psi.ch/en/ta/projects/hyspi).
+the [`HYSPI project`](https://www.psi.ch/en/ta/projects/hyspi).
 
 Ecoinvent database compatibility
 --------------------------------
@@ -70,13 +70,14 @@ ecoinvent 3.9.1 cut-off
 Prospective scenarios
 ---------------------------
 ADEME provides 6 scenarios : 
-* S1 : Frugal generation (Génération Frugale)
-* S2 : Territorial cooperation (Coopération territoriale)
-* S3 Renew : Green technologies based on renewables development (Technologies vertes)
-* S3 Nuc : Green technologies based on nuclear development (Technologies vertes)
-* S4 : Repairing bet (Pari réparateur)
+* S1 : Frugal generation (Génération Frugale) > The transition is driven mostly by sobriety and constraint.
+* S2 : Territorial cooperation (Coopération territoriale) > The society transformation is based on a shared governance and on territorialization strategies.
+* S3 Renew : Green technologies based on renewables development (Technologies vertes) > The transition is based on innovation and development of low carbon technologies, especially renewable energies.  
+* S3 Nuc : Green technologies based on nuclear development (Technologies vertes) > The transition is based on innovation and development of low carbon technologies, especially nuclear energy.  
+* S4 : Repairing bet (Pari réparateur) > The transition relies highly on new technologies development, without any society lifestyle changes. 
 * TEND : a trend-based scenario
 
+Informations about scenarios : [`here in French`](https://www.ademe.fr/les-futurs-en-transition/les-scenarios/)
 
 IAM scenario compatibility
 ---------------------------
