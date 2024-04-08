@@ -152,7 +152,7 @@ The following markets for hydrogen are created :
 * The only sector for which co-production is considered is refinery of fossil fuel. It means that for other sectors (such as ammonia, of chemicals) the market modeled includes only the hydrogen that is produced in addition to co-production from this sector.
 * The uses of hydrogen for each markets are explained in details in [Full Report, p. 520]. 
 
-**Hydrogen production inventories**
+**Hydrogen production inventories**\
 The datasets listed below are used to supply the above-listed markets:
 
 | Technologies in Tr2050                        | LCI datasets used                                                       | 
