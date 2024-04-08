@@ -120,12 +120,12 @@ Hydrogen
 
 **Input Data**
 
-Sources
+###### Sources
 * Chapter 3 (production d'énergie) / section 5 of [`Full Report`](https://librairie.ademe.fr/recherche-et-innovation/5072-prospective-transitions-2050-rapport.html)
 * Excel files hydrogene-g1 to g8 from [`Data repository`](https://data-transitions2050.ademe.fr/)
 * Discussions with ADEME experts
 
-Remarks about input data :
+###### Remarks about input data
 * All the quantities of hydrogen are given in TWh LHV (Low Heating Value)
 * The hydrogen imported (scenario S3) is produced by electrolysis using renewable electricity (solar, wind) [Full report, p.529]. It is modeled as the hydrogen produced by electrolysis using French electricity mix S3. This modeling is more representative for S3 Renew than for S3 Nuc.
 * The hydrogen produced from gas in scenario S4 is produced by SMR coupled with Carbon Capture and Storage technology [Full report, p.530] In other scenarios, the hydrogen produced from gas is produced by SMR without Carbon Capture and Storage.
@@ -144,7 +144,7 @@ The following markets for hydrogen are created :
 * `market for hydrogen, gaseous, for power to gaz, Tr2050` (FR)
 * `market for hydrogen, gaseous, Tr2050` (FR)
 
-Specifications
+###### Specifications of hydrogen markets
 * The market for transport use includes only direct use of hydrogen for transportation. 
 * The market for power-to-liquid covers the hydrogen production that is then used to produce synthetic fuels / e-fuels. 
 * The market for power-to-gaz covers the hydrogen production that is then used to produce methane by methanation process that is then injected in the gaz grid.
@@ -163,7 +163,7 @@ The datasets listed below are used to supply the above-listed markets:
 | Hydrogen, co-product for fossil fuel refinery | hydrogen production, gaseous, petroleum refinery operation              |
 
 
-**Market inventories** 
+**Market inventories** \
 Each market inventory is composed of the following flows :
 * One or several hydrogen production inventories. These inventories and their amount are specific for each market based on shares provided in Transition(s) 2050.
 * 5 inventories modelling the transport (by pipeline) and the storage (geological). The electricity flow represents the electricity used to generate pressure in pipeline [!!! to be discussed with romain]. This activities are similar for each market.
