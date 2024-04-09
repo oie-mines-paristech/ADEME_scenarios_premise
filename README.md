@@ -82,6 +82,7 @@ Informations about scenarios : [`here in French`](https://www.ademe.fr/les-futur
 IAM scenario compatibility
 ---------------------------
 
+[!!!!!!!! to be updated]
 The following coupling is done between IAM and FE2050+ scenarios:
 
 | IAM scenario            | Tr2050  scenario                       |
@@ -105,35 +106,70 @@ What does this do?
 
 ![map electricity markets](assets/map.png)
 
-This external scenario creates electricity and fuel markets for France listed below, according
+This external scenario creates electricity, hydrogen and fuel markets for France listed below, according
 to the projections from the ADEME's Transition(s) 2050 (yellow boundaries in map above).
-Imports of electricity are provided by the regional IAM market for European electricity (blue boundaries in map above).
+
 
 Electricity
-***********
+------------------
+\
+Input Data
+*****
 
+
+**Sources**
+* The data used are not the ones provided in the report but was directly provided by ADEME. This data was computed with an assumption of 39 GW of interconnexion (compared with 45 GW initially). The data was computed with this new assumption to fit better with RTE projections. 
+* Discussions with ADEME experts
+
+\
+How the data provided by ADEME has been modified ?
+*****
+
+**Production data**
+
+###### Hydro electricity production data
+As the data provided by ADEME is not divided in reservoir hydro and run-of-river hydro, the actual percentage of repartition between both technologies as been applied to generate production data for both technologies. The percentage has been calculated based on market for electricity, high voltage (FR) taken from ecoinvent 3.10 : 84% for run-of-river and 16% for reservoir technologies.
+
+###### 2020 production data
+In the data file provided by ADEME, the 2020 data is not the same for Combined Cycle Gaz Technology (0.8 TWh/year to 2.2 TWh/year). The data has not been changed. 
+
+###### Exports modelling : change of production volumes of "primary" electricity
+As we aim to model the electricity mix consumed in France, the production data used has thus been resized by substracting the exports from the volumes of "primary" electricity produced. Modeling the exports this way involves that : 
+* the exports are taken from the "primary" electricity production (ie the electricity that is not consumed then injected by flexibility technologies).
+* the electricity consumed then injected by flexibility technologies is only dedicated to French electricity market.
+
+The following market datasets are created:
+
+* `market for electricity, high voltage, Tr2050` (FR)
+* `market for electricity, medium voltage, Tr2050` (FR)
+* `market for electricity, medium voltage, Tr2050` (FR)
+
+These markets are relinked to activities that consume electricity in France.
+
+\
 Fuels
 *****
 
 
 Hydrogen
-********
-
-**Input Data**
-
-###### Sources
+------------------
+\
+Input Data
+*****
+**Sources**
 * Chapter 3 (production d'énergie) / section 5 of [`Full Report`](https://librairie.ademe.fr/recherche-et-innovation/5072-prospective-transitions-2050-rapport.html)
 * Excel files hydrogene-g1 to g8 from [`Data repository`](https://data-transitions2050.ademe.fr/)
 * Discussions with ADEME experts
 
-###### Remarks about input data
+**Remarks about input data**
 * All the quantities of hydrogen are given in TWh LHV (Low Heating Value)
 * The hydrogen imported (scenario S3) is produced by electrolysis using renewable electricity (solar, wind) [Full report, p.529]. It is modeled as the hydrogen produced by electrolysis using French electricity mix S3. This modeling is more representative for S3 Renew than for S3 Nuc.
 * The hydrogen produced from gas in scenario S4 is produced by SMR coupled with Carbon Capture and Storage technology [Full report, p.530] In other scenarios, the hydrogen produced from gas is produced by SMR without Carbon Capture and Storage.
-* The efficiency considered for electrolysis changes over time (variable Efficiency|Hydrogen|Electrolyzer) is 0.65 in 2030 and 0.72 in 2050 [Source: ADEME experts]. An efficiency of 0.61 was chosen for 2019 [!!!!!!!!!!! to be discussed with Romain]
+* The efficiency considered for electrolysis changes over time (variable Efficiency|Hydrogen|Electrolyzer) is 0.65 in 2030 and 0.72 in 2050 [Source: ADEME experts]. An efficiency of 0.61 was chosen for 2019 [!!!!!!!!!!! to be discussed]
 
-**Market created**
-
+\
+Markets created
+*****
 The following markets for hydrogen are created :
 * `market for hydrogen, gaseous, for transport - direct use of H2, Tr2050` (FR)
 * `market for hydrogen, gaseous, for fossil fuel refinery use, Tr2050` (FR)
@@ -145,7 +181,7 @@ The following markets for hydrogen are created :
 * `market for hydrogen, gaseous, for power to gaz, Tr2050` (FR)
 * `market for hydrogen, gaseous, Tr2050` (FR)
 
-###### Specifications of hydrogen markets
+**Specifications of hydrogen markets**
 * The market for transport use includes only direct use of hydrogen for transportation. 
 * The market for power-to-liquid covers the hydrogen production that is then used to produce synthetic fuels / e-fuels. 
 * The market for power-to-gaz covers the hydrogen production that is then used to produce methane by methanation process that is then injected in the gaz grid.
@@ -153,7 +189,9 @@ The following markets for hydrogen are created :
 * The only sector for which co-production is considered is refinery of fossil fuel. It means that for other sectors (such as ammonia, of chemicals) the market modeled includes only the hydrogen that is produced in addition to co-production from this sector.
 * The uses of hydrogen for each markets are explained in details in [Full Report, p. 520]. 
 
-**Hydrogen production inventories**\
+\
+Hydrogen production inventories
+******
 The datasets listed below are used to supply the above-listed markets:
 
 | Technologies in Tr2050                        | LCI datasets used                                                       | 
@@ -163,11 +201,55 @@ The datasets listed below are used to supply the above-listed markets:
 | Hydrogen, from SMR of NG + CCS                | hydrogen production, steam reforming  [!!! Jo to update]                |
 | Hydrogen, co-product for fossil fuel refinery | hydrogen production, gaseous, petroleum refinery operation              |
 
+\
+Market inventories
+******
 
-**Market inventories** \
 Each market inventory is composed of the following flows :
 * One or several hydrogen production inventories. These inventories and their amount are specific for each market based on shares provided in Transition(s) 2050.
 * 5 inventories modelling the transport (by pipeline) and the storage (geological). The electricity flow represents the electricity used to generate pressure in pipeline [!!! to be discussed with romain]. This activities are similar for each market.
 * A technosphere flow of itself and a hydrogen biosphere emission flow to model hydrogen losses among the distribution and storage value chain. This losses variable is static and considers 0.005% losses. 
 
-[!!!!!!!!!!! to be discussed with Romain] These markets are relinked to activities that consume hydrogen in France, according to their area of application. 
+[!!!!!!!!!!! to be discussed] These markets are relinked to activities that consume hydrogen in France, according to their area of application. 
+
+
+
+
+\
+To do Jo 
+*****
+
+* Elec: main difference with RTE : hydrogen not used to balance elec mix + voir notes réu ADEME. 
+
+* how is the location of the reference ecoinvent flow chosen ? 
+
+* new techno compared with FE2050 :
+  * biogaz_chp : heat and power co-generation, biogas, gas engine
+  * geothermal :electricity production, deep geothermal
+  * gaz_chp : heat and power co-generation, natural gas, conventional power plant, 100MW electrical
+
+* Nuclear = Pressurised water for now as we do not have disagregated data btw EPR and PWR (no SMR in the scenarios).
+No SMR in all scenarios. No new nuclear (except Flamanville) in S1 S2 S3 Renew. S3Nuc and S4, new EPR nuclear.  
+
+* gaz : Je pense que pour OCGT et CCGT je vais mettre un mix de gaz (biogaz + gaz nat + e-methane) et pour Autres thermiques, je vais mettre uniquement du gaz nat (sauf en 2020 avec un peu de fioul, je vais réfléchir comment désagréger la donnée) et pour CHP biogaz uniquement du biogaz. 
+
+* how to make appear fioul (only in 2020 ?) Use data from RTE ? Use data from feuilleton mix elec p. 15 sur capa gaz
+JM Parouffe : dans la catégorie «  CHP fioul, gaz », il n’y en a pas alimentées au fioul, sauf en 2020. 
+
+* PV is not at low voltage
+  
+* Disagregated data not used yet 
+  * Gaz OCGT CCGT but OCGT is really low
+  * PV not disagregated for now. level 1 : roof / ground. Level 2 : roof large / roof small ; ground fixed / ground tracker
+  * fixed vs floating wind = offshore total
+  * Where does PV inventory come from ? 
+
+* Hydro pumped storage : efficiency variation (how does efficency works ?)
+why is Efficiency|Storage|Hydro|Pumped storage used in production pathways and Efficiency|Storage|Battery|Charge used in markets ? 
+
+* medium_to_high et low_to_medium ??
+* to do : connect Production|Electricity|Conventional|Gaz|Cycle Turbines total to the new gaz market.
+
+* Aknoledgment : JM Parouffe
+
+
