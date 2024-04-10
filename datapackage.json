@@ -2,7 +2,7 @@
     "profile": "data-package",
     "name": "transitions-2050",
     "title": "Transition-s 2050",
-    "description": "Implementation of the electricity and hydrogen scenarios described in Futurs énergétiques 2050",
+    "description": "Implementation of the electricity and hydrogen scenarios described in Transition-s 2050 / ADEME",
     "version": "1.0.0",
     "contributors":[
         {
@@ -33,10 +33,10 @@
     "scenarios description": {
         "TEND - Trend scenario": "Trend based scenario",
         "S1 - Frugal generation": "The transition is driven\nmostly by sobriety and constraint",
-		"S2 - Territorial cooperation":"The society transformation\nis based on a shared governance and\non territorialization strategies",
-		"S3 Renew - Green technologies renewables":"The transition\nis based on innovation and development\nof low carbon technologies, especially renewable energies",  
-        "S3 Nuc - Green technologies nuclear":"The transition\nis based on innovation and development\nof low carbon technologies, especially nuclear energy",  
-        "S4 - Repairing bet - Pari reparateur":"The transition\nrelies highly on new technologies development,\nwithout any society lifestyle changes."
+		"S2 - Territorial cooperation": "The society transformation\nis based on a shared governance and\non territorialization strategies",
+		"S3 Renew - Green technologies renewables": "The transition\nis based on innovation and development\nof low carbon technologies, especially renewable energies",  
+        "S3 Nuc - Green technologies nuclear": "The transition\nis based on innovation and development\nof low carbon technologies, especially nuclear energy",  
+        "S4 - Repairing bet - Pari reparateur": "The transition\nrelies highly on new technologies development,\nwithout any society lifestyle changes."
     },
     "source": "https://www.ademe.fr/les-futurs-en-transition/",
     "licenses": [{
