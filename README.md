@@ -71,39 +71,22 @@ ecoinvent 3.9.1 cut-off
 
 Prospective scenarios
 ---------------------------
-ADEME provides 6 scenarios : 
+ADEME provides 5 scenarios : 
 * S1 : Frugal generation (Génération Frugale) > The transition is driven mostly by sobriety and constraint.
 * S2 : Territorial cooperation (Coopération territoriale) > The society transformation is based on a shared governance and on territorialization strategies.
 * S3 Renew : Green technologies based on renewables development (Technologies vertes) > The transition is based on innovation and development of low carbon technologies, especially renewable energies.  
 * S3 Nuc : Green technologies based on nuclear development (Technologies vertes) > The transition is based on innovation and development of low carbon technologies, especially nuclear energy.  
 * S4 : Repairing bet (Pari réparateur) > The transition relies highly on new technologies development, without any society lifestyle changes. 
-* TEND : a trend-based scenario
 
 Informations about scenarios : [`here in French`](https://www.ademe.fr/les-futurs-en-transition/les-scenarios/)
 
 IAM scenario compatibility
 ---------------------------
 
-[!!!!!!!! to be updated]
-The following coupling is done between IAM and FE2050+ scenarios:
+The ADEME French scenarios can be connected to any Integrated Assessment Model (IAM) provided by premise. 
+[`Link to explore IAM scenarios`]([https://www.ademe.fr/les-futurs-en-transition/](https://premisedash-6f5a0259c487.herokuapp.com/)) \ 
 
-| IAM scenario            | Tr2050  scenario                       |
-|-------------------------|----------------------------------------|
-| IMAGE SSP2-Base         | TEND                                   |
-| IMAGE SSP2-Base         | S1                                     |
-| IMAGE SSP2-Base         | S2                                     |
-| IMAGE SSP2-Base         | S3 Renew                               |
-| IMAGE SSP2-Base         | S3 Nuc                                 |
-| IMAGE SSP2-Base         | S4                                     |
-
-
-This pairing was done solely based on the author's opinions and does not reflect 
-any official coupling between the two scenarios. This is to prevent coupling
-between scenarios that are not compatible (e.g. coupling between a global scenario with
-a high carbon price and a national scenario with a low carbon price).
-
-
-What does this do?
+What does this notebook do?
 ------------------
 
 ![map electricity markets](assets/map.png)
@@ -151,6 +134,7 @@ As we aim to model the electricity mix consumed in France, the production data u
 * the electricity consumed then injected by flexibility technologies is only dedicated to French electricity market.\
 
 **Remarks about input data**
+* Electricity data is provided for every 5 years from 2020 to 2060.
 * In the data file provided by ADEME, the 2020 data is not the same for Combined Cycle Gaz Technology (0.8 TWh/year to 2.2 TWh/year). The data has not been changed and is thus different for each scenario.  
   * The **nuclear electricity** is modeled with Pressurised Water Reactor Technology (PWR) as we do not get disagregated data between PWR and Evolutionary Pressurised Reactor (EPR). New EPR capacity (except Flamanville) is developed in S3 Nuc and S4 but not in S1, S2, and S3 Renew. Therefor this modeling choice affect more S3 Nuc and S4 than S1, S2, S3 Renew. No Small Modular Reactor (SMR) technology is considered in any scenario.
 * There are 3 ways of **producing electricity from gas** in ADEME's scenarios :
@@ -168,29 +152,30 @@ Combined Heat and Power of biogas is thus considered in two different activities
 Electricity production inventories
 ******
 The inventories datasets listed below are used to model the different ways of producing electricity:
-| Technologies in Tr2050+             | LCI datasets used                                                          | Source                                                       |
-|-------------------------------------|----------------------------------------------------------------------------|--------------------------------------------------------------|
+| Technologies in Tr2050+             | LCI datasets used                                                          | Source         |
+|-------------------------------------|----------------------------------------------------------------------------|----------------|
 | Nuclear, Pressure water reactor     | electricity production, nuclear, pressure water reactor - FR               | ecoinvent 3.9.1|
 | Gas, Combined Heat and Power        | heat and power co-generation, natural gas, conventional power plant, 100MW electrical, FR| ecoinvent 3.9.1|
 | Coal                                | electricity production, hard coal - FR                                     | ecoinvent 3.9.1|
 | Oil                                 | electricity production, oil - FR                                           | ecoinvent 3.9.1|
 | Gas, Combined Cycle Turbine         | electricity production, natural gas, combined cycle power plant - FR       | ecoinvent 3.9.1|
-| Photovoltaic                        | electricity production, photovoltaic - FR                                  | Datasets provided by premise (????) from 10.13140/RG.2.2.17977.19041. |
+| Photovoltaic                        | electricity production, photovoltaic - FR                                  | Datasets provided by premise adapted from 10.13140/RG.2.2.17977.19041. |
 | Wind turbines, Onshore              | electricity production, wind, 1-3MW turbine, onshore - FR                  | ecoinvent 3.9.1|
 | Wind turbines, Offshore             | electricity production, wind, 1-3MW turbine, offshore - FR                 | ecoinvent 3.9.1|
-| Sea, wave                           | electricity production, wave energy converter - RER                        | Dataset provided by premise from 10.1007/s11367-018-1504-2| 
+| Sea, wave                           | electricity production, wave energy converter - RER                        | Dataset provided by premise from 10.1007/s11367-018-1504-2 as explained [here](`https://premise.readthedocs.io/en/latest/extract.html#photovoltaic-panels`)| 
 | Biogas, Combined Heat and Power     | heat and power co-generation, biogas, gas engine - FR                      | ecoinvent 3.9.1|
 | Biomass, Combined Heat and Power    | heat and power co-generation, wood chips, 6667 kW - RoW                    | ecoinvent 3.9.1|
 | Waste-to-Energy                     | treatment of municipal solid waste, incineration - FR                      |
-| Geothermal                          | electricity production, deep geothermal - FR                               | Dataset provided by premise, based on the geothermal heat dataset of ecoinvent  (??? which difference with ecoinvent?)|
+| Geothermal                          | electricity production, deep geothermal - FR                               | Dataset provided by premise, based on the geothermal heat dataset of ecoinvent, as explained [here](`https://premise.readthedocs.io/en/latest/extract.html#geothermal`) and [here](`https://premise.readthedocs.io/en/latest/extract.html#id2`)|
 | Hydro, alpine reservoir             | electricity production, hydro, reservoir, alpine region - FR               | ecoinvent 3.9.1|
 | Hydro, run-of-river                 | electricity production, hydro, run-of-river - FR                           | ecoinvent 3.9.1|
+
 
 \
 Flexibility technologies inventories
 ******
 The inventories datasets listed below are used to model the injection of electricity from flexibility technologies:
-| Storage, Battery                    | eelectricity supply, high voltage, from vanadium-redox flow battery system - FR [!!!!!!to be discussed] | Dataset created for this package.|
+| Storage, Battery                    | electricity supply, high voltage, from vanadium-redox flow battery system - FR  | Dataset created for this package.|
 | Storage, Pumped hydro               | electricity production, hydro, pumped storage - FR                              | ecoinvent 3.9.1|
 
 
@@ -265,6 +250,7 @@ Input Data
 * Discussions with ADEME experts
 
 **Remarks about input data**
+* Hydrogen data is provided for 2019, 2030 and 2050. We assumed data of 2020 is similar as data for 2019. 
 * All the quantities of hydrogen are given in TWh LHV (Low Heating Value)
 * The hydrogen imported (scenario S3) is produced by electrolysis using renewable electricity (solar, wind) [Full report, p.529]. It is modeled as the hydrogen produced by electrolysis using French electricity mix S3. This modeling is more representative for S3 Renew than for S3 Nuc.
 * The hydrogen produced from gas in scenario S4 is produced by SMR coupled with Carbon Capture and Storage technology [Full report, p.530] In other scenarios, the hydrogen produced from gas is produced by SMR without Carbon Capture and Storage.
@@ -278,9 +264,9 @@ The inventories datasets listed below are used to model the different ways of pr
 
 | Technologies in Tr2050        | LCI datasets used                                                       | Source | 
 |-------------------------------|-------------------------------------------------------------------------| -------|
-| Electrolysis                  | hydrogen production, gaseous, 30 bar, from PEM electrolysis, from grid electricity, domestic, FE2050 - FR | Dataset created for this datapackage from https://doi.org/10.1016/j.est.2021.102759 |
+| Electrolysis                  | hydrogen production, gaseous, 30 bar, from PEM electrolysis, from grid electricity, domestic, FE2050 - FR | Dataset created for this datapackage, adapted from https://doi.org/10.1016/j.est.2021.102759 |
 | Steam methane reforming       | hydrogen production, steam reforming of natural gas, 25 bar - FR| ecoinvent 3.9.1 |
-| Steam methane reforming + Carbone Capture and Storage| hydrogen production, steam methane reforming of natural gas, 25 bar - FR [!!! Jo to update] | Dataset created for this datapackage from ???|
+| Steam methane reforming + Carbone Capture and Storage| hydrogen production, steam methane reforming of natural gas, with CCS (MDEA, 98% eff.), 25 bar - FR???? [!!! Jo to update] | Dataset created for this datapackage from ???|
 \
 * For the production of hydrogen as a co-product, that is then consumed by this sector (fossil fuel refiner sector) :
 | Technologies in Tr2050                        | LCI datasets used                                            | Source          | 
