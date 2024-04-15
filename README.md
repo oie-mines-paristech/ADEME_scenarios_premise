@@ -84,7 +84,7 @@ IAM scenario compatibility
 ---------------------------
 
 The ADEME French scenarios can be connected to any Integrated Assessment Model (IAM) provided by premise. 
-[`Link to explore IAM scenarios`]([https://www.ademe.fr/les-futurs-en-transition/](https://premisedash-6f5a0259c487.herokuapp.com/)) \ 
+[`Link to explore IAM scenarios`]([https://www.ademe.fr/les-futurs-en-transition/](https://premisedash-6f5a0259c487.herokuapp.com/)  \ 
 
 What does this notebook do?
 ------------------
