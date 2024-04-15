@@ -1,0 +1,232 @@
+# Configuration file for custom scenarios for `premise`
+# Futurs Energétiques 2050 Scenario
+# https://www.rte-france.com/analyses-tendances-et-prospectives/bilan-previsionnel-2050-futurs-energetiques
+
+---
+
+production pathways:
+
+
+  diesel:
+    production volume:
+      variable: Production|Liquid fuel|Diesel|Diesel
+    ecoinvent alias:
+      name: diesel production, low-sulfur, petroleum refinery operation
+      reference product: diesel, low-sulfur
+      exists in original database: True
+
+  biodiesel:
+    production volume:
+      variable: Production|Liquid fuel|Diesel|Biodiesel
+    ecoinvent alias:
+      name: biodiesel, from rapeseed oil, at fuelling station
+      reference product: biodiesel, vehicle grade
+      exists in original database: True
+      regionalize: True
+
+  petrol:
+    production volume:
+      variable: Production|Liquid fuel|Petrol|Petrol
+    ecoinvent alias:
+      name: petrol production, low-sulfur
+      reference product: petrol, low-sulfur
+      exists in original database: True
+
+  bioethanol:
+    production volume:
+      variable: Production|Liquid fuel|Petrol|Bioethanol
+    ecoinvent alias:
+      name: ethanol production from sugar beet
+      reference product: ethanol, without water, in 95% solution state, from fermentation
+      exists in original database: True
+      regionalize: True
+
+
+
+  CNG:
+    production volume:
+      variable: Production|Gaseous fuel|CNG
+    ecoinvent alias:
+      name: market for natural gas, high pressure
+      reference product: natural gas, high pressure
+      exists in original database: True
+
+  LNG:
+    production volume:
+      variable: Production|Gaseous fuel|LNG
+    ecoinvent alias:
+      name: market for natural gas, liquefied
+      reference product: natural gas, liquefied
+      exists in original database: True
+
+  biomethane:
+    production volume:
+      variable: Production|Gaseous fuel|Biomethane
+    ecoinvent alias:
+      name: market for biomethane, high pressure
+      reference product: biomethane, high pressure
+      exists in original database: True
+      regionalize: True
+
+  low_to_high_pressure_gas:
+    production volume:
+      variable: Production|Gaseous fuel|Low to high
+    ecoinvent alias:
+      name: market for compressed gas, high pressure, FE2050
+      reference product: compressed gas
+      exists in original database: False
+      new dataset: True
+
+markets:
+  - name: market for compressed gas, high pressure, FE2050
+    reference product: compressed gas
+    unit: cubic meter
+    includes:
+      - CNG
+      - LNG
+      - biomethane
+    except regions:
+      - World
+
+    is fuel:
+      CNG:
+        Carbon dioxide, fossil: 1.944
+        Carbon dioxide, non-fossil: 0.0
+      LNG:
+        Carbon dioxide, fossil: 1.944
+        Carbon dioxide, non-fossil: 0.0
+      biomethane:
+        Carbon dioxide, fossil: 0.0
+        Carbon dioxide, non-fossil: 1.944
+
+    replaces:
+      - name: market for natural gas, high pressure
+        product: natural gas, high pressure
+
+    replaces in:
+      - location: FR
+
+
+  - name: market for compressed gas, low pressure, FE2050
+    reference product: compressed gas
+    unit: cubic meter
+
+    includes:
+      - CNG
+      - LNG
+      - biomethane
+
+    efficiency:
+      - variable: Distribution losses|Gaseous fuel|Low to high
+
+    is fuel:
+      CNG:
+        Carbon dioxide, fossil: 1.944
+        Carbon dioxide, non-fossil: 0.0
+      LNG:
+        Carbon dioxide, fossil: 1.944
+        Carbon dioxide, non-fossil: 0.0
+      biomethane:
+        Carbon dioxide, fossil: 0.0
+        Carbon dioxide, non-fossil: 1.944
+
+    replaces:
+      - name: market for natural gas, low pressure
+        product: natural gas, low pressure
+      - name: market group for natural gas, high pressure
+        product: natural gas, high pressure
+
+    replaces in:
+      - location: FR
+
+    add:
+      - name: natural gas, burned in gas turbine
+        reference product: natural gas, burned in gas turbine
+        amount: 0.044118
+      - name: market for pipeline, natural gas, low pressure distribution network
+        reference product: pipeline, natural gas, low pressure distribution network
+        amount: 1.43e-7
+      - name: Butane
+        categories: air::non-urban air or from high stacks
+        unit: kilogram
+        amount: 1.56e-05
+      - name: Carbon dioxide, fossil
+        categories: air::non-urban air or from high stacks
+        unit: kilogram
+        amount: 5.63e-05
+      - name: Ethane
+        categories: air::non-urban air or from high stacks
+        unit: kilogram
+        amount: 1.35e-04
+      - name: Methane, fossil
+        categories: air::non-urban air or from high stacks
+        unit: kilogram
+        amount: 0.001628712
+      - name: NMVOC, non-methane volatile organic compounds
+        categories: air::non-urban air or from high stacks
+        unit: kilogram
+        amount: 1.123812e-06
+      - name: Propane
+        categories: air::non-urban air or from high stacks
+        unit: kilogram
+        amount: 3.035e-05
+
+    except regions:
+      - World
+
+
+  - name: market for diesel, FE2050
+    reference product: diesel
+    unit: kilogram
+    includes:
+      - diesel
+      - biodiesel
+
+    is fuel:
+      diesel:
+        Carbon dioxide, fossil: 3.15
+        Carbon dioxide, non-fossil: 0.0
+      biodiesel:
+        Carbon dioxide, fossil: 0.0
+        Carbon dioxide, non-fossil: 3.15
+
+    except regions:
+      - World
+
+    replaces:
+      - name: market for diesel
+        product: diesel
+      - name: market for diesel, low-sulfur
+        product: diesel, low-sulfur
+
+    replaces in:
+      - location: FR
+
+  - name: market for petrol, FE2050
+    reference product: petrol
+    unit: kilogram
+    includes:
+      - petrol
+      - bioethanol
+
+    except regions:
+      - World
+
+    is fuel:
+      petrol:
+        Carbon dioxide, fossil: 3.15
+        Carbon dioxide, non-fossil: 0.0
+      bioethanol:
+        Carbon dioxide, fossil: 0.0
+        Carbon dioxide, non-fossil: 3.15
+
+    replaces:
+      - name: market for petrol
+        product: petrol
+      - name: market for petrol, low-sulfur
+        product: petrol, low-sulfur
+
+    replaces in:
+      - location: FR
+
+
