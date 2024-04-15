@@ -84,7 +84,7 @@ IAM scenario compatibility
 ---------------------------
 
 The ADEME French scenarios can be connected to any Integrated Assessment Model (IAM) provided by premise. 
-[`Link to explore IAM scenarios`]([https://www.ademe.fr/les-futurs-en-transition/](https://premisedash-6f5a0259c487.herokuapp.com/)  \ 
+[`Link to explore IAM scenarios`](https://premisedash-6f5a0259c487.herokuapp.com/)  
 
 What does this notebook do?
 ------------------
@@ -162,11 +162,11 @@ The inventories datasets listed below are used to model the different ways of pr
 | Photovoltaic                        | electricity production, photovoltaic - FR                                  | Datasets provided by premise adapted from 10.13140/RG.2.2.17977.19041. |
 | Wind turbines, Onshore              | electricity production, wind, 1-3MW turbine, onshore - FR                  | ecoinvent 3.9.1|
 | Wind turbines, Offshore             | electricity production, wind, 1-3MW turbine, offshore - FR                 | ecoinvent 3.9.1|
-| Sea, wave                           | electricity production, wave energy converter - RER                        | Dataset provided by premise from 10.1007/s11367-018-1504-2 as explained [here](`https://premise.readthedocs.io/en/latest/extract.html#photovoltaic-panels`)| 
+| Sea, wave                           | electricity production, wave energy converter - RER                        | Dataset provided by premise from 10.1007/s11367-018-1504-2 as explained [`here`](https://premise.readthedocs.io/en/latest/extract.html#photovoltaic-panels)| 
 | Biogas, Combined Heat and Power     | heat and power co-generation, biogas, gas engine - FR                      | ecoinvent 3.9.1|
 | Biomass, Combined Heat and Power    | heat and power co-generation, wood chips, 6667 kW - RoW                    | ecoinvent 3.9.1|
 | Waste-to-Energy                     | treatment of municipal solid waste, incineration - FR                      |
-| Geothermal                          | electricity production, deep geothermal - FR                               | Dataset provided by premise, based on the geothermal heat dataset of ecoinvent, as explained [here](`https://premise.readthedocs.io/en/latest/extract.html#geothermal`) and [here](`https://premise.readthedocs.io/en/latest/extract.html#id2`)|
+| Geothermal                          | electricity production, deep geothermal - FR                               | Dataset provided by premise, based on the geothermal heat dataset of ecoinvent, as explained [`here`](`https://premise.readthedocs.io/en/latest/extract.html#geothermal`) and [`here`](https://premise.readthedocs.io/en/latest/extract.html#id2)|
 | Hydro, alpine reservoir             | electricity production, hydro, reservoir, alpine region - FR               | ecoinvent 3.9.1|
 | Hydro, run-of-river                 | electricity production, hydro, run-of-river - FR                           | ecoinvent 3.9.1|
 
@@ -265,13 +265,18 @@ The inventories datasets listed below are used to model the different ways of pr
 | Technologies in Tr2050        | LCI datasets used                                                       | Source | 
 |-------------------------------|-------------------------------------------------------------------------| -------|
 | Electrolysis                  | hydrogen production, gaseous, 30 bar, from PEM electrolysis, from grid electricity, domestic, FE2050 - FR | Dataset created for this datapackage, adapted from https://doi.org/10.1016/j.est.2021.102759 |
-| Steam methane reforming       | hydrogen production, steam reforming of natural gas, 25 bar - FR| ecoinvent 3.9.1 |
-| Steam methane reforming + Carbone Capture and Storage| hydrogen production, steam methane reforming of natural gas, with CCS (MDEA, 98% eff.), 25 bar - FR???? [!!! Jo to update] | Dataset created for this datapackage from ???|
+| Steam methane reforming       | hydrogen production, steam reforming of natural gas, 25 bar - FR| Dataset created for this datapackage, adapted from https://doi.org/10.1039/D0SE00222D |
+| Steam methane reforming + Carbone Capture and Storage| hydrogen production, steam methane reforming of natural gas, with CCS (MDEA, 98% eff.), 25 bar - FR [!!! Jo to update] | Dataset created for this datapackage, adapted from https://doi.org/10.1039/D0SE00222D |
 \
+
 * For the production of hydrogen as a co-product, that is then consumed by this sector (fossil fuel refiner sector) :
 | Technologies in Tr2050                        | LCI datasets used                                            | Source          | 
 |-----------------------------------------------|--------------------------------------------------------------| ----------------|
 | Hydrogen, co-product for fossil fuel refinery | hydrogen production, gaseous, petroleum refinery operation - FR| ecoinvent 3.9.1 |
+
+
+For more inventories on Hydrogen : https://premise.readthedocs.io/en/latest/extract.html#hydrogen
+
 
 \
 **To do later**
