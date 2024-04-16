@@ -538,7 +538,7 @@ markets:
     add:
 
       - name: market for electricity, medium voltage, Tr2050
-        reference product: electricity, high voltage
+        reference product: electricity, medium voltage
         amount: 0.0042
 
       - name: market for sulfur hexafluoride, liquid
@@ -569,8 +569,8 @@ markets:
       - low_to_medium
 
     add:
-      - name: market for electricity, medium voltage, Tr2050
-        reference product: electricity, high voltage
+      - name: market for electricity, low voltage, Tr2050
+        reference product: electricity, low voltage
         amount: 0.0307
 
       - name: market for sulfur hexafluoride, liquid
