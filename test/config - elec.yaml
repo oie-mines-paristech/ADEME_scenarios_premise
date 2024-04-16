@@ -1,0 +1,131 @@
+  medium_to_high:
+    production volume:
+      variable: Production|Electricity|Medium to high
+    ecoinvent alias:
+      name: market for electricity, high voltage, FE2050
+      reference product: electricity, high voltage
+      exists in original database: False
+      new dataset: True
+
+  low_to_medium:
+    production volume:
+      variable: Production|Electricity|Low to medium
+    ecoinvent alias:
+      name: market for electricity, medium voltage, FE2050
+      reference product: electricity, medium voltage
+      exists in original database: False
+      new dataset: True
+
+  - name: market for electricity, high voltage, FE2050
+    reference product: electricity, high voltage
+    unit: kilowatt hour
+    includes:
+      - hydro_run_of_river
+      - hydro_reservoir
+      - hydro_pumped_storage
+      - nuclear_pressure_water
+      - nuclear_EPR
+      - nuclear_SMR
+      - waste
+      - natural_gas
+      - fuel_oil
+      - coal
+      - pv
+      - wind_onshore
+      - wind_offshore
+      - biomass
+      - wave
+      - hydrogen
+      - vehicle_to_grid
+      - battery
+      - import
+
+    add:
+
+      - name: market for electricity, high voltage, FE2050
+        reference product: electricity, high voltage
+        amount: 0.0312426845152551
+
+      - name: transmission network construction, electricity, high voltage
+        reference product: transmission network, electricity, high voltage
+        amount: 6.58e-09
+
+      - name: Dinitrogen monoxide
+        categories: air
+        unit: kilogram
+        amount: 5.0e-06
+
+      - name: Ozone
+        categories: air
+        unit: kilogram
+        amount: 4.16e-06
+
+    replaces:
+      - name: market for electricity, high voltage
+        product: electricity, high voltage
+        location: FR
+
+    except regions:
+      - World
+
+  - name: market for electricity, medium voltage, FE2050
+    reference product: electricity, medium voltage
+    unit: kilowatt hour
+    includes:
+      - medium_to_high
+
+    add:
+      - name: market for sulfur hexafluoride, liquid
+        reference product: sulfur hexafluoride, liquid
+        amount: 5.4e-08
+
+      - name: transmission network construction, electricity, medium voltage
+        reference product: transmission network, electricity, medium voltage
+        amount: 1.86e-08
+
+      - name: Sulfur hexafluoride
+        categories: air
+        unit: kilogram
+        amount: 5.4e-08
+
+    efficiency:
+      - variable: Transmission losses|Electricity|Medium to high
+
+    replaces:
+      - name: market for electricity, medium voltage
+        product: electricity, medium voltage
+        location: FR
+
+    except regions:
+      - World
+
+  - name: market for electricity, low voltage, FE2050
+    reference product: electricity, low voltage
+    unit: kilowatt hour
+    includes:
+      - low_to_medium
+
+    add:
+      - name: market for sulfur hexafluoride, liquid
+        reference product: sulfur hexafluoride, liquid
+        amount: 2.99e-09
+
+      - name: distribution network construction, electricity, low voltage
+        reference product: distribution network, electricity, low voltage
+        amount: 8.74e-08
+
+      - name: Sulfur hexafluoride
+        categories: air
+        unit: kilogram
+        amount: 2.99e-09
+
+    efficiency:
+      - variable: Distribution losses|Electricity|Low to medium
+
+    replaces:
+      - name: market for electricity, low voltage
+        product: electricity, low voltage
+        location: FR
+
+    except regions:
+      - World
