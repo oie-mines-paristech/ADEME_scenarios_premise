@@ -166,7 +166,7 @@ The inventories datasets listed below are used to model the different ways of pr
 | Biogas, Combined Heat and Power     | heat and power co-generation, biogas, gas engine - FR                      | ecoinvent 3.9.1|
 | Biomass, Combined Heat and Power    | heat and power co-generation, wood chips, 6667 kW - RoW                    | ecoinvent 3.9.1|
 | Waste-to-Energy                     | treatment of municipal solid waste, incineration - FR                      |
-| Geothermal                          | electricity production, deep geothermal - FR                               | Dataset provided by premise, based on the geothermal heat dataset of ecoinvent, as explained [`here`](`https://premise.readthedocs.io/en/latest/extract.html#geothermal`) and [`here`](https://premise.readthedocs.io/en/latest/extract.html#id2)|
+| Geothermal                          | electricity production, deep geothermal - FR                               | Dataset provided by premise, based on the geothermal heat dataset of ecoinvent, as explained [`here`](https://premise.readthedocs.io/en/latest/extract.html#geothermal) and [`here`](https://premise.readthedocs.io/en/latest/extract.html#id2)|
 | Hydro, alpine reservoir             | electricity production, hydro, reservoir, alpine region - FR               | ecoinvent 3.9.1|
 | Hydro, run-of-river                 | electricity production, hydro, run-of-river - FR                           | ecoinvent 3.9.1|
 
@@ -265,9 +265,8 @@ The inventories datasets listed below are used to model the different ways of pr
 | Technologies in Tr2050        | LCI datasets used                                                       | Source | 
 |-------------------------------|-------------------------------------------------------------------------| -------|
 | Electrolysis                  | hydrogen production, gaseous, 30 bar, from PEM electrolysis, from grid electricity, domestic, FE2050 - FR | Dataset created for this datapackage, adapted from https://doi.org/10.1016/j.est.2021.102759 |
-| Steam methane reforming       | hydrogen production, steam reforming of natural gas, 25 bar - FR| Dataset created for this datapackage, adapted from https://doi.org/10.1039/D0SE00222D |
-| Steam methane reforming + Carbone Capture and Storage| hydrogen production, steam methane reforming of natural gas, with CCS (MDEA, 98% eff.), 25 bar - FR [!!! Jo to update] | Dataset created for this datapackage, adapted from https://doi.org/10.1039/D0SE00222D |
-\
+| Steam methane reforming       | hydrogen production, steam reforming of natural gas, 25 bar - FR | Dataset created for this datapackage, adapted from https://doi.org/10.1039/D0SE00222D |
+| Steam methane reforming + Carbone Capture and Storage| hydrogen production, steam methane reforming of natural gas, with CCS (MDEA, 98% eff.), 25 bar - FR | Dataset created for this datapackage, adapted from https://doi.org/10.1039/D0SE00222D |
 
 * For the production of hydrogen as a co-product, that is then consumed by this sector (fossil fuel refiner sector) :
 | Technologies in Tr2050                        | LCI datasets used                                            | Source          | 
@@ -295,6 +294,8 @@ The following markets for hydrogen are created :
 * `market for hydrogen, gaseous, for chemicals use, Tr2050` (FR)
 * `market for hydrogen, gaseous, for power to gaz, Tr2050` (FR)
 * `market for hydrogen, gaseous, Tr2050` (FR)
+
+Note : in some scenarios, some markets are not created as the production for this market is equal to zero (eg, in S1 : `market for hydrogen, gaseous, for steel use, Tr2050` and `market for hydrogen, gaseous, for power to liquid use, Tr2050` are not created).
 
 **Specifications for hydrogen markets**
 * The market for transport use includes only direct use of hydrogen for transportation. 
