@@ -166,7 +166,7 @@ production pathways:
     production volume:
       variable: Production|Electricity|Medium to high
     ecoinvent alias:
-      name: market for electricity, high voltage, FE2050
+      name: market for electricity, high voltage, Tr2050
       reference product: electricity, high voltage
       exists in original database: False
       new dataset: True
@@ -175,7 +175,7 @@ production pathways:
     production volume:
       variable: Production|Electricity|Low to medium
     ecoinvent alias:
-      name: market for electricity, medium voltage, FE2050
+      name: market for electricity, medium voltage, Tr2050
       reference product: electricity, medium voltage
       exists in original database: False
       new dataset: True
