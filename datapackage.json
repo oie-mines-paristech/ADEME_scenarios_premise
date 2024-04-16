@@ -95,7 +95,6 @@
                         "type": "number",
                         "format": "default"
                     }
-
                 ],
                 "missingValues": [
                     ""
