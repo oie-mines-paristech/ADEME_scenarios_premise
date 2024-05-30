@@ -120,6 +120,10 @@ import numpy as np
 ## Explore 
 
 ```python
+#clear_cache() #if too slow
+```
+
+```python
 # Choose the scenario number to be explored
 n_scenario=1
 
