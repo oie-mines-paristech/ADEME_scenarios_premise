@@ -222,9 +222,7 @@ The `market for electricity, medium voltage, Tr2050` (FR) and `market for electr
 * A technosphere flow of itself to model electricity losses. Technosphere flows to model the network infrastructure and SF6 production and a biosphere flow (SF6). The amount of these flows is constant and equals to their value from `market for electricity, medium/low voltage, FR` from ecoinvent 3.9.1.
 
 \
-The main difference with ecoinvent modelling of 'market for electricity' inventories is that all the electricity produced are considered to be connected at high voltage grid whereas this is not the case in ecoinvent (eg, PV electricity is injected at low voltage grid)
-[to be discussed / noted : losses were not modelled in the same way as for FE2050]
-
+The main difference with ecoinvent modelling of 'market for electricity' inventories is that all the electricity produced are considered to be connected at high voltage grid whereas this is not the case in ecoinvent (eg, PV electricity is injected at low voltage grid). 
 
   
 \
@@ -240,6 +238,9 @@ Few informations about scenarios
 * There is only one hydrogen scenario for S3 that is used both for S3 Renew and S3 Nuc.
 * In S2 and S3, the hydrogen production in 2050 relies only on electrolysis whereas in S1 and S4, the hydrogen production in 2050 relies booth on electrolysis and steam methane reforming (of decarbonised gaz in S1 and of gas associated with Carbon Capture and Storage technology in S4).
 * S3 is the only scenario that considers hydrogen imports (produced by electrolysis with renewable electricity).
+* In S2, the hydrogen production by electrolysis is decentralised on few industrial sites without storage, whereas in S3, the production is more centralized, there are storage and grid facilities. In S1 and S4, as most of the production is from gas, there is no storage facilities.
+* Note : in this model, the hydrogen storage and grid facilities are modelled in the same way in all scenarios. 
+
 
 \
 Input Data
@@ -254,7 +255,7 @@ Input Data
 * All the quantities of hydrogen are given in TWh LHV (Low Heating Value)
 * The hydrogen imported (scenario S3) is produced by electrolysis using renewable electricity (solar, wind) [Full report, p.529]. It is modeled as the hydrogen produced by electrolysis using French electricity mix S3. This modeling is more representative for S3 Renew than for S3 Nuc.
 * The hydrogen produced from gas in scenario S4 is produced by SMR coupled with Carbon Capture and Storage technology [Full report, p.530] In other scenarios, the hydrogen produced from gas is produced by SMR without Carbon Capture and Storage.
-* The efficiency considered for electrolysis changes over time (variable Efficiency|Hydrogen|Electrolyzer) is 0.65 in 2030 and 0.72 in 2050 [Source: ADEME experts]. An efficiency of 0.61 was chosen for 2019 [!!!!!!!!!!! to be discussed]
+* The efficiency considered for electrolysis changes over time (variable Efficiency|Hydrogen|Electrolyzer) is 0.65 in 2030 and 0.72 in 2050 [Source: ADEME experts]. An efficiency of 0.61 was chosen for 2019 (that corresponds to the reference inventory loaded). 
 
 \
 Hydrogen production inventories
@@ -310,10 +311,10 @@ Market inventories
 ******
 Each market inventory is composed of the following flows :
 * One or several hydrogen production inventories. These inventories and their amount are specific for each market based on shares provided in Transition(s) 2050.
-* 5 inventories modelling the transport (by pipeline) and the storage (geological). The electricity flow represents the electricity used to generate pressure in pipeline [!!! to be confirmed by romain]. This activities are similar for each market.
+* 5 inventories modelling the transport (by pipeline) and the storage (geological). The electricity flow represents the electricity used for the process (compression) [!!! Ref to be added when it is published]. This activities are similar for each market and each scenarios.  
 * A technosphere flow of itself and a hydrogen biosphere emission flow to model hydrogen losses among the distribution and storage value chain. This losses variable is static and considers 0.005% losses. 
 
-[!!!!!!!!!!! to be discussed] These markets are relinked to activities that consume hydrogen in France, according to their area of application. 
+[!!! To be changed if Romain does it in a different way for FE2050] These markets are not relinked to activities that consume hydrogen in France, as the created market did not exist in the original database. 
 
 
 
