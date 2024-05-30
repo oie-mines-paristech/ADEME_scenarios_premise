@@ -171,6 +171,9 @@ The inventories datasets listed below are used to model the different ways of pr
 | Hydro, run-of-river                 | electricity production, hydro, run-of-river - FR                           | ecoinvent 3.9.1|
 
 
+As the nuclear production data are not disagregated between historical Pressurised Water Reactor (PWR) and new Evolutionary Power Reactor (EPR) technology, it has been decided to model the nuclear production with PWR technology to be conservative.
+
+
 \
 Flexibility technologies inventories
 ******
@@ -191,12 +194,6 @@ new techno compared with FE2050 :
   * geothermal :electricity production, deep geothermal
   * mix_gas_chp heat and power co-generation, natural gas, conventional power plant, 100MW electrical, FR
 
-Ways of improvement (not mandatory to do, see later if time) : 
-1. generate data (we have the inventories)
- * nuclear electricity : find a proxy to disagregate data btw PWR and EPR ? (! Flamanville)
-2. We have data, which inventories shall we use ?    
- * PV not disagregated for now. level 1 : roof / ground. Level 2 : roof large / roof small ; ground fixed / ground tracker
- * fixed vs floating wind = offshore total
 
 \
 Markets created
@@ -222,12 +219,22 @@ The `market for electricity, medium voltage, Tr2050` (FR) and `market for electr
 * A technosphere flow of itself to model electricity losses. Technosphere flows to model the network infrastructure and SF6 production and a biosphere flow (SF6). The amount of these flows is constant and equals to their value from `market for electricity, medium/low voltage, FR` from ecoinvent 3.9.1.
 
 \
-The main difference with ecoinvent modelling of 'market for electricity' inventories is that all the electricity produced are considered to be connected at high voltage grid whereas this is not the case in ecoinvent (eg, PV electricity is injected at low voltage grid). 
+The main difference with ecoinvent modelling of 'market for electricity' inventories is that all the electricity produced are considered to be connected at high voltage grid whereas this is not the case in ecoinvent (eg, PV electricity is injected at low voltage grid). It has been modeled this way as :
+* it is simpler to create one single market (at high voltage) based on prospective technologies shares with premise.
+* the shares between PV electricity volumes that are injected high / medium / low voltage is not available.
+
+\
+Main identified ways of improvement for electricity modeling
+******
+* Lack of prospective data (whereas prospective inventories exist) > Disaggregate ADEME nuclear production data between PWR and EPR technolog to connect them with existing inventories for these technologies
+* Prospective disaggregated data exists but is not used > Connect specific inventories for different types of PV and wind configurations to valorize existing ADEME disaggregated data on PV (large roof / small roof / ground fixed / ground tracker) and on wind (floating / fixed)
+* Market modeling > differenciate PV that is injected at low/medium/high voltage.
+
 
   
 \
-Fuels
-*****
+Fuels and gaz
+------------------
 
 
 Hydrogen
