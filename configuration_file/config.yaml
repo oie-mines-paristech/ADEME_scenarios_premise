@@ -622,7 +622,6 @@ markets:
     except regions:
       - World
 
-
   - name: market for hydrogen, gaseous, for fossil fuel refinery use, Tr2050
     reference product: hydrogen, gaseous
     unit: kilogram
