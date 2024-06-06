@@ -16,6 +16,7 @@ jupyter:
 *  If you have a problem concerning matching of biosphere flows, run 
 `bw2io.create_default_biosphere3(overwrite=True)`
 * Code run with premise 2.1.0.dev0 (pip install premise==2.1.0.dev0) [to be updated and included in the readme later]
+* avec from premise_gwp import add_premise_gwp, add_premise_gwp()
 
 
 # Initialisation
@@ -30,7 +31,7 @@ from datapackage import Package
 # Open brightway project
 
 ```python
-bw2data.projects.set_current("HySPI_premise_Tr2050_2")
+bw2data.projects.set_current("HySPI_premise_Tr2050_3")
 
 #bw2data.projects.current
 
@@ -44,10 +45,15 @@ ecoinvent_3_9_db = bw2data.Database('ecoinvent-3.9.1-cutoff')
 ```
 
 ```python
-#del bw2data.databases["ecoinvent_cutoff_3.9_image_SSP2-Base_2050_S2"]
+#del bw2data.databases["S3Nuc_2050_SSP2Base"]
 ```
 
-# Generate a new database according to scenarios with 2.1.0 dev0 version
+```python
+#from premise_gwp import add_premise_gwp
+#add_premise_gwp()
+```
+
+# Load input data
 
 ```python
 fp = r"datapackage.json"
@@ -59,33 +65,35 @@ ademe = Package(fp)
 ademe.resource_names
 ```
 
-## Exploration of the database without printing the database to brightway (to save time)
-
-
-### Generate the database
-
 ```python
 #Choose the scenario to generate
 #IAM model
 model="image"
 
-#IAM scenario
-#world_scenario="SSP2-Base"
-#world_scenario="SSP2-RCP26"
-world_scenario="SSP2-RCP19"
+#world scenario
+world_scenario_1="SSP2-Base"
+world_scenario_2="SSP2-RCP26"
+world_scenario_3="SSP2-RCP19"
 
 #Year
 year=2050
 
 #French scenario
-fr_scenario="S1 - Frugal generation"
-#fr_scenario="S2 - Territorial cooperation"
-#fr_scenario="S3 Renew - Green technologies renewables"
-#fr_scenario="S3 Nuc - Green technologies nuclear"
-#fr_scenario="S4 - Repairing bet"
+fr_scenario_1="S1 - Frugal generation"
+fr_scenario_2="S2 - Territorial cooperation"
+fr_scenario_3="S3 Renew - Green technologies renewables"
+fr_scenario_3bis="S3 Nuc - Green technologies nuclear"
+fr_scenario_4="S4 - Repairing bet"
+```
 
+## For tests : exploration of one database 
+
+
+### Generate the database
+
+```python
 scenarios = [
-        {"model": model, "pathway":world_scenario, "year": year, "external scenarios": [{"scenario": fr_scenario, "data": ademe}]},
+        {"model": model, "pathway":world_scenario_1, "year": year, "external scenarios": [{"scenario": fr_scenario_1, "data": ademe}]},
         ]
 ```
 
@@ -111,13 +119,12 @@ ndb = NewDatabase(
 ndb.update(["electricity","external"])
 ```
 
-## Explore nbd without printing the database to brightway
-
 ```python
-import numpy as np
+#Not mandatory for tests
+ndb.write_db_to_brightway(name=['test_tobedeleted_3'])
 ```
 
-## Explore 
+## Explore nbd without printing the database to brightway (to save time) 
 
 ```python
 #clear_cache() #if too slow
@@ -140,14 +147,36 @@ for act in list_act:
 ```
 
 ```python
+activity_name = "market for hydrogen, gaseous, for transport - direct use of H2, Tr2050"
+
+for act in list_act:
+    if activity_name==act["name"]:    
+        print(act["location"])
+```
+
+```python
 #Print all exchanges of a given activity
-activity_name = "market for electricity, high voltage, Tr2050"
+activity_name = "market for hydrogen, gaseous, for transport - direct use of H2, Tr2050"
 
 for act in list_act:
     if activity_name==act["name"]:    
         for e in act["exchanges"]:
             amount=e["amount"]
             print(f"{amount:.2f}","|", e["unit"],"|", e["name"] ) 
+```
+
+```python
+#Print all exchanges of a given activity
+activity_name = "market for hydrogen, gaseous, for transport - direct use of H2, Tr2050"
+#activity_name = "hydrogen production, steam methane reforming of natural gas, with CCS (MDEA, 98% eff.), 25 bar"
+#activity_name = "hydrogen production, gaseous, 30 bar, from PEM electrolysis, from grid electricity"
+
+for act in list_act:
+    if activity_name==act["name"] and act["location"]=='FR':    
+        for e in act["exchanges"]:
+            amount=e["amount"]
+            if e['type']=='technosphere':
+                print(f"{amount:.2f}","|", e["unit"],"|", e["name"],"|", e["location"] ) 
 ```
 
 ### Explanations (can be skipped)
@@ -174,36 +203,32 @@ type(list_act),len(list_act),act_test.keys()
 act_test["exchanges"][0].keys()
 ```
 
-# Generatenew databases with 2.1.0 dev0 version
+# Generate databases for several scenarios 
 
 ```python
-#Choose the scenario to generate
-#IAM model
-model="image
-
-#world scenario
-#world_scenario="SSP2-Base"
-#world_scenario="SSP2-RCP26"
-world_scenario="SSP2-RCP19"
-
-#Year
-year=2050
-
-#French scenario
-fr_scenario="S1 - Frugal generation"
-#fr_scenario="S2 - Territorial cooperation"
-#fr_scenario="S3 Renew - Green technologies renewables"
-#fr_scenario="S3 Nuc - Green technologies nuclear"
-#fr_scenario="S4 - Repairing bet"
+#Choose the scenarios to be modeled
+scenarios = [
+        {"model": model, "pathway":world_scenario_1, "year": year, "external scenarios": [{"scenario": fr_scenario_1, "data": ademe}]},
+        {"model": model, "pathway":world_scenario_1, "year": year, "external scenarios": [{"scenario": fr_scenario_2, "data": ademe}]},
+        {"model": model, "pathway":world_scenario_1, "year": year, "external scenarios": [{"scenario": fr_scenario_3, "data": ademe}]},
+        {"model": model, "pathway":world_scenario_1, "year": year, "external scenarios": [{"scenario": fr_scenario_3bis, "data": ademe}]},
+        {"model": model, "pathway":world_scenario_1, "year": year, "external scenarios": [{"scenario": fr_scenario_4, "data": ademe}]},
+        {"model": model, "pathway":world_scenario_2, "year": year, "external scenarios": [{"scenario": fr_scenario_1, "data": ademe}]},
+        {"model": model, "pathway":world_scenario_2, "year": year, "external scenarios": [{"scenario": fr_scenario_2, "data": ademe}]},
+        {"model": model, "pathway":world_scenario_2, "year": year, "external scenarios": [{"scenario": fr_scenario_3, "data": ademe}]},
+        {"model": model, "pathway":world_scenario_2, "year": year, "external scenarios": [{"scenario": fr_scenario_3bis, "data": ademe}]},
+        {"model": model, "pathway":world_scenario_2, "year": year, "external scenarios": [{"scenario": fr_scenario_4, "data": ademe}]},
+        {"model": model, "pathway":world_scenario_3, "year": year, "external scenarios": [{"scenario": fr_scenario_1, "data": ademe}]},
+        {"model": model, "pathway":world_scenario_3, "year": year, "external scenarios": [{"scenario": fr_scenario_2, "data": ademe}]},
+        {"model": model, "pathway":world_scenario_3, "year": year, "external scenarios": [{"scenario": fr_scenario_3, "data": ademe}]},
+        {"model": model, "pathway":world_scenario_3, "year": year, "external scenarios": [{"scenario": fr_scenario_3bis, "data": ademe}]},
+        {"model": model, "pathway":world_scenario_3, "year": year, "external scenarios": [{"scenario": fr_scenario_4, "data": ademe}]},
+    ]
 ```
 
 ```python
 scenarios = [
-        {"model": model, "pathway":world_scenario, "year": year, "external scenarios": [{"scenario": fr_scenario, "data": ademe}]},
-        {"model": model, "pathway":world_scenario, "year": year, "external scenarios": [{"scenario": fr_scenario, "data": ademe}]},
-        {"model": model, "pathway":world_scenario, "year": year, "external scenarios": [{"scenario": fr_scenario, "data": ademe}]},
-        {"model": model, "pathway":world_scenario, "year": year, "external scenarios": [{"scenario": fr_scenario, "data": ademe}]},
-        {"model": model, "pathway":world_scenario, "year": year, "external scenarios": [{"scenario": fr_scenario, "data": ademe}]},
+        {"model": model, "pathway":world_scenario_3, "year": year, "external scenarios": [{"scenario": fr_scenario_3bis, "data": ademe}]},
     ]
 ```
 
@@ -219,63 +244,68 @@ ndb = NewDatabase(
 
 ```python
 #This updates all the markets (included in premise) according to IAM scenarios chosen + the external French scenario
-#ndb.update() 
+ndb.update() 
 
 #This updates only the external French scenario. It does not work as we need updated European market for electricity 
 #to model the imports for French Tr20250 markets.
 #ndb.update(["external"]) 
 
 #This updates electricity markets according to IAM scenarios + the external French scenario
-ndb.update(["electricity","external"])
+#ndb.update(["electricity","external"])
+```
+
+```python
+#fait une fois la première fois que j'ai fait un extract. La première fois ça a planté, j'ai relancé
+#bw2io.create_default_biosphere3(overwrite=True)
 ```
 
 ```python
 #Choose the name of the databases that are exported to brightway > list_db_name
-
-S1_2050_SSP2base_db_name='S1_2050_SSP2base'
-S2_2050_SSP2base_db_name='S2_2050_SSP2base'
-S3Renew_2050_SSP2base_db_name='S3Renew_2050_SSP2base'
-S3Nuc_2050_SSP2base_db_name='S3Nuc_2050_SSP2base'
-S4_2050_SSP2base_db_name='S4_2050_SSP2base'
-
-S1_2050_SSP2RCP26_db_name='S1_2050_SSP2RCP26'
-S2_2050_SSP2RCP26_db_name='S2_2050_SSP2RCP26'
-S3Renew_2050_SSP2RCP26_db_name='S3Renew_2050_SSP2RCP26'
-S3Nuc_2050_SSP2RCP26_db_name='S3Nuc_2050_SSP2RCP26'
-S4_2050_SSP2RCP26_db_name='S4_2050_SSP2RCP26'
-
-S1_2050_SSP2RCP19_db_name='S1_2050_SSP2RCP19'
-S2_2050_SSP2RCP19_db_name='S2_2050_SSP2RCP19'
-S3Renew_2050_SSP2RCP19_db_name='S3Renew_2050_SSP2RCP19'
-S3Nuc_2050_SSP2RCP19_db_name='S3Nuc_2050_SSP2RCP19'
-S4_2050_SSP2RCP19_db_name='S4_2050_SSP2RCP19'
-
-if world_scenario=="SSP2-Base":
-    list_db_name=[
-         S1_2050_SSP2base_db_name,
-         S2_2050_SSP2base_db_name,
-         S3Renew_2050_SSP2base_db_name,
-         S3Nuc_2050_SSP2base_db_name,
-         S4_2050_SSP2base_db_name
+#if world_scenario_1=="SSP2-Base":
+list_db_name_1=[
+         'S1_2050_SSP2Base',
+         'S2_2050_SSP2Base',
+         'S3Renew_2050_SSP2Base',
+         'S3Nuc_2050_SSP2Base',
+         'S4_2050_SSP2Base'
         ]
-    
-if world_scenario=="SSP2-RCP26":
-    list_db_name=[
-        S1_2050_SSP2RCP26_db_name,
-        S2_2050_SSP2RCP26_db_name,
-        S3Renew_2050_SSP2RCP26_db_name,
-        S3Nuc_2050_SSP2RCP26_db_name,
-        S4_2050_SSP2RCP26_db_name]
 
-if world_scenario=="SSP2-RCP19":
-    list_db_name=[
-        S1_2050_SSP2RCP19_db_name,
-        S2_2050_SSP2RCP19_db_name,
-        S3Renew_2050_SSP2RCP19_db_name,
-        S3Nuc_2050_SSP2RCP19_db_name,
-        S4_2050_SSP2RCP19_db_name]
+list_db_name_2=[
+        'S1_2050_SSP2RCP26',
+        'S2_2050_SSP2RCP26',
+        'S3Renew_2050_SSP2RCP26',
+        'S3Nuc_2050_SSP2RCP26',
+        'S4_2050_SSP2RCP26']
+
+list_db_name_3=[
+        'S1_2050_SSP2RCP19',
+        'S2_2050_SSP2RCP19',
+        'S3Renew_2050_SSP2RCP19',
+        'S3Nuc_2050_SSP2RCP19',
+        'S4_2050_SSP2RCP19']
     
-list_db_name
+
+list_db_name_4=[
+         'S1_2050_SSP2Base',
+         'S2_2050_SSP2Base',
+         'S3Renew_2050_SSP2Base',
+         'S3Nuc_2050_SSP2Base',
+         'S4_2050_SSP2Base',
+        'S1_2050_SSP2RCP26',
+        'S2_2050_SSP2RCP26',
+        'S3Renew_2050_SSP2RCP26',
+        'S3Nuc_2050_SSP2RCP26',
+        'S4_2050_SSP2RCP26',        
+        'S1_2050_SSP2RCP19',
+        'S2_2050_SSP2RCP19',
+        'S3Renew_2050_SSP2RCP19',
+        'S3Nuc_2050_SSP2RCP19',
+        'S4_2050_SSP2RCP19'
+        ]
+```
+
+```python
+list_db_name=list_db_name_4
 ```
 
 ```python
@@ -291,7 +321,7 @@ bw2data.databases
 ### Explore the new databases
 
 ```python
-db_to_explore_name=S1_2050_SSP2base_db_name
+db_to_explore_name='S1_2050_SSP2Base'
 #S2_2050_SSP2base_db_name
 #S3Renew_2050_SSP2base_db_name
 #S3Nuc_2050_SSP2base_db_name
@@ -307,7 +337,7 @@ acts
 ```
 
 ```python
-act=[act for act in bw2data.Database(S1_2050_SSP2base_db_name) if "market for electricity, low voltage, Tr2050" in act["name"] and act["location"]=="FR"][0]
+act=[act for act in bw2data.Database(db_to_explore_name) if "market for electricity, high voltage, Tr2050" in act["name"] and act["location"]=="FR"][0]
 act
 ```
 
@@ -315,4 +345,8 @@ act
 exc = [exc for exc in act.exchanges()]
 exc
 #exc = [exc for exc in act.exchanges() if "wind" in e.input["name"]][0]  # ¡¡¡Nota: e.input et torna l'activitat!!!!
+```
+
+```python
+
 ```
