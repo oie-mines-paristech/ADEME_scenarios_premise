@@ -17,7 +17,7 @@ jupyter:
 `bw2io.create_default_biosphere3(overwrite=True)`
 * Code run with premise 2.1.0.dev0 (pip install premise==2.1.0.dev0) [to be updated and included in the readme later]
 * avec from premise_gwp import add_premise_gwp, add_premise_gwp()
-
+* Je ne me souviens plus si j'ai encore overwrite la biosphere dans ce doc ou seulement après l export d ecoinvent
 
 # Initialisation
 
