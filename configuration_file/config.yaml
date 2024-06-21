@@ -219,8 +219,8 @@ production pathways:
     production volume:
       variable: Production|Hydrogen|Ammonia|Steam methane reforming
     ecoinvent alias:
-      name: hydrogen production, steam methane reforming of natural gas, 25 bar, Tr2050
-      reference product: hydrogen, gaseous, 25 bar
+      name: hydrogen production, steam methane reforming
+      reference product: hydrogen, gaseous, low pressure
       exists in original database: True
 
   methane_reforming_hydrogen_steel:
