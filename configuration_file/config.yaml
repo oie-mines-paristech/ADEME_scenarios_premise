@@ -153,7 +153,7 @@ production pathways:
     production volume:
       variable: Production|Electricity|Storage|Battery
     ecoinvent alias:
-      name: electricity supply, high voltage, from vanadium-redox flow battery system, Tr2050
+      name: electricity supply, high voltage, from vanadium-redox flow battery system
       reference product: electricity, high voltage
       exists in original database: True
       regionalize: True
@@ -316,7 +316,7 @@ production pathways:
       variable: Production|Hydrogen|Chemicals|Steam methane reforming with Carbone Capture and Storage
     ecoinvent alias:
       name: hydrogen production, steam methane reforming, with CCS
-      reference product: hydrogen, gaseous, 25 bar
+      reference product: hydrogen, gaseous, low pressure
       exists in original database: True
       regionalize: True
 
@@ -341,7 +341,7 @@ production pathways:
           technosphere:
             - electricity
     ecoinvent alias:
-      name: hydrogen production, gaseous, 30 bar, from PEM electrolysis, from grid electricity, domestic, Tr2050
+      name: hydrogen production, gaseous, 30 bar, from PEM electrolysis, from grid electricity
       reference product: hydrogen, gaseous, 30 bar
       exists in original database: True
       regionalize: True
