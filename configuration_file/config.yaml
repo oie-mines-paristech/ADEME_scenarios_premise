@@ -261,66 +261,71 @@ production pathways:
     production volume:
       variable: Production|Hydrogen|Transport|Steam methane reforming with Carbone Capture and Storage
     ecoinvent alias:
-      name: hydrogen production, steam methane reforming of natural gas, with CCS (MDEA, 98% eff.), 25 bar, Tr2050
-      reference product: hydrogen, gaseous, 25 bar
+      name: hydrogen production, steam methane reforming, with CCS
+      reference product:  hydrogen, gaseous, low pressure
       exists in original database: True
+      regionalize: True
 
   methane_reforming_CCS_hydrogen_fossilfuel_refineries:
     production volume:
       variable: Production|Hydrogen|Fossil fuel refineries|Steam methane reforming with Carbone Capture and Storage
     ecoinvent alias:
-      name: hydrogen production, steam methane reforming of natural gas, with CCS (MDEA, 98% eff.), 25 bar, Tr2050
-      reference product: hydrogen, gaseous, 25 bar
+      name: hydrogen production, steam methane reforming, with CCS
+      reference product:  hydrogen, gaseous, low pressure
       exists in original database: True
+      regionalize: True
 
   methane_reforming_CCS_hydrogen_biofuel_refineries:
     production volume:
       variable: Production|Hydrogen|Biofuel refineries|Steam methane reforming with Carbone Capture and Storage
     ecoinvent alias:
-      name: hydrogen production, steam methane reforming of natural gas, with CCS (MDEA, 98% eff.), 25 bar, Tr2050
-      reference product: hydrogen, gaseous, 25 bar
+      name: hydrogen production, steam methane reforming, with CCS
+      reference product: hydrogen, gaseous, low pressure
       exists in original database: True
+      regionalize: True
 
   methane_reforming_CCS_hydrogen_ptoliquid:
     production volume:
       variable: Production|Hydrogen|Power to liquid|Steam methane reforming with Carbone Capture and Storage
     ecoinvent alias:
-      name: hydrogen production, steam methane reforming of natural gas, with CCS (MDEA, 98% eff.), 25 bar, Tr2050
-      reference product: hydrogen, gaseous, 25 bar
+      name: hydrogen production, steam methane reforming, with CCS
+      reference product: hydrogen, gaseous, low pressure
       exists in original database: True
+      regionalize: True
 
   methane_reforming_CCS_hydrogen_ammonia:
     production volume:
       variable: Production|Hydrogen|Ammonia|Steam methane reforming with Carbone Capture and Storage
     ecoinvent alias:
-      name: hydrogen production, steam methane reforming of natural gas, with CCS (MDEA, 98% eff.), 25 bar, Tr2050
-      reference product: hydrogen, gaseous, 25 bar
+      name: hydrogen production, steam methane reforming, with CCS
+      reference product: hydrogen, gaseous, low pressure
       exists in original database: True
+      regionalize: True
 
   methane_reforming_CCS_hydrogen_steel:
     production volume:
       variable: Production|Hydrogen|Steel|Steam methane reforming with Carbone Capture and Storage
     ecoinvent alias:
-      name: hydrogen production, steam methane reforming of natural gas, with CCS (MDEA, 98% eff.), 25 bar, Tr2050
-      reference product: hydrogen, gaseous, 25 bar
+      name: hydrogen production, steam methane reforming, with CCS
+      reference product:  hydrogen, gaseous, low pressure
       exists in original database: True
-
+      regionalize: True
 
   methane_reforming_CCS_hydrogen_chemicals:
     production volume:
       variable: Production|Hydrogen|Chemicals|Steam methane reforming with Carbone Capture and Storage
     ecoinvent alias:
-      name: hydrogen production, steam methane reforming of natural gas, with CCS (MDEA, 98% eff.), 25 bar, Tr2050
+      name: hydrogen production, steam methane reforming, with CCS
       reference product: hydrogen, gaseous, 25 bar
       exists in original database: True
-
+      regionalize: True
 
   methane_reforming_CCS_hydrogen_ptogaz:
     production volume:
       variable: Production|Hydrogen|Power to gaz|Steam methane reforming with Carbone Capture and Storage
     ecoinvent alias:
-      name: hydrogen production, steam methane reforming of natural gas, with CCS (MDEA, 98% eff.), 25 bar, Tr2050
-      reference product: hydrogen, gaseous, 25 bar
+      name: hydrogen production, steam methane reforming, with CCS
+      reference product: hydrogen, gaseous, low pressure
       exists in original database: True
       regionalize: True
 
