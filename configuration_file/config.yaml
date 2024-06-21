@@ -187,33 +187,37 @@ production pathways:
     production volume:
       variable: Production|Hydrogen|Transport|Steam methane reforming
     ecoinvent alias:
-      name: hydrogen production, steam methane reforming of natural gas, 25 bar, Tr2050
-      reference product: hydrogen, gaseous, 25 bar
+      name: hydrogen production, steam methane reforming
+      reference product: hydrogen, gaseous, low pressure
       exists in original database: True
+      regionalize: True
 
   methane_reforming_hydrogen_fossilfuel_refineries:
     production volume:
       variable: Production|Hydrogen|Fossil fuel refineries|Steam methane reforming
     ecoinvent alias:
-      name: hydrogen production, steam methane reforming of natural gas, 25 bar, Tr2050
-      reference product: hydrogen, gaseous, 25 bar
+      name: hydrogen production, steam methane reforming
+      reference product: hydrogen, gaseous, low pressure
       exists in original database: True
+      regionalize: True
 
   methane_reforming_hydrogen_biofuel_refineries:
     production volume:
       variable: Production|Hydrogen|Biofuel refineries|Steam methane reforming
     ecoinvent alias:
-      name: hydrogen production, steam methane reforming of natural gas, 25 bar, Tr2050
-      reference product: hydrogen, gaseous, 25 bar
+      name: hydrogen production, steam methane reforming
+      reference product: hydrogen, gaseous, low pressure
       exists in original database: True
+      regionalize: True
 
   methane_reforming_hydrogen_ptoliquid:
     production volume:
       variable: Production|Hydrogen|Power to liquid|Steam methane reforming
     ecoinvent alias:
-      name: hydrogen production, steam methane reforming of natural gas, 25 bar, Tr2050
-      reference product: hydrogen, gaseous, 25 bar
+      name: hydrogen production, steam methane reforming
+      reference product: hydrogen, gaseous, low pressure
       exists in original database: True
+      regionalize: True
 
   methane_reforming_hydrogen_ammonia:
     production volume:
@@ -222,30 +226,34 @@ production pathways:
       name: hydrogen production, steam methane reforming
       reference product: hydrogen, gaseous, low pressure
       exists in original database: True
+      regionalize: True
 
   methane_reforming_hydrogen_steel:
     production volume:
       variable: Production|Hydrogen|Steel|Steam methane reforming
     ecoinvent alias:
-      name: hydrogen production, steam methane reforming of natural gas, 25 bar, Tr2050
-      reference product: hydrogen, gaseous, 25 bar
+      name: hydrogen production, steam methane reforming
+      reference product: hydrogen, gaseous, low pressure
       exists in original database: True
+      regionalize: True
 
   methane_reforming_hydrogen_chemicals:
     production volume:
       variable: Production|Hydrogen|Chemicals|Steam methane reforming
     ecoinvent alias:
-      name: hydrogen production, steam methane reforming of natural gas, 25 bar, Tr2050
-      reference product: hydrogen, gaseous, 25 bar
+      name: hydrogen production, steam methane reforming
+      reference product: hydrogen, gaseous, low pressure
       exists in original database: True
+      regionalize: True
 
   methane_reforming_hydrogen_ptogaz:
     production volume:
       variable: Production|Hydrogen|Power to gaz|Steam methane reforming
     ecoinvent alias:
-      name: hydrogen production, steam methane reforming of natural gas, 25 bar, Tr2050
-      reference product: hydrogen, gaseous, 25 bar
+      name: hydrogen production, steam methane reforming
+      reference product: hydrogen, gaseous, low pressure
       exists in original database: True
+      regionalize: True
 
 #SMR + CCS hydrogen 
 
