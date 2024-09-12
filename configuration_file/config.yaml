@@ -156,7 +156,6 @@ production pathways:
       name: electricity supply, high voltage, from vanadium-redox flow battery system
       reference product: electricity, high voltage
       exists in original database: True
-      regionalize: True
 
     efficiency:
       - variable: Efficiency|Storage|Battery|Charge
@@ -524,8 +523,6 @@ markets:
         product: electricity, high voltage
         location: FR
 
-    except regions:
-      - World
 
 
   - name: market for electricity, medium voltage, Tr2050
@@ -558,8 +555,7 @@ markets:
         product: electricity, medium voltage
         location: FR
 
-    except regions:
-      - World
+
 
   - name: market for electricity, low voltage, Tr2050
     reference product: electricity, low voltage
@@ -590,8 +586,6 @@ markets:
         product: electricity, low voltage
         location: FR
 
-    except regions:
-      - World
 
 #Hydrogen
   - name: market for hydrogen, gaseous, for transport - direct use of H2, Tr2050
@@ -632,8 +626,6 @@ markets:
         unit: kilogram
         amount: 0.005
 
-    except regions:
-      - World
 
   - name: market for hydrogen, gaseous, for fossil fuel refinery use, Tr2050
     reference product: hydrogen, gaseous
@@ -674,8 +666,6 @@ markets:
         unit: kilogram
         amount: 0.005
 
-    except regions:
-      - World
 
 
   - name: market for hydrogen, gaseous, for biofuel refinery use, Tr2050
@@ -716,8 +706,6 @@ markets:
         unit: kilogram
         amount: 0.005
 
-    except regions:
-      - World
 
 
   - name: market for hydrogen, gaseous, for power to liquid use, Tr2050
@@ -758,8 +746,6 @@ markets:
         unit: kilogram
         amount: 0.005
 
-    except regions:
-      - World
 
 
   - name: market for hydrogen, gaseous, for ammonia use, Tr2050
@@ -800,8 +786,6 @@ markets:
         unit: kilogram
         amount: 0.005
 
-    except regions:
-      - World
 
 
   - name: market for hydrogen, gaseous, for steel use, Tr2050
@@ -842,8 +826,7 @@ markets:
         unit: kilogram
         amount: 0.005
 
-    except regions:
-      - World
+
 
 
 
@@ -885,9 +868,6 @@ markets:
         unit: kilogram
         amount: 0.005
 
-    except regions:
-      - World
-
 
   - name: market for hydrogen, gaseous, for power to gaz, Tr2050
     reference product: hydrogen, gaseous
@@ -926,9 +906,6 @@ markets:
         categories: air::non-urban air or from high stacks
         unit: kilogram
         amount: 0.005
-
-    except regions:
-      - World
 
 
   - name: market for hydrogen, gaseous, Tr2050
@@ -992,5 +969,3 @@ markets:
         unit: kilogram
         amount: 0.005
 
-    except regions:
-      - World
