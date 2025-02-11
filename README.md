@@ -2,25 +2,43 @@
 Implementation of French prospective scenarios from ADEME study "Transition(s) 2050" into ecoinvent database with premise
 
 
-Description
+What does this repository do ?
 -----------
 
-This is a repository containing the implementation of the prospective scenarios provided by the 
-French Agency for Ecological Transition - ADEME - into ecoinvent for the following sectors in France :
-
+This is a repository containing the implementation of prospective scenarios for France into ecoinvent. 
+The prospective scenarios are provided in the "Transition(s) 2050" study by the French Agency for Ecological Transition - ADEME.   
+The scope of ADEME prospective study is France, from now to 2050, and covers most of the economic sectors.
+This repository does not cover the whole scope of ADEME study and creates market-specific activities in the LCA database ecoinvent for the following sectors :
 * electricity
 * hydrogen
 * gas
 
-It is meant to be used in [`premise`](https://github.com/polca/premise), 
-optionally in addition to a global IAM scenario, 
-to provide refined projections at the country level.
 
-This data package contains all the files necessary for `premise` to implement
-this scenario and create market-specific composition for electricity (production and supply mix), gas and hydrogen in the LCA database ecoinvent.
+ADEME prospective study 
+------------------------
+
+Prospective scenarios are extracted from the study : Transition(s) 2050, ADEME, 2021\
+[`Website`](https://www.ademe.fr/les-futurs-en-transition/) \
+[`Full Report`](https://librairie.ademe.fr/recherche-et-innovation/5072-prospective-transitions-2050-rapport.html) \
+[`Data repository`](https://data-transitions2050.ademe.fr/)
+
+ADEME provides 5 scenarios : 
+* S1 : Frugal generation (Génération Frugale) > The transition is driven mostly by sobriety and constraint.
+* S2 : Territorial cooperation (Coopération territoriale) > The society transformation is based on a shared governance and on territorialization strategies.
+* S3 Renew : Green technologies based on renewables development (Technologies vertes) > The transition is based on innovation and development of low carbon technologies, especially renewable energies.  
+* S3 Nuc : Green technologies based on nuclear development (Technologies vertes) > The transition is based on innovation and development of low carbon technologies, especially nuclear energy.  
+* S4 : Repairing bet (Pari réparateur) > The transition relies highly on new technologies development, without any society lifestyle changes. 
+
+Informations about scenarios : [`here in French`](https://www.ademe.fr/les-futurs-en-transition/les-scenarios/)
+
+How is the repository organized ?
+-----------
+
+This repository is meant to be used with the open-source python library [`premise`](https://github.com/polca/premise), 
+optionally in addition to a global IAM scenario, to provide refined projections at the country level.
 
 The data relating to the annual production volumes of different energy carriers 
-(e.g. electricity, hydrogen) for each Transtion(s) 2050 scenario (5 in number) 
+(e.g. electricity, hydrogen) for each scenario 
 have been formatted and organised in a data package defined by the Frictionless standards 
 (Walsh and Pollock, 2022). This data package is read and interpreted by `premise`. 
 We therefore store a number of scenarios in a single data package.
@@ -28,22 +46,38 @@ We therefore store a number of scenarios in a single data package.
 This datapackage contains four files necessary to the scenarios implementation into the ecoinvent LCA database: 
 
 * A datapackage.json file, which provides the metadata for the data package (e.g. authors, scenario descriptions, list and locations of resources, etc.). 
-* A config.yaml file which provides the correspondence between the scenario variables and the LCA datasets in the ecoinvent DB, as well as the "LCA datasets to be created" as they are not available in the ecoinvent DB. 
+* A config.yaml file which provides the correspondence between the scenario variables and the LCA datasets in the ecoinvent DB, as well as the additional "LCA datasets" when they are not available in the ecoinvent DB. 
 * A tabular data file containing the time series for each variable in the set of scenarios. 
-* An optional Excel file containing the LCA inventories of the "LCA datasets to be created" for any technology not initially present in the ecoinvent DB. 
+* An optional Excel file containing the LCA inventories of the additional "LCA datasets" for any technology not initially present in the ecoinvent DB. 
+
+Additionaly, a pdf document called "supplementary information" presents the methodological choices that where made to build this model.
+
+How to use this notebook ?
+------------------
+
+To be completed. 
+
+Explore the database
+------------------
+
+To be completed. 
+
+The following market datasets are created: (search 'Tr2050')
+
+* `market for electricity, high voltage, Tr2050` (FR)
+* `market for electricity, medium voltage, Tr2050` (FR)
+* `market for electricity, low voltage, Tr2050` (FR)
 
 
-Sourced from publication
-------------------------
 
-Projections are extracted from:
+Ecoinvent database compatibility
+--------------------------------
+ecoinvent 3.9.1 cut-off
 
-Transition(s) 2050\
-ADEME\
-[`Website`](https://www.ademe.fr/les-futurs-en-transition/) \
-[`Full Report`](https://librairie.ademe.fr/recherche-et-innovation/5072-prospective-transitions-2050-rapport.html) \
-[`Data repository`](https://data-transitions2050.ademe.fr/)
-
+IAM scenario compatibility
+---------------------------
+The ADEME French scenarios can be connected to any Integrated Assessment Model (IAM) provided by premise
+[`Link to explore IAM scenarios`](https://premisedash-6f5a0259c487.herokuapp.com/)  
 
 
 Authors of this data package
@@ -55,56 +89,20 @@ Authors of this data package
 * Thomas Beaussier (thomas.beaussier@minesparis.psl.eu)
 * Paula Perez-Lopez (paula.perez_lopez@minesparis.psl.eu)
 
-Acknowledgement : Thank you to ADEME's experts, especially Jean-Michel Parrouffe, for providing datasets and helping us better understanding the dataset.
+
+Aknowledgements
+----------------------------
+We would like to thank ADEME experts for providing datasets and explanations to understand sceanrios and datasets. Special thanks to Jean-Michel Parrouffe.\
+We also would like to thank Guillaume Batot from IFPEN for discussing the methodological choices made to build this model.
+
 
 Funding
 -------
-
 This work is supported by the ADEME agency, in the context of
 the [`HYSPI project`](https://www.psi.ch/en/ta/projects/hyspi). 
-!! to be modified if collab with ENGIE
-
-Ecoinvent database compatibility
---------------------------------
-
-ecoinvent 3.9.1 cut-off
-
-
-Prospective scenarios
----------------------------
-ADEME provides 5 scenarios : 
-* S1 : Frugal generation (Génération Frugale) > The transition is driven mostly by sobriety and constraint.
-* S2 : Territorial cooperation (Coopération territoriale) > The society transformation is based on a shared governance and on territorialization strategies.
-* S3 Renew : Green technologies based on renewables development (Technologies vertes) > The transition is based on innovation and development of low carbon technologies, especially renewable energies.  
-* S3 Nuc : Green technologies based on nuclear development (Technologies vertes) > The transition is based on innovation and development of low carbon technologies, especially nuclear energy.  
-* S4 : Repairing bet (Pari réparateur) > The transition relies highly on new technologies development, without any society lifestyle changes. 
-
-Informations about scenarios : [`here in French`](https://www.ademe.fr/les-futurs-en-transition/les-scenarios/)
-
-IAM scenario compatibility
----------------------------
-
-The ADEME French scenarios can be connected to any Integrated Assessment Model (IAM) provided by premise. 
-[`Link to explore IAM scenarios`](https://premisedash-6f5a0259c487.herokuapp.com/)  
-
-What does this notebook do?
-------------------
-
-![map electricity markets](assets/map.png)
-
-This external scenario creates electricity, hydrogen and fuel markets for France listed below, according
-to the projections from the ADEME's Transition(s) 2050 (yellow boundaries in map above).
-
-The following market datasets are created: (search 'Tr2050)
-
-* `market for electricity, high voltage, Tr2050` (FR)
-* `market for electricity, medium voltage, Tr2050` (FR)
-* `market for electricity, low voltage, Tr2050` (FR)
 
 
 
-How to use this notebook ?
-------------------
 
   
 
