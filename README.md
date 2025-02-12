@@ -7,13 +7,13 @@ What does this repository do ?
 
 This is a repository containing the implementation of prospective scenarios for France into ecoinvent. 
 The prospective scenarios are provided in the "Transition(s) 2050" study by the French Agency for Ecological Transition - ADEME.   
-The scope of ADEME prospective study is France, from now to 2050, and covers most of the economic sectors.
+The scope of ADEME prospective study is metropolitan France, from now to 2050, and covers most of the economic sectors.
 This repository does not cover the whole scope of ADEME study and creates market-specific activities in the LCA database ecoinvent for the following sectors in France:
 * electricity
 * hydrogen
 * gas
 
-The evolution at the regional scale are modeled by coupling the French scenarios with a global scenario provided by an Integrated Assessment Model (IAM).
+The evolution at the world regional scale are modeled by coupling the French scenarios with a global scenario provided by an Integrated Assessment Model (IAM).
 
 
 
@@ -60,9 +60,50 @@ How to use this notebook ?
 * 1. Install the environment as explained [`here`](https://github.com/polca/premise?tab=readme-ov-file#how-to-install-this-package).
   Use premise version => 2.2.6
 * 2. Create a brightway project and load ecoinvent database in the project. It can be done using [`ecoinvent_interface`](https://github.com/brightway-lca/ecoinvent_interface).
-* 3. Run the script 'run-premise-ademe.md'
+* 3. Run the script for a chosen combination of Year x IAM model x IAM scenario x French scenario. Here is an example for two French scenarios combined with the same IAM scenario.
+
+  ```python
+
+    import brightway2 as bw
+    from premise import *
+    import bw2data
+    import bw2io
+    from datapackage import Package
+
+    fp = r"datapackage.json"
+    ademe = Package(fp)
+
+    #Choose the IAM model
+    model_1="tiam-ucl"
+    #Choose the world scenario
+    world_scenario_1=SSP2-RCP45"
+    #choose the Year
+    year=2050
+    #Choose the French scenario 
+    fr_scenario_1="S1 - Frugal generation"
+    fr_scenario_4="S4 - Repairing bet"
+    
+    scenarios = [
+        {"model": model_1, "pathway":world_scenario_1, "year": year, "external scenarios": [{"scenario": fr_scenario_1, "data": ademe}]},
+        {"model": model_1, "pathway":world_scenario_1, "year": year, "external scenarios": [{"scenario": fr_scenario_4, "data": ademe}]},
+        ]
   
-A prospective version of ecoinvent is generated for each combination of : Year x IAM model x IAM scenario x French scenario. You can choose the combination you want to compute in 'run-premise-ademe.md' file. \
+    ndb = NewDatabase(
+        scenarios = scenarios,        
+        source_db=ecoinvent_3_9_db_name,
+        source_version="3.9.1",
+        key= , #ask the key to Romain Sacchi
+        )
+  
+    ndb.update()
+  
+    ndb.write_db_to_brightway()
+  
+    list(bw2data.databases)
+
+  ```
+  
+A prospective version of ecoinvent is generated for each combination of : Year x IAM model x IAM scenario x French scenario.
 The newly created market datasets are tagged with 'Tr2050', for example : `market for electricity, high voltage, Tr2050` (FR) or `market for hydrogen, gaseous, Tr2050` 
 
 Ecoinvent database compatibility
@@ -75,9 +116,19 @@ The user can couple each French scenario with a global scenario (IAM) provided b
 The available IAM scenarios provided by premise can be explored [`here`](https://premisedash-6f5a0259c487.herokuapp.com/)\
 The choice of IAM scenario is under the responsability of the user of this repository. However, the authors highlight the fact that the impact results highly depends on the IAM scenario chosen. The authors advice to couple the scenarios with RCP 4.5 scenarios or with scenarios whose temperature increase are similar to RCP 4.5 scenarios, as these scenarios are probably the most representative of the current trends. 
 
+List of French scenarios
+--------------------------------
+| Tr2050 scenario                       |
+|----------------------------------------|
+| S1 - Frugal generation    |
+| S2 - Territorial cooperation    |
+| S3 Renew - Green technologies renewables   |
+| S3 Nuc - Green technologies nuclear   |
+| S4 - Repairing bet   |
+
+
 Authors of this data package
 ----------------------------
-
 * Joanna Schlesinger
 * Romain Sacchi 
 * Juliana Steinbach 
@@ -87,7 +138,7 @@ Authors of this data package
 
 Acknowledgements
 ----------------------------
-We would like to thank ADEME experts for providing datasets and explanations to understand scenarios and datasets, especially Jean-Michel Parrouffe for the multiple discussions.\
+We would like to thank ADEME experts for providing datasets and explanations to understand scenarios and datasets, especially Jean-Michel Parrouffe for the multiple discussions.
 
 
 Funding
