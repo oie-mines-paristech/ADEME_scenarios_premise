@@ -51,15 +51,16 @@ This datapackage contains four files necessary to the scenarios implementation i
 * A tabular data file containing the time series for each variable in the set of scenarios. 
 * An optional Excel file containing the LCA inventories of the additional "LCA datasets" for any technology not initially present in the ecoinvent database. 
 
-Additionaly, a pdf document called "supplementary information" presents the methodological choices that where made to build this model.
+Additionally, a pdf document called "supplementary information" presents the methodological choices that where made to build this model.
 
 
 How to use this notebook ?
 ------------------
-* Install the environment as explained [`here`](https://github.com/polca/premise?tab=readme-ov-file#how-to-install-this-package).
+* 0. Prerequisites: ecoinvent licence
+* 1. Install the environment as explained [`here`](https://github.com/polca/premise?tab=readme-ov-file#how-to-install-this-package).
   Use premise version => 2.2.6
-* Create a brightway project and load ecoinvent database in the project. It can be done using [`ecoinvent_interface`](https://github.com/brightway-lca/ecoinvent_interface).
-* Run the script 'run-premise-ademe.md'
+* 2. Create a brightway project and load ecoinvent database in the project. It can be done using [`ecoinvent_interface`](https://github.com/brightway-lca/ecoinvent_interface).
+* 3. Run the script 'run-premise-ademe.md'
   
 A prospective version of ecoinvent is generated for each combination of : Year x IAM model x IAM scenario x French scenario. You can choose the combination you want to compute in 'run-premise-ademe.md' file. \
 The newly created market datasets are tagged with 'Tr2050', for example : `market for electricity, high voltage, Tr2050` (FR) or `market for hydrogen, gaseous, Tr2050` 
@@ -72,7 +73,7 @@ IAM scenario compatibility
 ---------------------------
 The user can couple each French scenario with a global scenario (IAM) provided by premise.\
 The available IAM scenarios provided by premise can be explored [`here`](https://premisedash-6f5a0259c487.herokuapp.com/)\
-The choice of IAM scenario is under the responsability of the user of this repository. However, the authors advice to couple the scenarios with RCP 4.5 scenarios or with scenarios whose temperature increase are similar to RCP 4.5 scenarios.  
+The choice of IAM scenario is under the responsability of the user of this repository. However, the authors highlight the fact that the impact results highly depends on the IAM scenario chosen. The authors advice to couple the scenarios with RCP 4.5 scenarios or with scenarios whose temperature increase are similar to RCP 4.5 scenarios, as these scenarios are probably the most representative of the current trends. 
 
 Authors of this data package
 ----------------------------
@@ -84,10 +85,9 @@ Authors of this data package
 * Paula Perez-Lopez
 
 
-Aknowledgements
+Acknowledgements
 ----------------------------
 We would like to thank ADEME experts for providing datasets and explanations to understand scenarios and datasets, especially Jean-Michel Parrouffe for the multiple discussions.\
-We also would like to thank Guillaume Batot from IFPEN for fruitfull discussions regarding the modelling choices.
 
 
 Funding
