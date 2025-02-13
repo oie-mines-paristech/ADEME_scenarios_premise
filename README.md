@@ -1,4 +1,4 @@
-# Transition(s) 2050 / ADEME
+# Premise + French prospective scenarios : Transition(s) 2050 / ADEME
 Implementation of French prospective scenarios from ADEME study "Transition(s) 2050" into ecoinvent database with premise
 
 
@@ -46,10 +46,10 @@ We therefore store a number of scenarios in a single data package.
 
 This datapackage contains four files necessary to the scenarios implementation into the ecoinvent LCA database: 
 
-* A datapackage.json file, which provides the metadata for the data package (e.g. authors, scenario descriptions, list and locations of resources, etc.). 
-* A config.yaml file which provides the correspondence between the scenario variables and the LCA datasets in the ecoinvent DB, as well as the additional "LCA datasets" when they are not available in the ecoinvent database. 
-* A tabular data file containing the time series for each variable in the set of scenarios. 
-* An optional Excel file containing the LCA inventories of the additional "LCA datasets" for any technology not initially present in the ecoinvent database. 
+* A **datapackage.json** file, which provides the metadata for the data package (e.g. authors, scenario descriptions, list and locations of resources, etc.). 
+* A **config.yaml** file which provides the correspondence between the scenario variables and the LCA datasets in the ecoinvent DB, as well as the additional "LCA datasets" when they are not available in the ecoinvent database. 
+* A tabular data file **scenario_data.xlsx** containing the time series for each variable in the set of scenarios. 
+* An optional Excel file **LCI-Tr2050.xlsx** containing the LCA inventories of the additional "LCA datasets" for any technology not initially present in the ecoinvent database. 
 
 Additionally, a pdf document called "supplementary information" presents the methodological choices that where made to build this model.
 
@@ -104,7 +104,7 @@ How to use this notebook ?
   ```
   
 A prospective version of ecoinvent is generated for each combination of : Year x IAM model x IAM scenario x French scenario.
-The newly created market datasets are tagged with 'Tr2050', for example : `market for electricity, high voltage, Tr2050` (FR) or `market for hydrogen, gaseous, Tr2050` 
+The newly created market datasets are tagged with 'Tr2050', for example : `market for electricity, high voltage, Tr2050` (FR) or `market for hydrogen, gaseous, Tr2050` (FR)
 
 Ecoinvent database compatibility
 --------------------------------
