@@ -140,7 +140,7 @@ production pathways:
     production volume:
       variable: Production|Electricity|Storage|Hydro|Pumped storage
     ecoinvent alias:
-      name: electricity production, hydro, pumped storage
+      name: electricity production, hydro, pumped storage, Tr2050
       reference product: electricity, high voltage
       exists in original database: True
     efficiency:
@@ -153,7 +153,7 @@ production pathways:
     production volume:
       variable: Production|Electricity|Storage|Battery
     ecoinvent alias:
-      name: electricity supply, high voltage, from vanadium-redox flow battery system
+      name: electricity supply, high voltage, from vanadium-redox flow battery system, Tr2050
       reference product: electricity, high voltage
       exists in original database: True
 
@@ -180,6 +180,7 @@ production pathways:
       reference product: electricity, medium voltage
       exists in original database: False
       new dataset: True
+
 
 #SMR hydrogen 
   methane_reforming_hydrogen_transport:
@@ -471,10 +472,8 @@ markets:
     unit: kilowatt hour
     includes:
       - nuclear_pressure_water
-      - mix_gas_cycle_turbines
-      - coal
-      - fuel_oil_chp
-      - mix_gas_chp
+      - hydro_reservoir
+      - hydro_run_of_river
       - pv
       - wind_offshore
       - wind_onshore
@@ -483,8 +482,10 @@ markets:
       - biomass_chp
       - waste
       - geothermal
-      - hydro_reservoir
-      - hydro_run_of_river
+      - mix_gas_cycle_turbines
+      - coal
+      - fuel_oil_chp
+      - mix_gas_chp
       - hydro_pumped_storage
       - battery
       - import
@@ -585,7 +586,7 @@ markets:
       - name: market for electricity, low voltage
         product: electricity, low voltage
         location: FR
-
+        
 
 #Hydrogen
   - name: market for hydrogen, gaseous, for transport - direct use of H2, Tr2050
