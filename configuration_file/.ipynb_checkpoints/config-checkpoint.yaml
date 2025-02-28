@@ -140,7 +140,7 @@ production pathways:
     production volume:
       variable: Production|Electricity|Storage|Hydro|Pumped storage
     ecoinvent alias:
-      name: electricity production, hydro, pumped storage, Tr2050
+      name: electricity production, hydro, pumped storage
       reference product: electricity, high voltage
       exists in original database: True
     efficiency:
@@ -153,7 +153,7 @@ production pathways:
     production volume:
       variable: Production|Electricity|Storage|Battery
     ecoinvent alias:
-      name: electricity supply, high voltage, from vanadium-redox flow battery system, Tr2050
+      name: electricity supply, high voltage, from vanadium-redox flow battery system
       reference product: electricity, high voltage
       exists in original database: True
 
@@ -180,7 +180,6 @@ production pathways:
       reference product: electricity, medium voltage
       exists in original database: False
       new dataset: True
-
 
 #SMR hydrogen 
   methane_reforming_hydrogen_transport:
@@ -447,6 +446,7 @@ production pathways:
       name: hydrogen production, gaseous, petroleum refinery operation
       reference product: hydrogen, gaseous
       exists in original database: True
+      regionalize: True
 
 
   electrolysis_hydrogen_imported:
@@ -458,7 +458,7 @@ production pathways:
           technosphere:
             - electricity
     ecoinvent alias:
-      name: hydrogen production, gaseous, 30 bar, from PEM electrolysis, from grid electricity, domestic, Tr2050
+      name: hydrogen production, gaseous, 30 bar, from PEM electrolysis, from grid electricity
       reference product: hydrogen, gaseous, 30 bar
       exists in original database: True
 
@@ -471,8 +471,10 @@ markets:
     unit: kilowatt hour
     includes:
       - nuclear_pressure_water
-      - hydro_reservoir
-      - hydro_run_of_river
+      - mix_gas_cycle_turbines
+      - coal
+      - fuel_oil_chp
+      - mix_gas_chp
       - pv
       - wind_offshore
       - wind_onshore
@@ -481,10 +483,8 @@ markets:
       - biomass_chp
       - waste
       - geothermal
-      - mix_gas_cycle_turbines
-      - coal
-      - fuel_oil_chp
-      - mix_gas_chp
+      - hydro_reservoir
+      - hydro_run_of_river
       - hydro_pumped_storage
       - battery
       - import
@@ -495,17 +495,18 @@ markets:
         reference product: electricity, high voltage
         amount: 0.0312
 
-      - name: transmission network construction, electricity, high voltage direct current aerial line
+      - name: transmission network, electricity, high voltage direct current aerial line
         reference product: transmission network, electricity, high voltage direct current aerial line
         amount: 5.65e-09
 
-      - name: transmission network construction, electricity, high voltage direct current land cable
+      - name: transmission network, electricity, high voltage direct current land cable
         reference product: transmission network, electricity, high voltage direct current land cable
         amount: 3.86e-10
 
-      - name: transmission network construction, electricity, high voltage direct current subsea cable
+      - name: transmission network, electricity, high voltage direct current subsea cable
         reference product: transmission network, electricity, high voltage direct current subsea cable
         amount: 3.47e-12
+
 
       - name: Dinitrogen monoxide
         categories: air
