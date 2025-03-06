@@ -462,6 +462,31 @@ production pathways:
       reference product: hydrogen, gaseous, 30 bar
       exists in original database: True
 
+#Gas
+
+  anaerobic_digestion:
+    production volume:
+      variable: Production|Natural Gas|Anaerobic digestion
+    ecoinvent alias:
+      name: biogas purification to biomethane by membrane technique
+      reference product:  biomethane, high pressure
+      exists in original database: True
+
+  pyrogasification_wood:
+    production volume:
+      variable: Production|Natural gas|Pyrogasification|Renewable
+    ecoinvent alias:
+      name: biomethane production, high pressure from synthetic gas, wood, fixed bed technology
+      reference product:  biomethane, high pressure
+      exists in original database: True
+
+  natural_gas_imports_fossil:
+    production volume:
+      variable: Production|Natural gas|Imports|Fossil
+    ecoinvent alias:
+      name: natural gas, high pressure, import from NO
+      reference product:  natural gas, high pressure
+      exists in original database: True
 
 markets:
 
@@ -968,3 +993,63 @@ markets:
         unit: kilogram
         amount: 0.005
 
+
+#Gas
+
+  - name: market for natural gas, high pressure, Tr2050
+    reference product: natural gas, high pressure
+    unit: cubic meter
+    includes:
+      - anaerobic_digestion
+      - pyrogasification_wood
+      - natural_gas_imports_fossil
+
+    add:
+
+      - name: market for natural gas, high pressure, Tr2050
+        reference product: natural gas, high pressure
+        amount: 0.001
+
+      - name: pipeline construction, natural gas, high pressure distribution network
+        reference product: pipeline, natural gas, high pressure distribution network
+        amount: 3.83976e-08
+
+      - name: Carbon dioxide, non-fossil
+        categories: air
+        unit: kilogram
+        amount: 2.07e-05
+
+      - name: Methane, non-fossil
+        categories: air
+        unit: kilogram
+        amount: 6.52e-04
+      
+      - name: NMVOC, non-methane volatile organic compounds
+        categories: air
+        unit: kilogram
+        amount: 5.01E-07
+      
+      - name: Propane
+        categories: air
+        unit: kilogram
+        amount: 1.14e-05
+
+      - name: Butane
+        categories: air
+        unit: kilogram
+        amount: 5.82E-06
+  
+      - name: Ethane
+        categories: air
+        unit: kilogram
+        amount: 5.05E-05
+
+      - name: Mercury II
+        categories: air
+        unit: kilogram
+        amount: 8.37E-13
+
+    replaces:
+      - name: market for natural gas, high pressure
+        product: natural gas, high pressure
+        location: FR
