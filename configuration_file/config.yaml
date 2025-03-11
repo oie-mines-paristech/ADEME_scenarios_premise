@@ -341,7 +341,7 @@ production pathways:
           technosphere:
             - electricity
     ecoinvent alias:
-      name: hydrogen production, gaseous, 30 bar, from PEM electrolysis, from grid electricity
+      name: hydrogen production, gaseous, 30 bar, from PEM electrolysis, from grid electricity, domestic, Tr2050
       reference product: hydrogen, gaseous, 30 bar
       exists in original database: True
       regionalize: True
@@ -462,6 +462,13 @@ production pathways:
       reference product: hydrogen, gaseous, 30 bar
       exists in original database: True
 
+  empty_hydrogen_fossilfuel_refineries:
+    production volume:
+      variable: Production|Hydrogen|Fossil fuel refineries|Empty
+    ecoinvent alias:
+      name: empty activity, for market that does not exist any more in 2050, Tr2050
+      reference product: nothing
+      exists in original database: True
 
 markets:
 
@@ -626,44 +633,7 @@ markets:
         amount: 0.005
 
 
-  - name: market for hydrogen, gaseous, for fossil fuel refinery use, Tr2050
-    reference product: hydrogen, gaseous
-    unit: kilogram
-    includes:
-      - methane_reforming_hydrogen_fossilfuel_refineries
-      - methane_reforming_CCS_hydrogen_fossilfuel_refineries
-      - electrolysis_hydrogen_fossilfuel_refineries
-      - oil_refining_hydrogen_coproduct_fossilfuel_refineries
 
-    add:
-      - name: pipeline, hydrogen, low pressure distribution network
-        reference product: pipeline, for hydrogen distribution
-        unit: kilometer
-        amount: 1.14422E-06
-      - name: pipeline, hydrogen, high pressure transmission network
-        reference product: pipeline, for hydrogen transmission
-        unit: kilometer
-        amount: 2.01706E-09
-      - name: compressor assembly for transmission hydrogen pipeline
-        reference product: compressor, for hydrogen transmission
-        unit: unit
-        amount: 3.22703E-11
-      - name: geological hydrogen storage
-        reference product: hydrogen storage
-        unit: kilogram
-        amount: 0.302074305
-      - name: market for electricity, low voltage
-        reference product: electricity, low voltage
-        unit: kilowatt hour
-        amount: 1.82
-      - name: market for hydrogen, gaseous, for fossil fuel refinery use, Tr2050
-        reference product: hydrogen, gaseous
-        unit: kilogram
-        amount: 0.005
-      - name: Hydrogen
-        categories: air::non-urban air or from high stacks
-        unit: kilogram
-        amount: 0.005
 
 
 
