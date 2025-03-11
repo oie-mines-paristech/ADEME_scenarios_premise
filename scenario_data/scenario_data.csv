@@ -186,7 +186,7 @@ S4 - Repairing bet,FR,Efficiency|Storage|Battery|Charge,%,85,90,90
 S4 - Repairing bet,FR,Efficiency|Storage|Hydro|Pumped storage,%,70,75,80
 S1 - Frugal generation,FR,Efficiency|Hydrogen|Electrolyzer,%,61,65,72
 S1 - Frugal generation,FR,Production|Hydrogen|Transport|Steam methane reforming,TWh H2/year,0,0,0
-S1 - Frugal generation,FR,Production|Hydrogen|Fossil fuel refineries|Steam methane reforming,TWh H2/year,0,0,0
+S1 - Frugal generation,FR,Production|Hydrogen|Fossil fuel refineries|Steam methane reforming,TWh H2/year,4.3,0,0
 S1 - Frugal generation,FR,Production|Hydrogen|Biofuel refineries|Steam methane reforming,TWh H2/year,0,0,0
 S1 - Frugal generation,FR,Production|Hydrogen|Power to liquid|Steam methane reforming,TWh H2/year,0,0,0
 S1 - Frugal generation,FR,Production|Hydrogen|Ammonia|Steam methane reforming,TWh H2/year,7.3,6.1,4.9
@@ -215,6 +215,7 @@ S1 - Frugal generation,FR,Production|Hydrogen|Total,TWh H2/year,16.3,22.1,54.5
 S1 - Frugal generation,FR,Production|Hydrogen|Total from gaz without co-produced from fossil fuels,TWh H2/year,9.6,13.1,10.6
 S1 - Frugal generation,FR,Production|Hydrogen|Total from electrolysis,TWh H2/year,0,4,43.9
 S1 - Frugal generation,FR,Production|Hydrogen|Share electrolysis over gaz + electrolysis,%,0,23.39181287,80.55045872
+S1 - Frugal generation,FR,Production|Hydrogen|Fossil fuel refineries|Empty,TWh H2/year,0,0,1
 S2 - Territorial cooperation,FR,Efficiency|Hydrogen|Electrolyzer,%,61,65,72
 S2 - Territorial cooperation,FR,Production|Hydrogen|Transport|Steam methane reforming,TWh H2/year,0,0,0
 S2 - Territorial cooperation,FR,Production|Hydrogen|Fossil fuel refineries|Steam methane reforming,TWh H2/year,4.3,0,0
@@ -246,6 +247,7 @@ S2 - Territorial cooperation,FR,Production|Hydrogen|Total,TWh H2/year,20.6,35.3,
 S2 - Territorial cooperation,FR,Production|Hydrogen|Total from gaz without co-produced from fossil fuels,TWh H2/year,13.9,11.5,0
 S2 - Territorial cooperation,FR,Production|Hydrogen|Total from electrolysis,TWh H2/year,0,18.8,95.6
 S2 - Territorial cooperation,FR,Production|Hydrogen|Share electrolysis over gaz + electrolysis,%,0,62.04620462,100
+S2 - Territorial cooperation,FR,Production|Hydrogen|Fossil fuel refineries|Empty,TWh H2/year,0,0,1
 S3 Renew - Green technologies renewables,FR,Efficiency|Hydrogen|Electrolyzer,%,61,65,72
 S3 Renew - Green technologies renewables,FR,Production|Hydrogen|Transport|Steam methane reforming,TWh H2/year,0,0,0
 S3 Renew - Green technologies renewables,FR,Production|Hydrogen|Fossil fuel refineries|Steam methane reforming,TWh H2/year,4.3,0,0
@@ -277,6 +279,7 @@ S3 Renew - Green technologies renewables,FR,Production|Hydrogen|Total,TWh H2/yea
 S3 Renew - Green technologies renewables,FR,Production|Hydrogen|Total from gaz without co-produced from fossil fuels,TWh H2/year,13.9,4.3,0
 S3 Renew - Green technologies renewables,FR,Production|Hydrogen|Total from electrolysis,TWh H2/year,0,39.9,93.9
 S3 Renew - Green technologies renewables,FR,Production|Hydrogen|Share electrolysis over gaz + electrolysis,%,0,90.27149321,100
+S3 Renew - Green technologies renewables,FR,Production|Hydrogen|Fossil fuel refineries|Empty,TWh H2/year,0,0,1
 S3 Nuc - Green technologies nuclear,FR,Efficiency|Hydrogen|Electrolyzer,%,61,65,72
 S3 Nuc - Green technologies nuclear,FR,Production|Hydrogen|Transport|Steam methane reforming,TWh H2/year,0,0,0
 S3 Nuc - Green technologies nuclear,FR,Production|Hydrogen|Fossil fuel refineries|Steam methane reforming,TWh H2/year,4.3,0,0
@@ -308,22 +311,23 @@ S3 Nuc - Green technologies nuclear,FR,Production|Hydrogen|Total,TWh H2/year,20.
 S3 Nuc - Green technologies nuclear,FR,Production|Hydrogen|Total from gaz without co-produced from fossil fuels,TWh H2/year,13.9,4.3,0
 S3 Nuc - Green technologies nuclear,FR,Production|Hydrogen|Total from electrolysis,TWh H2/year,0,39.9,93.9
 S3 Nuc - Green technologies nuclear,FR,Production|Hydrogen|Share electrolysis over gaz + electrolysis,%,0,90.27149321,100
+S3 Nuc - Green technologies nuclear,FR,Production|Hydrogen|Fossil fuel refineries|Empty,TWh H2/year,0,0,1
 S4 - Repairing bet,FR,Efficiency|Hydrogen|Electrolyzer,%,61,65,72
-S4 - Repairing bet,FR,Production|Hydrogen|Transport|Steam methane reforming,TWh H2/year,0,0,0
+S4 - Repairing bet,FR,Production|Hydrogen|Transport|Steam methane reforming,TWh H2/year,4.3,0,0
 S4 - Repairing bet,FR,Production|Hydrogen|Fossil fuel refineries|Steam methane reforming,TWh H2/year,0,0,0
 S4 - Repairing bet,FR,Production|Hydrogen|Biofuel refineries|Steam methane reforming,TWh H2/year,0,0,0
 S4 - Repairing bet,FR,Production|Hydrogen|Power to liquid|Steam methane reforming,TWh H2/year,0,0,0
-S4 - Repairing bet,FR,Production|Hydrogen|Ammonia|Steam methane reforming,TWh H2/year,0,0,0
+S4 - Repairing bet,FR,Production|Hydrogen|Ammonia|Steam methane reforming,TWh H2/year,7.3,0,0
 S4 - Repairing bet,FR,Production|Hydrogen|Steel|Steam methane reforming,TWh H2/year,0,0,0
-S4 - Repairing bet,FR,Production|Hydrogen|Chemicals|Steam methane reforming,TWh H2/year,0,0,0
+S4 - Repairing bet,FR,Production|Hydrogen|Chemicals|Steam methane reforming,TWh H2/year,2.3,0,0
 S4 - Repairing bet,FR,Production|Hydrogen|Power to gaz|Steam methane reforming,TWh H2/year,0,0,0
 S4 - Repairing bet,FR,Production|Hydrogen|Transport|Steam methane reforming with Carbone Capture and Storage,TWh H2/year,0,0,0
-S4 - Repairing bet,FR,Production|Hydrogen|Fossil fuel refineries|Steam methane reforming with Carbone Capture and Storage,TWh H2/year,4.3,0,0
+S4 - Repairing bet,FR,Production|Hydrogen|Fossil fuel refineries|Steam methane reforming with Carbone Capture and Storage,TWh H2/year,0,0,0
 S4 - Repairing bet,FR,Production|Hydrogen|Biofuel refineries|Steam methane reforming with Carbone Capture and Storage,TWh H2/year,0,0,0
 S4 - Repairing bet,FR,Production|Hydrogen|Power to liquid|Steam methane reforming with Carbone Capture and Storage,TWh H2/year,0,0,0
-S4 - Repairing bet,FR,Production|Hydrogen|Ammonia|Steam methane reforming with Carbone Capture and Storage,TWh H2/year,7.3,6.4,6.2
+S4 - Repairing bet,FR,Production|Hydrogen|Ammonia|Steam methane reforming with Carbone Capture and Storage,TWh H2/year,0,6.4,6.2
 S4 - Repairing bet,FR,Production|Hydrogen|Steel|Steam methane reforming with Carbone Capture and Storage,TWh H2/year,0,0,0
-S4 - Repairing bet,FR,Production|Hydrogen|Chemicals|Steam methane reforming with Carbone Capture and Storage,TWh H2/year,2.3,7.1,5.8
+S4 - Repairing bet,FR,Production|Hydrogen|Chemicals|Steam methane reforming with Carbone Capture and Storage,TWh H2/year,0,7.1,5.8
 S4 - Repairing bet,FR,Production|Hydrogen|Power to gaz|Steam methane reforming with Carbone Capture and Storage,TWh H2/year,0,0,0
 S4 - Repairing bet,FR,Production|Hydrogen|Transport|Electrolysis,TWh H2/year,0,1.5,5.8
 S4 - Repairing bet,FR,Production|Hydrogen|Fossil fuel refineries|Electrolysis,TWh H2/year,0,0,0
@@ -339,3 +343,4 @@ S4 - Repairing bet,FR,Production|Hydrogen|Total,TWh H2/year,20.6,22.7,35.5
 S4 - Repairing bet,FR,Production|Hydrogen|Total from gaz without co-produced from fossil fuels,TWh H2/year,13.9,13.5,12
 S4 - Repairing bet,FR,Production|Hydrogen|Total from electrolysis,TWh H2/year,0,4,23.5
 S4 - Repairing bet,FR,Production|Hydrogen|Share electrolysis over gaz + electrolysis,%,0,22.85714286,66.1971831
+S4 - Repairing bet,FR,Production|Hydrogen|Fossil fuel refineries|Empty,TWh H2/year,0,0,1
