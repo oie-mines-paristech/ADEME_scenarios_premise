@@ -1,12 +1,12 @@
 ﻿scenario,region,variables,unit,2020,2030,2050
 S1,FR,Production|Electricity|Nuclear,TWh/year,335.5395679,241.0151676,7.02421836
-S1,FR,Production|Electricity|Conventional|Mix gaz|Combined Cycle Turbines,TWh/year,0.624086287,0.773092979,3.241537171
-S1,FR,Production|Electricity|Conventional|Mix gaz|Open Cycle Turbines,TWh/year,0.002156381,0.012288565,0.203758746
-S1,FR,Production|Electricity|Conventional|Mix gaz|Cycle Turbines total,TWh/year,0.626242668,0.785381543,3.445295917
+S1,FR,Production|Electricity|Conventional|Mix gas|Combined Cycle Turbines,TWh/year,0.624086287,0.773092979,3.241537171
+S1,FR,Production|Electricity|Conventional|Mix gas|Open Cycle Turbines,TWh/year,0.002156381,0.012288565,0.203758746
+S1,FR,Production|Electricity|Conventional|Mix gas|Cycle Turbines total,TWh/year,0.626242668,0.785381543,3.445295917
 S1,FR,Production|Electricity|Conventional|Coal,TWh/year,7.117993611,0,0
-S1,FR,Production|Electricity|Conventional|Fuel oil and Mix gaz|CHP,TWh/year,10.2913315,3.080661281,0
+S1,FR,Production|Electricity|Conventional|Fuel oil and Mix gas|CHP,TWh/year,10.2913315,3.080661281,0
 S1,FR,Production|Electricity|Conventional|Fuel oil|CHP,TWh/year,1.887397004,0,0
-S1,FR,Production|Electricity|Conventional|Mix gaz|CHP,TWh/year,8.4039345,3.080661281,0
+S1,FR,Production|Electricity|Conventional|Mix gas|CHP,TWh/year,8.4039345,3.080661281,0
 S1,FR,Production|Electricity|Renewable|Photovoltaic ground fix,TWh/year,4.900619953,14.58319934,25.12866733
 S1,FR,Production|Electricity|Renewable|Photovoltaic ground tracker,TWh/year,0,0.000000000418469,7.792609628
 S1,FR,Production|Electricity|Renewable|Photovoltaic ground total,TWh/year,4.900619953,14.58319934,32.92127695
@@ -19,7 +19,7 @@ S1,FR,Production|Electricity|Renewable|Wind turbines|Floating Offshore,TWh/year,
 S1,FR,Production|Electricity|Renewable|Wind turbines|Offshore total,TWh/year,0,13.90759548,35.01669159
 S1,FR,Production|Electricity|Renewable|Wind turbines|Onshore total,TWh/year,28.54751369,49.08759623,110.5667232
 S1,FR,Production|Electricity|Renewable|Sea,TWh/year,0.378518749,0.321330908,0.319292342
-S1,FR,Production|Electricity|Renewable|Biogaz|CHP,TWh/year,1.953011532,1.657944208,1.647425991
+S1,FR,Production|Electricity|Renewable|Biogas|CHP,TWh/year,1.953011532,1.657944208,1.647425991
 S1,FR,Production|Electricity|Renewable|Biomass|CHP,TWh/year,1.316081395,1.366859327,1.358187791
 S1,FR,Production|Electricity|Conventional|Waste,TWh/year,2.580028158,2.190229127,2.176334023
 S1,FR,Production|Electricity|Renewable|Geothermal,TWh/year,0.003856641,0.042473092,0.042203637
@@ -37,13 +37,13 @@ S1,FR,Production|Electricity|Medium to high,TWh,1,1,1
 S1,FR,Efficiency|Storage|Battery|Charge,%,85,90,90
 S1,FR,Efficiency|Storage|Hydro|Pumped storage,%,70,75,80
 S2,FR,Production|Electricity|Nuclear,TWh/year,335.5393739,259.5656085,51.89863513
-S2,FR,Production|Electricity|Conventional|Mix gaz|Combined Cycle Turbines,TWh/year,0.624289798,1.19629932,1.337122069
-S2,FR,Production|Electricity|Conventional|Mix gaz|Open Cycle Turbines,TWh/year,0.002159059,0.00262113,0.0000043103
-S2,FR,Production|Electricity|Conventional|Mix gaz|Cycle Turbines total,TWh/year,0.626448857,1.19892045,1.337126379
+S2,FR,Production|Electricity|Conventional|Mix gas|Combined Cycle Turbines,TWh/year,0.624289798,1.19629932,1.337122069
+S2,FR,Production|Electricity|Conventional|Mix gas|Open Cycle Turbines,TWh/year,0.002159059,0.00262113,0.0000043103
+S2,FR,Production|Electricity|Conventional|Mix gas|Cycle Turbines total,TWh/year,0.626448857,1.19892045,1.337126379
 S2,FR,Production|Electricity|Conventional|Coal,TWh/year,7.117849798,0,0
-S2,FR,Production|Electricity|Conventional|Fuel oil and Mix gaz|CHP,TWh/year,10.2913315,3.080661281,0
+S2,FR,Production|Electricity|Conventional|Fuel oil and Mix gas|CHP,TWh/year,10.2913315,3.080661281,0
 S2,FR,Production|Electricity|Conventional|Fuel oil|CHP,TWh/year,1.887397004,0,0
-S2,FR,Production|Electricity|Conventional|Mix gaz|CHP,TWh/year,8.4039345,3.080661281,0
+S2,FR,Production|Electricity|Conventional|Mix gas|CHP,TWh/year,8.4039345,3.080661281,0
 S2,FR,Production|Electricity|Renewable|Photovoltaic ground fix,TWh/year,4.900619953,18.3220083,52.02890107
 S2,FR,Production|Electricity|Renewable|Photovoltaic ground tracker,TWh/year,0,0.000000000180645,6.991681561
 S2,FR,Production|Electricity|Renewable|Photovoltaic ground total,TWh/year,4.900619953,18.3220083,59.02058263
@@ -56,7 +56,7 @@ S2,FR,Production|Electricity|Renewable|Wind turbines|Floating Offshore,TWh/year,
 S2,FR,Production|Electricity|Renewable|Wind turbines|Offshore total,TWh/year,0,13.90330679,55.76491052
 S2,FR,Production|Electricity|Renewable|Wind turbines|Onshore total,TWh/year,28.54751369,49.05833111,121.1270929
 S2,FR,Production|Electricity|Renewable|Sea,TWh/year,0.378518749,0.321330908,0.319292342
-S2,FR,Production|Electricity|Renewable|Biogaz|CHP,TWh/year,1.953011532,1.657944208,1.647425991
+S2,FR,Production|Electricity|Renewable|Biogas|CHP,TWh/year,1.953011532,1.657944208,1.647425991
 S2,FR,Production|Electricity|Renewable|Biomass|CHP,TWh/year,1.316081395,1.366859327,1.358187791
 S2,FR,Production|Electricity|Conventional|Waste,TWh/year,2.580028158,2.190229127,2.176334023
 S2,FR,Production|Electricity|Renewable|Geothermal,TWh/year,0.003856641,0.042473092,0.042203637
@@ -74,13 +74,13 @@ S2,FR,Production|Electricity|Medium to high,TWh,1,1,1
 S2,FR,Efficiency|Storage|Battery|Charge,%,85,90,90
 S2,FR,Efficiency|Storage|Hydro|Pumped storage,%,70,75,80
 S3 Renew,FR,Production|Electricity|Nuclear,TWh/year,335.539374,264.8852034,48.64406851
-S3 Renew,FR,Production|Electricity|Conventional|Mix gaz|Combined Cycle Turbines,TWh/year,1.167131523,10.71939392,13.34551598
-S3 Renew,FR,Production|Electricity|Conventional|Mix gaz|Open Cycle Turbines,TWh/year,0.002146611,0.002892816,0.00000252219
-S3 Renew,FR,Production|Electricity|Conventional|Mix gaz|Cycle Turbines total,TWh/year,1.169278134,10.72228673,13.3455185
+S3 Renew,FR,Production|Electricity|Conventional|Mix gas|Combined Cycle Turbines,TWh/year,1.167131523,10.71939392,13.34551598
+S3 Renew,FR,Production|Electricity|Conventional|Mix gas|Open Cycle Turbines,TWh/year,0.002146611,0.002892816,0.00000252219
+S3 Renew,FR,Production|Electricity|Conventional|Mix gas|Cycle Turbines total,TWh/year,1.169278134,10.72228673,13.3455185
 S3 Renew,FR,Production|Electricity|Conventional|Coal,TWh/year,7.024890598,0,0
-S3 Renew,FR,Production|Electricity|Conventional|Fuel oil and Mix gaz|CHP,TWh/year,10.2913315,3.080661281,0
+S3 Renew,FR,Production|Electricity|Conventional|Fuel oil and Mix gas|CHP,TWh/year,10.2913315,3.080661281,0
 S3 Renew,FR,Production|Electricity|Conventional|Fuel oil|CHP,TWh/year,1.887397004,0,0
-S3 Renew,FR,Production|Electricity|Conventional|Mix gaz|CHP,TWh/year,8.4039345,3.080661281,0
+S3 Renew,FR,Production|Electricity|Conventional|Mix gas|CHP,TWh/year,8.4039345,3.080661281,0
 S3 Renew,FR,Production|Electricity|Renewable|Photovoltaic ground fix,TWh/year,4.900619953,26.43916655,71.40027198
 S3 Renew,FR,Production|Electricity|Renewable|Photovoltaic ground tracker,TWh/year,0,0.000000000165003,0.00000000181952
 S3 Renew,FR,Production|Electricity|Renewable|Photovoltaic ground total,TWh/year,4.900619953,26.43916655,71.40027198
@@ -93,7 +93,7 @@ S3 Renew,FR,Production|Electricity|Renewable|Wind turbines|Floating Offshore,TWh
 S3 Renew,FR,Production|Electricity|Renewable|Wind turbines|Offshore total,TWh/year,0,18.27347459,115.4838459
 S3 Renew,FR,Production|Electricity|Renewable|Wind turbines|Onshore total,TWh/year,28.54751369,58.75526509,110.8579704
 S3 Renew,FR,Production|Electricity|Renewable|Sea,TWh/year,0.378518749,0.321330908,0.319292342
-S3 Renew,FR,Production|Electricity|Renewable|Biogaz|CHP,TWh/year,1.953011532,1.657944208,1.647425991
+S3 Renew,FR,Production|Electricity|Renewable|Biogas|CHP,TWh/year,1.953011532,1.657944208,1.647425991
 S3 Renew,FR,Production|Electricity|Renewable|Biomass|CHP,TWh/year,1.316081395,1.366859327,1.358187791
 S3 Renew,FR,Production|Electricity|Conventional|Waste,TWh/year,2.580028158,2.190229127,2.176334023
 S3 Renew,FR,Production|Electricity|Renewable|Geothermal,TWh/year,0.003856641,0.042473092,0.042203637
@@ -111,13 +111,13 @@ S3 Renew,FR,Production|Electricity|Medium to high,TWh,1,1,1
 S3 Renew,FR,Efficiency|Storage|Battery|Charge,%,85,90,90
 S3 Renew,FR,Efficiency|Storage|Hydro|Pumped storage,%,70,75,80
 S3 Nuc,FR,Production|Electricity|Nuclear,TWh/year,335.5393734,264.8884701,92.06769245
-S3 Nuc,FR,Production|Electricity|Conventional|Mix gaz|Combined Cycle Turbines,TWh/year,1.233630772,10.77148408,14.08042085
-S3 Nuc,FR,Production|Electricity|Conventional|Mix gaz|Open Cycle Turbines,TWh/year,0.002154623,0.00290897,0.0000256524
-S3 Nuc,FR,Production|Electricity|Conventional|Mix gaz|Cycle Turbines total,TWh/year,1.235785396,10.77439304,14.0804465
+S3 Nuc,FR,Production|Electricity|Conventional|Mix gas|Combined Cycle Turbines,TWh/year,1.233630772,10.77148408,14.08042085
+S3 Nuc,FR,Production|Electricity|Conventional|Mix gas|Open Cycle Turbines,TWh/year,0.002154623,0.00290897,0.0000256524
+S3 Nuc,FR,Production|Electricity|Conventional|Mix gas|Cycle Turbines total,TWh/year,1.235785396,10.77439304,14.0804465
 S3 Nuc,FR,Production|Electricity|Conventional|Coal,TWh/year,7.013253778,0,0
-S3 Nuc,FR,Production|Electricity|Conventional|Fuel oil and Mix gaz|CHP,TWh/year,10.2913315,3.080661281,0
+S3 Nuc,FR,Production|Electricity|Conventional|Fuel oil and Mix gas|CHP,TWh/year,10.2913315,3.080661281,0
 S3 Nuc,FR,Production|Electricity|Conventional|Fuel oil|CHP,TWh/year,1.887397004,0,0
-S3 Nuc,FR,Production|Electricity|Conventional|Mix gaz|CHP,TWh/year,8.4039345,3.080661281,0
+S3 Nuc,FR,Production|Electricity|Conventional|Mix gas|CHP,TWh/year,8.4039345,3.080661281,0
 S3 Nuc,FR,Production|Electricity|Renewable|Photovoltaic ground fix,TWh/year,4.900619953,26.47157099,72.33239529
 S3 Nuc,FR,Production|Electricity|Renewable|Photovoltaic ground tracker,TWh/year,0,0.00000000210029,0.0000000427143
 S3 Nuc,FR,Production|Electricity|Renewable|Photovoltaic ground total,TWh/year,4.900619953,26.47157099,72.33239533
@@ -130,7 +130,7 @@ S3 Nuc,FR,Production|Electricity|Renewable|Wind turbines|Floating Offshore,TWh/y
 S3 Nuc,FR,Production|Electricity|Renewable|Wind turbines|Offshore total,TWh/year,0,18.27347466,55.2809458
 S3 Nuc,FR,Production|Electricity|Renewable|Wind turbines|Onshore total,TWh/year,28.54751369,58.74485404,111.2566589
 S3 Nuc,FR,Production|Electricity|Renewable|Sea,TWh/year,0.378518749,0.321330908,0.319292342
-S3 Nuc,FR,Production|Electricity|Renewable|Biogaz|CHP,TWh/year,1.953011532,1.657944208,1.647425991
+S3 Nuc,FR,Production|Electricity|Renewable|Biogas|CHP,TWh/year,1.953011532,1.657944208,1.647425991
 S3 Nuc,FR,Production|Electricity|Renewable|Biomass|CHP,TWh/year,1.316081395,1.366859327,1.358187791
 S3 Nuc,FR,Production|Electricity|Conventional|Waste,TWh/year,2.580028158,2.190229127,2.176334023
 S3 Nuc,FR,Production|Electricity|Renewable|Geothermal,TWh/year,0.003856641,0.042473092,0.042203637
@@ -148,13 +148,13 @@ S3 Nuc,FR,Production|Electricity|Medium to high,TWh,1,1,1
 S3 Nuc,FR,Efficiency|Storage|Battery|Charge,%,85,90,90
 S3 Nuc,FR,Efficiency|Storage|Hydro|Pumped storage,%,70,75,80
 S4,FR,Production|Electricity|Nuclear,TWh/year,335.5396312,258.9482375,129.7852595
-S4,FR,Production|Electricity|Conventional|Mix gaz|Combined Cycle Turbines,TWh/year,1.781360598,19.6611791,27.53250153
-S4,FR,Production|Electricity|Conventional|Mix gaz|Open Cycle Turbines,TWh/year,0.002123602,0.010742241,0.474479455
-S4,FR,Production|Electricity|Conventional|Mix gaz|Cycle Turbines total,TWh/year,1.783484199,19.67192134,28.00698099
+S4,FR,Production|Electricity|Conventional|Mix gas|Combined Cycle Turbines,TWh/year,1.781360598,19.6611791,27.53250153
+S4,FR,Production|Electricity|Conventional|Mix gas|Open Cycle Turbines,TWh/year,0.002123602,0.010742241,0.474479455
+S4,FR,Production|Electricity|Conventional|Mix gas|Cycle Turbines total,TWh/year,1.783484199,19.67192134,28.00698099
 S4,FR,Production|Electricity|Conventional|Coal,TWh/year,6.913479284,0,0
-S4,FR,Production|Electricity|Conventional|Fuel oil and Mix gaz|CHP,TWh/year,10.2913315,3.080661281,0
+S4,FR,Production|Electricity|Conventional|Fuel oil and Mix gas|CHP,TWh/year,10.2913315,3.080661281,0
 S4,FR,Production|Electricity|Conventional|Fuel oil|CHP,TWh/year,1.887397004,0,0
-S4,FR,Production|Electricity|Conventional|Mix gaz|CHP,TWh/year,8.4039345,3.080661281,0
+S4,FR,Production|Electricity|Conventional|Mix gas|CHP,TWh/year,8.4039345,3.080661281,0
 S4,FR,Production|Electricity|Renewable|Photovoltaic ground fix,TWh/year,4.900619953,26.1264913,67.06823399
 S4,FR,Production|Electricity|Renewable|Photovoltaic ground tracker,TWh/year,0,0.00000000184279,6.99168157
 S4,FR,Production|Electricity|Renewable|Photovoltaic ground total,TWh/year,4.900619953,26.12649131,74.05991556
@@ -167,7 +167,7 @@ S4,FR,Production|Electricity|Renewable|Wind turbines|Floating Offshore,TWh/year,
 S4,FR,Production|Electricity|Renewable|Wind turbines|Offshore total,TWh/year,0,18.57305674,115.4838459
 S4,FR,Production|Electricity|Renewable|Wind turbines|Onshore total,TWh/year,28.54751369,58.85263177,121.1603558
 S4,FR,Production|Electricity|Renewable|Sea,TWh/year,0.378518749,0.321330908,0.319292342
-S4,FR,Production|Electricity|Renewable|Biogaz|CHP,TWh/year,1.953011532,1.657944208,1.647425991
+S4,FR,Production|Electricity|Renewable|Biogas|CHP,TWh/year,1.953011532,1.657944208,1.647425991
 S4,FR,Production|Electricity|Renewable|Biomass|CHP,TWh/year,1.316081395,1.366859327,1.358187791
 S4,FR,Production|Electricity|Conventional|Waste,TWh/year,2.580028158,2.190229127,2.176334023
 S4,FR,Production|Electricity|Renewable|Geothermal,TWh/year,0.003856641,0.042473092,0.042203637
@@ -212,9 +212,9 @@ S1,FR,Production|Hydrogen|Power to gas|Electrolysis,TWh H2/year,0,3.1,42.8
 S1,FR,Production|Hydrogen|Fossil fuel refineries|Co-produced|Oil refining,TWh H2/year,6.7,5,0
 S1,FR,Production|Hydrogen|Imported|Electrolysis,TWh H2/year,0,0,0
 S1,FR,Production|Hydrogen|Total,TWh H2/year,16.3,22.1,54.5
-S1,FR,Production|Hydrogen|Total from gaz without co-produced from fossil fuels,TWh H2/year,9.6,13.1,10.6
+S1,FR,Production|Hydrogen|Total from gas without co-produced from fossil fuels,TWh H2/year,9.6,13.1,10.6
 S1,FR,Production|Hydrogen|Total from electrolysis,TWh H2/year,0,4,43.9
-S1,FR,Production|Hydrogen|Share electrolysis over gaz + electrolysis,%,0,23.39181287,80.55045872
+S1,FR,Production|Hydrogen|Share electrolysis over gas + electrolysis,%,0,23.39181287,80.55045872
 S1,FR,Production|Hydrogen|Fossil fuel refineries|Empty,TWh H2/year,0,0,1
 S2,FR,Efficiency|Hydrogen|Electrolyzer,%,61,65,72
 S2,FR,Production|Hydrogen|Transport|Steam methane reforming,TWh H2/year,0,0,0
@@ -244,9 +244,9 @@ S2,FR,Production|Hydrogen|Power to gas|Electrolysis,TWh H2/year,0,3.5,37.9
 S2,FR,Production|Hydrogen|Fossil fuel refineries|Co-produced|Oil refining,TWh H2/year,6.7,5,0
 S2,FR,Production|Hydrogen|Imported|Electrolysis,TWh H2/year,0,0,0
 S2,FR,Production|Hydrogen|Total,TWh H2/year,20.6,35.3,95.6
-S2,FR,Production|Hydrogen|Total from gaz without co-produced from fossil fuels,TWh H2/year,13.9,11.5,0
+S2,FR,Production|Hydrogen|Total from gas without co-produced from fossil fuels,TWh H2/year,13.9,11.5,0
 S2,FR,Production|Hydrogen|Total from electrolysis,TWh H2/year,0,18.8,95.6
-S2,FR,Production|Hydrogen|Share electrolysis over gaz + electrolysis,%,0,62.04620462,100
+S2,FR,Production|Hydrogen|Share electrolysis over gas + electrolysis,%,0,62.04620462,100
 S2,FR,Production|Hydrogen|Fossil fuel refineries|Empty,TWh H2/year,0,0,1
 S3 Renew,FR,Efficiency|Hydrogen|Electrolyzer,%,61,65,72
 S3 Renew,FR,Production|Hydrogen|Transport|Steam methane reforming,TWh H2/year,0,0,0
@@ -276,9 +276,9 @@ S3 Renew,FR,Production|Hydrogen|Power to gas|Electrolysis,TWh H2/year,0,3.8,24.1
 S3 Renew,FR,Production|Hydrogen|Fossil fuel refineries|Co-produced|Oil refining,TWh H2/year,6.7,5.2,0
 S3 Renew,FR,Production|Hydrogen|Imported|Electrolysis,TWh H2/year,0,6,48
 S3 Renew,FR,Production|Hydrogen|Total,TWh H2/year,20.6,49.4,93.9
-S3 Renew,FR,Production|Hydrogen|Total from gaz without co-produced from fossil fuels,TWh H2/year,13.9,4.3,0
+S3 Renew,FR,Production|Hydrogen|Total from gas without co-produced from fossil fuels,TWh H2/year,13.9,4.3,0
 S3 Renew,FR,Production|Hydrogen|Total from electrolysis,TWh H2/year,0,39.9,93.9
-S3 Renew,FR,Production|Hydrogen|Share electrolysis over gaz + electrolysis,%,0,90.27149321,100
+S3 Renew,FR,Production|Hydrogen|Share electrolysis over gas + electrolysis,%,0,90.27149321,100
 S3 Renew,FR,Production|Hydrogen|Fossil fuel refineries|Empty,TWh H2/year,0,0,1
 S3 Nuc,FR,Efficiency|Hydrogen|Electrolyzer,%,61,65,72
 S3 Nuc,FR,Production|Hydrogen|Transport|Steam methane reforming,TWh H2/year,0,0,0
@@ -308,9 +308,9 @@ S3 Nuc,FR,Production|Hydrogen|Power to gas|Electrolysis,TWh H2/year,0,3.8,24.1
 S3 Nuc,FR,Production|Hydrogen|Fossil fuel refineries|Co-produced|Oil refining,TWh H2/year,6.7,5.2,0
 S3 Nuc,FR,Production|Hydrogen|Imported|Electrolysis,TWh H2/year,0,6,48
 S3 Nuc,FR,Production|Hydrogen|Total,TWh H2/year,20.6,49.4,93.9
-S3 Nuc,FR,Production|Hydrogen|Total from gaz without co-produced from fossil fuels,TWh H2/year,13.9,4.3,0
+S3 Nuc,FR,Production|Hydrogen|Total from gas without co-produced from fossil fuels,TWh H2/year,13.9,4.3,0
 S3 Nuc,FR,Production|Hydrogen|Total from electrolysis,TWh H2/year,0,39.9,93.9
-S3 Nuc,FR,Production|Hydrogen|Share electrolysis over gaz + electrolysis,%,0,90.27149321,100
+S3 Nuc,FR,Production|Hydrogen|Share electrolysis over gas + electrolysis,%,0,90.27149321,100
 S3 Nuc,FR,Production|Hydrogen|Fossil fuel refineries|Empty,TWh H2/year,0,0,1
 S4,FR,Efficiency|Hydrogen|Electrolyzer,%,61,65,72
 S4,FR,Production|Hydrogen|Transport|Steam methane reforming,TWh H2/year,4.3,0,0
@@ -340,7 +340,7 @@ S4,FR,Production|Hydrogen|Power to gas|Electrolysis,TWh H2/year,0,0,0
 S4,FR,Production|Hydrogen|Fossil fuel refineries|Co-produced|Oil refining,TWh H2/year,6.7,5.2,0
 S4,FR,Production|Hydrogen|Imported|Electrolysis,TWh H2/year,0,0,0
 S4,FR,Production|Hydrogen|Total,TWh H2/year,20.6,22.7,35.5
-S4,FR,Production|Hydrogen|Total from gaz without co-produced from fossil fuels,TWh H2/year,13.9,13.5,12
+S4,FR,Production|Hydrogen|Total from gas without co-produced from fossil fuels,TWh H2/year,13.9,13.5,12
 S4,FR,Production|Hydrogen|Total from electrolysis,TWh H2/year,0,4,23.5
-S4,FR,Production|Hydrogen|Share electrolysis over gaz + electrolysis,%,0,22.85714286,66.1971831
+S4,FR,Production|Hydrogen|Share electrolysis over gas + electrolysis,%,0,22.85714286,66.1971831
 S4,FR,Production|Hydrogen|Fossil fuel refineries|Empty,TWh H2/year,0,0,1

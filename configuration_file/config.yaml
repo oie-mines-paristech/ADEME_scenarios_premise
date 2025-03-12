@@ -17,7 +17,7 @@ production pathways:
 
   mix_gas_cycle_turbines:
     production volume:
-      variable: Production|Electricity|Conventional|Mix gaz|Cycle Turbines total
+      variable: Production|Electricity|Conventional|Mix gas|Cycle Turbines total
     ecoinvent alias:
       name: electricity production, natural gas, combined cycle power plant
       reference product: electricity, high voltage
@@ -41,11 +41,13 @@ production pathways:
 
   mix_gas_chp:
     production volume:
-      variable: Production|Electricity|Conventional|Mix gaz|CHP
+      variable: Production|Electricity|Conventional|Mix gas|CHP
     ecoinvent alias:
       name: heat and power co-generation, natural gas, conventional power plant, 100MW electrical
       reference product: electricity, high voltage
       exists in original database: True
+      regionalize: True
+
 
   pv:
     production volume:
@@ -79,9 +81,9 @@ production pathways:
       reference product: electricity, high voltage
       exists in original database: True
 
-  biogaz_chp:
+  biogas_chp:
     production volume:
-      variable: Production|Electricity|Renewable|Biogaz|CHP
+      variable: Production|Electricity|Renewable|Biogas|CHP
     ecoinvent alias:
       name: heat and power co-generation, biogas, gas engine
       reference product: electricity, high voltage
@@ -381,7 +383,7 @@ production pathways:
           technosphere:
             - electricity
     ecoinvent alias:
-      name: hydrogen production, gaseous, 30 bar, from PEM electrolysis, from grid electricity, domestic, Tr2050
+      name: hydrogen production, gaseous, 30 bar, from PEM electrolysis, from grid electricity
       reference product: hydrogen, gaseous, 30 bar
       exists in original database: True
 
@@ -484,7 +486,7 @@ markets:
       - wind_offshore
       - wind_onshore
       - wave
-      - biogaz_chp
+      - biogas_chp
       - biomass_chp
       - waste
       - geothermal
