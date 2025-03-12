@@ -246,9 +246,9 @@ production pathways:
       exists in original database: True
       regionalize: True
 
-  methane_reforming_hydrogen_ptogaz:
+  methane_reforming_hydrogen_ptogas:
     production volume:
-      variable: Production|Hydrogen|Power to gaz|Steam methane reforming
+      variable: Production|Hydrogen|Power to gas|Steam methane reforming
     ecoinvent alias:
       name: hydrogen production, steam methane reforming
       reference product: hydrogen, gaseous, low pressure
@@ -320,9 +320,9 @@ production pathways:
       exists in original database: True
       regionalize: True
 
-  methane_reforming_CCS_hydrogen_ptogaz:
+  methane_reforming_CCS_hydrogen_ptogas:
     production volume:
-      variable: Production|Hydrogen|Power to gaz|Steam methane reforming with Carbone Capture and Storage
+      variable: Production|Hydrogen|Power to gas|Steam methane reforming with Carbone Capture and Storage
     ecoinvent alias:
       name: hydrogen production, steam methane reforming, with CCS
       reference product: hydrogen, gaseous, low pressure
@@ -424,7 +424,7 @@ production pathways:
       reference product: hydrogen, gaseous, 30 bar
       exists in original database: True
 
-  electrolysis_hydrogen_ptogaz:
+  electrolysis_hydrogen_ptogas:
     production volume:
       variable: Production|Hydrogen|Power to gas|Electrolysis
     efficiency:
@@ -874,13 +874,13 @@ markets:
         amount: 0.005
 
 
-  - name: market for hydrogen, gaseous, for power to gaz, Tr2050
+  - name: market for hydrogen, gaseous, for power to gas, Tr2050
     reference product: hydrogen, gaseous
     unit: kilogram
     includes:
-      - methane_reforming_hydrogen_ptogaz
-      - methane_reforming_CCS_hydrogen_ptogaz
-      - electrolysis_hydrogen_ptogaz
+      - methane_reforming_hydrogen_ptogas
+      - methane_reforming_CCS_hydrogen_ptogas
+      - electrolysis_hydrogen_ptogas
 
     add:
       - name: pipeline, hydrogen, low pressure distribution network
@@ -903,7 +903,7 @@ markets:
         reference product: electricity, low voltage
         unit: kilowatt hour
         amount: 1.82
-      - name: market for hydrogen, gaseous, for power to gaz, Tr2050
+      - name: market for hydrogen, gaseous, for power to gas, Tr2050
         reference product: hydrogen, gaseous
         unit: kilogram
         amount: 0.005
@@ -939,9 +939,9 @@ markets:
       - methane_reforming_hydrogen_chemicals
       - methane_reforming_CCS_hydrogen_chemicals
       - electrolysis_hydrogen_chemicals
-      - methane_reforming_hydrogen_ptogaz
-      - methane_reforming_CCS_hydrogen_ptogaz
-      - electrolysis_hydrogen_ptogaz
+      - methane_reforming_hydrogen_ptogas
+      - methane_reforming_CCS_hydrogen_ptogas
+      - electrolysis_hydrogen_ptogas
 
 
     add:
