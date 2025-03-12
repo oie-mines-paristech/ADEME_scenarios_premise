@@ -673,6 +673,46 @@ markets:
         amount: 0.005
 
 
+
+  - name: market for hydrogen, gaseous, for biofuel refinery use, Tr2050
+    reference product: hydrogen, gaseous
+    unit: kilogram
+    includes:
+      - methane_reforming_hydrogen_biofuel_refineries
+      - methane_reforming_CCS_hydrogen_biofuel_refineries
+      - electrolysis_hydrogen_biofuel_refineries
+
+    add:
+      - name: pipeline, hydrogen, low pressure distribution network
+        reference product: pipeline, for hydrogen distribution
+        unit: kilometer
+        amount: 1.14422E-06
+      - name: pipeline, hydrogen, high pressure transmission network
+        reference product: pipeline, for hydrogen transmission
+        unit: kilometer
+        amount: 2.01706E-09
+      - name: compressor assembly for transmission hydrogen pipeline
+        reference product: compressor, for hydrogen transmission
+        unit: unit
+        amount: 3.22703E-11
+      - name: geological hydrogen storage
+        reference product: hydrogen storage
+        unit: kilogram
+        amount: 0.302074305
+      - name: market for electricity, low voltage
+        reference product: electricity, low voltage
+        unit: kilowatt hour
+        amount: 1.82
+      - name: market for hydrogen, gaseous, for biofuel refinery use, Tr2050
+        reference product: hydrogen, gaseous
+        unit: kilogram
+        amount: 0.005
+      - name: Hydrogen
+        categories: air::non-urban air or from high stacks
+        unit: kilogram
+        amount: 0.005
+      
+
   - name: market for hydrogen, gaseous, for power to liquid use, Tr2050
     reference product: hydrogen, gaseous
     unit: kilogram
