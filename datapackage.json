@@ -31,11 +31,11 @@
         "system model": "cut-off"
     },
     "scenarios description": {
-        "S1 - Frugal generation": "The transition is driven\nmostly by sobriety and constraint",
-		"S2 - Territorial cooperation": "The society transformation\nis based on a shared governance and\non territorialization strategies",
-		"S3 Renew - Green technologies renewables": "The transition\nis based on innovation and development\nof low carbon technologies, especially renewable energies",  
-        "S3 Nuc - Green technologies nuclear": "The transition\nis based on innovation and development\nof low carbon technologies, especially nuclear energy",  
-        "S4 - Repairing bet": "The transition\nrelies highly on new technologies development,\nwithout any society lifestyle changes."
+        "S1": "Frugal generation: The transition is driven\nmostly by sobriety and constraint",
+		"S2": "Territorial cooperation: The society transformation\nis based on a shared governance and\non territorialization strategies",
+		"S3 Renew": "- Green technologies renewables: The transition\nis based on innovation and development\nof low carbon technologies, especially renewable energies",  
+        "S3 Nuc": "Green technologies nuclear: The transition\nis based on innovation and development\nof low carbon technologies, especially nuclear energy",  
+        "S4": "Repairing bet: The transition\nrelies highly on new technologies development,\nwithout any society lifestyle changes."
     },
     "source": "https://www.ademe.fr/les-futurs-en-transition/",
     "licenses": [{
@@ -44,11 +44,11 @@
     "url": "https://creativecommons.org/publicdomain/zero/1.0/"
       }],
     "scenarios": [
-        "S1 - Frugal generation",
-        "S2 - Territorial cooperation",
-        "S3 Renew - Green technologies renewables",
-        "S3 Nuc - Green technologies nuclear",
-        "S4 - Repairing bet"
+        "S1",
+        "S2",
+        "S3 Renew",
+        "S3 Nuc",
+        "S4"
     ],
     "resources": [
         {
