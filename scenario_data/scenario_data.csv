@@ -413,7 +413,7 @@ S3 Nuc,FR,Production|Natural gas|Power to gas,TWh PCI/year,0,3.25,20.47
 S3 Nuc,FR,Production|Natural gas|Imports|Fossil,TWh PCI/year,384.3,294.05,15.18
 S3 Nuc,FR,Production|Natural gas|Imports|Renewable,TWh PCI/year,0,0,0
 S3 Nuc,FR,Production|Natural gas|Total,TWh PCI/year,386.3,348.85,219.28
-S4,FR,Production|Natural gas|Anaerobic digestion CIVE|Biogas,Nm3/year,2,465936500.7,469469528.6
+S4,FR,Production|Natural gas|Anaerobic digestion CIVE|Biogas,Nm3/year,2.1,465936500.7,469469528.6
 S4,FR,Production|Natural gas|Anaerobic digestion dedicated crops|Biogas,Nm3/year,2,48278585.69,66278999.49
 S4,FR,Production|Natural gas|Anaerobic digestion grass|Biogas,Nm3/year,2,363114782.2,281547101.9
 S4,FR,Production|Natural gas|Anaerobic digestion biowaste|Biogas,Nm3/year,2,0,0
