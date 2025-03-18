@@ -102,7 +102,7 @@
             }
         },
         {
-            "path": "inventories/lci-Tr2050.xlsx",
+            "path": "inventories/lci-Tr2050-Copie.xlsx",
             "profile": "data-resource",
             "name": "inventories",
             "format": "csv",
