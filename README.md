@@ -88,8 +88,8 @@ How to use this notebook ?
     #Choose the Year
     year=2050
     #Choose the French scenario 
-    fr_scenario_1="S1 - Frugal generation"
-    fr_scenario_4="S4 - Repairing bet"
+    fr_scenario_1="S1"
+    fr_scenario_4="S4"
     
     scenarios = [
         {"model": model_1, "pathway":world_scenario_1, "year": year, "external scenarios": [{"scenario": fr_scenario_1, "data": ademe}]},

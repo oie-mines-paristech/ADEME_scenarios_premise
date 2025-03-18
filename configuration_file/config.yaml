@@ -17,7 +17,7 @@ production pathways:
 
   mix_gas_cycle_turbines:
     production volume:
-      variable: Production|Electricity|Conventional|Mix gaz|Cycle Turbines total
+      variable: Production|Electricity|Conventional|Mix gas|Cycle Turbines total
     ecoinvent alias:
       name: electricity production, natural gas, combined cycle power plant
       reference product: electricity, high voltage
@@ -41,11 +41,13 @@ production pathways:
 
   mix_gas_chp:
     production volume:
-      variable: Production|Electricity|Conventional|Mix gaz|CHP
+      variable: Production|Electricity|Conventional|Mix gas|CHP
     ecoinvent alias:
       name: heat and power co-generation, natural gas, conventional power plant, 100MW electrical
       reference product: electricity, high voltage
       exists in original database: True
+      regionalize: True
+
 
   pv:
     production volume:
@@ -79,9 +81,9 @@ production pathways:
       reference product: electricity, high voltage
       exists in original database: True
 
-  biogaz_chp:
+  biogas_chp:
     production volume:
-      variable: Production|Electricity|Renewable|Biogaz|CHP
+      variable: Production|Electricity|Renewable|Biogas|CHP
     ecoinvent alias:
       name: heat and power co-generation, biogas, gas engine
       reference product: electricity, high voltage
@@ -246,9 +248,9 @@ production pathways:
       exists in original database: True
       regionalize: True
 
-  methane_reforming_hydrogen_ptogaz:
+  methane_reforming_hydrogen_ptogas:
     production volume:
-      variable: Production|Hydrogen|Power to gaz|Steam methane reforming
+      variable: Production|Hydrogen|Power to gas|Steam methane reforming
     ecoinvent alias:
       name: hydrogen production, steam methane reforming
       reference product: hydrogen, gaseous, low pressure
@@ -320,9 +322,9 @@ production pathways:
       exists in original database: True
       regionalize: True
 
-  methane_reforming_CCS_hydrogen_ptogaz:
+  methane_reforming_CCS_hydrogen_ptogas:
     production volume:
-      variable: Production|Hydrogen|Power to gaz|Steam methane reforming with Carbone Capture and Storage
+      variable: Production|Hydrogen|Power to gas|Steam methane reforming with Carbone Capture and Storage
     ecoinvent alias:
       name: hydrogen production, steam methane reforming, with CCS
       reference product: hydrogen, gaseous, low pressure
@@ -341,7 +343,7 @@ production pathways:
           technosphere:
             - electricity
     ecoinvent alias:
-      name: hydrogen production, gaseous, 30 bar, from PEM electrolysis, from grid electricity
+      name: hydrogen production, gaseous, 30 bar, from PEM electrolysis, from grid electricity, domestic, Tr2050
       reference product: hydrogen, gaseous, 30 bar
       exists in original database: True
       regionalize: True
@@ -381,7 +383,7 @@ production pathways:
           technosphere:
             - electricity
     ecoinvent alias:
-      name: hydrogen production, gaseous, 30 bar, from PEM electrolysis, from grid electricity, domestic, Tr2050
+      name: hydrogen production, gaseous, 30 bar, from PEM electrolysis, from grid electricity
       reference product: hydrogen, gaseous, 30 bar
       exists in original database: True
 
@@ -424,7 +426,7 @@ production pathways:
       reference product: hydrogen, gaseous, 30 bar
       exists in original database: True
 
-  electrolysis_hydrogen_ptogaz:
+  electrolysis_hydrogen_ptogas:
     production volume:
       variable: Production|Hydrogen|Power to gas|Electrolysis
     efficiency:
@@ -462,6 +464,13 @@ production pathways:
       reference product: hydrogen, gaseous, 30 bar
       exists in original database: True
 
+  empty_hydrogen_fossilfuel_refineries:
+    production volume:
+      variable: Production|Hydrogen|Fossil fuel refineries|Empty
+    ecoinvent alias:
+      name: empty activity, for market that does not exist any more in 2050, Tr2050
+      reference product: nothing
+      exists in original database: True
 #Gas
 
   anaerobic_digestion:
@@ -502,7 +511,7 @@ markets:
       - wind_offshore
       - wind_onshore
       - wave
-      - biogaz_chp
+      - biogas_chp
       - biomass_chp
       - waste
       - geothermal
@@ -650,7 +659,6 @@ markets:
         unit: kilogram
         amount: 0.005
 
-
   - name: market for hydrogen, gaseous, for fossil fuel refinery use, Tr2050
     reference product: hydrogen, gaseous
     unit: kilogram
@@ -659,6 +667,7 @@ markets:
       - methane_reforming_CCS_hydrogen_fossilfuel_refineries
       - electrolysis_hydrogen_fossilfuel_refineries
       - oil_refining_hydrogen_coproduct_fossilfuel_refineries
+      - empty_hydrogen_fossilfuel_refineries
 
     add:
       - name: pipeline, hydrogen, low pressure distribution network
@@ -729,8 +738,7 @@ markets:
         categories: air::non-urban air or from high stacks
         unit: kilogram
         amount: 0.005
-
-
+      
 
   - name: market for hydrogen, gaseous, for power to liquid use, Tr2050
     reference product: hydrogen, gaseous
@@ -893,13 +901,13 @@ markets:
         amount: 0.005
 
 
-  - name: market for hydrogen, gaseous, for power to gaz, Tr2050
+  - name: market for hydrogen, gaseous, for power to gas, Tr2050
     reference product: hydrogen, gaseous
     unit: kilogram
     includes:
-      - methane_reforming_hydrogen_ptogaz
-      - methane_reforming_CCS_hydrogen_ptogaz
-      - electrolysis_hydrogen_ptogaz
+      - methane_reforming_hydrogen_ptogas
+      - methane_reforming_CCS_hydrogen_ptogas
+      - electrolysis_hydrogen_ptogas
 
     add:
       - name: pipeline, hydrogen, low pressure distribution network
@@ -922,7 +930,7 @@ markets:
         reference product: electricity, low voltage
         unit: kilowatt hour
         amount: 1.82
-      - name: market for hydrogen, gaseous, for power to gaz, Tr2050
+      - name: market for hydrogen, gaseous, for power to gas, Tr2050
         reference product: hydrogen, gaseous
         unit: kilogram
         amount: 0.005
@@ -958,9 +966,9 @@ markets:
       - methane_reforming_hydrogen_chemicals
       - methane_reforming_CCS_hydrogen_chemicals
       - electrolysis_hydrogen_chemicals
-      - methane_reforming_hydrogen_ptogaz
-      - methane_reforming_CCS_hydrogen_ptogaz
-      - electrolysis_hydrogen_ptogaz
+      - methane_reforming_hydrogen_ptogas
+      - methane_reforming_CCS_hydrogen_ptogas
+      - electrolysis_hydrogen_ptogas
 
 
     add:
