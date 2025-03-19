@@ -654,6 +654,16 @@ production pathways:
       reference product: biomethane, high pressure
       exists in original database: True
 
+  #Cryogenic separation
+  ad_biogas_purification_cryogenic:
+    production volume:
+      variable: Production|Natural gas|Anaerobic digestion|Biogas to biomethane cryogenic
+    
+    ecoinvent alias:
+      name: biogas purification to biomethane by cryogenic separation, Tr2050
+      reference product: biomethane, high pressure
+      exists in original database: True
+
     # efficiency:
     #   - variable: Efficiency|Natural gas|Anaerobic digestion biowaste|Biogas to biomethane
     #     reference year: 2020
@@ -1242,6 +1252,7 @@ markets:
       - ad_biogas_purification_water
       - ad_biogas_purification_chemical
       - ad_biogas_purification_psa
+      - ad_biogas_purification_cryogenic
 
 
   # - name: market for natural gas, high pressure, Tr2050
