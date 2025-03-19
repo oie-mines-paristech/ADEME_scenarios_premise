@@ -613,17 +613,47 @@ production pathways:
       reference product:  biogas
       exists in original database: True
 
-#Biogas purification flows
-
+#Biogas purification processes
+  #Membrane
   ad_biogas_purification_membrane:
     production volume:
       variable: Production|Natural gas|Anaerobic digestion|Biogas to biomethane membrane
     
     ecoinvent alias:
-      name: biogas purification to biomethane by membrane
+      name: biogas purification to biomethane by membrane, Tr2050
       reference product: biomethane, high pressure
       exists in original database: True
+
+  #Chemical scrubbing
+  ad_biogas_purification_chemical:
+    production volume:
+      variable: Production|Natural gas|Anaerobic digestion|Biogas to biomethane chemical
     
+    ecoinvent alias:
+      name: biogas purification to biomethane by chemical scrubbing, Tr2050
+      reference product: biomethane, high pressure
+      exists in original database: True
+
+  #Water scrubbing
+  ad_biogas_purification_water:
+    production volume:
+      variable: Production|Natural gas|Anaerobic digestion|Biogas to biomethane water
+    
+    ecoinvent alias:
+      name: biogas purification to biomethane by water scrubbing, Tr2050
+      reference product: biomethane, high pressure
+      exists in original database: True
+
+  #PSA
+  ad_biogas_purification_psa:
+    production volume:
+      variable: Production|Natural gas|Anaerobic digestion|Biogas to biomethane PSA
+    
+    ecoinvent alias:
+      name: biogas purification to biomethane by PSA, Tr2050
+      reference product: biomethane, high pressure
+      exists in original database: True
+
     # efficiency:
     #   - variable: Efficiency|Natural gas|Anaerobic digestion biowaste|Biogas to biomethane
     #     reference year: 2020
@@ -636,29 +666,29 @@ production pathways:
     #       technosphere:
     #         - dedicated crops
 
-  anaerobic_digestion:
-    production volume:
-      variable: Production|Natural gas|Anaerobic digestion
-    ecoinvent alias:
-      name: biogas purification to biomethane by membrane technique
-      reference product:  biomethane, high pressure
-      exists in original database: True
+  # anaerobic_digestion:
+  #   production volume:
+  #     variable: Production|Natural gas|Anaerobic digestion
+  #   ecoinvent alias:
+  #     name: biogas purification to biomethane by membrane technique
+  #     reference product:  biomethane, high pressure
+  #     exists in original database: True
 
-  pyrogasification_wood:
-    production volume:
-      variable: Production|Natural gas|Pyrogasification|Renewable
-    ecoinvent alias:
-      name: biomethane production, high pressure from synthetic gas, wood, fixed bed technology
-      reference product:  biomethane, high pressure
-      exists in original database: True
+  # pyrogasification_wood:
+  #   production volume:
+  #     variable: Production|Natural gas|Pyrogasification|Renewable
+  #   ecoinvent alias:
+  #     name: biomethane production, high pressure from synthetic gas, wood, fixed bed technology
+  #     reference product:  biomethane, high pressure
+  #     exists in original database: True
 
-  natural_gas_imports_fossil:
-    production volume:
-      variable: Production|Natural gas|Imports|Fossil
-    ecoinvent alias:
-      name: natural gas, high pressure, import from NO
-      reference product:  natural gas, high pressure
-      exists in original database: True
+  # natural_gas_imports_fossil:
+  #   production volume:
+  #     variable: Production|Natural gas|Imports|Fossil
+  #   ecoinvent alias:
+  #     name: natural gas, high pressure, import from NO
+  #     reference product:  natural gas, high pressure
+  #     exists in original database: True
 
 markets:
 
@@ -1201,62 +1231,73 @@ markets:
       - ad_biogas_tobiomethane_biowaste
       - ad_biogas_tobiomethane_industrial_waste_water
       - ad_biogas_tobiomethane_sewage_sludge
-  
 
-  - name: market for natural gas, high pressure, Tr2050
-    reference product: natural gas, high pressure
+# Market for biomethane from anaerobic digestion
+
+  - name: market for biomethane AD, high pressure, Tr2050
+    reference product: biomethane, high pressure
     unit: cubic meter
     includes:
-      - anaerobic_digestion
-      - pyrogasification_wood
-      - natural_gas_imports_fossil
+      - ad_biogas_purification_membrane
+      - ad_biogas_purification_water
+      - ad_biogas_purification_chemical
+      - ad_biogas_purification_psa
 
-    add:
 
-      - name: market for natural gas, high pressure, Tr2050
-        reference product: natural gas, high pressure
-        amount: 0.001
+  # - name: market for natural gas, high pressure, Tr2050
+  #   reference product: natural gas, high pressure
+  #   unit: cubic meter
+  #   includes:
+  #     - market for biomethane AD, high pressure, Tr2050
+  #     - pyrogasification_wood
+  #     - natural_gas_imports_fossil
 
-      - name: pipeline construction, natural gas, high pressure distribution network
-        reference product: pipeline, natural gas, high pressure distribution network
-        amount: 3.83976e-08
+  #   add:
 
-      - name: Carbon dioxide, non-fossil
-        categories: air
-        unit: kilogram
-        amount: 2.07e-05
+  #     - name: market for natural gas, high pressure, Tr2050
+  #       reference product: natural gas, high pressure
+  #       amount: 0.015
 
-      - name: Methane, non-fossil
-        categories: air
-        unit: kilogram
-        amount: 6.52e-04
+  #     - name: pipeline construction, natural gas, high pressure distribution network
+  #       reference product: pipeline, natural gas, high pressure distribution network
+  #       amount: 3.83976e-08
+
+  #     - name: Carbon dioxide, non-fossil
+  #       categories: air
+  #       unit: kilogram
+  #       amount: 2.07e-05
+
+  #     - name: Methane, non-fossil
+  #       categories: air
+  #       unit: kilogram
+  #       amount: 6.52e-04
       
-      - name: NMVOC, non-methane volatile organic compounds
-        categories: air
-        unit: kilogram
-        amount: 5.01E-07
+  #     - name: NMVOC, non-methane volatile organic compounds
+  #       categories: air
+  #       unit: kilogram
+  #       amount: 5.01E-07
       
-      - name: Propane
-        categories: air
-        unit: kilogram
-        amount: 1.14e-05
+  #     - name: Propane
+  #       categories: air
+  #       unit: kilogram
+  #       amount: 1.14e-05
 
-      - name: Butane
-        categories: air
-        unit: kilogram
-        amount: 5.82E-06
+  #     - name: Butane
+  #       categories: air
+  #       unit: kilogram
+  #       amount: 5.82E-06
   
-      - name: Ethane
-        categories: air
-        unit: kilogram
-        amount: 5.05E-05
+  #     - name: Ethane
+  #       categories: air
+  #       unit: kilogram
+  #       amount: 5.05E-05
 
-      - name: Mercury II
-        categories: air
-        unit: kilogram
-        amount: 8.37E-13
+  #     - name: Mercury II
+  #       categories: air
+  #       unit: kilogram
+  #       amount: 8.37E-13
 
-    replaces:
-      - name: market for natural gas, high pressure
-        product: natural gas, high pressure
-        location: FR
+  #   replaces:
+  #     - name: market for natural gas, high pressure
+  #       product: natural gas, high pressure
+  #       location: FR
