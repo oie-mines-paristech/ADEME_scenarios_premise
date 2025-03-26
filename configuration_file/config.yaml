@@ -88,6 +88,7 @@ production pathways:
       name: heat and power co-generation, biogas, gas engine
       reference product: electricity, high voltage
       exists in original database: True
+      regionalize: True
 
   biomass_chp:
     production volume:
@@ -1225,7 +1226,9 @@ markets:
     replaces:
       - name: market for biogas
         product: biogas
-        location: FR
+    
+    replaces in:
+      - location: FR
 
 # Market for biogas sent to upgrading for biomethane production
 
