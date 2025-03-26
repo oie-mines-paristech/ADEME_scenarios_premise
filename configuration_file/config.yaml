@@ -22,6 +22,7 @@ production pathways:
       name: electricity production, natural gas, combined cycle power plant
       reference product: electricity, high voltage
       exists in original database: True
+      regionalize: True
 
   coal:
     production volume:
