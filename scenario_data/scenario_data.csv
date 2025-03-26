@@ -415,34 +415,6 @@ S3 Nuc,FR,Production|Natural gas|Power to gas,TWh PCI/year,0,3.25,20.47
 S3 Nuc,FR,Production|Natural gas|Imports|Fossil,TWh PCI/year,384.3,294.05,15.18
 S3 Nuc,FR,Production|Natural gas|Imports|Renewable,TWh PCI/year,0,0,0
 S3 Nuc,FR,Production|Natural gas|Total,TWh PCI/year,386.3,348.85,219.28
-S3 Renew,FR,Production|Natural gas|Anaerobic digestion CIVE|Biogas to biomethane,Nm3/year,135356783.8,3001484996,7739284186
-S3 Renew,FR,Production|Natural gas|Anaerobic digestion dedicated crops|Biogas to biomethane,Nm3/year,30299956.92,205819136.2,1031476523
-S3 Renew,FR,Production|Natural gas|Anaerobic digestion grass|Biogas to biomethane,Nm3/year,0,2422563105,5844369228
-S3 Renew,FR,Production|Natural gas|Anaerobic digestion biowaste|Biogas to biomethane,Nm3/year,17238457.22,241793030.3,379672497.4
-S3 Renew,FR,Production|Natural gas|Anaerobic digestion sewage sludge|Biogas to biomethane,Nm3/year,17498474.93,82172033.01,167434974.3
-S3 Renew,FR,Production|Natural gas|Anaerobic digestion agricultural residues|Biogas to biomethane,Nm3/year,120388011.8,1190814463,5496011191
-S3 Renew,FR,Production|Natural gas|Anaerobic digestion industrial wastewater|Biogas to biomethane,Nm3/year,22155643.24,341812520.8,180207027.7
-S3 Renew,FR,Production|Natural gas|Anaerobic digestion animal manure|Biogas to biomethane,Nm3/year,42069837.85,273965476.3,441049823.1
-S3 Renew,FR,Production|Natural gas|Anaerobic digestion|Biogas to biomethane membrane,Nm3/year,3.25E+08,6.54E+09,1.79E+10
-S3 Renew,FR,Production|Natural gas|Anaerobic digestion|Biogas to biomethane chemical,Nm3/year,1.13E+07,2.28E+08,6.26E+08
-S3 Renew,FR,Production|Natural gas|Anaerobic digestion|Biogas to biomethane water,Nm3/year,1.13E+07,2.28E+08,6.26E+08
-S3 Renew,FR,Production|Natural gas|Anaerobic digestion|Biogas to biomethane PSA,Nm3/year,3.02E+07,6.09E+08,1.67E+09
-S3 Renew,FR,Production|Natural gas|Anaerobic digestion|Biogas to biomethane cryogenic,Nm3/year,7.55E+06,1.52E+08,4.17E+08
-S3 Nuc,FR,Production|Natural gas|Anaerobic digestion CIVE|Biogas,Nm3/year,2,450686946.6,419277862.8
-S3 Nuc,FR,Production|Natural gas|Anaerobic digestion dedicated crops|Biogas,Nm3/year,2,31027995.97,56084789.87
-S3 Nuc,FR,Production|Natural gas|Anaerobic digestion grass|Biogas,Nm3/year,2,365812106.8,300503812.8
-S3 Nuc,FR,Production|Natural gas|Anaerobic digestion biowaste|Biogas,Nm3/year,2,0,0
-S3 Nuc,FR,Production|Natural gas|Anaerobic digestion sewage sludge|Biogas,Nm3/year,2,10725516.56,19847644.85
-S3 Nuc,FR,Production|Natural gas|Anaerobic digestion agricultural residues|Biogas,Nm3/year,2,168881622.6,278285791.5
-S3 Nuc,FR,Production|Natural gas|Anaerobic digestion industrial wastewater|Biogas,Nm3/year,2,25637644.96,3321173.046
-S3 Nuc,FR,Production|Natural gas|Anaerobic digestion animal manure|Biogas,Nm3/year,2,39015614.3,22883783.41
-S3 Nuc,FR,Production|Natural gas|Anaerobic digestion,TWh PCI/year,2,45.54,116.34
-S3 Nuc,FR,Production|Natural gas|Pyrogasification|Renewable,TWh PCI/year,0,0.43,48.48
-S3 Nuc,FR,Production|Natural gas|Pyrogasification|Fossil,TWh PCI/year,0,0,18.81
-S3 Nuc,FR,Production|Natural gas|Power to gas,TWh PCI/year,0,3.25,20.47
-S3 Nuc,FR,Production|Natural gas|Imports|Fossil,TWh PCI/year,384.3,294.05,15.18
-S3 Nuc,FR,Production|Natural gas|Imports|Renewable,TWh PCI/year,0,0,0
-S3 Nuc,FR,Production|Natural gas|Total,TWh PCI/year,386.3,348.85,219.28
 S3 Nuc,FR,Production|Natural gas|Anaerobic digestion CIVE|Biogas to biomethane,Nm3/year,135356783.8,3001484996,7739284186
 S3 Nuc,FR,Production|Natural gas|Anaerobic digestion dedicated crops|Biogas to biomethane,Nm3/year,30299956.92,205819136.2,1031476523
 S3 Nuc,FR,Production|Natural gas|Anaerobic digestion grass|Biogas to biomethane,Nm3/year,0,2422563105,5844369228
@@ -451,11 +423,39 @@ S3 Nuc,FR,Production|Natural gas|Anaerobic digestion sewage sludge|Biogas to bio
 S3 Nuc,FR,Production|Natural gas|Anaerobic digestion agricultural residues|Biogas to biomethane,Nm3/year,120388011.8,1190814463,5496011191
 S3 Nuc,FR,Production|Natural gas|Anaerobic digestion industrial wastewater|Biogas to biomethane,Nm3/year,22155643.24,341812520.8,180207027.7
 S3 Nuc,FR,Production|Natural gas|Anaerobic digestion animal manure|Biogas to biomethane,Nm3/year,42069837.85,273965476.3,441049823.1
-S3 Nuc,FR,Production|Natural gas|Anaerobic digestion|Biogas to biomethane membrane,Nm3/year,325000000,6543103230,17941543811
-S3 Nuc,FR,Production|Natural gas|Anaerobic digestion|Biogas to biomethane chemical,Nm3/year,11300000,228247787.1,625867807.4
-S3 Nuc,FR,Production|Natural gas|Anaerobic digestion|Biogas to biomethane water,Nm3/year,11300000,228247787.1,625867807.4
-S3 Nuc,FR,Production|Natural gas|Anaerobic digestion|Biogas to biomethane PSA,Nm3/year,30200000,608660765.6,1668980820
-S3 Nuc,FR,Production|Natural gas|Anaerobic digestion|Biogas to biomethane cryogenic,Nm3/year,7550000,152165191.4,417245204.9
+S3 Nuc,FR,Production|Natural gas|Anaerobic digestion|Biogas to biomethane membrane,Nm3/year,3.25E+08,6.54E+09,1.79E+10
+S3 Nuc,FR,Production|Natural gas|Anaerobic digestion|Biogas to biomethane chemical,Nm3/year,1.13E+07,2.28E+08,6.26E+08
+S3 Nuc,FR,Production|Natural gas|Anaerobic digestion|Biogas to biomethane water,Nm3/year,1.13E+07,2.28E+08,6.26E+08
+S3 Nuc,FR,Production|Natural gas|Anaerobic digestion|Biogas to biomethane PSA,Nm3/year,3.02E+07,6.09E+08,1.67E+09
+S3 Nuc,FR,Production|Natural gas|Anaerobic digestion|Biogas to biomethane cryogenic,Nm3/year,7.55E+06,1.52E+08,4.17E+08
+S3 Renew,FR,Production|Natural gas|Anaerobic digestion CIVE|Biogas,Nm3/year,2,450686946.6,419277862.8
+S3 Renew,FR,Production|Natural gas|Anaerobic digestion dedicated crops|Biogas,Nm3/year,2,31027995.97,56084789.87
+S3 Renew,FR,Production|Natural gas|Anaerobic digestion grass|Biogas,Nm3/year,2,365812106.8,300503812.8
+S3 Renew,FR,Production|Natural gas|Anaerobic digestion biowaste|Biogas,Nm3/year,2,0,0
+S3 Renew,FR,Production|Natural gas|Anaerobic digestion sewage sludge|Biogas,Nm3/year,2,10725516.56,19847644.85
+S3 Renew,FR,Production|Natural gas|Anaerobic digestion agricultural residues|Biogas,Nm3/year,2,168881622.6,278285791.5
+S3 Renew,FR,Production|Natural gas|Anaerobic digestion industrial wastewater|Biogas,Nm3/year,2,25637644.96,3321173.046
+S3 Renew,FR,Production|Natural gas|Anaerobic digestion animal manure|Biogas,Nm3/year,2,39015614.3,22883783.41
+S3 Renew,FR,Production|Natural gas|Anaerobic digestion,TWh PCI/year,2,45.54,116.34
+S3 Renew,FR,Production|Natural gas|Pyrogasification|Renewable,TWh PCI/year,0,0.43,48.48
+S3 Renew,FR,Production|Natural gas|Pyrogasification|Fossil,TWh PCI/year,0,0,18.81
+S3 Renew,FR,Production|Natural gas|Power to gas,TWh PCI/year,0,3.25,20.47
+S3 Renew,FR,Production|Natural gas|Imports|Fossil,TWh PCI/year,384.3,294.05,15.18
+S3 Renew,FR,Production|Natural gas|Imports|Renewable,TWh PCI/year,0,0,0
+S3 Renew,FR,Production|Natural gas|Total,TWh PCI/year,386.3,348.85,219.28
+S3 Renew,FR,Production|Natural gas|Anaerobic digestion CIVE|Biogas to biomethane,Nm3/year,135356783.8,3001484996,7739284186
+S3 Renew,FR,Production|Natural gas|Anaerobic digestion dedicated crops|Biogas to biomethane,Nm3/year,30299956.92,205819136.2,1031476523
+S3 Renew,FR,Production|Natural gas|Anaerobic digestion grass|Biogas to biomethane,Nm3/year,0,2422563105,5844369228
+S3 Renew,FR,Production|Natural gas|Anaerobic digestion biowaste|Biogas to biomethane,Nm3/year,17238457.22,241793030.3,379672497.4
+S3 Renew,FR,Production|Natural gas|Anaerobic digestion sewage sludge|Biogas to biomethane,Nm3/year,17498474.93,82172033.01,167434974.3
+S3 Renew,FR,Production|Natural gas|Anaerobic digestion agricultural residues|Biogas to biomethane,Nm3/year,120388011.8,1190814463,5496011191
+S3 Renew,FR,Production|Natural gas|Anaerobic digestion industrial wastewater|Biogas to biomethane,Nm3/year,22155643.24,341812520.8,180207027.7
+S3 Renew,FR,Production|Natural gas|Anaerobic digestion animal manure|Biogas to biomethane,Nm3/year,42069837.85,273965476.3,441049823.1
+S3 Renew,FR,Production|Natural gas|Anaerobic digestion|Biogas to biomethane membrane,Nm3/year,325000000,6543103230,17941543811
+S3 Renew,FR,Production|Natural gas|Anaerobic digestion|Biogas to biomethane chemical,Nm3/year,11300000,228247787.1,625867807.4
+S3 Renew,FR,Production|Natural gas|Anaerobic digestion|Biogas to biomethane water,Nm3/year,11300000,228247787.1,625867807.4
+S3 Renew,FR,Production|Natural gas|Anaerobic digestion|Biogas to biomethane PSA,Nm3/year,30200000,608660765.6,1668980820
+S3 Renew,FR,Production|Natural gas|Anaerobic digestion|Biogas to biomethane cryogenic,Nm3/year,7550000,152165191.4,417245204.9
 S4,FR,Production|Natural gas|Anaerobic digestion CIVE|Biogas,Nm3/year,2,465936500.7,469469528.6
 S4,FR,Production|Natural gas|Anaerobic digestion dedicated crops|Biogas,Nm3/year,2,48278585.69,66278999.49
 S4,FR,Production|Natural gas|Anaerobic digestion grass|Biogas,Nm3/year,2,363114782.2,281547101.9
