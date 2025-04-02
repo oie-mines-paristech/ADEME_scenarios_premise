@@ -440,6 +440,7 @@ production pathways:
       name: hydrogen production, gaseous, 30 bar, from PEM electrolysis, from grid electricity, domestic, Tr2050
       reference product: hydrogen, gaseous, 30 bar
       exists in original database: True
+      ratio: 3.00E+07 #convert TWh to kg
 
 
 #Others
@@ -866,6 +867,13 @@ production pathways:
       reference product: biomethane, high pressure
       exists in original database: True
 
+    efficiency:
+      - variable: Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane membrane|Biogenic CO2 emissions
+        reference year: 2020
+        includes:
+          biosphere: 
+            - Carbon dioxide, non-fossil
+
   #Chemical scrubbing
   ad_biogas_purification_chemical:
     production volume:
@@ -875,6 +883,13 @@ production pathways:
       name: biogas purification to biomethane by chemical scrubbing, Tr2050
       reference product: biomethane, high pressure
       exists in original database: True
+
+    efficiency:
+      - variable: Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane chemical|Biogenic CO2 emissions
+        reference year: 2020
+        includes:
+          biosphere: 
+            - Carbon dioxide, non-fossil
 
   #Water scrubbing
   ad_biogas_purification_water:
@@ -886,6 +901,13 @@ production pathways:
       reference product: biomethane, high pressure
       exists in original database: True
 
+    efficiency:
+      - variable: Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane water|Biogenic CO2 emissions
+        reference year: 2020
+        includes:
+          biosphere: 
+            - Carbon dioxide, non-fossil
+
   #PSA
   ad_biogas_purification_psa:
     production volume:
@@ -896,6 +918,13 @@ production pathways:
       reference product: biomethane, high pressure
       exists in original database: True
 
+    efficiency:
+      - variable: Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane PSA|Biogenic CO2 emissions
+        reference year: 2020
+        includes:
+          biosphere: 
+            - Carbon dioxide, non-fossil
+
   #Cryogenic separation
   ad_biogas_purification_cryogenic:
     production volume:
@@ -905,6 +934,91 @@ production pathways:
       name: biogas purification to biomethane by cryogenic separation, Tr2050
       reference product: biomethane, high pressure
       exists in original database: True
+
+    efficiency:
+      - variable: Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane cryogenic|Biogenic CO2 emissions
+        reference year: 2020
+        includes:
+          biosphere: 
+            - Carbon dioxide, non-fossil
+  
+#Biogas purification processes with CCS
+  #Membrane with CCS
+  ad_biogas_purification_membrane_CCS:
+    production volume:
+      variable: Production|Natural gas|Anaerobic digestion|Biogas to biomethane membrane with CCS
+    
+    ecoinvent alias:
+      name: biogas purification to biomethane by membrane with CCS, Tr2050
+      reference product: biomethane, high pressure
+      exists in original database: True
+
+    efficiency:
+      - variable: Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane membrane|Biogenic CO2 emissions
+        reference year: 2020
+        includes:
+          biosphere: 
+            - Carbon dioxide, non-fossil
+
+  #Chemical scrubbing with CCS
+  ad_biogas_purification_chemical_CCS:
+    production volume:
+      variable: Production|Natural gas|Anaerobic digestion|Biogas to biomethane chemical with CCS
+    
+    ecoinvent alias:
+      name: biogas purification to biomethane by chemical scrubbing with CCS, Tr2050
+      reference product: biomethane, high pressure
+      exists in original database: True
+
+  #Water scrubbing with CCS
+  ad_biogas_purification_water_CCS:
+    production volume:
+      variable: Production|Natural gas|Anaerobic digestion|Biogas to biomethane water with CCS
+    
+    ecoinvent alias:
+      name: biogas purification to biomethane by water scrubbing with CCS, Tr2050
+      reference product: biomethane, high pressure
+      exists in original database: True
+
+  #PSA with CCS
+  ad_biogas_purification_psa_CCS:
+    production volume:
+      variable: Production|Natural gas|Anaerobic digestion|Biogas to biomethane PSA with CCS
+    
+    ecoinvent alias:
+      name: biogas purification to biomethane by PSA with CCS, Tr2050
+      reference product: biomethane, high pressure
+      exists in original database: True
+
+  #Cryogenic separation with CCS
+  ad_biogas_purification_cryogenic_CCS:
+    production volume:
+      variable: Production|Natural gas|Anaerobic digestion|Biogas to biomethane cryogenic with CCS
+    
+    ecoinvent alias:
+      name: biogas purification to biomethane by cryogenic separation with CCS, Tr2050
+      reference product: biomethane, high pressure
+      exists in original database: True
+
+  #Power-to-methane
+  power_to_gas_methanation:
+    production volume:
+      variable: Production|Natural gas|Power to gas
+
+    ecoinvent alias:
+      name: methane, from electrochemical methanation, with carbon from anaerobic digestion
+      reference product:  methane, from electrochemical methanation
+      exists in original database: True
+      #convert TWh to Nm3        
+      ratio: 1.01E+08 
+      
+    efficiency:
+      - variable: Efficiency|Natural gas|Power to gas|Methanation
+        reference year: 2020
+        includes:
+          technosphere: 
+            - hydrogen
+
 
   # pyrogasification_wood:
   #   production volume:
@@ -1443,13 +1557,6 @@ markets:
       - ad_biogas_biowaste
       - ad_biogas_industrial_waste_water
       - ad_biogas_sewage_sludge
-    
-    replaces:
-      - name: market for biogas
-        product: biogas
-    
-    replaces in:
-      - location: FR
 
 # Market for biogas sent to upgrading for biomethane production
 
@@ -1477,7 +1584,11 @@ markets:
       - ad_biogas_purification_chemical
       - ad_biogas_purification_psa
       - ad_biogas_purification_cryogenic
-
+      - ad_biogas_purification_membrane_CCS
+      - ad_biogas_purification_water_CCS
+      - ad_biogas_purification_chemical_CCS
+      - ad_biogas_purification_psa_CCS
+      - ad_biogas_purification_cryogenic_CCS
 
 # TODO: Change production variable for pyrogasification a PtX to Nm3 in stead of TWh
 
