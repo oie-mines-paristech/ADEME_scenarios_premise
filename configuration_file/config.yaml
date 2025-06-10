@@ -1028,13 +1028,14 @@ production pathways:
   #     reference product:  biomethane, high pressure
   #     exists in original database: True
 
-  # natural_gas_imports_fossil:
-  #   production volume:
-  #     variable: Production|Natural gas|Imports|Fossil
-  #   ecoinvent alias:
-  #     name: natural gas, high pressure, import from NO
-  #     reference product:  natural gas, high pressure
-  #     exists in original database: True
+  natural_gas_imports_fossil:
+    production volume:
+      variable: Production|Natural gas|Imports|Fossil
+    ecoinvent alias:
+      name: market for natural gas, high pressure
+      reference product:  natural gas, high pressure
+      exists in original database: True
+      ratio: 1.00E+08 #convert TWh to Nm3
 
 markets:
 
