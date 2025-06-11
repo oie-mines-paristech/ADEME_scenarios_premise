@@ -1037,19 +1037,6 @@ production pathways:
       exists in original database: True
       ratio: 1.00E+08 #convert TWh to Nm3
 
-    #Factor derived from the leakage ratio in the scenarios compared to ecoinvent (Bussa et al. 2022) considering natural gas composition
-    efficiency:
-      - variable: Efficiency|Natural gas|Imports|Leakage
-        absolute: True
-        includes:
-          biosphere: 
-            - Butane
-            - Ethane
-            - Methane, fossil
-            - Propane
-            - Carbon dioxide, fossil
-            - NMVOC, non-methane volatile organic compounds
-
 markets:
 
 #Electricity
