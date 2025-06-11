@@ -1032,7 +1032,7 @@ production pathways:
     production volume:
       variable: Production|Natural gas|Imports|Fossil
     ecoinvent alias:
-      name: market for natural gas, high pressure
+      name: natural gas, imports
       reference product:  natural gas, high pressure
       exists in original database: True
       ratio: 1.00E+08 #convert TWh to Nm3
