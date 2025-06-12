@@ -1036,6 +1036,15 @@ production pathways:
       reference product:  natural gas, high pressure
       exists in original database: True
       ratio: 1.00E+08 #convert TWh to Nm3
+  
+  renewable_gas_imports:
+    production volume:
+      variable: Production|Natural gas|Imports|Renewable
+    ecoinvent alias:
+      name: biomethane, imports
+      reference product: biomethane, high pressure
+      exists in original database: True
+      ratio: 1.00E+08 #convert TWh to Nm3 
 
 markets:
 
@@ -1608,6 +1617,7 @@ markets:
       # - pyrogasification_wood
       - power_to_gas_methanation
       - natural_gas_imports_fossil
+      - renewable_gas_imports
     
     add:
       - name: pipeline construction, natural gas, high pressure distribution network
