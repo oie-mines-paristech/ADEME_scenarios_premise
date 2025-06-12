@@ -1487,7 +1487,17 @@ markets:
         categories: air::non-urban air or from high stacks
         unit: kilogram
         amount: 0.005
-
+      
+    replaces:
+      - name: hydrogen production, gaseous, 30 bar, from PEM electrolysis, from grid electricity, domestic, Tr2050
+        product: hydrogen, gaseous, 30 bar
+        location: FR
+    
+    replaces in:
+      - name: methane, from electrochemical methanation, with carbon from anaerobic digestion
+        product: methane, from electrochemical methanation
+        location: FR
+        operator: equals
 
   - name: market for hydrogen, gaseous, Tr2050
     reference product: hydrogen, gaseous
