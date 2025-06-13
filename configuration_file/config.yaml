@@ -1593,6 +1593,18 @@ markets:
       - ad_biogas_tobiomethane_industrial_waste_water
       - ad_biogas_tobiomethane_sewage_sludge
 
+    replaces:
+      - name: market for biogas
+        product: biogas
+        location: RoW
+        operator: equals
+    
+    replaces in:
+      - name: biogas purification to biomethane
+        reference product: biomethane, high pressure
+        location: FR
+        operator: contains
+
 # Market for biomethane from anaerobic digestion
 
   - name: market for biomethane AD, high pressure, Tr2050
