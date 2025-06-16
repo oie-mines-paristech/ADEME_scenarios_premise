@@ -1577,6 +1577,17 @@ markets:
       - ad_biogas_biowaste
       - ad_biogas_industrial_waste_water
       - ad_biogas_sewage_sludge
+  
+    replaces:
+      - name: market for biogas
+        product: biogas
+        location: RoW
+        operator: equals
+    
+    replaces in:
+      - name: heat and power co-generation, biogas, gas engine
+        location: FR
+        operator: contains
 
 # Market for biogas sent to upgrading for biomethane production
 
