@@ -1009,8 +1009,6 @@ production pathways:
       name: methane, from electrochemical methanation, with carbon from anaerobic digestion
       reference product:  methane, from electrochemical methanation
       exists in original database: True
-      #convert TWh to Nm3        
-      ratio: 1.01E+08 
       
     efficiency:
       - variable: Efficiency|Natural gas|Power to gas|Methanation
@@ -1035,7 +1033,6 @@ production pathways:
       name: natural gas, imports
       reference product:  natural gas, high pressure
       exists in original database: True
-      ratio: 1.00E+08 #convert TWh to Nm3
   
   renewable_gas_imports:
     production volume:
