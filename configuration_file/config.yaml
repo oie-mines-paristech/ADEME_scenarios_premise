@@ -49,7 +49,6 @@ production pathways:
       exists in original database: True
       regionalize: True
 
-
   pv:
     production volume:
       variable: Production|Electricity|Renewable|Photovoltaic total
@@ -1017,14 +1016,13 @@ production pathways:
           technosphere: 
             - hydrogen
 
-
-  # pyrogasification_wood:
-  #   production volume:
-  #     variable: Production|Natural gas|Pyrogasification|Renewable
-  #   ecoinvent alias:
-  #     name: biomethane production, high pressure from synthetic gas, wood, fixed bed technology
-  #     reference product:  biomethane, high pressure
-  #     exists in original database: True
+  pyrogasification_wood:
+    production volume:
+      variable: Production|Natural gas|Pyrogasification|Renewable
+    ecoinvent alias:
+      name: synthetic gas production, from wood, at fluidized bed gasifier
+      reference product:  synthetic gas
+      exists in original database: True
 
   natural_gas_imports_fossil:
     production volume:
@@ -1041,7 +1039,15 @@ production pathways:
       name: biomethane, imports
       reference product: biomethane, high pressure
       exists in original database: True
-      ratio: 1.00E+08 #convert TWh to Nm3 
+
+  high_to_low_gas:
+    production volume:
+      variable: Production|Natural gas|High to low
+    ecoinvent alias:
+      name: market for natural gas, high pressure, Tr2050
+      reference product: natural gas, high pressure
+      exists in original database: False
+      new dataset: True 
 
 markets:
 
@@ -1630,6 +1636,15 @@ markets:
       - ad_biogas_purification_psa_CCS
       - ad_biogas_purification_cryogenic_CCS
 
+    add:
+      - name: pipeline construction, natural gas, high pressure distribution network
+        reference product: pipeline, natural gas, high pressure distribution network
+        amount: 3.84E-08
+        
+      - name: market for biomethane AD, high pressure, Tr2050
+        reference product: biomethane, high pressure
+        amount: 0.015
+
   - name: market for natural gas, high pressure, Tr2050
     reference product: natural gas, high pressure
     unit: cubic meter
@@ -1644,7 +1659,7 @@ markets:
       - ad_biogas_purification_chemical_CCS
       - ad_biogas_purification_psa_CCS
       - ad_biogas_purification_cryogenic_CCS
-      # - pyrogasification_wood
+      - pyrogasification_wood
       - power_to_gas_methanation
       - natural_gas_imports_fossil
       - renewable_gas_imports
@@ -1661,4 +1676,23 @@ markets:
     replaces:
       - name: market for natural gas, high pressure
         product: natural gas, high pressure
+        location: FR
+
+  - name: market for natural gas, low pressure, Tr2050
+    reference product: natural gas, low pressure
+    unit: cubic meter
+    includes:
+      - high_to_low_gas
+    add:
+      - name: pipeline construction, natural gas, low pressure distribution network
+        reference product: pipeline, natural gas, low pressure distribution network
+        amount: 1.430064e-07
+      
+      - name: natural gas, burned in gas turbine
+        reference product: natural gas, burned in gas turbine
+        amount: 0.04418 #consider constant LHV to be 36 MJ/Nm3
+
+    replaces:
+      - name: market for natural gas, low pressure
+        product: natural gas, low pressure
         location: FR
