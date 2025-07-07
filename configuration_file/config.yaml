@@ -491,7 +491,7 @@ production pathways:
         reference year: 2020
         includes:
           technosphere:
-            - collection
+            - supply
             - electricity
             - boiler
             - construction
@@ -804,7 +804,7 @@ production pathways:
         reference year: 2020
         includes:
           technosphere:
-            - collection
+            - supply
             - electricity
             - boiler
             - construction
