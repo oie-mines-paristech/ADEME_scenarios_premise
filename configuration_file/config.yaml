@@ -485,6 +485,36 @@ production pathways:
       reference product:  biogas
       exists in original database: True
       regionalize: True
+
+    efficiency:
+      - variable: Efficiency|Natural gas|Anaerobic digestion CIVE|Biogas to biomethane|Generic
+        reference year: 2020
+        includes:
+          technosphere:
+            - collection
+            - electricity
+            - boiler
+            - construction
+          biosphere:
+            - Carbon dioxide, in air
+            - Carbon monoxide
+            - Dinitrogen monoxide
+            - Nitrogen
+            - Sulfur
+            - NMVOC
+            - Platinum
+        
+      - variable: Efficiency|Natural gas|Anaerobic digestion CIVE|Biogas to biomethane|Biogenic CO2 emissions
+        reference year: 2020
+        includes:
+          biosphere:
+            - Carbon dioxide, non-fossil
+
+      - variable: Efficiency|Natural gas|Anaerobic digestion CIVE|Biogas to biomethane|Biogenic CH4 emissions
+        reference year: 2020
+        includes:
+          biosphere:        
+            - Methane, non-fossil
   
   ad_biogas_agri_residues:
     production volume:
@@ -495,6 +525,36 @@ production pathways:
       exists in original database: True
       regionalize: True
 
+    efficiency:
+      - variable: Efficiency|Natural gas|Anaerobic digestion agricultural residues|Biogas to biomethane|Generic
+        reference year: 2020
+        includes:
+          technosphere:
+            - collection
+            - electricity
+            - boiler
+            - construction
+          biosphere:
+            - Carbon dioxide, in air
+            - Carbon monoxide
+            - Dinitrogen monoxide
+            - Nitrogen
+            - Sulfur
+            - NMVOC
+            - Platinum
+        
+      - variable: Efficiency|Natural gas|Anaerobic digestion agricultural residues|Biogas to biomethane|Biogenic CO2 emissions
+        reference year: 2020
+        includes:
+          biosphere:
+            - Carbon dioxide, non-fossil
+
+      - variable: Efficiency|Natural gas|Anaerobic digestion agricultural residues|Biogas to biomethane|Biogenic CH4 emissions
+        reference year: 2020
+        includes:
+          biosphere:        
+            - Methane, non-fossil
+
   ad_biogas_manure:
     production volume:
       variable: Production|Natural gas|Anaerobic digestion animal manure|Biogas
@@ -504,6 +564,36 @@ production pathways:
       exists in original database: True
       regionalize: True
 
+    efficiency:
+      - variable: Efficiency|Natural gas|Anaerobic digestion animal manure|Biogas to biomethane|Generic
+        reference year: 2020
+        includes:
+          technosphere:
+            - collection
+            - electricity
+            - boiler
+            - construction
+          biosphere:
+            - Carbon dioxide, in air
+            - Carbon monoxide
+            - Dinitrogen monoxide
+            - Nitrogen
+            - Sulfur
+            - NMVOC
+            - Platinum
+        
+      - variable: Efficiency|Natural gas|Anaerobic digestion animal manure|Biogas to biomethane|Biogenic CO2 emissions
+        reference year: 2020
+        includes:
+          biosphere:
+            - Carbon dioxide, non-fossil
+
+      - variable: Efficiency|Natural gas|Anaerobic digestion animal manure|Biogas to biomethane|Biogenic CH4 emissions
+        reference year: 2020
+        includes:
+          biosphere:        
+            - Methane, non-fossil
+
   ad_biogas_dedicated_crops:
     production volume:
       variable: Production|Natural gas|Anaerobic digestion dedicated crops|Biogas
@@ -512,6 +602,36 @@ production pathways:
       reference product:  biogas
       exists in original database: True
       regionalize: True
+
+    efficiency:
+      - variable: Efficiency|Natural gas|Anaerobic digestion dedicated crops|Biogas to biomethane|Generic
+        reference year: 2020
+        includes:
+          technosphere:
+            - collection
+            - electricity
+            - boiler
+            - construction
+          biosphere:
+            - Carbon dioxide, in air
+            - Carbon monoxide
+            - Dinitrogen monoxide
+            - Nitrogen
+            - Sulfur
+            - NMVOC
+            - Platinum
+        
+      - variable: Efficiency|Natural gas|Anaerobic digestion dedicated crops|Biogas to biomethane|Biogenic CO2 emissions
+        reference year: 2020
+        includes:
+          biosphere:
+            - Carbon dioxide, non-fossil
+
+      - variable: Efficiency|Natural gas|Anaerobic digestion dedicated crops|Biogas to biomethane|Biogenic CH4 emissions
+        reference year: 2020
+        includes:
+          biosphere:        
+            - Methane, non-fossil
   
   ad_biogas_grass:
     production volume:
@@ -522,6 +642,36 @@ production pathways:
       exists in original database: True
       regionalize: True
 
+    efficiency:
+      - variable: Efficiency|Natural gas|Anaerobic digestion grass|Biogas to biomethane|Generic
+        reference year: 2020
+        includes:
+          technosphere:
+            - collection
+            - electricity            
+            - boiler
+            - construction
+          biosphere:
+            - Carbon dioxide, in air
+            - Carbon monoxide
+            - Dinitrogen monoxide
+            - Nitrogen
+            - Sulfur
+            - NMVOC
+            - Platinum
+        
+      - variable: Efficiency|Natural gas|Anaerobic digestion grass|Biogas to biomethane|Biogenic CO2 emissions
+        reference year: 2020
+        includes:
+          biosphere:
+            - Carbon dioxide, non-fossil
+
+      - variable: Efficiency|Natural gas|Anaerobic digestion grass|Biogas to biomethane|Biogenic CH4 emissions
+        reference year: 2020
+        includes:
+          biosphere:        
+            - Methane, non-fossil
+
   ad_biogas_biowaste:
     production volume:
       variable: Production|Natural gas|Anaerobic digestion biowaste|Biogas
@@ -530,6 +680,36 @@ production pathways:
       reference product:  biogas
       exists in original database: True
       regionalize: True
+
+    efficiency:
+      - variable: Efficiency|Natural gas|Anaerobic digestion biowaste|Biogas to biomethane|Generic
+        reference year: 2020
+        includes:
+          technosphere:
+            - collection
+            - electricity            
+            - boiler
+            - construction
+          biosphere:
+            - Carbon dioxide, in air
+            - Carbon monoxide
+            - Dinitrogen monoxide
+            - Nitrogen
+            - Sulfur
+            - NMVOC
+            - Platinum
+        
+      - variable: Efficiency|Natural gas|Anaerobic digestion biowaste|Biogas to biomethane|Biogenic CO2 emissions
+        reference year: 2020
+        includes:
+          biosphere:
+            - Carbon dioxide, non-fossil
+
+      - variable: Efficiency|Natural gas|Anaerobic digestion biowaste|Biogas to biomethane|Biogenic CH4 emissions
+        reference year: 2020
+        includes:
+          biosphere:        
+            - Methane, non-fossil
 
   ad_biogas_industrial_waste_water:
     production volume:
@@ -540,6 +720,36 @@ production pathways:
       exists in original database: True
       regionalize: True
 
+    efficiency:
+      - variable: Efficiency|Natural gas|Anaerobic digestion industrial wastewater|Biogas to biomethane|Generic
+        reference year: 2020
+        includes:
+          technosphere:
+            - collection
+            - electricity            
+            - boiler
+            - construction
+          biosphere:
+            - Carbon dioxide, in air
+            - Carbon monoxide
+            - Dinitrogen monoxide
+            - Nitrogen
+            - Sulfur
+            - NMVOC
+            - Platinum
+        
+      - variable: Efficiency|Natural gas|Anaerobic digestion industrial wastewater|Biogas to biomethane|Biogenic CO2 emissions
+        reference year: 2020
+        includes:
+          biosphere:
+            - Carbon dioxide, non-fossil
+
+      - variable: Efficiency|Natural gas|Anaerobic digestion industrial wastewater|Biogas to biomethane|Biogenic CH4 emissions
+        reference year: 2020
+        includes:
+          biosphere:        
+            - Methane, non-fossil
+
   ad_biogas_sewage_sludge:
     production volume:
       variable: Production|Natural gas|Anaerobic digestion sewage sludge|Biogas
@@ -548,6 +758,36 @@ production pathways:
       reference product:  biogas
       exists in original database: True
       regionalize: True
+
+    efficiency:
+      - variable: Efficiency|Natural gas|Anaerobic digestion sewage sludge|Biogas to biomethane|Generic
+        reference year: 2020
+        includes:
+          technosphere:
+            - collection
+            - electricity            
+            - boiler
+            - construction
+          biosphere:
+            - Carbon dioxide, in air
+            - Carbon monoxide
+            - Dinitrogen monoxide
+            - Nitrogen
+            - Sulfur
+            - NMVOC
+            - Platinum
+        
+      - variable: Efficiency|Natural gas|Anaerobic digestion sewage sludge|Biogas to biomethane|Biogenic CO2 emissions
+        reference year: 2020
+        includes:
+          biosphere:
+            - Carbon dioxide, non-fossil
+
+      - variable: Efficiency|Natural gas|Anaerobic digestion sewage sludge|Biogas to biomethane|Biogenic CH4 emissions
+        reference year: 2020
+        includes:
+          biosphere:        
+            - Methane, non-fossil
   
 # Biogas production sent to biomethane
 
