@@ -1112,6 +1112,20 @@ production pathways:
         includes:
           biosphere: 
             - Carbon dioxide, non-fossil
+            - activated carbon
+            - market for biogas to biomethane
+  
+      - variable: Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane purification|Biogenic CH4 emissions
+        reference year: 2020
+        includes:
+          biosphere: 
+            - Methane, non-fossil
+
+      - variable: Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane membrane|Electricity
+        reference year: 2020
+        includes:
+          biosphere: 
+            - electricity
 
   #Chemical scrubbing
   ad_biogas_purification_chemical:
@@ -1129,6 +1143,22 @@ production pathways:
         includes:
           biosphere: 
             - Carbon dioxide, non-fossil
+            - activated carbon
+            - market for biogas to biomethane
+            - Ammonia
+            - Acetaldehyde
+
+      - variable: Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane purification|Biogenic CH4 emissions
+        reference year: 2020
+        includes:
+          biosphere: 
+            - Methane, non-fossil
+
+      - variable: Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane chemical|Electricity
+        reference year: 2020
+        includes:
+          biosphere: 
+            - electricity
 
   #Water scrubbing
   ad_biogas_purification_water:
@@ -1146,6 +1176,21 @@ production pathways:
         includes:
           biosphere: 
             - Carbon dioxide, non-fossil
+            - activated carbon
+            - market for biogas to biomethane
+            - tap water
+
+      - variable: Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane purification|Biogenic CH4 emissions
+        reference year: 2020
+        includes:
+          biosphere: 
+            - Methane, non-fossil
+
+      - variable: Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane water|Electricity
+        reference year: 2020
+        includes:
+          biosphere: 
+            - electricity
 
   #PSA
   ad_biogas_purification_psa:
@@ -1163,6 +1208,20 @@ production pathways:
         includes:
           biosphere: 
             - Carbon dioxide, non-fossil
+            - activated carbon
+            - market for biogas to biomethane
+
+      - variable: Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane purification|Biogenic CH4 emissions
+        reference year: 2020
+        includes:
+          biosphere: 
+            - Methane, non-fossil
+
+      - variable: Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane PSA|Electricity
+        reference year: 2020
+        includes:
+          biosphere: 
+            - electricity
 
   #Cryogenic separation
   ad_biogas_purification_cryogenic:
@@ -1180,6 +1239,20 @@ production pathways:
         includes:
           biosphere: 
             - Carbon dioxide, non-fossil
+            - activated carbon
+            - market for biogas to biomethane
+
+      - variable: Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane purification|Biogenic CH4 emissions
+        reference year: 2020
+        includes:
+          biosphere: 
+            - Methane, non-fossil
+
+      - variable: Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane cryogenic|Electricity
+        reference year: 2020
+        includes:
+          biosphere: 
+            - electricity
   
 #Biogas purification processes with CCS
   #Membrane with CCS
@@ -1197,7 +1270,21 @@ production pathways:
         reference year: 2020
         includes:
           biosphere: 
-            - Carbon dioxide, non-fossil
+            - activated carbon
+            - market for biogas to biomethane
+  
+      - variable: Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane purification|Biogenic CH4 emissions
+        reference year: 2020
+        includes:
+          biosphere: 
+            - Methane, non-fossil
+            - Carbon dioxide, non-fossil #behaves as CH4 factor (only leaks)
+
+      - variable: Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane membrane|Electricity
+        reference year: 2020
+        includes:
+          biosphere: 
+            - electricity
 
   #Chemical scrubbing with CCS
   ad_biogas_purification_chemical_CCS:
@@ -1209,6 +1296,29 @@ production pathways:
       reference product: biomethane, high pressure
       exists in original database: True
 
+    efficiency:
+      - variable: Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane chemical|Biogenic CO2 emissions
+        reference year: 2020
+        includes:
+          biosphere: 
+            - activated carbon
+            - market for biogas to biomethane
+            - Ammonia
+            - Acetaldehyde
+
+      - variable: Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane purification|Biogenic CH4 emissions
+        reference year: 2020
+        includes:
+          biosphere: 
+            - Methane, non-fossil
+            - Carbon dioxide, non-fossil
+
+      - variable: Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane chemical|Electricity
+        reference year: 2020
+        includes:
+          biosphere: 
+            - electricity
+
   #Water scrubbing with CCS
   ad_biogas_purification_water_CCS:
     production volume:
@@ -1218,6 +1328,28 @@ production pathways:
       name: biogas purification to biomethane by water scrubbing with CCS, Tr2050
       reference product: biomethane, high pressure
       exists in original database: True
+
+    efficiency:
+      - variable: Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane chemical|Biogenic CO2 emissions
+        reference year: 2020
+        includes:
+          biosphere: 
+            - activated carbon
+            - market for biogas to biomethane
+            - tap water
+
+      - variable: Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane purification|Biogenic CH4 emissions
+        reference year: 2020
+        includes:
+          biosphere: 
+            - Methane, non-fossil
+            - Carbon dioxide, non-fossil
+
+      - variable: Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane chemical|Electricity
+        reference year: 2020
+        includes:
+          biosphere: 
+            - electricity
 
   #PSA with CCS
   ad_biogas_purification_psa_CCS:
@@ -1229,6 +1361,27 @@ production pathways:
       reference product: biomethane, high pressure
       exists in original database: True
 
+    efficiency:
+      - variable: Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane chemical|Biogenic CO2 emissions
+        reference year: 2020
+        includes:
+          biosphere: 
+            - activated carbon
+            - market for biogas to biomethane
+
+      - variable: Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane purification|Biogenic CH4 emissions
+        reference year: 2020
+        includes:
+          biosphere: 
+            - Methane, non-fossil
+            - Carbon dioxide, non-fossil
+
+      - variable: Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane chemical|Electricity
+        reference year: 2020
+        includes:
+          biosphere: 
+            - electricity
+
   #Cryogenic separation with CCS
   ad_biogas_purification_cryogenic_CCS:
     production volume:
@@ -1238,6 +1391,27 @@ production pathways:
       name: biogas purification to biomethane by cryogenic separation with CCS, Tr2050
       reference product: biomethane, high pressure
       exists in original database: True
+  
+    efficiency:
+      - variable: Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane chemical|Biogenic CO2 emissions
+        reference year: 2020
+        includes:
+          biosphere: 
+            - activated carbon
+            - market for biogas to biomethane
+
+      - variable: Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane purification|Biogenic CH4 emissions
+        reference year: 2020
+        includes:
+          biosphere: 
+            - Methane, non-fossil
+            - Carbon dioxide, non-fossil
+
+      - variable: Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane chemical|Electricity
+        reference year: 2020
+        includes:
+          biosphere: 
+            - electricity
 
   #Power-to-methane
   power_to_gas_methanation:

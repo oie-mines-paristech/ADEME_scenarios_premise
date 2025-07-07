@@ -406,6 +406,12 @@ S1,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane chemical|B
 S1,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane water|Biogenic CO2 emissions,%,1,1,1.02
 S1,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane PSA|Biogenic CO2 emissions,%,1,1,1.03
 S1,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane cryogenic|Biogenic CO2 emissions,%,1,1,1.0005
+S1,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane purification|Biogenic CH4 emissions,%,1,1,1.00E+20
+S1,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane membrane|Electricity,%,1,1,1.009642426
+S1,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane chemical|Electricity,%,1,1,1.001
+S1,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane water|Electricity,%,1,1,1.018
+S1,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane PSA|Electricity,%,1,1,1.025
+S1,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane cryogenic|Electricity,%,1,1,1.001
 S1,FR,Production|Natural gas|High to low,TWh,1,1,1
 S2,FR,Production|Natural gas|Anaerobic digestion CIVE|Biogas,Nm3/year,1.41E+08,3.80E+08,3.59E+08
 S2,FR,Production|Natural gas|Anaerobic digestion dedicated crops|Biogas,Nm3/year,9.67E+07,1.22E+07,0.00E+00
@@ -469,6 +475,12 @@ S2,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane chemical|B
 S2,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane water|Biogenic CO2 emissions,%,1,1,1.02
 S2,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane PSA|Biogenic CO2 emissions,%,1,1,1.03
 S2,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane cryogenic|Biogenic CO2 emissions,%,1,1,1.0005
+S2,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane purification|Biogenic CH4 emissions,%,1,1,1.00E+20
+S2,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane membrane|Electricity,%,1,1,1.009642426
+S2,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane chemical|Electricity,%,1,1,1.001
+S2,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane water|Electricity,%,1,1,1.018
+S2,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane PSA|Electricity,%,1,1,1.025
+S2,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane cryogenic|Electricity,%,1,1,1.001
 S2,FR,Production|Natural gas|High to low,TWh,1,1,1
 S3 Renew,FR,Production|Natural gas|Anaerobic digestion CIVE|Biogas,Nm3/year,1.41E+08,4.53E+08,4.20E+08
 S3 Renew,FR,Production|Natural gas|Anaerobic digestion dedicated crops|Biogas,Nm3/year,9.67E+07,3.12E+07,5.62E+07
@@ -532,6 +544,12 @@ S3 Renew,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane chem
 S3 Renew,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane water|Biogenic CO2 emissions,%,1,1,1.02
 S3 Renew,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane PSA|Biogenic CO2 emissions,%,1,1,1.03
 S3 Renew,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane cryogenic|Biogenic CO2 emissions,%,1,1,1.0005
+S3 Renew,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane purification|Biogenic CH4 emissions,%,1,1,1.00E+20
+S3 Renew,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane membrane|Electricity,%,1,1,1.009642426
+S3 Renew,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane chemical|Electricity,%,1,1,1.001
+S3 Renew,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane water|Electricity,%,1,1,1.018
+S3 Renew,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane PSA|Electricity,%,1,1,1.025
+S3 Renew,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane cryogenic|Electricity,%,1,1,1.001
 S3 Renew,FR,Production|Natural gas|High to low,TWh,1,1,1
 S3 Nuc,FR,Production|Natural gas|Anaerobic digestion CIVE|Biogas,Nm3/year,1.41E+08,4.53E+08,4.20E+08
 S3 Nuc,FR,Production|Natural gas|Anaerobic digestion dedicated crops|Biogas,Nm3/year,9.67E+07,3.12E+07,5.62E+07
@@ -595,6 +613,12 @@ S3 Nuc,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane chemic
 S3 Nuc,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane water|Biogenic CO2 emissions,%,1,1,1.02
 S3 Nuc,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane PSA|Biogenic CO2 emissions,%,1,1,1.03
 S3 Nuc,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane cryogenic|Biogenic CO2 emissions,%,1,1,1.0005
+S3 Nuc,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane purification|Biogenic CH4 emissions,%,1,1,1.00E+20
+S3 Nuc,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane membrane|Electricity,%,1,1,1.009642426
+S3 Nuc,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane chemical|Electricity,%,1,1,1.001
+S3 Nuc,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane water|Electricity,%,1,1,1.018
+S3 Nuc,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane PSA|Electricity,%,1,1,1.025
+S3 Nuc,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane cryogenic|Electricity,%,1,1,1.001
 S3 Nuc,FR,Production|Natural gas|High to low,TWh,1,1,1
 S4,FR,Production|Natural gas|Anaerobic digestion CIVE|Biogas,Nm3/year,1.41E+08,4.68E+08,4.70E+08
 S4,FR,Production|Natural gas|Anaerobic digestion dedicated crops|Biogas,Nm3/year,9.67E+07,4.85E+07,6.64E+07
@@ -658,4 +682,10 @@ S4,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane chemical|B
 S4,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane water|Biogenic CO2 emissions,%,1,1,1.02
 S4,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane PSA|Biogenic CO2 emissions,%,1,1,1.03
 S4,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane cryogenic|Biogenic CO2 emissions,%,1,1,1.0005
+S4,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane purification|Biogenic CH4 emissions,%,1,1,1.00E+20
+S4,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane membrane|Electricity,%,1,1,1.009642426
+S4,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane chemical|Electricity,%,1,1,1.001
+S4,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane water|Electricity,%,1,1,1.018
+S4,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane PSA|Electricity,%,1,1,1.025
+S4,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane cryogenic|Electricity,%,1,1,1.001
 S4,FR,Production|Natural gas|High to low,TWh,1,1,1
