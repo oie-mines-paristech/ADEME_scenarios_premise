@@ -439,8 +439,6 @@ production pathways:
       name: hydrogen production, gaseous, 30 bar, from PEM electrolysis, from grid electricity, domestic, Tr2050
       reference product: hydrogen, gaseous, 30 bar
       exists in original database: True
-      ratio: 3.00E+07 #convert TWh to kg
-
 
 #Others
 
