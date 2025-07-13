@@ -1518,9 +1518,12 @@ markets:
     replaces:
       - name: market for electricity, high voltage
         product: electricity, high voltage
-        location: FR
 
-
+      - name: market group for electricity, high voltage
+        product: electricity, high voltage
+    
+    replaces in:
+      - location: FR
 
   - name: market for electricity, medium voltage, Tr2050
     reference product: electricity, medium voltage
@@ -1550,9 +1553,12 @@ markets:
     replaces:
       - name: market for electricity, medium voltage
         product: electricity, medium voltage
-        location: FR
 
-
+      - name: market group for electricity, medium voltage
+        product: electricity, medium voltage
+    
+    replaces in:
+      - location: FR
 
   - name: market for electricity, low voltage, Tr2050
     reference product: electricity, low voltage
@@ -1581,8 +1587,12 @@ markets:
     replaces:
       - name: market for electricity, low voltage
         product: electricity, low voltage
-        location: FR
 
+      - name: market group for electricity, low voltage
+        product: electricity, low voltage
+    
+    replaces in:
+      - location: FR
 
 #Hydrogen
   - name: market for hydrogen, gaseous, for transport - direct use of H2, Tr2050
@@ -1822,10 +1832,6 @@ markets:
         unit: kilogram
         amount: 0.005
 
-
-
-
-
   - name: market for hydrogen, gaseous, for chemicals use, Tr2050
     reference product: hydrogen, gaseous
     unit: kilogram
@@ -1863,7 +1869,6 @@ markets:
         categories: air::non-urban air or from high stacks
         unit: kilogram
         amount: 0.005
-
 
   - name: market for hydrogen, gaseous, for power to gas, Tr2050
     reference product: hydrogen, gaseous
@@ -1974,7 +1979,6 @@ markets:
         categories: air::non-urban air or from high stacks
         unit: kilogram
         amount: 0.005
-
 
 #Gas
 
@@ -2088,7 +2092,9 @@ markets:
     replaces:
       - name: market for natural gas, high pressure
         product: natural gas, high pressure
-        location: FR
+
+    replaces in:
+      - location: FR
 
   - name: market for natural gas, low pressure, Tr2050
     reference product: natural gas, low pressure
@@ -2107,4 +2113,6 @@ markets:
     replaces:
       - name: market for natural gas, low pressure
         product: natural gas, low pressure
-        location: FR
+        
+    replaces in:
+      - location: FR
