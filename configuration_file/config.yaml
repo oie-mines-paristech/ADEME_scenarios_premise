@@ -2093,8 +2093,68 @@ markets:
       - name: market for natural gas, high pressure
         product: natural gas, high pressure
 
+      - name: market for natural gas, high pressure, vehicle grade
+        product: natural gas, high pressure, vehicle grade
+
     replaces in:
       - location: FR
+      
+    is fuel:
+      ad_biogas_purification_membrane:
+          Carbon dioxide, fossil: 0.0
+          Carbon dioxide, non-fossil: 1.944
+
+      ad_biogas_purification_water:
+          Carbon dioxide, fossil: 0.0
+          Carbon dioxide, non-fossil: 1.944
+
+      ad_biogas_purification_chemical:
+          Carbon dioxide, fossil: 0.0
+          Carbon dioxide, non-fossil: 1.944
+
+      ad_biogas_purification_psa:
+          Carbon dioxide, fossil: 0.0
+          Carbon dioxide, non-fossil: 1.944
+
+      ad_biogas_purification_cryogenic:
+          Carbon dioxide, fossil: 0.0
+          Carbon dioxide, non-fossil: 1.944
+
+      ad_biogas_purification_membrane_CCS:
+          Carbon dioxide, fossil: 0.0
+          Carbon dioxide, non-fossil: 1.944
+
+      ad_biogas_purification_water_CCS:
+          Carbon dioxide, fossil: 0.0
+          Carbon dioxide, non-fossil: 1.944
+
+      ad_biogas_purification_chemical_CCS:
+          Carbon dioxide, fossil: 0.0
+          Carbon dioxide, non-fossil: 1.944
+
+      ad_biogas_purification_psa_CCS:
+          Carbon dioxide, fossil: 0.0
+          Carbon dioxide, non-fossil: 1.944
+
+      ad_biogas_purification_cryogenic_CCS:
+          Carbon dioxide, fossil: 0.0
+          Carbon dioxide, non-fossil: 1.944
+
+      pyrogasification_wood:
+          Carbon dioxide, fossil: 0.0
+          Carbon dioxide, non-fossil: 1.944 
+
+      power_to_gas_methanation:
+          Carbon dioxide, fossil: 0.0
+          Carbon dioxide, non-fossil: 1.944 
+
+      natural_gas_imports_fossil:
+          Carbon dioxide, fossil: 1.944
+          Carbon dioxide, non-fossil: 0.0  
+
+      renewable_gas_imports:
+          Carbon dioxide, fossil: 0.0
+          Carbon dioxide, non-fossil: 1.944
 
   - name: market for natural gas, low pressure, Tr2050
     reference product: natural gas, low pressure
@@ -2113,6 +2173,6 @@ markets:
     replaces:
       - name: market for natural gas, low pressure
         product: natural gas, low pressure
-        
+
     replaces in:
       - location: FR
