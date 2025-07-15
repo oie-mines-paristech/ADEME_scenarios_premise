@@ -1432,8 +1432,17 @@ production pathways:
     production volume:
       variable: Production|Natural gas|Pyrogasification|Renewable
     ecoinvent alias:
-      name: synthetic gas production, from wood, at fluidized bed gasifier
-      reference product:  synthetic gas
+      name: synthetic natural gas from wood, 70 bar, at plant
+      reference product:  synthetic natural gas from wood, 70 bar, at plant
+      exists in original database: True
+      regionalize: True
+
+  pyrogasification_rdf:
+    production volume:
+      variable: Production|Natural gas|Pyrogasification|Fossil
+    ecoinvent alias:
+      name: synthetic natural gas from wood, 70 bar, at plant
+      reference product:  synthetic natural gas from wood, 70 bar, at plant
       exists in original database: True
 
   natural_gas_imports_fossil:
@@ -2076,6 +2085,7 @@ markets:
       - ad_biogas_purification_psa_CCS
       - ad_biogas_purification_cryogenic_CCS
       - pyrogasification_wood
+      - pyrogasification_rdf
       - power_to_gas_methanation
       - natural_gas_imports_fossil
       - renewable_gas_imports
@@ -2142,7 +2152,11 @@ markets:
 
       pyrogasification_wood:
           Carbon dioxide, fossil: 0.0
-          Carbon dioxide, non-fossil: 1.944 
+          Carbon dioxide, non-fossil: 1.944
+
+      pyrogasification_rdf:
+          Carbon dioxide, fossil: 0.69984
+          Carbon dioxide, non-fossil: 1.24416  
 
       power_to_gas_methanation:
           Carbon dioxide, fossil: 0.0
