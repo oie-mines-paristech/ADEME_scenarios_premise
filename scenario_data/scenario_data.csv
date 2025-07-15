@@ -358,7 +358,6 @@ S1,FR,Production|Natural gas|Power to gas,Nm3/year,0,270000000,3636000000
 S1,FR,Efficiency|Natural gas|Power to gas|Methanation,%,77,83,85
 S1,FR,Production|Natural gas|Imports|Fossil,Nm3/year,38430000000,21237000000,1807000000
 S1,FR,Production|Natural gas|Imports|Renewable,Nm3/year,0,0,0
-S1,FR,Production|Natural gas|Total,Nm3/year,38630000000,25806000000,14796000000
 S1,FR,Production|Natural gas|Anaerobic digestion CIVE|Biogas to biomethane,Nm3/year,9.90E+07,2.27E+09,6.49E+09
 S1,FR,Production|Natural gas|Anaerobic digestion dedicated crops|Biogas to biomethane,Nm3/year,3.02E+07,7.12E+07,0.00E+00
 S1,FR,Production|Natural gas|Anaerobic digestion grass|Biogas to biomethane,Nm3/year,6.57E+06,1.93E+09,3.81E+09
@@ -427,7 +426,6 @@ S2,FR,Production|Natural gas|Power to gas,Nm3/year,0,298000000,3222000000
 S2,FR,Efficiency|Natural gas|Power to gas|Methanation,%,77,83,85
 S2,FR,Production|Natural gas|Imports|Fossil,Nm3/year,38430000000,24908000000,2523000000
 S2,FR,Production|Natural gas|Imports|Renewable,Nm3/year,0,0,0
-S2,FR,Production|Natural gas|Total,Nm3/year,38630000000,29921000000,15750000000
 S2,FR,Production|Natural gas|Anaerobic digestion CIVE|Biogas to biomethane,Nm3/year,1.41E+08,3.80E+08,3.61E+08
 S2,FR,Production|Natural gas|Anaerobic digestion dedicated crops|Biogas to biomethane,Nm3/year,9.67E+07,1.22E+07,0.00E+00
 S2,FR,Production|Natural gas|Anaerobic digestion grass|Biogas to biomethane,Nm3/year,1.27E+07,3.54E+08,1.97E+08
@@ -496,7 +494,6 @@ S3 Renew,FR,Production|Natural gas|Power to gas,Nm3/year,0,325000000,2047000000
 S3 Renew,FR,Efficiency|Natural gas|Power to gas|Methanation,%,77,83,85
 S3 Renew,FR,Production|Natural gas|Imports|Fossil,Nm3/year,38430000000,29405000000,1518000000
 S3 Renew,FR,Production|Natural gas|Imports|Renewable,Nm3/year,0,0,0
-S3 Renew,FR,Production|Natural gas|Total,Nm3/year,38630000000,34885000000,21928000000
 S3 Renew,FR,Production|Natural gas|Anaerobic digestion CIVE|Biogas to biomethane,Nm3/year,1.41E+08,4.53E+08,4.20E+08
 S3 Renew,FR,Production|Natural gas|Anaerobic digestion dedicated crops|Biogas to biomethane,Nm3/year,9.67E+07,3.12E+07,5.62E+07
 S3 Renew,FR,Production|Natural gas|Anaerobic digestion grass|Biogas to biomethane,Nm3/year,1.27E+07,3.68E+08,3.01E+08
@@ -565,7 +562,6 @@ S3 Nuc,FR,Production|Natural gas|Power to gas,Nm3/year,0,325000000,2047000000
 S3 Nuc,FR,Efficiency|Natural gas|Power to gas|Methanation,%,77,83,85
 S3 Nuc,FR,Production|Natural gas|Imports|Fossil,Nm3/year,38430000000,29405000000,1518000000
 S3 Nuc,FR,Production|Natural gas|Imports|Renewable,Nm3/year,0,0,0
-S3 Nuc,FR,Production|Natural gas|Total,Nm3/year,38630000000,34885000000,21928000000
 S3 Nuc,FR,Production|Natural gas|Anaerobic digestion CIVE|Biogas to biomethane,Nm3/year,9.90E+07,3.05E+09,7.78E+09
 S3 Nuc,FR,Production|Natural gas|Anaerobic digestion dedicated crops|Biogas to biomethane,Nm3/year,3.02E+07,2.09E+08,1.04E+09
 S3 Nuc,FR,Production|Natural gas|Anaerobic digestion grass|Biogas to biomethane,Nm3/year,6.57E+06,2.46E+09,5.87E+09
@@ -634,7 +630,6 @@ S4,FR,Production|Natural gas|Power to gas,Nm3/year,0,0,0
 S4,FR,Efficiency|Natural gas|Power to gas|Methanation,%,77,83,85
 S4,FR,Production|Natural gas|Imports|Fossil,Nm3/year,38430000000,39787000000,17045000000
 S4,FR,Production|Natural gas|Imports|Renewable,Nm3/year,0,0,4416000000
-S4,FR,Production|Natural gas|Total,Nm3/year,38630000000,45030000000,37056000000
 S4,FR,Production|Natural gas|Anaerobic digestion CIVE|Biogas to biomethane,Nm3/year,9.90E+07,3.15E+09,8.76E+09
 S4,FR,Production|Natural gas|Anaerobic digestion dedicated crops|Biogas to biomethane,Nm3/year,3.02E+07,3.25E+08,1.23E+09
 S4,FR,Production|Natural gas|Anaerobic digestion grass|Biogas to biomethane,Nm3/year,6.57E+06,2.44E+09,5.56E+09
