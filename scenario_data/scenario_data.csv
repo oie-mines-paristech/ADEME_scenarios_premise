@@ -354,6 +354,7 @@ S1,FR,Production|Natural gas|Anaerobic digestion industrial wastewater|Biogas,Nm
 S1,FR,Production|Natural gas|Anaerobic digestion animal manure|Biogas,Nm3/year,4.23E+08,1.74E+07,1.02E+07
 S1,FR,Production|Natural gas|Pyrogasification|Renewable,Nm3/year,0,0,0
 S1,FR,Production|Natural gas|Pyrogasification|Fossil,Nm3/year,0,0,0
+S1,FR,Production|Natural gas|Pyrogasification with CCS|Renewable,Nm3/year,0,0,0
 S1,FR,Production|Natural gas|Power to gas,Nm3/year,0,270000000,3636000000
 S1,FR,Efficiency|Natural gas|Power to gas|Methanation,%,77,83,85
 S1,FR,Production|Natural gas|Imports|Fossil,Nm3/year,38430000000,21237000000,1807000000
@@ -423,6 +424,7 @@ S2,FR,Production|Natural gas|Anaerobic digestion animal manure|Biogas,Nm3/year,4
 S2,FR,Production|Natural gas|Pyrogasification|Renewable,Nm3/year,0,0,302000000
 S2,FR,Production|Natural gas|Pyrogasification|Fossil,Nm3/year,0,0,201000000
 S2,FR,Production|Natural gas|Power to gas,Nm3/year,0,298000000,3222000000
+S2,FR,Production|Natural gas|Pyrogasification with CCS|Renewable,Nm3/year,0,0,0
 S2,FR,Efficiency|Natural gas|Power to gas|Methanation,%,77,83,85
 S2,FR,Production|Natural gas|Imports|Fossil,Nm3/year,38430000000,24908000000,2523000000
 S2,FR,Production|Natural gas|Imports|Renewable,Nm3/year,0,0,0
@@ -490,6 +492,7 @@ S3 Renew,FR,Production|Natural gas|Anaerobic digestion industrial wastewater|Bio
 S3 Renew,FR,Production|Natural gas|Anaerobic digestion animal manure|Biogas,Nm3/year,4.23E+08,3.92E+07,2.29E+07
 S3 Renew,FR,Production|Natural gas|Pyrogasification|Renewable,Nm3/year,0,43000000,4848000000
 S3 Renew,FR,Production|Natural gas|Pyrogasification|Fossil,Nm3/year,0,0,1881000000
+S3 Renew,FR,Production|Natural gas|Pyrogasification with CCS|Renewable,Nm3/year,0,0,0
 S3 Renew,FR,Production|Natural gas|Power to gas,Nm3/year,0,325000000,2047000000
 S3 Renew,FR,Efficiency|Natural gas|Power to gas|Methanation,%,77,83,85
 S3 Renew,FR,Production|Natural gas|Imports|Fossil,Nm3/year,38430000000,29405000000,1518000000
@@ -558,6 +561,7 @@ S3 Nuc,FR,Production|Natural gas|Anaerobic digestion industrial wastewater|Bioga
 S3 Nuc,FR,Production|Natural gas|Anaerobic digestion animal manure|Biogas,Nm3/year,4.23E+08,3.92E+07,2.29E+07
 S3 Nuc,FR,Production|Natural gas|Pyrogasification|Renewable,Nm3/year,0,43000000,4848000000
 S3 Nuc,FR,Production|Natural gas|Pyrogasification|Fossil,Nm3/year,0,0,1881000000
+S3 Nuc,FR,Production|Natural gas|Pyrogasification with CCS|Renewable,Nm3/year,0,0,0
 S3 Nuc,FR,Production|Natural gas|Power to gas,Nm3/year,0,325000000,2047000000
 S3 Nuc,FR,Efficiency|Natural gas|Power to gas|Methanation,%,77,83,85
 S3 Nuc,FR,Production|Natural gas|Imports|Fossil,Nm3/year,38430000000,29405000000,1518000000
@@ -626,6 +630,7 @@ S4,FR,Production|Natural gas|Anaerobic digestion industrial wastewater|Biogas,Nm
 S4,FR,Production|Natural gas|Anaerobic digestion animal manure|Biogas,Nm3/year,4.23E+08,4.08E+07,2.35E+07
 S4,FR,Production|Natural gas|Pyrogasification|Renewable,Nm3/year,0,35000000,1684000000
 S4,FR,Production|Natural gas|Pyrogasification|Fossil,Nm3/year,0,0,1123000000
+S4,FR,Production|Natural gas|Pyrogasification with CCS|Renewable,Nm3/year,0,0,632129414.1
 S4,FR,Production|Natural gas|Power to gas,Nm3/year,0,0,0
 S4,FR,Efficiency|Natural gas|Power to gas|Methanation,%,77,83,85
 S4,FR,Production|Natural gas|Imports|Fossil,Nm3/year,38430000000,39787000000,17045000000
