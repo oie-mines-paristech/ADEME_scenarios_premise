@@ -3,6 +3,12 @@
 # https://www.ademe.fr/les-futurs-en-transition/
 
 ---
+regionalize:
+  datasets:
+    - name: carbon dioxide storage at synthetic natural gas plant, post, 400km pipeline, storage 3000m
+      reference product: carbon dioxide storage at synthetic natural gas plant, post, 400km pipeline, storage 3000m
+      exists in original database: True
+
 production pathways:
 
 #Electricity
@@ -22,6 +28,7 @@ production pathways:
       name: electricity production, natural gas, combined cycle power plant
       reference product: electricity, high voltage
       exists in original database: True
+      regionalize: True
 
   coal:
     production volume:
@@ -47,7 +54,6 @@ production pathways:
       reference product: electricity, high voltage
       exists in original database: True
       regionalize: True
-
 
   pv:
     production volume:
@@ -88,6 +94,7 @@ production pathways:
       name: heat and power co-generation, biogas, gas engine
       reference product: electricity, high voltage
       exists in original database: True
+      regionalize: True
 
   biomass_chp:
     production volume:
@@ -439,7 +446,6 @@ production pathways:
       reference product: hydrogen, gaseous, 30 bar
       exists in original database: True
 
-
 #Others
 
   oil_refining_hydrogen_coproduct_fossilfuel_refineries:
@@ -471,6 +477,1018 @@ production pathways:
       name: empty activity, for market that does not exist any more in 2050, Tr2050
       reference product: nothing
       exists in original database: True
+#Gas
+
+# Anaerobic digestion of different feedstocks
+
+  ad_biogas_cive:
+    production volume:
+      variable: Production|Natural gas|Anaerobic digestion CIVE|Biogas
+    ecoinvent alias:
+      name: anaerobic digestion of sequential crops, with biogenic carbon uptake 
+      reference product:  biogas
+      exists in original database: True
+      regionalize: True
+
+    efficiency:
+      - variable: Efficiency|Natural gas|Anaerobic digestion CIVE|Biogas to biomethane|Generic
+        reference year: 2020
+        includes:
+          technosphere:
+            - supply
+            - electricity
+            - boiler
+            - construction
+          biosphere:
+            - Carbon dioxide, in air
+            - Carbon monoxide
+            - Dinitrogen monoxide
+            - Nitrogen
+            - Sulfur
+            - NMVOC
+            - Platinum
+        
+      - variable: Efficiency|Natural gas|Anaerobic digestion CIVE|Biogas to biomethane|Biogenic CO2 emissions
+        reference year: 2020
+        includes:
+          biosphere:
+            - Carbon dioxide, non-fossil
+
+      - variable: Efficiency|Natural gas|Anaerobic digestion CIVE|Biogas to biomethane|Biogenic CH4 emissions
+        reference year: 2020
+        includes:
+          biosphere:        
+            - Methane, non-fossil
+  
+  ad_biogas_agri_residues:
+    production volume:
+      variable: Production|Natural gas|Anaerobic digestion agricultural residues|Biogas
+    ecoinvent alias:
+      name: anaerobic digestion of agricultural residues, with biogenic carbon uptake 
+      reference product:  biogas
+      exists in original database: True
+      regionalize: True
+
+    efficiency:
+      - variable: Efficiency|Natural gas|Anaerobic digestion agricultural residues|Biogas to biomethane|Generic
+        reference year: 2020
+        includes:
+          technosphere:
+            - collection
+            - electricity
+            - boiler
+            - construction
+          biosphere:
+            - Carbon dioxide, in air
+            - Carbon monoxide
+            - Dinitrogen monoxide
+            - Nitrogen
+            - Sulfur
+            - NMVOC
+            - Platinum
+        
+      - variable: Efficiency|Natural gas|Anaerobic digestion agricultural residues|Biogas to biomethane|Biogenic CO2 emissions
+        reference year: 2020
+        includes:
+          biosphere:
+            - Carbon dioxide, non-fossil
+
+      - variable: Efficiency|Natural gas|Anaerobic digestion agricultural residues|Biogas to biomethane|Biogenic CH4 emissions
+        reference year: 2020
+        includes:
+          biosphere:        
+            - Methane, non-fossil
+
+  ad_biogas_manure:
+    production volume:
+      variable: Production|Natural gas|Anaerobic digestion animal manure|Biogas
+    ecoinvent alias:
+      name: anaerobic digestion of animal manure, with biogenic carbon uptake
+      reference product:  biogas
+      exists in original database: True
+      regionalize: True
+
+    efficiency:
+      - variable: Efficiency|Natural gas|Anaerobic digestion animal manure|Biogas to biomethane|Generic
+        reference year: 2020
+        includes:
+          technosphere:
+            - collection
+            - electricity
+            - boiler
+            - construction
+          biosphere:
+            - Carbon dioxide, in air
+            - Carbon monoxide
+            - Dinitrogen monoxide
+            - Nitrogen
+            - Sulfur
+            - NMVOC
+            - Platinum
+        
+      - variable: Efficiency|Natural gas|Anaerobic digestion animal manure|Biogas to biomethane|Biogenic CO2 emissions
+        reference year: 2020
+        includes:
+          biosphere:
+            - Carbon dioxide, non-fossil
+
+      - variable: Efficiency|Natural gas|Anaerobic digestion animal manure|Biogas to biomethane|Biogenic CH4 emissions
+        reference year: 2020
+        includes:
+          biosphere:        
+            - Methane, non-fossil
+
+  ad_biogas_dedicated_crops:
+    production volume:
+      variable: Production|Natural gas|Anaerobic digestion dedicated crops|Biogas
+    ecoinvent alias:
+      name: anaerobic digestion of dedicated crops, with biogenic carbon uptake
+      reference product:  biogas
+      exists in original database: True
+      regionalize: True
+
+    efficiency:
+      - variable: Efficiency|Natural gas|Anaerobic digestion dedicated crops|Biogas to biomethane|Generic
+        reference year: 2020
+        includes:
+          technosphere:
+            - collection
+            - electricity
+            - boiler
+            - construction
+          biosphere:
+            - Carbon dioxide, in air
+            - Carbon monoxide
+            - Dinitrogen monoxide
+            - Nitrogen
+            - Sulfur
+            - NMVOC
+            - Platinum
+        
+      - variable: Efficiency|Natural gas|Anaerobic digestion dedicated crops|Biogas to biomethane|Biogenic CO2 emissions
+        reference year: 2020
+        includes:
+          biosphere:
+            - Carbon dioxide, non-fossil
+
+      - variable: Efficiency|Natural gas|Anaerobic digestion dedicated crops|Biogas to biomethane|Biogenic CH4 emissions
+        reference year: 2020
+        includes:
+          biosphere:        
+            - Methane, non-fossil
+  
+  ad_biogas_grass:
+    production volume:
+      variable: Production|Natural gas|Anaerobic digestion grass|Biogas
+    ecoinvent alias:
+      name: anaerobic digestion of grass and pastures, with biogenic carbon uptake
+      reference product:  biogas
+      exists in original database: True
+      regionalize: True
+
+    efficiency:
+      - variable: Efficiency|Natural gas|Anaerobic digestion grass|Biogas to biomethane|Generic
+        reference year: 2020
+        includes:
+          technosphere:
+            - collection
+            - electricity            
+            - boiler
+            - construction
+          biosphere:
+            - Carbon dioxide, in air
+            - Carbon monoxide
+            - Dinitrogen monoxide
+            - Nitrogen
+            - Sulfur
+            - NMVOC
+            - Platinum
+        
+      - variable: Efficiency|Natural gas|Anaerobic digestion grass|Biogas to biomethane|Biogenic CO2 emissions
+        reference year: 2020
+        includes:
+          biosphere:
+            - Carbon dioxide, non-fossil
+
+      - variable: Efficiency|Natural gas|Anaerobic digestion grass|Biogas to biomethane|Biogenic CH4 emissions
+        reference year: 2020
+        includes:
+          biosphere:        
+            - Methane, non-fossil
+
+  ad_biogas_biowaste:
+    production volume:
+      variable: Production|Natural gas|Anaerobic digestion biowaste|Biogas
+    ecoinvent alias:
+      name: treatment of biowaste by anaerobic digestion, cut-off with biogenic carbon uptake
+      reference product:  biogas
+      exists in original database: True
+      regionalize: True
+
+    efficiency:
+      - variable: Efficiency|Natural gas|Anaerobic digestion biowaste|Biogas to biomethane|Generic
+        reference year: 2020
+        includes:
+          technosphere:
+            - collection
+            - electricity            
+            - boiler
+            - construction
+          biosphere:
+            - Carbon dioxide, in air
+            - Carbon monoxide
+            - Dinitrogen monoxide
+            - Nitrogen
+            - Sulfur
+            - NMVOC
+            - Platinum
+        
+      - variable: Efficiency|Natural gas|Anaerobic digestion biowaste|Biogas to biomethane|Biogenic CO2 emissions
+        reference year: 2020
+        includes:
+          biosphere:
+            - Carbon dioxide, non-fossil
+
+      - variable: Efficiency|Natural gas|Anaerobic digestion biowaste|Biogas to biomethane|Biogenic CH4 emissions
+        reference year: 2020
+        includes:
+          biosphere:        
+            - Methane, non-fossil
+
+  ad_biogas_industrial_waste_water:
+    production volume:
+      variable: Production|Natural gas|Anaerobic digestion industrial wastewater|Biogas
+    ecoinvent alias:
+      name: treatment of industrial wastewater by anaerobic digestion, cut-off with biogenic carbon uptake
+      reference product:  biogas
+      exists in original database: True
+      regionalize: True
+
+    efficiency:
+      - variable: Efficiency|Natural gas|Anaerobic digestion industrial wastewater|Biogas to biomethane|Generic
+        reference year: 2020
+        includes:
+          technosphere:
+            - collection
+            - electricity            
+            - boiler
+            - construction
+          biosphere:
+            - Carbon dioxide, in air
+            - Carbon monoxide
+            - Dinitrogen monoxide
+            - Nitrogen
+            - Sulfur
+            - NMVOC
+            - Platinum
+        
+      - variable: Efficiency|Natural gas|Anaerobic digestion industrial wastewater|Biogas to biomethane|Biogenic CO2 emissions
+        reference year: 2020
+        includes:
+          biosphere:
+            - Carbon dioxide, non-fossil
+
+      - variable: Efficiency|Natural gas|Anaerobic digestion industrial wastewater|Biogas to biomethane|Biogenic CH4 emissions
+        reference year: 2020
+        includes:
+          biosphere:        
+            - Methane, non-fossil
+
+  ad_biogas_sewage_sludge:
+    production volume:
+      variable: Production|Natural gas|Anaerobic digestion sewage sludge|Biogas
+    ecoinvent alias:
+      name: treatment of sewage sludge by anaerobic digestion, cut-off with biogenic carbon uptake
+      reference product:  biogas
+      exists in original database: True
+      regionalize: True
+
+    efficiency:
+      - variable: Efficiency|Natural gas|Anaerobic digestion sewage sludge|Biogas to biomethane|Generic
+        reference year: 2020
+        includes:
+          technosphere:
+            - collection
+            - electricity            
+            - boiler
+            - construction
+          biosphere:
+            - Carbon dioxide, in air
+            - Carbon monoxide
+            - Dinitrogen monoxide
+            - Nitrogen
+            - Sulfur
+            - NMVOC
+            - Platinum
+        
+      - variable: Efficiency|Natural gas|Anaerobic digestion sewage sludge|Biogas to biomethane|Biogenic CO2 emissions
+        reference year: 2020
+        includes:
+          biosphere:
+            - Carbon dioxide, non-fossil
+
+      - variable: Efficiency|Natural gas|Anaerobic digestion sewage sludge|Biogas to biomethane|Biogenic CH4 emissions
+        reference year: 2020
+        includes:
+          biosphere:        
+            - Methane, non-fossil
+  
+# Biogas production sent to biomethane
+
+  ad_biogas_tobiomethane_cive:
+    production volume:
+      variable: Production|Natural gas|Anaerobic digestion CIVE|Biogas to biomethane
+    ecoinvent alias:
+      name: anaerobic digestion of sequential crops, with biogenic carbon uptake 
+      reference product:  biogas
+      exists in original database: True
+  
+    efficiency:
+      - variable: Efficiency|Natural gas|Anaerobic digestion CIVE|Biogas to biomethane|Generic
+        reference year: 2020
+        includes:
+          technosphere:
+            - supply
+            - electricity
+            - boiler
+            - construction
+          biosphere:
+            - Carbon dioxide, in air
+            - Carbon monoxide
+            - Dinitrogen monoxide
+            - Nitrogen
+            - Sulfur
+            - NMVOC
+            - Platinum
+        
+      - variable: Efficiency|Natural gas|Anaerobic digestion CIVE|Biogas to biomethane|Biogenic CO2 emissions
+        reference year: 2020
+        includes:
+          biosphere:
+            - Carbon dioxide, non-fossil
+
+      - variable: Efficiency|Natural gas|Anaerobic digestion CIVE|Biogas to biomethane|Biogenic CH4 emissions
+        reference year: 2020
+        includes:
+          biosphere:        
+            - Methane, non-fossil
+
+  ad_biogas_tobiomethane_agri_residues:
+    production volume:
+      variable: Production|Natural gas|Anaerobic digestion agricultural residues|Biogas to biomethane
+    ecoinvent alias:
+      name: anaerobic digestion of agricultural residues, with biogenic carbon uptake 
+      reference product:  biogas
+      exists in original database: True
+
+    efficiency:
+      - variable: Efficiency|Natural gas|Anaerobic digestion agricultural residues|Biogas to biomethane|Generic
+        reference year: 2020
+        includes:
+          technosphere:
+            - collection
+            - electricity
+            - boiler
+            - construction
+          biosphere:
+            - Carbon dioxide, in air
+            - Carbon monoxide
+            - Dinitrogen monoxide
+            - Nitrogen
+            - Sulfur
+            - NMVOC
+            - Platinum
+        
+      - variable: Efficiency|Natural gas|Anaerobic digestion agricultural residues|Biogas to biomethane|Biogenic CO2 emissions
+        reference year: 2020
+        includes:
+          biosphere:
+            - Carbon dioxide, non-fossil
+
+      - variable: Efficiency|Natural gas|Anaerobic digestion agricultural residues|Biogas to biomethane|Biogenic CH4 emissions
+        reference year: 2020
+        includes:
+          biosphere:        
+            - Methane, non-fossil
+
+  ad_biogas_tobiomethane_manure:
+    production volume:
+      variable: Production|Natural gas|Anaerobic digestion animal manure|Biogas to biomethane
+    ecoinvent alias:
+      name: anaerobic digestion of animal manure, with biogenic carbon uptake
+      reference product:  biogas
+      exists in original database: True
+
+    efficiency:
+      - variable: Efficiency|Natural gas|Anaerobic digestion animal manure|Biogas to biomethane|Generic
+        reference year: 2020
+        includes:
+          technosphere:
+            - collection
+            - electricity
+            - boiler
+            - construction
+          biosphere:
+            - Carbon dioxide, in air
+            - Carbon monoxide
+            - Dinitrogen monoxide
+            - Nitrogen
+            - Sulfur
+            - NMVOC
+            - Platinum
+        
+      - variable: Efficiency|Natural gas|Anaerobic digestion animal manure|Biogas to biomethane|Biogenic CO2 emissions
+        reference year: 2020
+        includes:
+          biosphere:
+            - Carbon dioxide, non-fossil
+
+      - variable: Efficiency|Natural gas|Anaerobic digestion animal manure|Biogas to biomethane|Biogenic CH4 emissions
+        reference year: 2020
+        includes:
+          biosphere:        
+            - Methane, non-fossil
+
+  ad_biogas_tobiomethane_dedicated_crops:
+    production volume:
+      variable: Production|Natural gas|Anaerobic digestion dedicated crops|Biogas to biomethane
+    ecoinvent alias:
+      name: anaerobic digestion of dedicated crops, with biogenic carbon uptake
+      reference product:  biogas
+      exists in original database: True
+
+    efficiency:
+      - variable: Efficiency|Natural gas|Anaerobic digestion dedicated crops|Biogas to biomethane|Generic
+        reference year: 2020
+        includes:
+          technosphere:
+            - collection
+            - electricity
+            - boiler
+            - construction
+          biosphere:
+            - Carbon dioxide, in air
+            - Carbon monoxide
+            - Dinitrogen monoxide
+            - Nitrogen
+            - Sulfur
+            - NMVOC
+            - Platinum
+        
+      - variable: Efficiency|Natural gas|Anaerobic digestion dedicated crops|Biogas to biomethane|Biogenic CO2 emissions
+        reference year: 2020
+        includes:
+          biosphere:
+            - Carbon dioxide, non-fossil
+
+      - variable: Efficiency|Natural gas|Anaerobic digestion dedicated crops|Biogas to biomethane|Biogenic CH4 emissions
+        reference year: 2020
+        includes:
+          biosphere:        
+            - Methane, non-fossil
+  
+  ad_biogas_tobiomethane_grass:
+    production volume:
+      variable: Production|Natural gas|Anaerobic digestion grass|Biogas to biomethane
+    ecoinvent alias:
+      name: anaerobic digestion of grass and pastures, with biogenic carbon uptake
+      reference product:  biogas
+      exists in original database: True
+
+    efficiency:
+      - variable: Efficiency|Natural gas|Anaerobic digestion grass|Biogas to biomethane|Generic
+        reference year: 2020
+        includes:
+          technosphere:
+            - collection
+            - electricity            
+            - boiler
+            - construction
+          biosphere:
+            - Carbon dioxide, in air
+            - Carbon monoxide
+            - Dinitrogen monoxide
+            - Nitrogen
+            - Sulfur
+            - NMVOC
+            - Platinum
+        
+      - variable: Efficiency|Natural gas|Anaerobic digestion grass|Biogas to biomethane|Biogenic CO2 emissions
+        reference year: 2020
+        includes:
+          biosphere:
+            - Carbon dioxide, non-fossil
+
+      - variable: Efficiency|Natural gas|Anaerobic digestion grass|Biogas to biomethane|Biogenic CH4 emissions
+        reference year: 2020
+        includes:
+          biosphere:        
+            - Methane, non-fossil
+
+  ad_biogas_tobiomethane_biowaste:
+    production volume:
+      variable: Production|Natural gas|Anaerobic digestion biowaste|Biogas to biomethane
+    ecoinvent alias:
+      name: treatment of biowaste by anaerobic digestion, cut-off with biogenic carbon uptake
+      reference product:  biogas
+      exists in original database: True
+    
+    efficiency:
+      - variable: Efficiency|Natural gas|Anaerobic digestion biowaste|Biogas to biomethane|Generic
+        reference year: 2020
+        includes:
+          technosphere:
+            - collection
+            - electricity            
+            - boiler
+            - construction
+          biosphere:
+            - Carbon dioxide, in air
+            - Carbon monoxide
+            - Dinitrogen monoxide
+            - Nitrogen
+            - Sulfur
+            - NMVOC
+            - Platinum
+        
+      - variable: Efficiency|Natural gas|Anaerobic digestion biowaste|Biogas to biomethane|Biogenic CO2 emissions
+        reference year: 2020
+        includes:
+          biosphere:
+            - Carbon dioxide, non-fossil
+
+      - variable: Efficiency|Natural gas|Anaerobic digestion biowaste|Biogas to biomethane|Biogenic CH4 emissions
+        reference year: 2020
+        includes:
+          biosphere:        
+            - Methane, non-fossil
+
+  ad_biogas_tobiomethane_industrial_waste_water:
+    production volume:
+      variable: Production|Natural gas|Anaerobic digestion industrial wastewater|Biogas to biomethane
+    ecoinvent alias:
+      name: treatment of industrial wastewater by anaerobic digestion, cut-off with biogenic carbon uptake
+      reference product:  biogas
+      exists in original database: True
+
+    efficiency:
+      - variable: Efficiency|Natural gas|Anaerobic digestion industrial wastewater|Biogas to biomethane|Generic
+        reference year: 2020
+        includes:
+          technosphere:
+            - collection
+            - electricity            
+            - boiler
+            - construction
+          biosphere:
+            - Carbon dioxide, in air
+            - Carbon monoxide
+            - Dinitrogen monoxide
+            - Nitrogen
+            - Sulfur
+            - NMVOC
+            - Platinum
+        
+      - variable: Efficiency|Natural gas|Anaerobic digestion industrial wastewater|Biogas to biomethane|Biogenic CO2 emissions
+        reference year: 2020
+        includes:
+          biosphere:
+            - Carbon dioxide, non-fossil
+
+      - variable: Efficiency|Natural gas|Anaerobic digestion industrial wastewater|Biogas to biomethane|Biogenic CH4 emissions
+        reference year: 2020
+        includes:
+          biosphere:        
+            - Methane, non-fossil
+
+  ad_biogas_tobiomethane_sewage_sludge:
+    production volume:
+      variable: Production|Natural gas|Anaerobic digestion sewage sludge|Biogas to biomethane
+    ecoinvent alias:
+      name: treatment of sewage sludge by anaerobic digestion, cut-off with biogenic carbon uptake
+      reference product:  biogas
+      exists in original database: True
+
+    efficiency:
+      - variable: Efficiency|Natural gas|Anaerobic digestion sewage sludge|Biogas to biomethane|Generic
+        reference year: 2020
+        includes:
+          technosphere:
+            - collection
+            - electricity            
+            - boiler
+            - construction
+          biosphere:
+            - Carbon dioxide, in air
+            - Carbon monoxide
+            - Dinitrogen monoxide
+            - Nitrogen
+            - Sulfur
+            - NMVOC
+            - Platinum
+        
+      - variable: Efficiency|Natural gas|Anaerobic digestion sewage sludge|Biogas to biomethane|Biogenic CO2 emissions
+        reference year: 2020
+        includes:
+          biosphere:
+            - Carbon dioxide, non-fossil
+
+      - variable: Efficiency|Natural gas|Anaerobic digestion sewage sludge|Biogas to biomethane|Biogenic CH4 emissions
+        reference year: 2020
+        includes:
+          biosphere:        
+            - Methane, non-fossil
+
+#Biogas purification processes
+  #Membrane
+  ad_biogas_purification_membrane:
+    production volume:
+      variable: Production|Natural gas|Anaerobic digestion|Biogas to biomethane membrane
+    
+    ecoinvent alias:
+      name: biogas purification to biomethane by membrane, Tr2050
+      reference product: biomethane, high pressure
+      exists in original database: True
+
+    efficiency:
+      - variable: Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane membrane|Biogenic CO2 emissions
+        reference year: 2020
+        includes:
+          biosphere: 
+            - Carbon dioxide, non-fossil
+            - activated carbon
+            - market for biogas to biomethane
+  
+      - variable: Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane purification|Biogenic CH4 emissions
+        reference year: 2020
+        includes:
+          biosphere: 
+            - Methane, non-fossil
+
+      - variable: Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane membrane|Electricity
+        reference year: 2020
+        includes:
+          biosphere: 
+            - electricity
+
+  #Chemical scrubbing
+  ad_biogas_purification_chemical:
+    production volume:
+      variable: Production|Natural gas|Anaerobic digestion|Biogas to biomethane chemical
+    
+    ecoinvent alias:
+      name: biogas purification to biomethane by chemical scrubbing, Tr2050
+      reference product: biomethane, high pressure
+      exists in original database: True
+
+    efficiency:
+      - variable: Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane chemical|Biogenic CO2 emissions
+        reference year: 2020
+        includes:
+          biosphere: 
+            - Carbon dioxide, non-fossil
+            - activated carbon
+            - market for biogas to biomethane
+            - Ammonia
+            - Acetaldehyde
+
+      - variable: Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane purification|Biogenic CH4 emissions
+        reference year: 2020
+        includes:
+          biosphere: 
+            - Methane, non-fossil
+
+      - variable: Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane chemical|Electricity
+        reference year: 2020
+        includes:
+          biosphere: 
+            - electricity
+
+  #Water scrubbing
+  ad_biogas_purification_water:
+    production volume:
+      variable: Production|Natural gas|Anaerobic digestion|Biogas to biomethane water
+    
+    ecoinvent alias:
+      name: biogas purification to biomethane by water scrubbing, Tr2050
+      reference product: biomethane, high pressure
+      exists in original database: True
+
+    efficiency:
+      - variable: Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane water|Biogenic CO2 emissions
+        reference year: 2020
+        includes:
+          biosphere: 
+            - Carbon dioxide, non-fossil
+            - activated carbon
+            - market for biogas to biomethane
+            - tap water
+
+      - variable: Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane purification|Biogenic CH4 emissions
+        reference year: 2020
+        includes:
+          biosphere: 
+            - Methane, non-fossil
+
+      - variable: Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane water|Electricity
+        reference year: 2020
+        includes:
+          biosphere: 
+            - electricity
+
+  #PSA
+  ad_biogas_purification_psa:
+    production volume:
+      variable: Production|Natural gas|Anaerobic digestion|Biogas to biomethane PSA
+    
+    ecoinvent alias:
+      name: biogas purification to biomethane by PSA, Tr2050
+      reference product: biomethane, high pressure
+      exists in original database: True
+
+    efficiency:
+      - variable: Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane PSA|Biogenic CO2 emissions
+        reference year: 2020
+        includes:
+          biosphere: 
+            - Carbon dioxide, non-fossil
+            - activated carbon
+            - market for biogas to biomethane
+
+      - variable: Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane purification|Biogenic CH4 emissions
+        reference year: 2020
+        includes:
+          biosphere: 
+            - Methane, non-fossil
+
+      - variable: Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane PSA|Electricity
+        reference year: 2020
+        includes:
+          biosphere: 
+            - electricity
+
+  #Cryogenic separation
+  ad_biogas_purification_cryogenic:
+    production volume:
+      variable: Production|Natural gas|Anaerobic digestion|Biogas to biomethane cryogenic
+    
+    ecoinvent alias:
+      name: biogas purification to biomethane by cryogenic separation, Tr2050
+      reference product: biomethane, high pressure
+      exists in original database: True
+
+    efficiency:
+      - variable: Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane cryogenic|Biogenic CO2 emissions
+        reference year: 2020
+        includes:
+          biosphere: 
+            - Carbon dioxide, non-fossil
+            - activated carbon
+            - market for biogas to biomethane
+
+      - variable: Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane purification|Biogenic CH4 emissions
+        reference year: 2020
+        includes:
+          biosphere: 
+            - Methane, non-fossil
+
+      - variable: Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane cryogenic|Electricity
+        reference year: 2020
+        includes:
+          biosphere: 
+            - electricity
+  
+#Biogas purification processes with CCS
+  #Membrane with CCS
+  ad_biogas_purification_membrane_CCS:
+    production volume:
+      variable: Production|Natural gas|Anaerobic digestion|Biogas to biomethane membrane with CCS
+    
+    ecoinvent alias:
+      name: biogas purification to biomethane by membrane with CCS, Tr2050
+      reference product: biomethane, high pressure
+      exists in original database: True
+
+    efficiency:
+      - variable: Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane membrane|Biogenic CO2 emissions
+        reference year: 2020
+        includes:
+          biosphere: 
+            - activated carbon
+            - market for biogas to biomethane
+  
+      - variable: Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane purification|Biogenic CH4 emissions
+        reference year: 2020
+        includes:
+          biosphere: 
+            - Methane, non-fossil
+            - Carbon dioxide, non-fossil #behaves as CH4 factor (only leaks)
+
+      - variable: Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane membrane|Electricity
+        reference year: 2020
+        includes:
+          biosphere: 
+            - electricity
+
+  #Chemical scrubbing with CCS
+  ad_biogas_purification_chemical_CCS:
+    production volume:
+      variable: Production|Natural gas|Anaerobic digestion|Biogas to biomethane chemical with CCS
+    
+    ecoinvent alias:
+      name: biogas purification to biomethane by chemical scrubbing with CCS, Tr2050
+      reference product: biomethane, high pressure
+      exists in original database: True
+
+    efficiency:
+      - variable: Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane chemical|Biogenic CO2 emissions
+        reference year: 2020
+        includes:
+          biosphere: 
+            - activated carbon
+            - market for biogas to biomethane
+            - Ammonia
+            - Acetaldehyde
+
+      - variable: Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane purification|Biogenic CH4 emissions
+        reference year: 2020
+        includes:
+          biosphere: 
+            - Methane, non-fossil
+            - Carbon dioxide, non-fossil
+
+      - variable: Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane chemical|Electricity
+        reference year: 2020
+        includes:
+          biosphere: 
+            - electricity
+
+  #Water scrubbing with CCS
+  ad_biogas_purification_water_CCS:
+    production volume:
+      variable: Production|Natural gas|Anaerobic digestion|Biogas to biomethane water with CCS
+    
+    ecoinvent alias:
+      name: biogas purification to biomethane by water scrubbing with CCS, Tr2050
+      reference product: biomethane, high pressure
+      exists in original database: True
+
+    efficiency:
+      - variable: Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane chemical|Biogenic CO2 emissions
+        reference year: 2020
+        includes:
+          biosphere: 
+            - activated carbon
+            - market for biogas to biomethane
+            - tap water
+
+      - variable: Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane purification|Biogenic CH4 emissions
+        reference year: 2020
+        includes:
+          biosphere: 
+            - Methane, non-fossil
+            - Carbon dioxide, non-fossil
+
+      - variable: Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane chemical|Electricity
+        reference year: 2020
+        includes:
+          biosphere: 
+            - electricity
+
+  #PSA with CCS
+  ad_biogas_purification_psa_CCS:
+    production volume:
+      variable: Production|Natural gas|Anaerobic digestion|Biogas to biomethane PSA with CCS
+    
+    ecoinvent alias:
+      name: biogas purification to biomethane by PSA with CCS, Tr2050
+      reference product: biomethane, high pressure
+      exists in original database: True
+
+    efficiency:
+      - variable: Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane chemical|Biogenic CO2 emissions
+        reference year: 2020
+        includes:
+          biosphere: 
+            - activated carbon
+            - market for biogas to biomethane
+
+      - variable: Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane purification|Biogenic CH4 emissions
+        reference year: 2020
+        includes:
+          biosphere: 
+            - Methane, non-fossil
+            - Carbon dioxide, non-fossil
+
+      - variable: Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane chemical|Electricity
+        reference year: 2020
+        includes:
+          biosphere: 
+            - electricity
+
+  #Cryogenic separation with CCS
+  ad_biogas_purification_cryogenic_CCS:
+    production volume:
+      variable: Production|Natural gas|Anaerobic digestion|Biogas to biomethane cryogenic with CCS
+    
+    ecoinvent alias:
+      name: biogas purification to biomethane by cryogenic separation with CCS, Tr2050
+      reference product: biomethane, high pressure
+      exists in original database: True
+  
+    efficiency:
+      - variable: Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane chemical|Biogenic CO2 emissions
+        reference year: 2020
+        includes:
+          biosphere: 
+            - activated carbon
+            - market for biogas to biomethane
+
+      - variable: Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane purification|Biogenic CH4 emissions
+        reference year: 2020
+        includes:
+          biosphere: 
+            - Methane, non-fossil
+            - Carbon dioxide, non-fossil
+
+      - variable: Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane chemical|Electricity
+        reference year: 2020
+        includes:
+          biosphere: 
+            - electricity
+
+  #Power-to-methane
+  power_to_gas_methanation:
+    production volume:
+      variable: Production|Natural gas|Power to gas
+    
+    ecoinvent alias:
+      name: methane, from electrochemical methanation, with carbon from anaerobic digestion
+      reference product:  methane, from electrochemical methanation
+      exists in original database: True
+      
+    efficiency:
+      - variable: Efficiency|Natural gas|Power to gas|Methanation
+        reference year: 2020
+        includes:
+          technosphere: 
+            - hydrogen
+  
+  #Gasification
+  pyrogasification_wood:
+    production volume:
+      variable: Production|Natural gas|Pyrogasification|Renewable
+    ecoinvent alias:
+      name: synthetic natural gas from wood, 70 bar, at plant
+      reference product:  synthetic natural gas from wood, 70 bar, at plant
+      exists in original database: True
+      regionalize: True
+      ratio: 5.4 #MJ/Nm3
+
+  pyrogasification_rdf:
+    production volume:
+      variable: Production|Natural gas|Pyrogasification|Fossil
+    ecoinvent alias:
+      name: synthetic natural gas from wood, 70 bar, at plant
+      reference product:  synthetic natural gas from wood, 70 bar, at plant
+      exists in original database: True
+      regionalize: True
+      ratio: 5.4
+  
+  pyrogasification_wood_CCS:
+    production volume:
+      variable: Production|Natural gas|Pyrogasification with CCS|Renewable
+    ecoinvent alias:
+      name: synthetic natural gas from wood, 70 bar, at plant with CCS
+      reference product:  synthetic natural gas from wood, 70 bar, at plant
+      exists in original database: True
+      regionalize: True
+      ratio: 5.4
+
+  natural_gas_imports_fossil:
+    production volume:
+      variable: Production|Natural gas|Imports|Fossil
+    ecoinvent alias:
+      name: natural gas, imports
+      reference product:  natural gas, high pressure
+      exists in original database: True
+  
+  renewable_gas_imports:
+    production volume:
+      variable: Production|Natural gas|Imports|Renewable
+    ecoinvent alias:
+      name: biomethane, imports
+      reference product: biomethane, high pressure
+      exists in original database: True
+
+  high_to_low_gas:
+    production volume:
+      variable: Production|Natural gas|High to low
+    ecoinvent alias:
+      name: market for natural gas, high pressure, Tr2050
+      reference product: natural gas, high pressure
+      exists in original database: False
+      new dataset: True 
 
 markets:
 
@@ -529,9 +1547,12 @@ markets:
     replaces:
       - name: market for electricity, high voltage
         product: electricity, high voltage
-        location: FR
 
-
+      - name: market group for electricity, high voltage
+        product: electricity, high voltage
+    
+    replaces in:
+      - location: FR
 
   - name: market for electricity, medium voltage, Tr2050
     reference product: electricity, medium voltage
@@ -561,9 +1582,12 @@ markets:
     replaces:
       - name: market for electricity, medium voltage
         product: electricity, medium voltage
-        location: FR
 
-
+      - name: market group for electricity, medium voltage
+        product: electricity, medium voltage
+    
+    replaces in:
+      - location: FR
 
   - name: market for electricity, low voltage, Tr2050
     reference product: electricity, low voltage
@@ -592,8 +1616,12 @@ markets:
     replaces:
       - name: market for electricity, low voltage
         product: electricity, low voltage
-        location: FR
 
+      - name: market group for electricity, low voltage
+        product: electricity, low voltage
+    
+    replaces in:
+      - location: FR
 
 #Hydrogen
   - name: market for hydrogen, gaseous, for transport - direct use of H2, Tr2050
@@ -833,10 +1861,6 @@ markets:
         unit: kilogram
         amount: 0.005
 
-
-
-
-
   - name: market for hydrogen, gaseous, for chemicals use, Tr2050
     reference product: hydrogen, gaseous
     unit: kilogram
@@ -875,7 +1899,6 @@ markets:
         unit: kilogram
         amount: 0.005
 
-
   - name: market for hydrogen, gaseous, for power to gas, Tr2050
     reference product: hydrogen, gaseous
     unit: kilogram
@@ -913,7 +1936,17 @@ markets:
         categories: air::non-urban air or from high stacks
         unit: kilogram
         amount: 0.005
-
+      
+    replaces:
+      - name: hydrogen production, gaseous, 30 bar, from PEM electrolysis, from grid electricity, domestic, Tr2050
+        product: hydrogen, gaseous, 30 bar
+        location: FR
+    
+    replaces in:
+      - name: methane, from electrochemical methanation, with carbon from anaerobic digestion
+        product: methane, from electrochemical methanation
+        location: FR
+        operator: equals
 
   - name: market for hydrogen, gaseous, Tr2050
     reference product: hydrogen, gaseous
@@ -976,3 +2009,209 @@ markets:
         unit: kilogram
         amount: 0.005
 
+#Gas
+
+# Market for biogas sent to electricity production
+
+  - name: market for biogas, Tr2050
+    reference product: biogas
+    unit: cubic meter
+    includes:
+      - ad_biogas_cive
+      - ad_biogas_agri_residues
+      - ad_biogas_manure
+      - ad_biogas_dedicated_crops
+      - ad_biogas_grass
+      - ad_biogas_biowaste
+      - ad_biogas_industrial_waste_water
+      - ad_biogas_sewage_sludge
+  
+    replaces:
+      - name: market for biogas
+        product: biogas
+        location: RoW
+        operator: equals
+    
+    replaces in:
+      - name: heat and power co-generation, biogas, gas engine
+        location: FR
+        operator: contains
+
+# Market for biogas sent to upgrading for biomethane production
+
+  - name: market for biogas to biomethane, Tr2050
+    reference product: biogas
+    unit: cubic meter
+    includes:
+      - ad_biogas_tobiomethane_cive
+      - ad_biogas_tobiomethane_agri_residues
+      - ad_biogas_tobiomethane_manure
+      - ad_biogas_tobiomethane_dedicated_crops
+      - ad_biogas_tobiomethane_grass
+      - ad_biogas_tobiomethane_biowaste
+      - ad_biogas_tobiomethane_industrial_waste_water
+      - ad_biogas_tobiomethane_sewage_sludge
+
+    replaces:
+      - name: market for biogas
+        product: biogas
+        location: RoW
+        operator: equals
+    
+    replaces in:
+      - name: biogas purification to biomethane
+        reference product: biomethane, high pressure
+        location: FR
+        operator: contains
+
+# Market for biomethane from anaerobic digestion
+
+  - name: market for biomethane AD, high pressure, Tr2050
+    reference product: biomethane, high pressure
+    unit: cubic meter
+    includes:
+      - ad_biogas_purification_membrane
+      - ad_biogas_purification_water
+      - ad_biogas_purification_chemical
+      - ad_biogas_purification_psa
+      - ad_biogas_purification_cryogenic
+      - ad_biogas_purification_membrane_CCS
+      - ad_biogas_purification_water_CCS
+      - ad_biogas_purification_chemical_CCS
+      - ad_biogas_purification_psa_CCS
+      - ad_biogas_purification_cryogenic_CCS
+
+    add:
+      - name: pipeline construction, natural gas, high pressure distribution network
+        reference product: pipeline, natural gas, high pressure distribution network
+        amount: 3.84E-08
+        
+      - name: market for biomethane AD, high pressure, Tr2050
+        reference product: biomethane, high pressure
+        amount: 0.015
+
+  - name: market for natural gas, high pressure, Tr2050
+    reference product: natural gas, high pressure
+    unit: cubic meter
+    includes:
+      - ad_biogas_purification_membrane
+      - ad_biogas_purification_water
+      - ad_biogas_purification_chemical
+      - ad_biogas_purification_psa
+      - ad_biogas_purification_cryogenic
+      - ad_biogas_purification_membrane_CCS
+      - ad_biogas_purification_water_CCS
+      - ad_biogas_purification_chemical_CCS
+      - ad_biogas_purification_psa_CCS
+      - ad_biogas_purification_cryogenic_CCS
+      - pyrogasification_wood
+      - pyrogasification_rdf
+      - pyrogasification_wood_CCS
+      - power_to_gas_methanation
+      - natural_gas_imports_fossil
+      - renewable_gas_imports
+    
+    add:
+      - name: pipeline construction, natural gas, high pressure distribution network
+        reference product: pipeline, natural gas, high pressure distribution network
+        amount: 3.84E-08
+        
+      - name: market for natural gas, high pressure, Tr2050
+        reference product: natural gas, high pressure
+        amount: 0.015
+
+    replaces:
+      - name: market for natural gas, high pressure
+        product: natural gas, high pressure
+
+      - name: market for natural gas, high pressure, vehicle grade
+        product: natural gas, high pressure, vehicle grade
+
+    replaces in:
+      - location: FR
+      
+    is fuel:
+      ad_biogas_purification_membrane:
+          Carbon dioxide, fossil: 0.0
+          Carbon dioxide, non-fossil: 1.944
+
+      ad_biogas_purification_water:
+          Carbon dioxide, fossil: 0.0
+          Carbon dioxide, non-fossil: 1.944
+
+      ad_biogas_purification_chemical:
+          Carbon dioxide, fossil: 0.0
+          Carbon dioxide, non-fossil: 1.944
+
+      ad_biogas_purification_psa:
+          Carbon dioxide, fossil: 0.0
+          Carbon dioxide, non-fossil: 1.944
+
+      ad_biogas_purification_cryogenic:
+          Carbon dioxide, fossil: 0.0
+          Carbon dioxide, non-fossil: 1.944
+
+      ad_biogas_purification_membrane_CCS:
+          Carbon dioxide, fossil: 0.0
+          Carbon dioxide, non-fossil: 1.944
+
+      ad_biogas_purification_water_CCS:
+          Carbon dioxide, fossil: 0.0
+          Carbon dioxide, non-fossil: 1.944
+
+      ad_biogas_purification_chemical_CCS:
+          Carbon dioxide, fossil: 0.0
+          Carbon dioxide, non-fossil: 1.944
+
+      ad_biogas_purification_psa_CCS:
+          Carbon dioxide, fossil: 0.0
+          Carbon dioxide, non-fossil: 1.944
+
+      ad_biogas_purification_cryogenic_CCS:
+          Carbon dioxide, fossil: 0.0
+          Carbon dioxide, non-fossil: 1.944
+
+      pyrogasification_wood:
+          Carbon dioxide, fossil: 0.0
+          Carbon dioxide, non-fossil: 1.944
+
+      pyrogasification_rdf:
+          Carbon dioxide, fossil: 0.69984
+          Carbon dioxide, non-fossil: 1.24416
+
+      pyrogasification_wood_CCS:
+          Carbon dioxide, fossil: 0.0
+          Carbon dioxide, non-fossil: 1.944  
+
+      power_to_gas_methanation:
+          Carbon dioxide, fossil: 0.0
+          Carbon dioxide, non-fossil: 1.944 
+
+      natural_gas_imports_fossil:
+          Carbon dioxide, fossil: 1.944
+          Carbon dioxide, non-fossil: 0.0  
+
+      renewable_gas_imports:
+          Carbon dioxide, fossil: 0.0
+          Carbon dioxide, non-fossil: 1.944
+
+  - name: market for natural gas, low pressure, Tr2050
+    reference product: natural gas, low pressure
+    unit: cubic meter
+    includes:
+      - high_to_low_gas
+    add:
+      - name: pipeline construction, natural gas, low pressure distribution network
+        reference product: pipeline, natural gas, low pressure distribution network
+        amount: 1.430064e-07
+      
+      - name: natural gas, burned in gas turbine
+        reference product: natural gas, burned in gas turbine
+        amount: 0.04418 #consider constant LHV to be 36 MJ/Nm3
+
+    replaces:
+      - name: market for natural gas, low pressure
+        product: natural gas, low pressure
+
+    replaces in:
+      - location: FR

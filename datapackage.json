@@ -2,7 +2,7 @@
     "profile": "data-package",
     "name": "transitions-2050",
     "title": "Transition-s 2050",
-    "description": "Implementation of the electricity and hydrogen scenarios described in Transition-s 2050 / ADEME",
+    "description": "Implementation of the electricity, gas, and hydrogen scenarios described in Transition-s 2050 / ADEME",
     "version": "1.0.0",
     "contributors":[
         {
