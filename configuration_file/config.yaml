@@ -1514,7 +1514,7 @@ markets:
       - mix_gas_chp
       - hydro_pumped_storage
       - battery
-      - import
+      #- import
 
     add:
 
