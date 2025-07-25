@@ -9,6 +9,10 @@ regionalize:
       reference product: carbon dioxide storage at synthetic natural gas plant, post, 400km pipeline, storage 3000m
       exists in original database: True
 
+    - name: heat production, biomethane, at boiler condensing modulating <100kW
+      reference product: heat, central or small-scale, biomethane
+      exists in original database: True
+
 production pathways:
 
 #Electricity
@@ -1433,6 +1437,7 @@ production pathways:
         includes:
           technosphere: 
             - hydrogen
+            - carbon dioxide capture
   
   #Gasification
   pyrogasification_wood:
@@ -1449,8 +1454,8 @@ production pathways:
     production volume:
       variable: Production|Natural gas|Pyrogasification|Fossil
     ecoinvent alias:
-      name: synthetic natural gas from wood, 70 bar, at plant
-      reference product:  synthetic natural gas from wood, 70 bar, at plant
+      name: synthetic natural gas from RDF, 70 bar, at plant
+      reference product:  synthetic natural gas from RDF, 70 bar, at plant
       exists in original database: True
       regionalize: True
       ratio: 5.4
@@ -1464,7 +1469,8 @@ production pathways:
       exists in original database: True
       regionalize: True
       ratio: 5.4
-
+  
+  #Imports of natural gas
   natural_gas_imports_fossil:
     production volume:
       variable: Production|Natural gas|Imports|Fossil
@@ -2064,9 +2070,9 @@ markets:
         location: FR
         operator: contains
 
-# Market for biomethane from anaerobic digestion
+# Market for biomethane
 
-  - name: market for biomethane AD, high pressure, Tr2050
+  - name: market for biomethane, high pressure, Tr2050
     reference product: biomethane, high pressure
     unit: cubic meter
     includes:
@@ -2080,15 +2086,31 @@ markets:
       - ad_biogas_purification_chemical_CCS
       - ad_biogas_purification_psa_CCS
       - ad_biogas_purification_cryogenic_CCS
+      - pyrogasification_wood
+      - pyrogasification_rdf
+      - pyrogasification_wood_CCS
+      - power_to_gas_methanation
+      - renewable_gas_imports
 
     add:
       - name: pipeline construction, natural gas, high pressure distribution network
         reference product: pipeline, natural gas, high pressure distribution network
         amount: 3.84E-08
         
-      - name: market for biomethane AD, high pressure, Tr2050
+      - name: market for biomethane, high pressure, Tr2050
         reference product: biomethane, high pressure
         amount: 0.015
+
+    replaces:
+      - name: market for biomethane, high pressure
+        product: biomethane, high pressure
+
+    replaces in:
+      - name: heat production, biomethane, at boiler condensing modulating <100kW
+        reference product: heat, central or small-scale, biomethane
+        location: FR
+
+# Market for natural gas
 
   - name: market for natural gas, high pressure, Tr2050
     reference product: natural gas, high pressure
