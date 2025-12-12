@@ -1,691 +1,686 @@
-scenario,region,variables,unit,2020,2030,2050
-S1,FR,Production|Electricity|Nuclear,TWh/year,348.5535264,258.8897445,9.93607041
-S1,FR,Production|Electricity|Conventional|Mix gas|Combined Cycle Turbines,TWh/year,0.648291578,0.830428416,4.58529902
-S1,FR,Production|Electricity|Conventional|Mix gas|Open Cycle Turbines,TWh/year,0.002240017,0.01319993,0.288225842
-S1,FR,Production|Electricity|Conventional|Mix gas|Cycle Turbines total,TWh/year,0.650531595,0.843628346,4.873524862
-S1,FR,Production|Electricity|Conventional|Coal,TWh/year,7.394066187,0,0
-S1,FR,Production|Electricity|Conventional|Fuel oil and Mix gas|CHP,TWh/year,10.69048252,3.309134524,0
-S1,FR,Production|Electricity|Conventional|Fuel oil|CHP,TWh/year,1.960600014,0,0
-S1,FR,Production|Electricity|Conventional|Mix gas|CHP,TWh/year,8.72988251,3.309134524,0
-S1,FR,Production|Electricity|Renewable|Photovoltaic ground fix,TWh/year,5.09069132,15.66474338,35.5456216
-S1,FR,Production|Electricity|Renewable|Photovoltaic ground tracker,TWh/year,0,4.50E-10,11.02299416
-S1,FR,Production|Electricity|Renewable|Photovoltaic ground total,TWh/year,5.09069132,15.66474338,46.56861575
-S1,FR,Production|Electricity|Renewable|Photovoltaic roof large,TWh/year,4.527400137,7.66410922,25.67787782
-S1,FR,Production|Electricity|Renewable|Photovoltaic roof small,TWh/year,1.719538834,6.327814016,43.91893226
-S1,FR,Production|Electricity|Renewable|Photovoltaic roof total,TWh/year,6.246938971,13.99192324,69.59681008
-S1,FR,Production|Electricity|Renewable|Photovoltaic total,TWh/year,11.33763029,29.65666662,116.1654258
-S1,FR,Production|Electricity|Renewable|Wind turbines|Fixed Offshore,TWh/year,0,12.22681839,31.55946485
-S1,FR,Production|Electricity|Renewable|Wind turbines|Floating Offshore,TWh/year,0,2.712215844,17.97320844
-S1,FR,Production|Electricity|Renewable|Wind turbines|Offshore total,TWh/year,0,14.93903424,49.53267329
-S1,FR,Production|Electricity|Renewable|Wind turbines|Onshore total,TWh/year,29.6547338,52.72811406,156.4015653
-S1,FR,Production|Electricity|Renewable|Sea,TWh/year,0.393199663,0.345161997,0.45165327
-S1,FR,Production|Electricity|Renewable|Biogas|CHP,TWh/year,2.028759411,1.780903488,2.3303576
-S1,FR,Production|Electricity|Renewable|Biomass|CHP,TWh/year,1.367125832,1.468230674,1.921217255
-S1,FR,Production|Electricity|Conventional|Waste,TWh/year,2.680094983,2.352664626,3.07852162
-S1,FR,Production|Electricity|Renewable|Geothermal,TWh/year,0.004006222,0.045623053,0.059698928
-S1,FR,Production|Electricity|Hydro|Reservoir,TWh/year,8.664228966,7.605705803,9.952265143
-S1,FR,Production|Electricity|Hydro|Run of river,TWh/year,45.48720207,39.92995546,52.249392
-S1,FR,Production|Electricity|Hydro Total,TWh/year,54.15143103,47.53566127,62.20165714
-S1,FR,Production|Electricity|Total primary electricity without flexibility,TWh/year,550.0779581,553.119187,415.6142117
-S1,FR,Consumption|Electricity|Exports,TWh/year,98.67991883,167.8012258,127.9227844
-S1,FR,Production|Electricity|Imports,TWh/year,17.50754868,28.57660622,119.2609382
-S1,FR,Balance|Electricity|Export-import balance,TWh/year,81.17237014,139.2246196,8.661846207
-S1,FR,Production|Electricity|Storage|Hydro|Pumped storage,TWh/year,3.064943229,4.785689478,8.114000916
-S1,FR,Production|Electricity|Storage|Battery,TWh/year,8.83E-06,1.12E-05,0.355095909
-S1,FR,Production|Electricity|Low to medium,TWh,1,1,1
-S1,FR,Production|Electricity|Medium to high,TWh,1,1,1
-S1,FR,Efficiency|Storage|Battery|Charge,%,85,90,90
-S1,FR,Efficiency|Storage|Hydro|Pumped storage,%,70,75,80
-S2,FR,Production|Electricity|Nuclear,TWh/year,348.5533248,278.8159548,73.41293598
-S2,FR,Production|Electricity|Conventional|Mix gas|Combined Cycle Turbines,TWh/year,0.648502982,1.285021306,1.891418852
-S2,FR,Production|Electricity|Conventional|Mix gas|Open Cycle Turbines,TWh/year,0.002242799,0.002815522,6.10E-06
-S2,FR,Production|Electricity|Conventional|Mix gas|Cycle Turbines total,TWh/year,0.650745781,1.287836828,1.891424949
-S2,FR,Production|Electricity|Conventional|Coal,TWh/year,7.393916796,0,0
-S2,FR,Production|Electricity|Conventional|Fuel oil and Mix gas|CHP,TWh/year,10.69048252,3.309134524,0
-S2,FR,Production|Electricity|Conventional|Fuel oil|CHP,TWh/year,1.960600014,0,0
-S2,FR,Production|Electricity|Conventional|Mix gas|CHP,TWh/year,8.72988251,3.309134524,0
-S2,FR,Production|Electricity|Renewable|Photovoltaic ground fix,TWh/year,5.09069132,19.68083626,73.59720297
-S2,FR,Production|Electricity|Renewable|Photovoltaic ground tracker,TWh/year,0,1.94E-10,9.890045655
-S2,FR,Production|Electricity|Renewable|Photovoltaic ground total,TWh/year,5.09069132,19.68083626,83.48724862
-S2,FR,Production|Electricity|Renewable|Photovoltaic roof large,TWh/year,4.527400067,7.938561035,26.90036974
-S2,FR,Production|Electricity|Renewable|Photovoltaic roof small,TWh/year,1.719538834,1.890250299,6.342903557
-S2,FR,Production|Electricity|Renewable|Photovoltaic roof total,TWh/year,6.246938901,9.828811335,33.2432733
-S2,FR,Production|Electricity|Renewable|Photovoltaic total,TWh/year,11.33763022,29.50964759,116.7305219
-S2,FR,Production|Electricity|Renewable|Wind turbines|Fixed Offshore,TWh/year,0,12.22221164,60.95714135
-S2,FR,Production|Electricity|Renewable|Wind turbines|Floating Offshore,TWh/year,0,2.712215847,17.92481375
-S2,FR,Production|Electricity|Renewable|Wind turbines|Offshore total,TWh/year,0,14.93442749,78.88195511
-S2,FR,Production|Electricity|Renewable|Wind turbines|Onshore total,TWh/year,29.6547338,52.69667853,171.3396797
-S2,FR,Production|Electricity|Renewable|Sea,TWh/year,0.393199663,0.345161997,0.45165327
-S2,FR,Production|Electricity|Renewable|Biogas|CHP,TWh/year,2.028759411,1.780903488,2.3303576
-S2,FR,Production|Electricity|Renewable|Biomass|CHP,TWh/year,1.367125832,1.468230674,1.921217255
-S2,FR,Production|Electricity|Conventional|Waste,TWh/year,2.680094983,2.352664626,3.07852162
-S2,FR,Production|Electricity|Renewable|Geothermal,TWh/year,0.004006222,0.045623053,0.059698928
-S2,FR,Production|Electricity|Hydro|Reservoir,TWh/year,8.66422895,7.605709878,9.952265301
-S2,FR,Production|Electricity|Hydro|Run of river,TWh/year,45.48720199,39.92997686,52.24939283
-S2,FR,Production|Electricity|Hydro Total,TWh/year,54.15143094,47.53568674,62.20165813
-S2,FR,Production|Electricity|Total primary electricity without flexibility,TWh/year,550.0777974,580.0971415,523.2037521
-S2,FR,Consumption|Electricity|Exports,TWh/year,98.68070748,154.6170575,126.2209896
-S2,FR,Production|Electricity|Imports,TWh/year,17.50835461,34.52006287,123.1576301
-S2,FR,Balance|Electricity|Export-import balance,TWh/year,81.17235287,120.0969946,3.063359499
-S2,FR,Production|Electricity|Storage|Hydro|Pumped storage,TWh/year,3.065100531,5.763795233,6.651109807
-S2,FR,Production|Electricity|Storage|Battery,TWh/year,1.78E-06,4.18E-06,0.025875481
-S2,FR,Production|Electricity|Low to medium,TWh,1,1,1
-S2,FR,Production|Electricity|Medium to high,TWh,1,1,1
-S2,FR,Efficiency|Storage|Battery|Charge,%,85,90,90
-S2,FR,Efficiency|Storage|Hydro|Pumped storage,%,70,75,80
-S3 Renew,FR,Production|Electricity|Nuclear,TWh/year,348.5533249,284.5300705,68.80920622
-S3 Renew,FR,Production|Electricity|Conventional|Mix gas|Combined Cycle Turbines,TWh/year,1.212398915,11.51438385,18.87782806
-S3 Renew,FR,Production|Electricity|Conventional|Mix gas|Open Cycle Turbines,TWh/year,0.002229868,0.003107358,3.57E-06
-S3 Renew,FR,Production|Electricity|Conventional|Mix gas|Cycle Turbines total,TWh/year,1.214628783,11.5174912,18.87783163
-S3 Renew,FR,Production|Electricity|Conventional|Coal,TWh/year,7.297352159,0,0
-S3 Renew,FR,Production|Electricity|Conventional|Fuel oil and Mix gas|CHP,TWh/year,10.69048252,3.309134524,0
-S3 Renew,FR,Production|Electricity|Conventional|Fuel oil|CHP,TWh/year,1.960600014,0,0
-S3 Renew,FR,Production|Electricity|Conventional|Mix gas|CHP,TWh/year,8.72988251,3.309134524,0
-S3 Renew,FR,Production|Electricity|Renewable|Photovoltaic ground fix,TWh/year,5.09069132,28.39999301,100.9988718
-S3 Renew,FR,Production|Electricity|Renewable|Photovoltaic ground tracker,TWh/year,0,1.77E-10,2.57E-09
-S3 Renew,FR,Production|Electricity|Renewable|Photovoltaic ground total,TWh/year,5.09069132,28.39999301,100.9988718
-S3 Renew,FR,Production|Electricity|Renewable|Photovoltaic roof large,TWh/year,4.527400127,10.03192501,46.19066882
-S3 Renew,FR,Production|Electricity|Renewable|Photovoltaic roof small,TWh/year,1.719538834,1.8902503,25.00632276
-S3 Renew,FR,Production|Electricity|Renewable|Photovoltaic roof total,TWh/year,6.246938961,11.92217531,71.19699158
-S3 Renew,FR,Production|Electricity|Renewable|Photovoltaic total,TWh/year,11.33763028,40.32216832,172.1958634
-S3 Renew,FR,Production|Electricity|Renewable|Wind turbines|Fixed Offshore,TWh/year,0,16.91648726,60.95714135
-S3 Renew,FR,Production|Electricity|Renewable|Wind turbines|Floating Offshore,TWh/year,0,2.712215844,102.3999135
-S3 Renew,FR,Production|Electricity|Renewable|Wind turbines|Offshore total,TWh/year,0,19.62870311,163.3570549
-S3 Renew,FR,Production|Electricity|Renewable|Wind turbines|Onshore total,TWh/year,29.6547338,63.11277303,156.8135475
-S3 Renew,FR,Production|Electricity|Renewable|Sea,TWh/year,0.393199663,0.345161997,0.45165327
-S3 Renew,FR,Production|Electricity|Renewable|Biogas|CHP,TWh/year,2.028759411,1.780903488,2.3303576
-S3 Renew,FR,Production|Electricity|Renewable|Biomass|CHP,TWh/year,1.367125832,1.468230674,1.921217255
-S3 Renew,FR,Production|Electricity|Conventional|Waste,TWh/year,2.680094983,2.352664626,3.07852162
-S3 Renew,FR,Production|Electricity|Renewable|Geothermal,TWh/year,0.004006222,0.045623053,0.059698928
-S3 Renew,FR,Production|Electricity|Hydro|Reservoir,TWh/year,8.664228967,7.60570991,9.952240229
-S3 Renew,FR,Production|Electricity|Hydro|Run of river,TWh/year,45.48720208,39.92997703,52.2492612
-S3 Renew,FR,Production|Electricity|Hydro Total,TWh/year,54.15143104,47.53568694,62.20150143
-S3 Renew,FR,Production|Electricity|Total primary electricity without flexibility,TWh/year,550.6260137,636.0467853,663.9335413
-S3 Renew,FR,Consumption|Electricity|Exports,TWh/year,99.0617845,120.9599307,122.2911507
-S3 Renew,FR,Production|Electricity|Imports,TWh/year,17.33992489,39.86461646,119.0948336
-S3 Renew,FR,Balance|Electricity|Export-import balance,TWh/year,81.72185961,81.09531426,3.19631712
-S3 Renew,FR,Production|Electricity|Storage|Hydro|Pumped storage,TWh/year,3.058656894,3.83372312,10.96691099
-S3 Renew,FR,Production|Electricity|Storage|Battery,TWh/year,1.17E-06,3.52E-06,0.155352366
-S3 Renew,FR,Production|Electricity|Low to medium,TWh,1,1,1
-S3 Renew,FR,Production|Electricity|Medium to high,TWh,1,1,1
-S3 Renew,FR,Efficiency|Storage|Battery|Charge,%,85,90,90
-S3 Renew,FR,Efficiency|Storage|Hydro|Pumped storage,%,70,75,80
-S3 Nuc,FR,Production|Electricity|Nuclear,TWh/year,348.5533243,284.5335795,130.2338606
-S3 Nuc,FR,Production|Electricity|Conventional|Mix gas|Combined Cycle Turbines,TWh/year,1.281477349,11.5703372,19.91738379
-S3 Nuc,FR,Production|Electricity|Conventional|Mix gas|Open Cycle Turbines,TWh/year,0.002238191,0.00312471,3.63E-05
-S3 Nuc,FR,Production|Electricity|Conventional|Mix gas|Cycle Turbines total,TWh/year,1.28371554,11.57346191,19.91742008
-S3 Nuc,FR,Production|Electricity|Conventional|Coal,TWh/year,7.285264003,0,0
-S3 Nuc,FR,Production|Electricity|Conventional|Fuel oil and Mix gas|CHP,TWh/year,10.69048252,3.309134524,0
-S3 Nuc,FR,Production|Electricity|Conventional|Fuel oil|CHP,TWh/year,1.960600014,0,0
-S3 Nuc,FR,Production|Electricity|Conventional|Mix gas|CHP,TWh/year,8.72988251,3.309134524,0
-S3 Nuc,FR,Production|Electricity|Renewable|Photovoltaic ground fix,TWh/year,5.09069132,28.43480067,102.3174018
-S3 Nuc,FR,Production|Electricity|Renewable|Photovoltaic ground tracker,TWh/year,0,2.26E-09,6.04E-08
-S3 Nuc,FR,Production|Electricity|Renewable|Photovoltaic ground total,TWh/year,5.09069132,28.43480068,102.3174019
-S3 Nuc,FR,Production|Electricity|Renewable|Photovoltaic roof large,TWh/year,4.527400106,10.03192501,46.21531244
-S3 Nuc,FR,Production|Electricity|Renewable|Photovoltaic roof small,TWh/year,1.719538834,1.890250299,25.69021761
-S3 Nuc,FR,Production|Electricity|Renewable|Photovoltaic roof total,TWh/year,6.24693894,11.92217531,71.90553005
-S3 Nuc,FR,Production|Electricity|Renewable|Photovoltaic total,TWh/year,11.33763026,40.35697599,174.2229319
-S3 Nuc,FR,Production|Electricity|Renewable|Wind turbines|Fixed Offshore,TWh/year,0,16.91648734,60.95714135
-S3 Nuc,FR,Production|Electricity|Renewable|Wind turbines|Floating Offshore,TWh/year,0,2.712215843,17.24022405
-S3 Nuc,FR,Production|Electricity|Renewable|Wind turbines|Offshore total,TWh/year,0,19.62870318,78.19736541
-S3 Nuc,FR,Production|Electricity|Renewable|Wind turbines|Onshore total,TWh/year,29.6547338,63.10158986,157.3775102
-S3 Nuc,FR,Production|Electricity|Renewable|Sea,TWh/year,0.393199663,0.345161997,0.45165327
-S3 Nuc,FR,Production|Electricity|Renewable|Biogas|CHP,TWh/year,2.028759411,1.780903488,2.3303576
-S3 Nuc,FR,Production|Electricity|Renewable|Biomass|CHP,TWh/year,1.367125832,1.468230674,1.921217255
-S3 Nuc,FR,Production|Electricity|Conventional|Waste,TWh/year,2.680094983,2.352664626,3.07852162
-S3 Nuc,FR,Production|Electricity|Renewable|Geothermal,TWh/year,0.004006222,0.045623053,0.059698928
-S3 Nuc,FR,Production|Electricity|Hydro|Reservoir,TWh/year,8.664228972,7.60570992,9.95226317
-S3 Nuc,FR,Production|Electricity|Hydro|Run of river,TWh/year,45.4872021,39.92997708,52.24938164
-S3 Nuc,FR,Production|Electricity|Hydro Total,TWh/year,54.15143107,47.535687,62.20164481
-S3 Nuc,FR,Production|Electricity|Total primary electricity without flexibility,TWh/year,550.6928786,636.1578439,643.4013564
-S3 Nuc,FR,Consumption|Electricity|Exports,TWh/year,99.10793316,121.1799822,117.9646182
-S3 Nuc,FR,Production|Electricity|Imports,TWh/year,17.31889373,40.04258049,124.80401
-S3 Nuc,FR,Balance|Electricity|Export-import balance,TWh/year,81.78903943,81.13740172,-6.839391807
-S3 Nuc,FR,Production|Electricity|Storage|Hydro|Pumped storage,TWh/year,3.057250177,3.840619097,10.69672571
-S3 Nuc,FR,Production|Electricity|Storage|Battery,TWh/year,9.81E-06,4.68E-06,0.250675114
-S3 Nuc,FR,Production|Electricity|Low to medium,TWh,1,1,1
-S3 Nuc,FR,Production|Electricity|Medium to high,TWh,1,1,1
-S3 Nuc,FR,Efficiency|Storage|Battery|Charge,%,85,90,90
-S3 Nuc,FR,Efficiency|Storage|Hydro|Pumped storage,%,70,75,80
-S4,FR,Production|Electricity|Nuclear,TWh/year,348.553592,278.1527973,183.5870428
-S4,FR,Production|Electricity|Conventional|Mix gas|Combined Cycle Turbines,TWh/year,1.850450967,21.11932491,38.94595238
-S4,FR,Production|Electricity|Conventional|Mix gas|Open Cycle Turbines,TWh/year,0.002205966,0.011538926,0.671172369
-S4,FR,Production|Electricity|Conventional|Mix gas|Cycle Turbines total,TWh/year,1.852656933,21.13086384,39.61712475
-S4,FR,Production|Electricity|Conventional|Coal,TWh/year,7.181619738,0,0
-S4,FR,Production|Electricity|Conventional|Fuel oil and Mix gas|CHP,TWh/year,10.69048252,3.309134524,0
-S4,FR,Production|Electricity|Conventional|Fuel oil|CHP,TWh/year,1.960600014,0,0
-S4,FR,Production|Electricity|Conventional|Mix gas|CHP,TWh/year,8.72988251,3.309134524,0
-S4,FR,Production|Electricity|Renewable|Photovoltaic ground fix,TWh/year,5.09069132,28.0641286,94.87101069
-S4,FR,Production|Electricity|Renewable|Photovoltaic ground tracker,TWh/year,0,1.98E-09,9.890045667
-S4,FR,Production|Electricity|Renewable|Photovoltaic ground total,TWh/year,5.09069132,28.06412861,104.7610564
-S4,FR,Production|Electricity|Renewable|Photovoltaic roof large,TWh/year,4.527400143,10.03628795,46.14707017
-S4,FR,Production|Electricity|Renewable|Photovoltaic roof small,TWh/year,1.719538834,1.890250298,25.41155207
-S4,FR,Production|Electricity|Renewable|Photovoltaic roof total,TWh/year,6.246938977,11.92653825,71.55862225
-S4,FR,Production|Electricity|Renewable|Photovoltaic total,TWh/year,11.3376303,39.99066685,176.3196786
-S4,FR,Production|Electricity|Renewable|Wind turbines|Fixed Offshore,TWh/year,0,17.22719825,60.95714135
-S4,FR,Production|Electricity|Renewable|Wind turbines|Floating Offshore,TWh/year,0,2.723305121,102.3999135
-S4,FR,Production|Electricity|Renewable|Wind turbines|Offshore total,TWh/year,0,19.95050337,163.3570548
-S4,FR,Production|Electricity|Renewable|Wind turbines|Onshore total,TWh/year,29.6547338,63.21736078,171.3867315
-S4,FR,Production|Electricity|Renewable|Sea,TWh/year,0.393199663,0.345161997,0.45165327
-S4,FR,Production|Electricity|Renewable|Biogas|CHP,TWh/year,2.028759411,1.780903488,2.3303576
-S4,FR,Production|Electricity|Renewable|Biomass|CHP,TWh/year,1.367125832,1.468230674,1.921217255
-S4,FR,Production|Electricity|Conventional|Waste,TWh/year,2.680094983,2.352664626,3.07852162
-S4,FR,Production|Electricity|Renewable|Geothermal,TWh/year,0.004006222,0.045623053,0.059698928
-S4,FR,Production|Electricity|Hydro|Reservoir,TWh/year,8.664228968,7.605709854,9.952230494
-S4,FR,Production|Electricity|Hydro|Run of river,TWh/year,45.48720208,39.92997673,52.24921009
-S4,FR,Production|Electricity|Hydro Total,TWh/year,54.15143105,47.53568659,62.20144058
-S4,FR,Production|Electricity|Total primary electricity without flexibility,TWh/year,551.2390376,640.4982379,821.4300046
-S4,FR,Consumption|Electricity|Exports,TWh/year,99.48852319,132.3240862,123.3896958
-S4,FR,Production|Electricity|Imports,TWh/year,17.1527227,36.35552333,131.7182871
-S4,FR,Balance|Electricity|Export-import balance,TWh/year,82.33580049,95.96856283,-8.328591251
-S4,FR,Production|Electricity|Storage|Hydro|Pumped storage,TWh/year,3.052983606,5.276551702,10.9956624
-S4,FR,Production|Electricity|Storage|Battery,TWh/year,8.32E-06,1.468582212,13.9283042
-S4,FR,Production|Electricity|Low to medium,TWh,1,1,1
-S4,FR,Production|Electricity|Medium to high,TWh,1,1,1
-S4,FR,Efficiency|Storage|Battery|Charge,%,85,90,90
-S4,FR,Efficiency|Storage|Hydro|Pumped storage,%,70,75,80
-S1,FR,Efficiency|Hydrogen|Electrolyzer,%,61,65,72
-S1,FR,Production|Hydrogen|Transport|Steam methane reforming,TWh H2/year,0,0,0
-S1,FR,Production|Hydrogen|Fossil fuel refineries|Steam methane reforming,TWh H2/year,4.3,0,0
-S1,FR,Production|Hydrogen|Biofuel refineries|Steam methane reforming,TWh H2/year,0,0,0
-S1,FR,Production|Hydrogen|Power to liquid|Steam methane reforming,TWh H2/year,0,0,0
-S1,FR,Production|Hydrogen|Ammonia|Steam methane reforming,TWh H2/year,7.3,6.1,4.9
-S1,FR,Production|Hydrogen|Steel|Steam methane reforming,TWh H2/year,0,0,0
-S1,FR,Production|Hydrogen|Chemicals|Steam methane reforming,TWh H2/year,2.3,7,5.7
-S1,FR,Production|Hydrogen|Power to gas|Steam methane reforming,TWh H2/year,0,0,0
-S1,FR,Production|Hydrogen|Transport|Steam methane reforming with Carbone Capture and Storage,TWh H2/year,0,0,0
-S1,FR,Production|Hydrogen|Fossil fuel refineries|Steam methane reforming with Carbone Capture and Storage,TWh H2/year,0,0,0
-S1,FR,Production|Hydrogen|Biofuel refineries|Steam methane reforming with Carbone Capture and Storage,TWh H2/year,0,0,0
-S1,FR,Production|Hydrogen|Power to liquid|Steam methane reforming with Carbone Capture and Storage,TWh H2/year,0,0,0
-S1,FR,Production|Hydrogen|Ammonia|Steam methane reforming with Carbone Capture and Storage,TWh H2/year,0,0,0
-S1,FR,Production|Hydrogen|Steel|Steam methane reforming with Carbone Capture and Storage,TWh H2/year,0,0,0
-S1,FR,Production|Hydrogen|Chemicals|Steam methane reforming with Carbone Capture and Storage,TWh H2/year,0,0,0
-S1,FR,Production|Hydrogen|Power to gas|Steam methane reforming with Carbone Capture and Storage,TWh H2/year,0,0,0
-S1,FR,Production|Hydrogen|Transport|Electrolysis,TWh H2/year,0,0,0.1
-S1,FR,Production|Hydrogen|Fossil fuel refineries|Electrolysis,TWh H2/year,0,0,0
-S1,FR,Production|Hydrogen|Biofuel refineries|Electrolysis,TWh H2/year,0,0.9,1
-S1,FR,Production|Hydrogen|Power to liquid|Electrolysis,TWh H2/year,0,0,0
-S1,FR,Production|Hydrogen|Ammonia|Electrolysis,TWh H2/year,0,0,0
-S1,FR,Production|Hydrogen|Steel|Electrolysis,TWh H2/year,0,0,0
-S1,FR,Production|Hydrogen|Chemicals|Electrolysis,TWh H2/year,0,0,0
-S1,FR,Production|Hydrogen|Power to gas|Electrolysis,TWh H2/year,0,3.3,42.8
-S1,FR,Production|Hydrogen|Fossil fuel refineries|Co-produced|Oil refining,TWh H2/year,6.7,5,0
-S1,FR,Production|Hydrogen|Imported|Electrolysis,TWh H2/year,0,0,0
-S1,FR,Production|Hydrogen|Total,TWh H2/year,16.3,22.1,54.5
-S1,FR,Production|Hydrogen|Total from gas without co-produced from fossil fuels,TWh H2/year,9.6,13.1,10.6
-S1,FR,Production|Hydrogen|Total from electrolysis,TWh H2/year,0,4,43.9
-S1,FR,Production|Hydrogen|Share electrolysis over gas + electrolysis,%,0,23.39181287,80.55045872
-S1,FR,Production|Hydrogen|Fossil fuel refineries|Empty,TWh H2/year,0,0,1
-S2,FR,Efficiency|Hydrogen|Electrolyzer,%,61,65,72
-S2,FR,Production|Hydrogen|Transport|Steam methane reforming,TWh H2/year,0,0,0
-S2,FR,Production|Hydrogen|Fossil fuel refineries|Steam methane reforming,TWh H2/year,4.3,0,0
-S2,FR,Production|Hydrogen|Biofuel refineries|Steam methane reforming,TWh H2/year,0,0,0
-S2,FR,Production|Hydrogen|Power to liquid|Steam methane reforming,TWh H2/year,0,0,0
-S2,FR,Production|Hydrogen|Ammonia|Steam methane reforming,TWh H2/year,7.3,4.9,0
-S2,FR,Production|Hydrogen|Steel|Steam methane reforming,TWh H2/year,0,0,0
-S2,FR,Production|Hydrogen|Chemicals|Steam methane reforming,TWh H2/year,2.3,6.6,0
-S2,FR,Production|Hydrogen|Power to gas|Steam methane reforming,TWh H2/year,0,0,0
-S2,FR,Production|Hydrogen|Transport|Steam methane reforming with Carbone Capture and Storage,TWh H2/year,0,0,0
-S2,FR,Production|Hydrogen|Fossil fuel refineries|Steam methane reforming with Carbone Capture and Storage,TWh H2/year,0,0,0
-S2,FR,Production|Hydrogen|Biofuel refineries|Steam methane reforming with Carbone Capture and Storage,TWh H2/year,0,0,0
-S2,FR,Production|Hydrogen|Power to liquid|Steam methane reforming with Carbone Capture and Storage,TWh H2/year,0,0,0
-S2,FR,Production|Hydrogen|Ammonia|Steam methane reforming with Carbone Capture and Storage,TWh H2/year,0,0,0
-S2,FR,Production|Hydrogen|Steel|Steam methane reforming with Carbone Capture and Storage,TWh H2/year,0,0,0
-S2,FR,Production|Hydrogen|Chemicals|Steam methane reforming with Carbone Capture and Storage,TWh H2/year,0,0,0
-S2,FR,Production|Hydrogen|Power to gas|Steam methane reforming with Carbone Capture and Storage,TWh H2/year,0,0,0
-S2,FR,Production|Hydrogen|Transport|Electrolysis,TWh H2/year,0,3.4,19.8
-S2,FR,Production|Hydrogen|Fossil fuel refineries|Electrolysis,TWh H2/year,0,0,0
-S2,FR,Production|Hydrogen|Biofuel refineries|Electrolysis,TWh H2/year,0,0.3,1.3
-S2,FR,Production|Hydrogen|Power to liquid|Electrolysis,TWh H2/year,0,0,13
-S2,FR,Production|Hydrogen|Ammonia|Electrolysis,TWh H2/year,0,1.2,4.1
-S2,FR,Production|Hydrogen|Steel|Electrolysis,TWh H2/year,0,10.4,14.3
-S2,FR,Production|Hydrogen|Chemicals|Electrolysis,TWh H2/year,0,0,5.2
-S2,FR,Production|Hydrogen|Power to gas|Electrolysis,TWh H2/year,0,3.6,37.9
-S2,FR,Production|Hydrogen|Fossil fuel refineries|Co-produced|Oil refining,TWh H2/year,6.7,5,0
-S2,FR,Production|Hydrogen|Imported|Electrolysis,TWh H2/year,0,0,0
-S2,FR,Production|Hydrogen|Total,TWh H2/year,20.6,35.3,95.6
-S2,FR,Production|Hydrogen|Total from gas without co-produced from fossil fuels,TWh H2/year,13.9,11.5,0
-S2,FR,Production|Hydrogen|Total from electrolysis,TWh H2/year,0,18.8,95.6
-S2,FR,Production|Hydrogen|Share electrolysis over gas + electrolysis,%,0,62.04620462,100
-S2,FR,Production|Hydrogen|Fossil fuel refineries|Empty,TWh H2/year,0,0,1
-S3 Renew,FR,Efficiency|Hydrogen|Electrolyzer,%,61,65,72
-S3 Renew,FR,Production|Hydrogen|Transport|Steam methane reforming,TWh H2/year,0,0,0
-S3 Renew,FR,Production|Hydrogen|Fossil fuel refineries|Steam methane reforming,TWh H2/year,4.3,0,0
-S3 Renew,FR,Production|Hydrogen|Biofuel refineries|Steam methane reforming,TWh H2/year,0,0,0
-S3 Renew,FR,Production|Hydrogen|Power to liquid|Steam methane reforming,TWh H2/year,0,0,0
-S3 Renew,FR,Production|Hydrogen|Ammonia|Steam methane reforming,TWh H2/year,7.3,4.3,0
-S3 Renew,FR,Production|Hydrogen|Steel|Steam methane reforming,TWh H2/year,0,0,0
-S3 Renew,FR,Production|Hydrogen|Chemicals|Steam methane reforming,TWh H2/year,2.3,0,0
-S3 Renew,FR,Production|Hydrogen|Power to gas|Steam methane reforming,TWh H2/year,0,0,0
-S3 Renew,FR,Production|Hydrogen|Transport|Steam methane reforming with Carbone Capture and Storage,TWh H2/year,0,0,0
-S3 Renew,FR,Production|Hydrogen|Fossil fuel refineries|Steam methane reforming with Carbone Capture and Storage,TWh H2/year,0,0,0
-S3 Renew,FR,Production|Hydrogen|Biofuel refineries|Steam methane reforming with Carbone Capture and Storage,TWh H2/year,0,0,0
-S3 Renew,FR,Production|Hydrogen|Power to liquid|Steam methane reforming with Carbone Capture and Storage,TWh H2/year,0,0,0
-S3 Renew,FR,Production|Hydrogen|Ammonia|Steam methane reforming with Carbone Capture and Storage,TWh H2/year,0,0,0
-S3 Renew,FR,Production|Hydrogen|Steel|Steam methane reforming with Carbone Capture and Storage,TWh H2/year,0,0,0
-S3 Renew,FR,Production|Hydrogen|Chemicals|Steam methane reforming with Carbone Capture and Storage,TWh H2/year,0,0,0
-S3 Renew,FR,Production|Hydrogen|Power to gas|Steam methane reforming with Carbone Capture and Storage,TWh H2/year,0,0,0
-S3 Renew,FR,Production|Hydrogen|Transport|Electrolysis,TWh H2/year,0,3.2,12.5
-S3 Renew,FR,Production|Hydrogen|Fossil fuel refineries|Electrolysis,TWh H2/year,0,0,0
-S3 Renew,FR,Production|Hydrogen|Biofuel refineries|Electrolysis,TWh H2/year,0,2,3.2
-S3 Renew,FR,Production|Hydrogen|Power to liquid|Electrolysis,TWh H2/year,0,0,0
-S3 Renew,FR,Production|Hydrogen|Ammonia|Electrolysis,TWh H2/year,0,2.2,6
-S3 Renew,FR,Production|Hydrogen|Steel|Electrolysis,TWh H2/year,0,12.5,12.8
-S3 Renew,FR,Production|Hydrogen|Chemicals|Electrolysis,TWh H2/year,0,16.2,35.3
-S3 Renew,FR,Production|Hydrogen|Power to gas|Electrolysis,TWh H2/year,0,3.9,24.1
-S3 Renew,FR,Production|Hydrogen|Fossil fuel refineries|Co-produced|Oil refining,TWh H2/year,6.7,5.2,0
-S3 Renew,FR,Production|Hydrogen|Imported|Electrolysis,TWh H2/year,0,6,48
-S3 Renew,FR,Production|Hydrogen|Total,TWh H2/year,20.6,49.4,93.9
-S3 Renew,FR,Production|Hydrogen|Total from gas without co-produced from fossil fuels,TWh H2/year,13.9,4.3,0
-S3 Renew,FR,Production|Hydrogen|Total from electrolysis,TWh H2/year,0,39.9,93.9
-S3 Renew,FR,Production|Hydrogen|Share electrolysis over gas + electrolysis,%,0,90.27149321,100
-S3 Renew,FR,Production|Hydrogen|Fossil fuel refineries|Empty,TWh H2/year,0,0,1
-S3 Nuc,FR,Efficiency|Hydrogen|Electrolyzer,%,61,65,72
-S3 Nuc,FR,Production|Hydrogen|Transport|Steam methane reforming,TWh H2/year,0,0,0
-S3 Nuc,FR,Production|Hydrogen|Fossil fuel refineries|Steam methane reforming,TWh H2/year,4.3,0,0
-S3 Nuc,FR,Production|Hydrogen|Biofuel refineries|Steam methane reforming,TWh H2/year,0,0,0
-S3 Nuc,FR,Production|Hydrogen|Power to liquid|Steam methane reforming,TWh H2/year,0,0,0
-S3 Nuc,FR,Production|Hydrogen|Ammonia|Steam methane reforming,TWh H2/year,7.3,4.3,0
-S3 Nuc,FR,Production|Hydrogen|Steel|Steam methane reforming,TWh H2/year,0,0,0
-S3 Nuc,FR,Production|Hydrogen|Chemicals|Steam methane reforming,TWh H2/year,2.3,0,0
-S3 Nuc,FR,Production|Hydrogen|Power to gas|Steam methane reforming,TWh H2/year,0,0,0
-S3 Nuc,FR,Production|Hydrogen|Transport|Steam methane reforming with Carbone Capture and Storage,TWh H2/year,0,0,0
-S3 Nuc,FR,Production|Hydrogen|Fossil fuel refineries|Steam methane reforming with Carbone Capture and Storage,TWh H2/year,0,0,0
-S3 Nuc,FR,Production|Hydrogen|Biofuel refineries|Steam methane reforming with Carbone Capture and Storage,TWh H2/year,0,0,0
-S3 Nuc,FR,Production|Hydrogen|Power to liquid|Steam methane reforming with Carbone Capture and Storage,TWh H2/year,0,0,0
-S3 Nuc,FR,Production|Hydrogen|Ammonia|Steam methane reforming with Carbone Capture and Storage,TWh H2/year,0,0,0
-S3 Nuc,FR,Production|Hydrogen|Steel|Steam methane reforming with Carbone Capture and Storage,TWh H2/year,0,0,0
-S3 Nuc,FR,Production|Hydrogen|Chemicals|Steam methane reforming with Carbone Capture and Storage,TWh H2/year,0,0,0
-S3 Nuc,FR,Production|Hydrogen|Power to gas|Steam methane reforming with Carbone Capture and Storage,TWh H2/year,0,0,0
-S3 Nuc,FR,Production|Hydrogen|Transport|Electrolysis,TWh H2/year,0,3.2,12.5
-S3 Nuc,FR,Production|Hydrogen|Fossil fuel refineries|Electrolysis,TWh H2/year,0,0,0
-S3 Nuc,FR,Production|Hydrogen|Biofuel refineries|Electrolysis,TWh H2/year,0,2,3.2
-S3 Nuc,FR,Production|Hydrogen|Power to liquid|Electrolysis,TWh H2/year,0,0,0
-S3 Nuc,FR,Production|Hydrogen|Ammonia|Electrolysis,TWh H2/year,0,2.2,6
-S3 Nuc,FR,Production|Hydrogen|Steel|Electrolysis,TWh H2/year,0,12.5,12.8
-S3 Nuc,FR,Production|Hydrogen|Chemicals|Electrolysis,TWh H2/year,0,16.2,35.3
-S3 Nuc,FR,Production|Hydrogen|Power to gas|Electrolysis,TWh H2/year,0,3.9,24.1
-S3 Nuc,FR,Production|Hydrogen|Fossil fuel refineries|Co-produced|Oil refining,TWh H2/year,6.7,5.2,0
-S3 Nuc,FR,Production|Hydrogen|Imported|Electrolysis,TWh H2/year,0,6,48
-S3 Nuc,FR,Production|Hydrogen|Total,TWh H2/year,20.6,49.4,93.9
-S3 Nuc,FR,Production|Hydrogen|Total from gas without co-produced from fossil fuels,TWh H2/year,13.9,4.3,0
-S3 Nuc,FR,Production|Hydrogen|Total from electrolysis,TWh H2/year,0,39.9,93.9
-S3 Nuc,FR,Production|Hydrogen|Share electrolysis over gas + electrolysis,%,0,90.27149321,100
-S3 Nuc,FR,Production|Hydrogen|Fossil fuel refineries|Empty,TWh H2/year,0,0,1
-S4,FR,Efficiency|Hydrogen|Electrolyzer,%,61,65,72
-S4,FR,Production|Hydrogen|Transport|Steam methane reforming,TWh H2/year,4.3,0,0
-S4,FR,Production|Hydrogen|Fossil fuel refineries|Steam methane reforming,TWh H2/year,0,0,0
-S4,FR,Production|Hydrogen|Biofuel refineries|Steam methane reforming,TWh H2/year,0,0,0
-S4,FR,Production|Hydrogen|Power to liquid|Steam methane reforming,TWh H2/year,0,0,0
-S4,FR,Production|Hydrogen|Ammonia|Steam methane reforming,TWh H2/year,7.3,0,0
-S4,FR,Production|Hydrogen|Steel|Steam methane reforming,TWh H2/year,0,0,0
-S4,FR,Production|Hydrogen|Chemicals|Steam methane reforming,TWh H2/year,2.3,0,0
-S4,FR,Production|Hydrogen|Power to gas|Steam methane reforming,TWh H2/year,0,0,0
-S4,FR,Production|Hydrogen|Transport|Steam methane reforming with Carbone Capture and Storage,TWh H2/year,0,0,0
-S4,FR,Production|Hydrogen|Fossil fuel refineries|Steam methane reforming with Carbone Capture and Storage,TWh H2/year,0,0,0
-S4,FR,Production|Hydrogen|Biofuel refineries|Steam methane reforming with Carbone Capture and Storage,TWh H2/year,0,0,0
-S4,FR,Production|Hydrogen|Power to liquid|Steam methane reforming with Carbone Capture and Storage,TWh H2/year,0,0,0
-S4,FR,Production|Hydrogen|Ammonia|Steam methane reforming with Carbone Capture and Storage,TWh H2/year,0,6.4,6.2
-S4,FR,Production|Hydrogen|Steel|Steam methane reforming with Carbone Capture and Storage,TWh H2/year,0,0,0
-S4,FR,Production|Hydrogen|Chemicals|Steam methane reforming with Carbone Capture and Storage,TWh H2/year,0,7.1,5.8
-S4,FR,Production|Hydrogen|Power to gas|Steam methane reforming with Carbone Capture and Storage,TWh H2/year,0,0,0
-S4,FR,Production|Hydrogen|Transport|Electrolysis,TWh H2/year,0,1.5,5.8
-S4,FR,Production|Hydrogen|Fossil fuel refineries|Electrolysis,TWh H2/year,0,0,0
-S4,FR,Production|Hydrogen|Biofuel refineries|Electrolysis,TWh H2/year,0,2.5,4.3
-S4,FR,Production|Hydrogen|Power to liquid|Electrolysis,TWh H2/year,0,0,13.4
-S4,FR,Production|Hydrogen|Ammonia|Electrolysis,TWh H2/year,0,0,0
-S4,FR,Production|Hydrogen|Steel|Electrolysis,TWh H2/year,0,0,0
-S4,FR,Production|Hydrogen|Chemicals|Electrolysis,TWh H2/year,0,0,0
-S4,FR,Production|Hydrogen|Power to gas|Electrolysis,TWh H2/year,0,0,0
-S4,FR,Production|Hydrogen|Fossil fuel refineries|Co-produced|Oil refining,TWh H2/year,6.7,5.2,0
-S4,FR,Production|Hydrogen|Imported|Electrolysis,TWh H2/year,0,0,0
-S4,FR,Production|Hydrogen|Total,TWh H2/year,20.6,22.7,35.5
-S4,FR,Production|Hydrogen|Total from gas without co-produced from fossil fuels,TWh H2/year,13.9,13.5,12
-S4,FR,Production|Hydrogen|Total from electrolysis,TWh H2/year,0,4,23.5
-S4,FR,Production|Hydrogen|Share electrolysis over gas + electrolysis,%,0,22.85714286,66.1971831
-S4,FR,Production|Hydrogen|Fossil fuel refineries|Empty,TWh H2/year,0,0,1
-S1,FR,Production|Natural gas|Anaerobic digestion CIVE|Biogas,Nm3/year,1.41E+08,3.53E+08,3.62E+08
-S1,FR,Production|Natural gas|Anaerobic digestion dedicated crops|Biogas,Nm3/year,9.67E+07,1.10E+07,0.00E+00
-S1,FR,Production|Natural gas|Anaerobic digestion grass|Biogas,Nm3/year,1.27E+07,3.00E+08,1.97E+08
-S1,FR,Production|Natural gas|Anaerobic digestion biowaste|Biogas,Nm3/year,1.82E+08,0.00E+00,0.00E+00
-S1,FR,Production|Natural gas|Anaerobic digestion sewage sludge|Biogas,Nm3/year,0.00E+00,1.54E+07,1.98E+07
-S1,FR,Production|Natural gas|Anaerobic digestion agricultural residues|Biogas,Nm3/year,3.54E+07,2.37E+08,3.24E+08
-S1,FR,Production|Natural gas|Anaerobic digestion industrial wastewater|Biogas,Nm3/year,1.83E+08,1.46E+07,1.10E+06
-S1,FR,Production|Natural gas|Anaerobic digestion animal manure|Biogas,Nm3/year,4.23E+08,1.68E+07,9.86E+06
-S1,FR,Production|Natural gas|Pyrogasification|Renewable,Nm3/year,0,0,0
-S1,FR,Production|Natural gas|Pyrogasification|Fossil,Nm3/year,0,0,0
-S1,FR,Production|Natural gas|Pyrogasification with CCS|Renewable,Nm3/year,0,0,0
-S1,FR,Production|Natural gas|Power to gas,Nm3/year,0,271508379.9,3656312849
-S1,FR,Efficiency|Natural gas|Power to gas|Methanation,%,77,83,85
-S1,FR,Production|Natural gas|Imports|Fossil,Nm3/year,38430000000,21237000000,1807000000
-S1,FR,Production|Natural gas|Imports|Renewable,Nm3/year,0,0,0
-S1,FR,Production|Natural gas|Anaerobic digestion CIVE|Biogas to biomethane,Nm3/year,5.25E+07,1.47E+09,3.74E+09
-S1,FR,Production|Natural gas|Anaerobic digestion dedicated crops|Biogas to biomethane,Nm3/year,1.59E+07,4.59E+07,0.00E+00
-S1,FR,Production|Natural gas|Anaerobic digestion grass|Biogas to biomethane,Nm3/year,3.51E+06,1.25E+09,2.16E+09
-S1,FR,Production|Natural gas|Anaerobic digestion biowaste|Biogas to biomethane,Nm3/year,1.59E+07,6.21E+07,9.78E+07
-S1,FR,Production|Natural gas|Anaerobic digestion sewage sludge|Biogas to biomethane,Nm3/year,1.65E+07,7.13E+06,7.11E+06
-S1,FR,Production|Natural gas|Anaerobic digestion agricultural residues|Biogas to biomethane,Nm3/year,2.40E+07,9.81E+08,3.54E+09
-S1,FR,Production|Natural gas|Anaerobic digestion industrial wastewater|Biogas to biomethane,Nm3/year,3.46E+07,6.35E+07,2.74E+07
-S1,FR,Production|Natural gas|Anaerobic digestion animal manure|Biogas to biomethane,Nm3/year,6.60E+07,7.25E+07,1.05E+08
-S1,FR,Efficiency|Natural gas|Anaerobic digestion CIVE|Biogas to biomethane|Generic,%,1,1.00540062,1.025835592
-S1,FR,Efficiency|Natural gas|Anaerobic digestion CIVE|Biogas to biomethane|Biogenic CO2 emissions,%,1,1.031420892,1.163448536
-S1,FR,Efficiency|Natural gas|Anaerobic digestion CIVE|Biogas to biomethane|Biogenic CH4 emissions,%,1,1.220515396,5.907434554
-S1,FR,Efficiency|Natural gas|Anaerobic digestion dedicated crops|Biogas to biomethane|Generic,%,1,1.00540062,1.025835592
-S1,FR,Efficiency|Natural gas|Anaerobic digestion dedicated crops|Biogas to biomethane|Biogenic CO2 emissions,%,1,1.031420892,1.163885572
-S1,FR,Efficiency|Natural gas|Anaerobic digestion dedicated crops|Biogas to biomethane|Biogenic CH4 emissions,%,1,1.220515396,5.907434554
-S1,FR,Efficiency|Natural gas|Anaerobic digestion grass|Biogas to biomethane|Generic,%,1,1.00540062,1.025835592
-S1,FR,Efficiency|Natural gas|Anaerobic digestion grass|Biogas to biomethane|Biogenic CO2 emissions,%,1,1.031420892,1.163448536
-S1,FR,Efficiency|Natural gas|Anaerobic digestion grass|Biogas to biomethane|Biogenic CH4 emissions,%,1,1.220515396,5.907434554
-S1,FR,Efficiency|Natural gas|Anaerobic digestion biowaste|Biogas to biomethane|Generic,%,1,1.00540062,1.025835592
-S1,FR,Efficiency|Natural gas|Anaerobic digestion biowaste|Biogas to biomethane|Biogenic CO2 emissions,%,1,1.031420892,1.163885572
-S1,FR,Efficiency|Natural gas|Anaerobic digestion biowaste|Biogas to biomethane|Biogenic CH4 emissions,%,1,1.220515396,5.907434554
-S1,FR,Efficiency|Natural gas|Anaerobic digestion sewage sludge|Biogas to biomethane|Generic,%,1,1.00540062,1.025835592
-S1,FR,Efficiency|Natural gas|Anaerobic digestion sewage sludge|Biogas to biomethane|Biogenic CO2 emissions,%,1,1.031420892,1.163448536
-S1,FR,Efficiency|Natural gas|Anaerobic digestion sewage sludge|Biogas to biomethane|Biogenic CH4 emissions,%,1,1.220515396,5.907434554
-S1,FR,Efficiency|Natural gas|Anaerobic digestion agricultural residues|Biogas to biomethane|Generic,%,1,1.00540062,1.025835592
-S1,FR,Efficiency|Natural gas|Anaerobic digestion agricultural residues|Biogas to biomethane|Biogenic CO2 emissions,%,1,1.031420892,1.163885572
-S1,FR,Efficiency|Natural gas|Anaerobic digestion agricultural residues|Biogas to biomethane|Biogenic CH4 emissions,%,1,1.220515396,5.907434554
-S1,FR,Efficiency|Natural gas|Anaerobic digestion industrial wastewater|Biogas to biomethane|Generic,%,1,1.00540062,1.025835592
-S1,FR,Efficiency|Natural gas|Anaerobic digestion industrial wastewater|Biogas to biomethane|Biogenic CO2 emissions,%,1,1.031420892,1.163448536
-S1,FR,Efficiency|Natural gas|Anaerobic digestion industrial wastewater|Biogas to biomethane|Biogenic CH4 emissions,%,1,1.220515396,5.907434554
-S1,FR,Efficiency|Natural gas|Anaerobic digestion animal manure|Biogas to biomethane|Generic,%,1,1.00540062,1.025835592
-S1,FR,Efficiency|Natural gas|Anaerobic digestion animal manure|Biogas to biomethane|Biogenic CO2 emissions,%,1,1.031420892,1.163885572
-S1,FR,Efficiency|Natural gas|Anaerobic digestion animal manure|Biogas to biomethane|Biogenic CH4 emissions,%,1,1.220515396,5.907434554
-S1,FR,Production|Natural gas|Anaerobic digestion|Biogas to biomethane membrane,Nm3/year,1.93E+08,3.07E+09,4.77E+09
-S1,FR,Production|Natural gas|Anaerobic digestion|Biogas to biomethane chemical,Nm3/year,6.71E+06,1.07E+08,1.66E+08
-S1,FR,Production|Natural gas|Anaerobic digestion|Biogas to biomethane water,Nm3/year,6.71E+06,1.07E+08,1.66E+08
-S1,FR,Production|Natural gas|Anaerobic digestion|Biogas to biomethane PSA,Nm3/year,1.79E+07,2.85E+08,4.43E+08
-S1,FR,Production|Natural gas|Anaerobic digestion|Biogas to biomethane cryogenic,Nm3/year,4.48E+06,7.14E+07,1.11E+08
-S1,FR,Production|Natural gas|Anaerobic digestion|Biogas to biomethane membrane with CCS,Nm3/year,0.00E+00,2.58E+08,3.40E+09
-S1,FR,Production|Natural gas|Anaerobic digestion|Biogas to biomethane chemical with CCS,Nm3/year,0.00E+00,8.98E+06,1.18E+08
-S1,FR,Production|Natural gas|Anaerobic digestion|Biogas to biomethane water with CCS,Nm3/year,0.00E+00,8.98E+06,1.18E+08
-S1,FR,Production|Natural gas|Anaerobic digestion|Biogas to biomethane PSA with CCS,Nm3/year,0.00E+00,2.40E+07,3.16E+08
-S1,FR,Production|Natural gas|Anaerobic digestion|Biogas to biomethane cryogenic with CCS,Nm3/year,0.00E+00,6.00E+06,7.89E+07
-S1,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane membrane|Biogenic CO2 emissions,%,1,1,1.01
-S1,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane chemical|Biogenic CO2 emissions,%,1,1,1.001
-S1,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane water|Biogenic CO2 emissions,%,1,1,1.02
-S1,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane PSA|Biogenic CO2 emissions,%,1,1,1.03
-S1,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane cryogenic|Biogenic CO2 emissions,%,1,1,1.0005
-S1,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane purification|Biogenic CH4 emissions,%,1,1,1.00E+20
-S1,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane membrane|Electricity,%,1,1,1.009642426
-S1,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane chemical|Electricity,%,1,1,1.001
-S1,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane water|Electricity,%,1,1,1.018
-S1,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane PSA|Electricity,%,1,1,1.025
-S1,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane cryogenic|Electricity,%,1,1,1.001
-S1,FR,Production|Natural gas|High to low,TWh,1,1,1
-S2,FR,Production|Natural gas|Anaerobic digestion CIVE|Biogas,Nm3/year,1.41E+08,3.82E+08,3.60E+08
-S2,FR,Production|Natural gas|Anaerobic digestion dedicated crops|Biogas,Nm3/year,9.67E+07,1.22E+07,0.00E+00
-S2,FR,Production|Natural gas|Anaerobic digestion grass|Biogas,Nm3/year,1.27E+07,3.54E+08,2.42E+08
-S2,FR,Production|Natural gas|Anaerobic digestion biowaste|Biogas,Nm3/year,1.82E+08,0.00E+00,0.00E+00
-S2,FR,Production|Natural gas|Anaerobic digestion sewage sludge|Biogas,Nm3/year,0.00E+00,1.54E+07,1.98E+07
-S2,FR,Production|Natural gas|Anaerobic digestion agricultural residues|Biogas,Nm3/year,3.54E+07,2.19E+08,2.92E+08
-S2,FR,Production|Natural gas|Anaerobic digestion industrial wastewater|Biogas,Nm3/year,1.83E+08,1.55E+07,1.55E+06
-S2,FR,Production|Natural gas|Anaerobic digestion animal manure|Biogas,Nm3/year,4.23E+08,3.43E+07,1.06E+07
-S2,FR,Production|Natural gas|Pyrogasification|Renewable,Nm3/year,0,0,3.02E+08
-S2,FR,Production|Natural gas|Pyrogasification|Fossil,Nm3/year,0,0,2.01E+08
-S2,FR,Production|Natural gas|Power to gas,Nm3/year,0,3.00E+08,3.24E+09
-S2,FR,Production|Natural gas|Pyrogasification with CCS|Renewable,Nm3/year,0,0,0
-S2,FR,Efficiency|Natural gas|Power to gas|Methanation,%,77,83,85
-S2,FR,Production|Natural gas|Imports|Fossil,Nm3/year,3.84E+10,2.49E+10,2.52E+09
-S2,FR,Production|Natural gas|Imports|Renewable,Nm3/year,0.00E+00,0.00E+00,0.00E+00
-S2,FR,Production|Natural gas|Anaerobic digestion CIVE|Biogas to biomethane,Nm3/year,5.25E+07,1.58E+09,3.73E+09
-S2,FR,Production|Natural gas|Anaerobic digestion dedicated crops|Biogas to biomethane,Nm3/year,1.59E+07,5.05E+07,0.00E+00
-S2,FR,Production|Natural gas|Anaerobic digestion grass|Biogas to biomethane,Nm3/year,3.51E+06,1.46E+09,2.64E+09
-S2,FR,Production|Natural gas|Anaerobic digestion biowaste|Biogas to biomethane,Nm3/year,1.59E+07,6.83E+07,9.74E+07
-S2,FR,Production|Natural gas|Anaerobic digestion sewage sludge|Biogas to biomethane,Nm3/year,1.65E+07,7.84E+06,7.08E+06
-S2,FR,Production|Natural gas|Anaerobic digestion agricultural residues|Biogas to biomethane,Nm3/year,2.40E+07,9.48E+08,3.20E+09
-S2,FR,Production|Natural gas|Anaerobic digestion industrial wastewater|Biogas to biomethane,Nm3/year,3.46E+07,7.11E+07,4.47E+07
-S2,FR,Production|Natural gas|Anaerobic digestion animal manure|Biogas to biomethane,Nm3/year,6.60E+07,1.47E+08,1.13E+08
-S2,FR,Efficiency|Natural gas|Anaerobic digestion CIVE|Biogas to biomethane|Generic,%,1,1.040548915,1.061698284
-S2,FR,Efficiency|Natural gas|Anaerobic digestion CIVE|Biogas to biomethane|Biogenic CO2 emissions,%,1,1.24274411,1.401822308
-S2,FR,Efficiency|Natural gas|Anaerobic digestion CIVE|Biogas to biomethane|Biogenic CH4 emissions,%,1,2.712136891,13.12705373
-S2,FR,Efficiency|Natural gas|Anaerobic digestion dedicated crops|Biogas to biomethane|Generic,%,1,1.040548915,1.061698284
-S2,FR,Efficiency|Natural gas|Anaerobic digestion dedicated crops|Biogas to biomethane|Biogenic CO2 emissions,%,1,1.24274411,1.401822308
-S2,FR,Efficiency|Natural gas|Anaerobic digestion dedicated crops|Biogas to biomethane|Biogenic CH4 emissions,%,1,2.712136891,13.12705373
-S2,FR,Efficiency|Natural gas|Anaerobic digestion grass|Biogas to biomethane|Generic,%,1,1.040548915,1.061698284
-S2,FR,Efficiency|Natural gas|Anaerobic digestion grass|Biogas to biomethane|Biogenic CO2 emissions,%,1,1.24274411,1.401822308
-S2,FR,Efficiency|Natural gas|Anaerobic digestion grass|Biogas to biomethane|Biogenic CH4 emissions,%,1,2.712136891,13.12705373
-S2,FR,Efficiency|Natural gas|Anaerobic digestion biowaste|Biogas to biomethane|Generic,%,1,1.043204958,1.064408311
-S2,FR,Efficiency|Natural gas|Anaerobic digestion biowaste|Biogas to biomethane|Biogenic CO2 emissions,%,1,1.232999922,1.373254617
-S2,FR,Efficiency|Natural gas|Anaerobic digestion biowaste|Biogas to biomethane|Biogenic CH4 emissions,%,1,2.828831874,13.69187084
-S2,FR,Efficiency|Natural gas|Anaerobic digestion sewage sludge|Biogas to biomethane|Generic,%,1,1.043204958,1.064408311
-S2,FR,Efficiency|Natural gas|Anaerobic digestion sewage sludge|Biogas to biomethane|Biogenic CO2 emissions,%,1,1.235892289,1.378399399
-S2,FR,Efficiency|Natural gas|Anaerobic digestion sewage sludge|Biogas to biomethane|Biogenic CH4 emissions,%,1,2.828831874,13.69187084
-S2,FR,Efficiency|Natural gas|Anaerobic digestion agricultural residues|Biogas to biomethane|Generic,%,1,1.040548915,1.061698284
-S2,FR,Efficiency|Natural gas|Anaerobic digestion agricultural residues|Biogas to biomethane|Biogenic CO2 emissions,%,1,1.243523008,1.404384514
-S2,FR,Efficiency|Natural gas|Anaerobic digestion agricultural residues|Biogas to biomethane|Biogenic CH4 emissions,%,1,2.712136891,13.12705373
-S2,FR,Efficiency|Natural gas|Anaerobic digestion industrial wastewater|Biogas to biomethane|Generic,%,1,1.040548915,1.061698284
-S2,FR,Efficiency|Natural gas|Anaerobic digestion industrial wastewater|Biogas to biomethane|Biogenic CO2 emissions,%,1,1.233260701,1.384273032
-S2,FR,Efficiency|Natural gas|Anaerobic digestion industrial wastewater|Biogas to biomethane|Biogenic CH4 emissions,%,1,2.712136891,13.12705373
-S2,FR,Efficiency|Natural gas|Anaerobic digestion animal manure|Biogas to biomethane|Generic,%,1,1.10960602,1.132158988
-S2,FR,Efficiency|Natural gas|Anaerobic digestion animal manure|Biogas to biomethane|Biogenic CO2 emissions,%,1,1.707746329,1.931707307
-S2,FR,Efficiency|Natural gas|Anaerobic digestion animal manure|Biogas to biomethane|Biogenic CH4 emissions,%,1,5.927871313,28.6915773
-S2,FR,Production|Natural gas|Anaerobic digestion|Biogas to biomethane membrane,Nm3/year,1.93E+08,3.37E+09,5.29E+09
-S2,FR,Production|Natural gas|Anaerobic digestion|Biogas to biomethane chemical,Nm3/year,6.71E+06,1.17E+08,1.84E+08
-S2,FR,Production|Natural gas|Anaerobic digestion|Biogas to biomethane water,Nm3/year,6.71E+06,1.17E+08,1.84E+08
-S2,FR,Production|Natural gas|Anaerobic digestion|Biogas to biomethane PSA,Nm3/year,1.79E+07,3.13E+08,4.91E+08
-S2,FR,Production|Natural gas|Anaerobic digestion|Biogas to biomethane cryogenic,Nm3/year,4.48E+06,7.83E+07,1.23E+08
-S2,FR,Production|Natural gas|Anaerobic digestion|Biogas to biomethane membrane with CCS,Nm3/year,0.00E+00,2.85E+08,3.01E+09
-S2,FR,Production|Natural gas|Anaerobic digestion|Biogas to biomethane chemical with CCS,Nm3/year,0.00E+00,9.92E+06,1.05E+08
-S2,FR,Production|Natural gas|Anaerobic digestion|Biogas to biomethane water with CCS,Nm3/year,0.00E+00,9.92E+06,1.05E+08
-S2,FR,Production|Natural gas|Anaerobic digestion|Biogas to biomethane PSA with CCS,Nm3/year,0.00E+00,2.65E+07,2.80E+08
-S2,FR,Production|Natural gas|Anaerobic digestion|Biogas to biomethane cryogenic with CCS,Nm3/year,0.00E+00,6.63E+06,6.99E+07
-S2,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane membrane|Biogenic CO2 emissions,%,1,1,1.01
-S2,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane chemical|Biogenic CO2 emissions,%,1,1,1.001
-S2,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane water|Biogenic CO2 emissions,%,1,1,1.02
-S2,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane PSA|Biogenic CO2 emissions,%,1,1,1.03
-S2,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane cryogenic|Biogenic CO2 emissions,%,1,1,1.0005
-S2,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane purification|Biogenic CH4 emissions,%,1,1,1.00E+20
-S2,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane membrane|Electricity,%,1,1,1.009642426
-S2,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane chemical|Electricity,%,1,1,1.001
-S2,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane water|Electricity,%,1,1,1.018
-S2,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane PSA|Electricity,%,1,1,1.025
-S2,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane cryogenic|Electricity,%,1,1,1.001
-S2,FR,Production|Natural gas|High to low,TWh,1,1,1
-S3 Renew,FR,Production|Natural gas|Anaerobic digestion CIVE|Biogas,Nm3/year,1.41E+08,4.55E+08,4.22E+08
-S3 Renew,FR,Production|Natural gas|Anaerobic digestion dedicated crops|Biogas,Nm3/year,9.67E+07,3.12E+07,5.62E+07
-S3 Renew,FR,Production|Natural gas|Anaerobic digestion grass|Biogas,Nm3/year,1.27E+07,3.68E+08,3.01E+08
-S3 Renew,FR,Production|Natural gas|Anaerobic digestion biowaste|Biogas,Nm3/year,1.82E+08,0.00E+00,0.00E+00
-S3 Renew,FR,Production|Natural gas|Anaerobic digestion sewage sludge|Biogas,Nm3/year,0.00E+00,1.54E+07,1.99E+07
-S3 Renew,FR,Production|Natural gas|Anaerobic digestion agricultural residues|Biogas,Nm3/year,3.54E+07,1.69E+08,2.78E+08
-S3 Renew,FR,Production|Natural gas|Anaerobic digestion industrial wastewater|Biogas,Nm3/year,1.83E+08,1.55E+07,1.72E+06
-S3 Renew,FR,Production|Natural gas|Anaerobic digestion animal manure|Biogas,Nm3/year,4.23E+08,3.78E+07,2.21E+07
-S3 Renew,FR,Production|Natural gas|Pyrogasification|Renewable,Nm3/year,0,4.30E+07,4848000000
-S3 Renew,FR,Production|Natural gas|Pyrogasification|Fossil,Nm3/year,0,0,1881000000
-S3 Renew,FR,Production|Natural gas|Pyrogasification with CCS|Renewable,Nm3/year,0,0,0
-S3 Renew,FR,Production|Natural gas|Power to gas,Nm3/year,0,326815642.5,2058435754
-S3 Renew,FR,Efficiency|Natural gas|Power to gas|Methanation,%,77,83,85
-S3 Renew,FR,Production|Natural gas|Imports|Fossil,Nm3/year,38430000000,29405000000,1518000000
-S3 Renew,FR,Production|Natural gas|Imports|Renewable,Nm3/year,0,0,0
-S3 Renew,FR,Production|Natural gas|Anaerobic digestion CIVE|Biogas to biomethane,Nm3/year,5.25E+07,1.95E+09,4.51E+09
-S3 Renew,FR,Production|Natural gas|Anaerobic digestion dedicated crops|Biogas to biomethane,Nm3/year,1.59E+07,1.33E+08,6.00E+08
-S3 Renew,FR,Production|Natural gas|Anaerobic digestion grass|Biogas to biomethane,Nm3/year,3.51E+06,1.56E+09,3.37E+09
-S3 Renew,FR,Production|Natural gas|Anaerobic digestion biowaste|Biogas to biomethane,Nm3/year,1.59E+07,7.01E+07,1.10E+08
-S3 Renew,FR,Production|Natural gas|Anaerobic digestion sewage sludge|Biogas to biomethane,Nm3/year,1.65E+07,8.05E+06,7.98E+06
-S3 Renew,FR,Production|Natural gas|Anaerobic digestion agricultural residues|Biogas to biomethane,Nm3/year,2.40E+07,7.54E+08,3.15E+09
-S3 Renew,FR,Production|Natural gas|Anaerobic digestion industrial wastewater|Biogas to biomethane,Nm3/year,3.46E+07,7.30E+07,5.17E+07
-S3 Renew,FR,Production|Natural gas|Anaerobic digestion animal manure|Biogas to biomethane,Nm3/year,6.60E+07,1.67E+08,2.45E+08
-S3 Renew,FR,Efficiency|Natural gas|Anaerobic digestion CIVE|Biogas to biomethane|Generic,%,1,1.040548915,1.061698284
-S3 Renew,FR,Efficiency|Natural gas|Anaerobic digestion CIVE|Biogas to biomethane|Biogenic CO2 emissions,%,1,1.24274411,1.401822308
-S3 Renew,FR,Efficiency|Natural gas|Anaerobic digestion CIVE|Biogas to biomethane|Biogenic CH4 emissions,%,1,2.712136891,13.12705373
-S3 Renew,FR,Efficiency|Natural gas|Anaerobic digestion dedicated crops|Biogas to biomethane|Generic,%,1,1.040548915,1.061698284
-S3 Renew,FR,Efficiency|Natural gas|Anaerobic digestion dedicated crops|Biogas to biomethane|Biogenic CO2 emissions,%,1,1.24274411,1.401822308
-S3 Renew,FR,Efficiency|Natural gas|Anaerobic digestion dedicated crops|Biogas to biomethane|Biogenic CH4 emissions,%,1,2.712136891,13.12705373
-S3 Renew,FR,Efficiency|Natural gas|Anaerobic digestion grass|Biogas to biomethane|Generic,%,1,1.040548915,1.061698284
-S3 Renew,FR,Efficiency|Natural gas|Anaerobic digestion grass|Biogas to biomethane|Biogenic CO2 emissions,%,1,1.24274411,1.401822308
-S3 Renew,FR,Efficiency|Natural gas|Anaerobic digestion grass|Biogas to biomethane|Biogenic CH4 emissions,%,1,2.712136891,13.12705373
-S3 Renew,FR,Efficiency|Natural gas|Anaerobic digestion biowaste|Biogas to biomethane|Generic,%,1,1.043204958,1.064408311
-S3 Renew,FR,Efficiency|Natural gas|Anaerobic digestion biowaste|Biogas to biomethane|Biogenic CO2 emissions,%,1,1.232999922,1.373254617
-S3 Renew,FR,Efficiency|Natural gas|Anaerobic digestion biowaste|Biogas to biomethane|Biogenic CH4 emissions,%,1,2.828831874,13.69187084
-S3 Renew,FR,Efficiency|Natural gas|Anaerobic digestion sewage sludge|Biogas to biomethane|Generic,%,1,1.043204958,1.064408311
-S3 Renew,FR,Efficiency|Natural gas|Anaerobic digestion sewage sludge|Biogas to biomethane|Biogenic CO2 emissions,%,1,1.235892289,1.378399399
-S3 Renew,FR,Efficiency|Natural gas|Anaerobic digestion sewage sludge|Biogas to biomethane|Biogenic CH4 emissions,%,1,2.828831874,13.69187084
-S3 Renew,FR,Efficiency|Natural gas|Anaerobic digestion agricultural residues|Biogas to biomethane|Generic,%,1,1.040548915,1.061698284
-S3 Renew,FR,Efficiency|Natural gas|Anaerobic digestion agricultural residues|Biogas to biomethane|Biogenic CO2 emissions,%,1,1.243523008,1.404384514
-S3 Renew,FR,Efficiency|Natural gas|Anaerobic digestion agricultural residues|Biogas to biomethane|Biogenic CH4 emissions,%,1,2.712136891,13.12705373
-S3 Renew,FR,Efficiency|Natural gas|Anaerobic digestion industrial wastewater|Biogas to biomethane|Generic,%,1,1.040548915,1.061698284
-S3 Renew,FR,Efficiency|Natural gas|Anaerobic digestion industrial wastewater|Biogas to biomethane|Biogenic CO2 emissions,%,1,1.233260701,1.384273032
-S3 Renew,FR,Efficiency|Natural gas|Anaerobic digestion industrial wastewater|Biogas to biomethane|Biogenic CH4 emissions,%,1,2.712136891,13.12705373
-S3 Renew,FR,Efficiency|Natural gas|Anaerobic digestion animal manure|Biogas to biomethane|Generic,%,1,1.10960602,1.132158988
-S3 Renew,FR,Efficiency|Natural gas|Anaerobic digestion animal manure|Biogas to biomethane|Biogenic CO2 emissions,%,1,1.707746329,1.931707307
-S3 Renew,FR,Efficiency|Natural gas|Anaerobic digestion animal manure|Biogas to biomethane|Biogenic CH4 emissions,%,1,5.927871313,28.6915773
-S3 Renew,FR,Production|Natural gas|Anaerobic digestion|Biogas to biomethane membrane,Nm3/year,1.93E+08,3.67E+09,8.25E+09
-S3 Renew,FR,Production|Natural gas|Anaerobic digestion|Biogas to biomethane chemical,Nm3/year,6.71E+06,1.27E+08,2.87E+08
-S3 Renew,FR,Production|Natural gas|Anaerobic digestion|Biogas to biomethane water,Nm3/year,6.71E+06,1.27E+08,2.87E+08
-S3 Renew,FR,Production|Natural gas|Anaerobic digestion|Biogas to biomethane PSA,Nm3/year,1.79E+07,3.41E+08,7.66E+08
-S3 Renew,FR,Production|Natural gas|Anaerobic digestion|Biogas to biomethane cryogenic,Nm3/year,4.48E+06,8.51E+07,1.92E+08
-S3 Renew,FR,Production|Natural gas|Anaerobic digestion|Biogas to biomethane membrane with CCS,Nm3/year,0.00E+00,3.11E+08,1.91E+09
-S3 Renew,FR,Production|Natural gas|Anaerobic digestion|Biogas to biomethane chemical with CCS,Nm3/year,0.00E+00,1.08E+07,6.65E+07
-S3 Renew,FR,Production|Natural gas|Anaerobic digestion|Biogas to biomethane water with CCS,Nm3/year,0.00E+00,1.08E+07,6.65E+07
-S3 Renew,FR,Production|Natural gas|Anaerobic digestion|Biogas to biomethane PSA with CCS,Nm3/year,0.00E+00,2.89E+07,1.78E+08
-S3 Renew,FR,Production|Natural gas|Anaerobic digestion|Biogas to biomethane cryogenic with CCS,Nm3/year,0.00E+00,7.23E+06,4.44E+07
-S3 Renew,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane membrane|Biogenic CO2 emissions,%,1,1,1.01
-S3 Renew,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane chemical|Biogenic CO2 emissions,%,1,1,1.001
-S3 Renew,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane water|Biogenic CO2 emissions,%,1,1,1.02
-S3 Renew,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane PSA|Biogenic CO2 emissions,%,1,1,1.03
-S3 Renew,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane cryogenic|Biogenic CO2 emissions,%,1,1,1.0005
-S3 Renew,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane purification|Biogenic CH4 emissions,%,1,1,1.00E+20
-S3 Renew,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane membrane|Electricity,%,1,1,1.009642426
-S3 Renew,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane chemical|Electricity,%,1,1,1.001
-S3 Renew,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane water|Electricity,%,1,1,1.018
-S3 Renew,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane PSA|Electricity,%,1,1,1.025
-S3 Renew,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane cryogenic|Electricity,%,1,1,1.001
-S3 Renew,FR,Production|Natural gas|High to low,TWh,1,1,1
-S3 Nuc,FR,Production|Natural gas|Anaerobic digestion CIVE|Biogas,Nm3/year,1.41E+08,4.55E+08,4.22E+08
-S3 Nuc,FR,Production|Natural gas|Anaerobic digestion dedicated crops|Biogas,Nm3/year,9.67E+07,3.12E+07,5.62E+07
-S3 Nuc,FR,Production|Natural gas|Anaerobic digestion grass|Biogas,Nm3/year,1.27E+07,3.68E+08,3.01E+08
-S3 Nuc,FR,Production|Natural gas|Anaerobic digestion biowaste|Biogas,Nm3/year,1.82E+08,0.00E+00,0.00E+00
-S3 Nuc,FR,Production|Natural gas|Anaerobic digestion sewage sludge|Biogas,Nm3/year,0.00E+00,1.54E+07,1.99E+07
-S3 Nuc,FR,Production|Natural gas|Anaerobic digestion agricultural residues|Biogas,Nm3/year,3.54E+07,1.69E+08,2.78E+08
-S3 Nuc,FR,Production|Natural gas|Anaerobic digestion industrial wastewater|Biogas,Nm3/year,1.83E+08,1.55E+07,1.72E+06
-S3 Nuc,FR,Production|Natural gas|Anaerobic digestion animal manure|Biogas,Nm3/year,4.23E+08,3.78E+07,2.21E+07
-S3 Nuc,FR,Production|Natural gas|Pyrogasification|Renewable,Nm3/year,0,43000000,4848000000
-S3 Nuc,FR,Production|Natural gas|Pyrogasification|Fossil,Nm3/year,0,0,1881000000
-S3 Nuc,FR,Production|Natural gas|Pyrogasification with CCS|Renewable,Nm3/year,0,0,0
-S3 Nuc,FR,Production|Natural gas|Power to gas,Nm3/year,0,326815642.5,2058435754
-S3 Nuc,FR,Efficiency|Natural gas|Power to gas|Methanation,%,77,83,85
-S3 Nuc,FR,Production|Natural gas|Imports|Fossil,Nm3/year,38430000000,29405000000,1518000000
-S3 Nuc,FR,Production|Natural gas|Imports|Renewable,Nm3/year,0,0,0
-S3 Nuc,FR,Production|Natural gas|Anaerobic digestion CIVE|Biogas to biomethane,Nm3/year,5.25E+07,1.95E+09,4.51E+09
-S3 Nuc,FR,Production|Natural gas|Anaerobic digestion dedicated crops|Biogas to biomethane,Nm3/year,1.59E+07,1.33E+08,6.00E+08
-S3 Nuc,FR,Production|Natural gas|Anaerobic digestion grass|Biogas to biomethane,Nm3/year,3.51E+06,1.56E+09,3.37E+09
-S3 Nuc,FR,Production|Natural gas|Anaerobic digestion biowaste|Biogas to biomethane,Nm3/year,1.59E+07,7.01E+07,1.10E+08
-S3 Nuc,FR,Production|Natural gas|Anaerobic digestion sewage sludge|Biogas to biomethane,Nm3/year,1.65E+07,8.05E+06,7.98E+06
-S3 Nuc,FR,Production|Natural gas|Anaerobic digestion agricultural residues|Biogas to biomethane,Nm3/year,2.40E+07,7.54E+08,3.15E+09
-S3 Nuc,FR,Production|Natural gas|Anaerobic digestion industrial wastewater|Biogas to biomethane,Nm3/year,3.46E+07,7.30E+07,5.17E+07
-S3 Nuc,FR,Production|Natural gas|Anaerobic digestion animal manure|Biogas to biomethane,Nm3/year,6.60E+07,1.67E+08,2.45E+08
-S3 Nuc,FR,Efficiency|Natural gas|Anaerobic digestion CIVE|Biogas to biomethane|Generic,%,1,1.040548915,1.061698284
-S3 Nuc,FR,Efficiency|Natural gas|Anaerobic digestion CIVE|Biogas to biomethane|Biogenic CO2 emissions,%,1,1.24274411,1.401822308
-S3 Nuc,FR,Efficiency|Natural gas|Anaerobic digestion CIVE|Biogas to biomethane|Biogenic CH4 emissions,%,1,2.712136891,13.12705373
-S3 Nuc,FR,Efficiency|Natural gas|Anaerobic digestion dedicated crops|Biogas to biomethane|Generic,%,1,1.040548915,1.061698284
-S3 Nuc,FR,Efficiency|Natural gas|Anaerobic digestion dedicated crops|Biogas to biomethane|Biogenic CO2 emissions,%,1,1.24274411,1.401822308
-S3 Nuc,FR,Efficiency|Natural gas|Anaerobic digestion dedicated crops|Biogas to biomethane|Biogenic CH4 emissions,%,1,2.712136891,13.12705373
-S3 Nuc,FR,Efficiency|Natural gas|Anaerobic digestion grass|Biogas to biomethane|Generic,%,1,1.040548915,1.061698284
-S3 Nuc,FR,Efficiency|Natural gas|Anaerobic digestion grass|Biogas to biomethane|Biogenic CO2 emissions,%,1,1.24274411,1.401822308
-S3 Nuc,FR,Efficiency|Natural gas|Anaerobic digestion grass|Biogas to biomethane|Biogenic CH4 emissions,%,1,2.712136891,13.12705373
-S3 Nuc,FR,Efficiency|Natural gas|Anaerobic digestion biowaste|Biogas to biomethane|Generic,%,1,1.043204958,1.064408311
-S3 Nuc,FR,Efficiency|Natural gas|Anaerobic digestion biowaste|Biogas to biomethane|Biogenic CO2 emissions,%,1,1.232999922,1.373254617
-S3 Nuc,FR,Efficiency|Natural gas|Anaerobic digestion biowaste|Biogas to biomethane|Biogenic CH4 emissions,%,1,2.828831874,13.69187084
-S3 Nuc,FR,Efficiency|Natural gas|Anaerobic digestion sewage sludge|Biogas to biomethane|Generic,%,1,1.043204958,1.064408311
-S3 Nuc,FR,Efficiency|Natural gas|Anaerobic digestion sewage sludge|Biogas to biomethane|Biogenic CO2 emissions,%,1,1.235892289,1.378399399
-S3 Nuc,FR,Efficiency|Natural gas|Anaerobic digestion sewage sludge|Biogas to biomethane|Biogenic CH4 emissions,%,1,2.828831874,13.69187084
-S3 Nuc,FR,Efficiency|Natural gas|Anaerobic digestion agricultural residues|Biogas to biomethane|Generic,%,1,1.040548915,1.061698284
-S3 Nuc,FR,Efficiency|Natural gas|Anaerobic digestion agricultural residues|Biogas to biomethane|Biogenic CO2 emissions,%,1,1.243523008,1.404384514
-S3 Nuc,FR,Efficiency|Natural gas|Anaerobic digestion agricultural residues|Biogas to biomethane|Biogenic CH4 emissions,%,1,2.712136891,13.12705373
-S3 Nuc,FR,Efficiency|Natural gas|Anaerobic digestion industrial wastewater|Biogas to biomethane|Generic,%,1,1.040548915,1.061698284
-S3 Nuc,FR,Efficiency|Natural gas|Anaerobic digestion industrial wastewater|Biogas to biomethane|Biogenic CO2 emissions,%,1,1.233260701,1.384273032
-S3 Nuc,FR,Efficiency|Natural gas|Anaerobic digestion industrial wastewater|Biogas to biomethane|Biogenic CH4 emissions,%,1,2.712136891,13.12705373
-S3 Nuc,FR,Efficiency|Natural gas|Anaerobic digestion animal manure|Biogas to biomethane|Generic,%,1,1.10960602,1.132158988
-S3 Nuc,FR,Efficiency|Natural gas|Anaerobic digestion animal manure|Biogas to biomethane|Biogenic CO2 emissions,%,1,1.707746329,1.931707307
-S3 Nuc,FR,Efficiency|Natural gas|Anaerobic digestion animal manure|Biogas to biomethane|Biogenic CH4 emissions,%,1,5.927871313,28.6915773
-S3 Nuc,FR,Production|Natural gas|Anaerobic digestion|Biogas to biomethane membrane,Nm3/year,1.93E+08,3.67E+09,8.25E+09
-S3 Nuc,FR,Production|Natural gas|Anaerobic digestion|Biogas to biomethane chemical,Nm3/year,6.71E+06,1.27E+08,2.87E+08
-S3 Nuc,FR,Production|Natural gas|Anaerobic digestion|Biogas to biomethane water,Nm3/year,6.71E+06,1.27E+08,2.87E+08
-S3 Nuc,FR,Production|Natural gas|Anaerobic digestion|Biogas to biomethane PSA,Nm3/year,1.79E+07,3.41E+08,7.66E+08
-S3 Nuc,FR,Production|Natural gas|Anaerobic digestion|Biogas to biomethane cryogenic,Nm3/year,4.48E+06,8.51E+07,1.92E+08
-S3 Nuc,FR,Production|Natural gas|Anaerobic digestion|Biogas to biomethane membrane with CCS,Nm3/year,0.00E+00,3.11E+08,1.91E+09
-S3 Nuc,FR,Production|Natural gas|Anaerobic digestion|Biogas to biomethane chemical with CCS,Nm3/year,0.00E+00,1.08E+07,6.65E+07
-S3 Nuc,FR,Production|Natural gas|Anaerobic digestion|Biogas to biomethane water with CCS,Nm3/year,0.00E+00,1.08E+07,6.65E+07
-S3 Nuc,FR,Production|Natural gas|Anaerobic digestion|Biogas to biomethane PSA with CCS,Nm3/year,0.00E+00,2.89E+07,1.78E+08
-S3 Nuc,FR,Production|Natural gas|Anaerobic digestion|Biogas to biomethane cryogenic with CCS,Nm3/year,0.00E+00,7.23E+06,4.44E+07
-S3 Nuc,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane membrane|Biogenic CO2 emissions,%,1,1,1.01
-S3 Nuc,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane chemical|Biogenic CO2 emissions,%,1,1,1.001
-S3 Nuc,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane water|Biogenic CO2 emissions,%,1,1,1.02
-S3 Nuc,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane PSA|Biogenic CO2 emissions,%,1,1,1.03
-S3 Nuc,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane cryogenic|Biogenic CO2 emissions,%,1,1,1.0005
-S3 Nuc,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane purification|Biogenic CH4 emissions,%,1,1,1.00E+20
-S3 Nuc,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane membrane|Electricity,%,1,1,1.009642426
-S3 Nuc,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane chemical|Electricity,%,1,1,1.001
-S3 Nuc,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane water|Electricity,%,1,1,1.018
-S3 Nuc,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane PSA|Electricity,%,1,1,1.025
-S3 Nuc,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane cryogenic|Electricity,%,1,1,1.001
-S3 Nuc,FR,Production|Natural gas|High to low,TWh,1,1,1
-S4,FR,Production|Natural gas|Anaerobic digestion CIVE|Biogas,Nm3/year,1.41E+08,4.70E+08,4.72E+08
-S4,FR,Production|Natural gas|Anaerobic digestion dedicated crops|Biogas,Nm3/year,9.67E+07,4.86E+07,6.64E+07
-S4,FR,Production|Natural gas|Anaerobic digestion grass|Biogas,Nm3/year,1.27E+07,3.65E+08,2.82E+08
-S4,FR,Production|Natural gas|Anaerobic digestion biowaste|Biogas,Nm3/year,1.82E+08,0.00E+00,0.00E+00
-S4,FR,Production|Natural gas|Anaerobic digestion sewage sludge|Biogas,Nm3/year,0.00E+00,1.54E+07,1.99E+07
-S4,FR,Production|Natural gas|Anaerobic digestion agricultural residues|Biogas,Nm3/year,3.54E+07,1.60E+08,3.49E+08
-S4,FR,Production|Natural gas|Anaerobic digestion industrial wastewater|Biogas,Nm3/year,1.83E+08,1.56E+07,1.95E+06
-S4,FR,Production|Natural gas|Anaerobic digestion animal manure|Biogas,Nm3/year,4.23E+08,3.94E+07,2.26E+07
-S4,FR,Production|Natural gas|Pyrogasification|Renewable,Nm3/year,0,3.50E+07,1051870586
-S4,FR,Production|Natural gas|Pyrogasification|Fossil,Nm3/year,0,0,1123000000
-S4,FR,Production|Natural gas|Pyrogasification with CCS|Renewable,Nm3/year,0,0,632129414.1
-S4,FR,Production|Natural gas|Power to gas,Nm3/year,0,0,0
-S4,FR,Efficiency|Natural gas|Power to gas|Methanation,%,77,83,85
-S4,FR,Production|Natural gas|Imports|Fossil,Nm3/year,38430000000,39787000000,17045000000
-S4,FR,Production|Natural gas|Imports|Renewable,Nm3/year,0,0,4416000000
-S4,FR,Production|Natural gas|Anaerobic digestion CIVE|Biogas to biomethane,Nm3/year,5.25E+07,2.01E+09,5.03E+09
-S4,FR,Production|Natural gas|Anaerobic digestion dedicated crops|Biogas to biomethane,Nm3/year,1.59E+07,2.07E+08,7.05E+08
-S4,FR,Production|Natural gas|Anaerobic digestion grass|Biogas to biomethane,Nm3/year,3.51E+06,1.55E+09,3.15E+09
-S4,FR,Production|Natural gas|Anaerobic digestion biowaste|Biogas to biomethane,Nm3/year,1.59E+07,7.11E+07,1.09E+08
-S4,FR,Production|Natural gas|Anaerobic digestion sewage sludge|Biogas to biomethane,Nm3/year,1.65E+07,8.16E+06,7.96E+06
-S4,FR,Production|Natural gas|Anaerobic digestion agricultural residues|Biogas to biomethane,Nm3/year,2.40E+07,7.11E+08,3.93E+09
-S4,FR,Production|Natural gas|Anaerobic digestion industrial wastewater|Biogas to biomethane,Nm3/year,3.46E+07,7.40E+07,6.01E+07
-S4,FR,Production|Natural gas|Anaerobic digestion animal manure|Biogas to biomethane,Nm3/year,6.60E+07,1.74E+08,2.49E+08
-S4,FR,Efficiency|Natural gas|Anaerobic digestion CIVE|Biogas to biomethane|Generic,%,1,1.040548915,1.061698284
-S4,FR,Efficiency|Natural gas|Anaerobic digestion CIVE|Biogas to biomethane|Biogenic CO2 emissions,%,1,1.24274411,1.401822308
-S4,FR,Efficiency|Natural gas|Anaerobic digestion CIVE|Biogas to biomethane|Biogenic CH4 emissions,%,1,2.712136891,13.12705373
-S4,FR,Efficiency|Natural gas|Anaerobic digestion dedicated crops|Biogas to biomethane|Generic,%,1,1.040548915,1.061698284
-S4,FR,Efficiency|Natural gas|Anaerobic digestion dedicated crops|Biogas to biomethane|Biogenic CO2 emissions,%,1,1.24274411,1.401822308
-S4,FR,Efficiency|Natural gas|Anaerobic digestion dedicated crops|Biogas to biomethane|Biogenic CH4 emissions,%,1,2.712136891,13.12705373
-S4,FR,Efficiency|Natural gas|Anaerobic digestion grass|Biogas to biomethane|Generic,%,1,1.040548915,1.061698284
-S4,FR,Efficiency|Natural gas|Anaerobic digestion grass|Biogas to biomethane|Biogenic CO2 emissions,%,1,1.24274411,1.401822308
-S4,FR,Efficiency|Natural gas|Anaerobic digestion grass|Biogas to biomethane|Biogenic CH4 emissions,%,1,2.712136891,13.12705373
-S4,FR,Efficiency|Natural gas|Anaerobic digestion biowaste|Biogas to biomethane|Generic,%,1,1.043204958,1.064408311
-S4,FR,Efficiency|Natural gas|Anaerobic digestion biowaste|Biogas to biomethane|Biogenic CO2 emissions,%,1,1.232999922,1.373254617
-S4,FR,Efficiency|Natural gas|Anaerobic digestion biowaste|Biogas to biomethane|Biogenic CH4 emissions,%,1,2.828831874,13.69187084
-S4,FR,Efficiency|Natural gas|Anaerobic digestion sewage sludge|Biogas to biomethane|Generic,%,1,1.043204958,1.064408311
-S4,FR,Efficiency|Natural gas|Anaerobic digestion sewage sludge|Biogas to biomethane|Biogenic CO2 emissions,%,1,1.235892289,1.378399399
-S4,FR,Efficiency|Natural gas|Anaerobic digestion sewage sludge|Biogas to biomethane|Biogenic CH4 emissions,%,1,2.828831874,13.69187084
-S4,FR,Efficiency|Natural gas|Anaerobic digestion agricultural residues|Biogas to biomethane|Generic,%,1,1.040548915,1.061698284
-S4,FR,Efficiency|Natural gas|Anaerobic digestion agricultural residues|Biogas to biomethane|Biogenic CO2 emissions,%,1,1.243523008,1.404384514
-S4,FR,Efficiency|Natural gas|Anaerobic digestion agricultural residues|Biogas to biomethane|Biogenic CH4 emissions,%,1,2.712136891,13.12705373
-S4,FR,Efficiency|Natural gas|Anaerobic digestion industrial wastewater|Biogas to biomethane|Generic,%,1,1.040548915,1.061698284
-S4,FR,Efficiency|Natural gas|Anaerobic digestion industrial wastewater|Biogas to biomethane|Biogenic CO2 emissions,%,1,1.233260701,1.384273032
-S4,FR,Efficiency|Natural gas|Anaerobic digestion industrial wastewater|Biogas to biomethane|Biogenic CH4 emissions,%,1,2.712136891,13.12705373
-S4,FR,Efficiency|Natural gas|Anaerobic digestion animal manure|Biogas to biomethane|Generic,%,1,1.10960602,1.132158988
-S4,FR,Efficiency|Natural gas|Anaerobic digestion animal manure|Biogas to biomethane|Biogenic CO2 emissions,%,1,1.707746329,1.931707307
-S4,FR,Efficiency|Natural gas|Anaerobic digestion animal manure|Biogas to biomethane|Biogenic CH4 emissions,%,1,5.927871313,28.6915773
-S4,FR,Production|Natural gas|Anaerobic digestion|Biogas to biomethane membrane,Nm3/year,1.93E+08,4.05E+09,1.12E+10
-S4,FR,Production|Natural gas|Anaerobic digestion|Biogas to biomethane chemical,Nm3/year,6.71E+06,1.41E+08,3.88E+08
-S4,FR,Production|Natural gas|Anaerobic digestion|Biogas to biomethane water,Nm3/year,6.71E+06,1.41E+08,3.88E+08
-S4,FR,Production|Natural gas|Anaerobic digestion|Biogas to biomethane PSA,Nm3/year,1.79E+07,3.76E+08,1.04E+09
-S4,FR,Production|Natural gas|Anaerobic digestion|Biogas to biomethane cryogenic,Nm3/year,4.48E+06,9.41E+07,2.59E+08
-S4,FR,Production|Natural gas|Anaerobic digestion|Biogas to biomethane membrane with CCS,Nm3/year,0.00E+00,0.00E+00,0.00E+00
-S4,FR,Production|Natural gas|Anaerobic digestion|Biogas to biomethane chemical with CCS,Nm3/year,0.00E+00,0.00E+00,0.00E+00
-S4,FR,Production|Natural gas|Anaerobic digestion|Biogas to biomethane water with CCS,Nm3/year,0.00E+00,0.00E+00,0.00E+00
-S4,FR,Production|Natural gas|Anaerobic digestion|Biogas to biomethane PSA with CCS,Nm3/year,0.00E+00,0.00E+00,0.00E+00
-S4,FR,Production|Natural gas|Anaerobic digestion|Biogas to biomethane cryogenic with CCS,Nm3/year,0.00E+00,0.00E+00,0.00E+00
-S4,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane membrane|Biogenic CO2 emissions,%,1,1,1.01
-S4,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane chemical|Biogenic CO2 emissions,%,1,1,1.001
-S4,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane water|Biogenic CO2 emissions,%,1,1,1.02
-S4,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane PSA|Biogenic CO2 emissions,%,1,1,1.03
-S4,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane cryogenic|Biogenic CO2 emissions,%,1,1,1.0005
-S4,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane purification|Biogenic CH4 emissions,%,1,1,1.00E+20
-S4,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane membrane|Electricity,%,1,1,1.009642426
-S4,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane chemical|Electricity,%,1,1,1.001
-S4,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane water|Electricity,%,1,1,1.018
-S4,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane PSA|Electricity,%,1,1,1.025
-S4,FR,Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane cryogenic|Electricity,%,1,1,1.001
-S4,FR,Production|Natural gas|High to low,TWh,1,1,1
+scenario;region;variables;unit;2020;2030;2050
+S1;FR;Production|Electricity|Nuclear;TWh/year;348.5535264;258.8897445;9.93607041
+S1;FR;Production|Electricity|Conventional|Mix gas|Combined Cycle Turbines;TWh/year;0.648291578;0.830428416;4.58529902
+S1;FR;Production|Electricity|Conventional|Mix gas|Open Cycle Turbines;TWh/year;0.002240017;0.01319993;0.288225842
+S1;FR;Production|Electricity|Conventional|Mix gas|Cycle Turbines total;TWh/year;0.650531595;0.843628346;4.873524862
+S1;FR;Production|Electricity|Conventional|Coal;TWh/year;7.394066187;0;0
+S1;FR;Production|Electricity|Conventional|Fuel oil and Mix gas|CHP;TWh/year;10.69048252;3.309134524;0
+S1;FR;Production|Electricity|Conventional|Fuel oil|CHP;TWh/year;1.960600014;0;0
+S1;FR;Production|Electricity|Conventional|Mix gas|CHP;TWh/year;8.72988251;3.309134524;0
+S1;FR;Production|Electricity|Renewable|Photovoltaic ground fix;TWh/year;5.09069132;15.66474338;35.5456216
+S1;FR;Production|Electricity|Renewable|Photovoltaic ground tracker;TWh/year;0;4.50E-10;11.02299416
+S1;FR;Production|Electricity|Renewable|Photovoltaic ground total;TWh/year;5.09069132;15.66474338;46.56861575
+S1;FR;Production|Electricity|Renewable|Photovoltaic roof large;TWh/year;4.527400137;7.66410922;25.67787782
+S1;FR;Production|Electricity|Renewable|Photovoltaic roof small;TWh/year;1.719538834;6.327814016;43.91893226
+S1;FR;Production|Electricity|Renewable|Photovoltaic roof total;TWh/year;6.246938971;13.99192324;69.59681008
+S1;FR;Production|Electricity|Renewable|Photovoltaic total;TWh/year;11.33763029;29.65666662;116.1654258
+S1;FR;Production|Electricity|Renewable|Wind turbines|Fixed Offshore;TWh/year;0;12.22681839;31.55946485
+S1;FR;Production|Electricity|Renewable|Wind turbines|Floating Offshore;TWh/year;0;2.712215844;17.97320844
+S1;FR;Production|Electricity|Renewable|Wind turbines|Offshore total;TWh/year;0;14.93903424;49.53267329
+S1;FR;Production|Electricity|Renewable|Wind turbines|Onshore total;TWh/year;29.6547338;52.72811406;156.4015653
+S1;FR;Production|Electricity|Renewable|Sea;TWh/year;0.393199663;0.345161997;0.45165327
+S1;FR;Production|Electricity|Renewable|Biogas|CHP;TWh/year;2.028759411;1.780903488;2.3303576
+S1;FR;Production|Electricity|Renewable|Biomass|CHP;TWh/year;1.367125832;1.468230674;1.921217255
+S1;FR;Production|Electricity|Conventional|Waste;TWh/year;2.680094983;2.352664626;3.07852162
+S1;FR;Production|Electricity|Renewable|Geothermal;TWh/year;0.004006222;0.045623053;0.059698928
+S1;FR;Production|Electricity|Hydro|Reservoir;TWh/year;8.664228966;7.605705803;9.952265143
+S1;FR;Production|Electricity|Hydro|Run of river;TWh/year;45.48720207;39.92995546;52.249392
+S1;FR;Production|Electricity|Hydro Total;TWh/year;54.15143103;47.53566127;62.20165714
+S1;FR;Production|Electricity|Total primary electricity without flexibility;TWh/year;550.0779581;553.119187;415.6142117
+S1;FR;Consumption|Electricity|Exports;TWh/year;98.67991883;167.8012258;127.9227844
+S1;FR;Production|Electricity|Imports;TWh/year;17.50754868;28.57660622;119.2609382
+S1;FR;Balance|Electricity|Export-import balance;TWh/year;81.17237014;139.2246196;8.661846207
+S1;FR;Production|Electricity|Storage|Hydro|Pumped storage;TWh/year;3.064943229;4.785689478;8.114000916
+S1;FR;Production|Electricity|Storage|Battery;TWh/year;8.83E-06;1.12E-05;0.355095909
+S1;FR;Production|Electricity|Low to medium;TWh;1;1;1
+S1;FR;Production|Electricity|Medium to high;TWh;1;1;1
+S1;FR;Efficiency|Storage|Battery|Charge;%;85;90;90
+S1;FR;Efficiency|Storage|Hydro|Pumped storage;%;70;75;80
+S2;FR;Production|Electricity|Nuclear;TWh/year;348.5533248;278.8159548;73.41293598
+S2;FR;Production|Electricity|Conventional|Mix gas|Combined Cycle Turbines;TWh/year;0.648502982;1.285021306;1.891418852
+S2;FR;Production|Electricity|Conventional|Mix gas|Open Cycle Turbines;TWh/year;0.002242799;0.002815522;6.10E-06
+S2;FR;Production|Electricity|Conventional|Mix gas|Cycle Turbines total;TWh/year;0.650745781;1.287836828;1.891424949
+S2;FR;Production|Electricity|Conventional|Coal;TWh/year;7.393916796;0;0
+S2;FR;Production|Electricity|Conventional|Fuel oil and Mix gas|CHP;TWh/year;10.69048252;3.309134524;0
+S2;FR;Production|Electricity|Conventional|Fuel oil|CHP;TWh/year;1.960600014;0;0
+S2;FR;Production|Electricity|Conventional|Mix gas|CHP;TWh/year;8.72988251;3.309134524;0
+S2;FR;Production|Electricity|Renewable|Photovoltaic ground fix;TWh/year;5.09069132;19.68083626;73.59720297
+S2;FR;Production|Electricity|Renewable|Photovoltaic ground tracker;TWh/year;0;1.94E-10;9.890045655
+S2;FR;Production|Electricity|Renewable|Photovoltaic ground total;TWh/year;5.09069132;19.68083626;83.48724862
+S2;FR;Production|Electricity|Renewable|Photovoltaic roof large;TWh/year;4.527400067;7.938561035;26.90036974
+S2;FR;Production|Electricity|Renewable|Photovoltaic roof small;TWh/year;1.719538834;1.890250299;6.342903557
+S2;FR;Production|Electricity|Renewable|Photovoltaic roof total;TWh/year;6.246938901;9.828811335;33.2432733
+S2;FR;Production|Electricity|Renewable|Photovoltaic total;TWh/year;11.33763022;29.50964759;116.7305219
+S2;FR;Production|Electricity|Renewable|Wind turbines|Fixed Offshore;TWh/year;0;12.22221164;60.95714135
+S2;FR;Production|Electricity|Renewable|Wind turbines|Floating Offshore;TWh/year;0;2.712215847;17.92481375
+S2;FR;Production|Electricity|Renewable|Wind turbines|Offshore total;TWh/year;0;14.93442749;78.88195511
+S2;FR;Production|Electricity|Renewable|Wind turbines|Onshore total;TWh/year;29.6547338;52.69667853;171.3396797
+S2;FR;Production|Electricity|Renewable|Sea;TWh/year;0.393199663;0.345161997;0.45165327
+S2;FR;Production|Electricity|Renewable|Biogas|CHP;TWh/year;2.028759411;1.780903488;2.3303576
+S2;FR;Production|Electricity|Renewable|Biomass|CHP;TWh/year;1.367125832;1.468230674;1.921217255
+S2;FR;Production|Electricity|Conventional|Waste;TWh/year;2.680094983;2.352664626;3.07852162
+S2;FR;Production|Electricity|Renewable|Geothermal;TWh/year;0.004006222;0.045623053;0.059698928
+S2;FR;Production|Electricity|Hydro|Reservoir;TWh/year;8.66422895;7.605709878;9.952265301
+S2;FR;Production|Electricity|Hydro|Run of river;TWh/year;45.48720199;39.92997686;52.24939283
+S2;FR;Production|Electricity|Hydro Total;TWh/year;54.15143094;47.53568674;62.20165813
+S2;FR;Production|Electricity|Total primary electricity without flexibility;TWh/year;550.0777974;580.0971415;523.2037521
+S2;FR;Consumption|Electricity|Exports;TWh/year;98.68070748;154.6170575;126.2209896
+S2;FR;Production|Electricity|Imports;TWh/year;17.50835461;34.52006287;123.1576301
+S2;FR;Balance|Electricity|Export-import balance;TWh/year;81.17235287;120.0969946;3.063359499
+S2;FR;Production|Electricity|Storage|Hydro|Pumped storage;TWh/year;3.065100531;5.763795233;6.651109807
+S2;FR;Production|Electricity|Storage|Battery;TWh/year;1.78E-06;4.18E-06;0.025875481
+S2;FR;Production|Electricity|Low to medium;TWh;1;1;1
+S2;FR;Production|Electricity|Medium to high;TWh;1;1;1
+S2;FR;Efficiency|Storage|Battery|Charge;%;85;90;90
+S2;FR;Efficiency|Storage|Hydro|Pumped storage;%;70;75;80
+S3 Renew;FR;Production|Electricity|Nuclear;TWh/year;348.5533249;284.5300705;68.80920622
+S3 Renew;FR;Production|Electricity|Conventional|Mix gas|Combined Cycle Turbines;TWh/year;1.212398915;11.51438385;18.87782806
+S3 Renew;FR;Production|Electricity|Conventional|Mix gas|Open Cycle Turbines;TWh/year;0.002229868;0.003107358;3.57E-06
+S3 Renew;FR;Production|Electricity|Conventional|Mix gas|Cycle Turbines total;TWh/year;1.214628783;11.5174912;18.87783163
+S3 Renew;FR;Production|Electricity|Conventional|Coal;TWh/year;7.297352159;0;0
+S3 Renew;FR;Production|Electricity|Conventional|Fuel oil and Mix gas|CHP;TWh/year;10.69048252;3.309134524;0
+S3 Renew;FR;Production|Electricity|Conventional|Fuel oil|CHP;TWh/year;1.960600014;0;0
+S3 Renew;FR;Production|Electricity|Conventional|Mix gas|CHP;TWh/year;8.72988251;3.309134524;0
+S3 Renew;FR;Production|Electricity|Renewable|Photovoltaic ground fix;TWh/year;5.09069132;28.39999301;100.9988718
+S3 Renew;FR;Production|Electricity|Renewable|Photovoltaic ground tracker;TWh/year;0;1.77E-10;2.57E-09
+S3 Renew;FR;Production|Electricity|Renewable|Photovoltaic ground total;TWh/year;5.09069132;28.39999301;100.9988718
+S3 Renew;FR;Production|Electricity|Renewable|Photovoltaic roof large;TWh/year;4.527400127;10.03192501;46.19066882
+S3 Renew;FR;Production|Electricity|Renewable|Photovoltaic roof small;TWh/year;1.719538834;1.8902503;25.00632276
+S3 Renew;FR;Production|Electricity|Renewable|Photovoltaic roof total;TWh/year;6.246938961;11.92217531;71.19699158
+S3 Renew;FR;Production|Electricity|Renewable|Photovoltaic total;TWh/year;11.33763028;40.32216832;172.1958634
+S3 Renew;FR;Production|Electricity|Renewable|Wind turbines|Fixed Offshore;TWh/year;0;16.91648726;60.95714135
+S3 Renew;FR;Production|Electricity|Renewable|Wind turbines|Floating Offshore;TWh/year;0;2.712215844;102.3999135
+S3 Renew;FR;Production|Electricity|Renewable|Wind turbines|Offshore total;TWh/year;0;19.62870311;163.3570549
+S3 Renew;FR;Production|Electricity|Renewable|Wind turbines|Onshore total;TWh/year;29.6547338;63.11277303;156.8135475
+S3 Renew;FR;Production|Electricity|Renewable|Sea;TWh/year;0.393199663;0.345161997;0.45165327
+S3 Renew;FR;Production|Electricity|Renewable|Biogas|CHP;TWh/year;2.028759411;1.780903488;2.3303576
+S3 Renew;FR;Production|Electricity|Renewable|Biomass|CHP;TWh/year;1.367125832;1.468230674;1.921217255
+S3 Renew;FR;Production|Electricity|Conventional|Waste;TWh/year;2.680094983;2.352664626;3.07852162
+S3 Renew;FR;Production|Electricity|Renewable|Geothermal;TWh/year;0.004006222;0.045623053;0.059698928
+S3 Renew;FR;Production|Electricity|Hydro|Reservoir;TWh/year;8.664228967;7.60570991;9.952240229
+S3 Renew;FR;Production|Electricity|Hydro|Run of river;TWh/year;45.48720208;39.92997703;52.2492612
+S3 Renew;FR;Production|Electricity|Hydro Total;TWh/year;54.15143104;47.53568694;62.20150143
+S3 Renew;FR;Production|Electricity|Total primary electricity without flexibility;TWh/year;550.6260137;636.0467853;663.9335413
+S3 Renew;FR;Consumption|Electricity|Exports;TWh/year;99.0617845;120.9599307;122.2911507
+S3 Renew;FR;Production|Electricity|Imports;TWh/year;17.33992489;39.86461646;119.0948336
+S3 Renew;FR;Balance|Electricity|Export-import balance;TWh/year;81.72185961;81.09531426;3.19631712
+S3 Renew;FR;Production|Electricity|Storage|Hydro|Pumped storage;TWh/year;3.058656894;3.83372312;10.96691099
+S3 Renew;FR;Production|Electricity|Storage|Battery;TWh/year;1.17E-06;3.52E-06;0.155352366
+S3 Renew;FR;Production|Electricity|Low to medium;TWh;1;1;1
+S3 Renew;FR;Production|Electricity|Medium to high;TWh;1;1;1
+S3 Renew;FR;Efficiency|Storage|Battery|Charge;%;85;90;90
+S3 Renew;FR;Efficiency|Storage|Hydro|Pumped storage;%;70;75;80
+S3 Nuc;FR;Production|Electricity|Nuclear;TWh/year;348.5533243;284.5335795;130.2338606
+S3 Nuc;FR;Production|Electricity|Conventional|Mix gas|Combined Cycle Turbines;TWh/year;1.281477349;11.5703372;19.91738379
+S3 Nuc;FR;Production|Electricity|Conventional|Mix gas|Open Cycle Turbines;TWh/year;0.002238191;0.00312471;3.63E-05
+S3 Nuc;FR;Production|Electricity|Conventional|Mix gas|Cycle Turbines total;TWh/year;1.28371554;11.57346191;19.91742008
+S3 Nuc;FR;Production|Electricity|Conventional|Coal;TWh/year;7.285264003;0;0
+S3 Nuc;FR;Production|Electricity|Conventional|Fuel oil and Mix gas|CHP;TWh/year;10.69048252;3.309134524;0
+S3 Nuc;FR;Production|Electricity|Conventional|Fuel oil|CHP;TWh/year;1.960600014;0;0
+S3 Nuc;FR;Production|Electricity|Conventional|Mix gas|CHP;TWh/year;8.72988251;3.309134524;0
+S3 Nuc;FR;Production|Electricity|Renewable|Photovoltaic ground fix;TWh/year;5.09069132;28.43480067;102.3174018
+S3 Nuc;FR;Production|Electricity|Renewable|Photovoltaic ground tracker;TWh/year;0;2.26E-09;6.04E-08
+S3 Nuc;FR;Production|Electricity|Renewable|Photovoltaic ground total;TWh/year;5.09069132;28.43480068;102.3174019
+S3 Nuc;FR;Production|Electricity|Renewable|Photovoltaic roof large;TWh/year;4.527400106;10.03192501;46.21531244
+S3 Nuc;FR;Production|Electricity|Renewable|Photovoltaic roof small;TWh/year;1.719538834;1.890250299;25.69021761
+S3 Nuc;FR;Production|Electricity|Renewable|Photovoltaic roof total;TWh/year;6.24693894;11.92217531;71.90553005
+S3 Nuc;FR;Production|Electricity|Renewable|Photovoltaic total;TWh/year;11.33763026;40.35697599;174.2229319
+S3 Nuc;FR;Production|Electricity|Renewable|Wind turbines|Fixed Offshore;TWh/year;0;16.91648734;60.95714135
+S3 Nuc;FR;Production|Electricity|Renewable|Wind turbines|Floating Offshore;TWh/year;0;2.712215843;17.24022405
+S3 Nuc;FR;Production|Electricity|Renewable|Wind turbines|Offshore total;TWh/year;0;19.62870318;78.19736541
+S3 Nuc;FR;Production|Electricity|Renewable|Wind turbines|Onshore total;TWh/year;29.6547338;63.10158986;157.3775102
+S3 Nuc;FR;Production|Electricity|Renewable|Sea;TWh/year;0.393199663;0.345161997;0.45165327
+S3 Nuc;FR;Production|Electricity|Renewable|Biogas|CHP;TWh/year;2.028759411;1.780903488;2.3303576
+S3 Nuc;FR;Production|Electricity|Renewable|Biomass|CHP;TWh/year;1.367125832;1.468230674;1.921217255
+S3 Nuc;FR;Production|Electricity|Conventional|Waste;TWh/year;2.680094983;2.352664626;3.07852162
+S3 Nuc;FR;Production|Electricity|Renewable|Geothermal;TWh/year;0.004006222;0.045623053;0.059698928
+S3 Nuc;FR;Production|Electricity|Hydro|Reservoir;TWh/year;8.664228972;7.60570992;9.95226317
+S3 Nuc;FR;Production|Electricity|Hydro|Run of river;TWh/year;45.4872021;39.92997708;52.24938164
+S3 Nuc;FR;Production|Electricity|Hydro Total;TWh/year;54.15143107;47.535687;62.20164481
+S3 Nuc;FR;Production|Electricity|Total primary electricity without flexibility;TWh/year;550.6928786;636.1578439;643.4013564
+S3 Nuc;FR;Consumption|Electricity|Exports;TWh/year;99.10793316;121.1799822;117.9646182
+S3 Nuc;FR;Production|Electricity|Imports;TWh/year;17.31889373;40.04258049;124.80401
+S3 Nuc;FR;Balance|Electricity|Export-import balance;TWh/year;81.78903943;81.13740172;-6.839391807
+S3 Nuc;FR;Production|Electricity|Storage|Hydro|Pumped storage;TWh/year;3.057250177;3.840619097;10.69672571
+S3 Nuc;FR;Production|Electricity|Storage|Battery;TWh/year;9.81E-06;4.68E-06;0.250675114
+S3 Nuc;FR;Production|Electricity|Low to medium;TWh;1;1;1
+S3 Nuc;FR;Production|Electricity|Medium to high;TWh;1;1;1
+S3 Nuc;FR;Efficiency|Storage|Battery|Charge;%;85;90;90
+S3 Nuc;FR;Efficiency|Storage|Hydro|Pumped storage;%;70;75;80
+S4;FR;Production|Electricity|Nuclear;TWh/year;348.553592;278.1527973;183.5870428
+S4;FR;Production|Electricity|Conventional|Mix gas|Combined Cycle Turbines;TWh/year;1.850450967;21.11932491;38.94595238
+S4;FR;Production|Electricity|Conventional|Mix gas|Open Cycle Turbines;TWh/year;0.002205966;0.011538926;0.671172369
+S4;FR;Production|Electricity|Conventional|Mix gas|Cycle Turbines total;TWh/year;1.852656933;21.13086384;39.61712475
+S4;FR;Production|Electricity|Conventional|Coal;TWh/year;7.181619738;0;0
+S4;FR;Production|Electricity|Conventional|Fuel oil and Mix gas|CHP;TWh/year;10.69048252;3.309134524;0
+S4;FR;Production|Electricity|Conventional|Fuel oil|CHP;TWh/year;1.960600014;0;0
+S4;FR;Production|Electricity|Conventional|Mix gas|CHP;TWh/year;8.72988251;3.309134524;0
+S4;FR;Production|Electricity|Renewable|Photovoltaic ground fix;TWh/year;5.09069132;28.0641286;94.87101069
+S4;FR;Production|Electricity|Renewable|Photovoltaic ground tracker;TWh/year;0;1.98E-09;9.890045667
+S4;FR;Production|Electricity|Renewable|Photovoltaic ground total;TWh/year;5.09069132;28.06412861;104.7610564
+S4;FR;Production|Electricity|Renewable|Photovoltaic roof large;TWh/year;4.527400143;10.03628795;46.14707017
+S4;FR;Production|Electricity|Renewable|Photovoltaic roof small;TWh/year;1.719538834;1.890250298;25.41155207
+S4;FR;Production|Electricity|Renewable|Photovoltaic roof total;TWh/year;6.246938977;11.92653825;71.55862225
+S4;FR;Production|Electricity|Renewable|Photovoltaic total;TWh/year;11.3376303;39.99066685;176.3196786
+S4;FR;Production|Electricity|Renewable|Wind turbines|Fixed Offshore;TWh/year;0;17.22719825;60.95714135
+S4;FR;Production|Electricity|Renewable|Wind turbines|Floating Offshore;TWh/year;0;2.723305121;102.3999135
+S4;FR;Production|Electricity|Renewable|Wind turbines|Offshore total;TWh/year;0;19.95050337;163.3570548
+S4;FR;Production|Electricity|Renewable|Wind turbines|Onshore total;TWh/year;29.6547338;63.21736078;171.3867315
+S4;FR;Production|Electricity|Renewable|Sea;TWh/year;0.393199663;0.345161997;0.45165327
+S4;FR;Production|Electricity|Renewable|Biogas|CHP;TWh/year;2.028759411;1.780903488;2.3303576
+S4;FR;Production|Electricity|Renewable|Biomass|CHP;TWh/year;1.367125832;1.468230674;1.921217255
+S4;FR;Production|Electricity|Conventional|Waste;TWh/year;2.680094983;2.352664626;3.07852162
+S4;FR;Production|Electricity|Renewable|Geothermal;TWh/year;0.004006222;0.045623053;0.059698928
+S4;FR;Production|Electricity|Hydro|Reservoir;TWh/year;8.664228968;7.605709854;9.952230494
+S4;FR;Production|Electricity|Hydro|Run of river;TWh/year;45.48720208;39.92997673;52.24921009
+S4;FR;Production|Electricity|Hydro Total;TWh/year;54.15143105;47.53568659;62.20144058
+S4;FR;Production|Electricity|Total primary electricity without flexibility;TWh/year;551.2390376;640.4982379;821.4300046
+S4;FR;Consumption|Electricity|Exports;TWh/year;99.48852319;132.3240862;123.3896958
+S4;FR;Production|Electricity|Imports;TWh/year;17.1527227;36.35552333;131.7182871
+S4;FR;Balance|Electricity|Export-import balance;TWh/year;82.33580049;95.96856283;-8.328591251
+S4;FR;Production|Electricity|Storage|Hydro|Pumped storage;TWh/year;3.052983606;5.276551702;10.9956624
+S4;FR;Production|Electricity|Storage|Battery;TWh/year;8.32E-06;1.468582212;13.9283042
+S4;FR;Production|Electricity|Low to medium;TWh;1;1;1
+S4;FR;Production|Electricity|Medium to high;TWh;1;1;1
+S4;FR;Efficiency|Storage|Battery|Charge;%;85;90;90
+S4;FR;Efficiency|Storage|Hydro|Pumped storage;%;70;75;80
+S1;FR;Efficiency|Hydrogen|Electrolyzer;%;61;65;72
+S1;FR;Production|Hydrogen|Transport|Steam methane reforming;TWh H2/year;0;0;0
+S1;FR;Production|Hydrogen|Fossil fuel refineries|Steam methane reforming;TWh H2/year;4.3;0;0
+S1;FR;Production|Hydrogen|Biofuel refineries|Steam methane reforming;TWh H2/year;0;0;0
+S1;FR;Production|Hydrogen|Power to liquid|Steam methane reforming;TWh H2/year;0;0;0
+S1;FR;Production|Hydrogen|Ammonia|Steam methane reforming;TWh H2/year;7.3;6.1;4.9
+S1;FR;Production|Hydrogen|Steel|Steam methane reforming;TWh H2/year;0;0;0
+S1;FR;Production|Hydrogen|Chemicals|Steam methane reforming;TWh H2/year;2.3;7;5.7
+S1;FR;Production|Hydrogen|Power to gas|Steam methane reforming;TWh H2/year;0;0;0
+S1;FR;Production|Hydrogen|Transport|Steam methane reforming with Carbone Capture and Storage;TWh H2/year;0;0;0
+S1;FR;Production|Hydrogen|Fossil fuel refineries|Steam methane reforming with Carbone Capture and Storage;TWh H2/year;0;0;0
+S1;FR;Production|Hydrogen|Biofuel refineries|Steam methane reforming with Carbone Capture and Storage;TWh H2/year;0;0;0
+S1;FR;Production|Hydrogen|Power to liquid|Steam methane reforming with Carbone Capture and Storage;TWh H2/year;0;0;0
+S1;FR;Production|Hydrogen|Ammonia|Steam methane reforming with Carbone Capture and Storage;TWh H2/year;0;0;0
+S1;FR;Production|Hydrogen|Steel|Steam methane reforming with Carbone Capture and Storage;TWh H2/year;0;0;0
+S1;FR;Production|Hydrogen|Chemicals|Steam methane reforming with Carbone Capture and Storage;TWh H2/year;0;0;0
+S1;FR;Production|Hydrogen|Power to gas|Steam methane reforming with Carbone Capture and Storage;TWh H2/year;0;0;0
+S1;FR;Production|Hydrogen|Transport|Electrolysis;TWh H2/year;0;0;0.1
+S1;FR;Production|Hydrogen|Fossil fuel refineries|Electrolysis;TWh H2/year;0;0;0
+S1;FR;Production|Hydrogen|Biofuel refineries|Electrolysis;TWh H2/year;0;0.9;1
+S1;FR;Production|Hydrogen|Power to liquid|Electrolysis;TWh H2/year;0;0;0
+S1;FR;Production|Hydrogen|Ammonia|Electrolysis;TWh H2/year;0;0;0
+S1;FR;Production|Hydrogen|Steel|Electrolysis;TWh H2/year;0;0;0
+S1;FR;Production|Hydrogen|Chemicals|Electrolysis;TWh H2/year;0;0;0
+S1;FR;Production|Hydrogen|Power to gas|Electrolysis;TWh H2/year;0;3.3;42.8
+S1;FR;Production|Hydrogen|Fossil fuel refineries|Co-produced|Oil refining;TWh H2/year;6.7;5;0
+S1;FR;Production|Hydrogen|Imported|Electrolysis;TWh H2/year;0;0;0
+S1;FR;Production|Hydrogen|Total;TWh H2/year;16.3;22.1;54.5
+S1;FR;Production|Hydrogen|Total from gas without co-produced from fossil fuels;TWh H2/year;9.6;13.1;10.6
+S1;FR;Production|Hydrogen|Total from electrolysis;TWh H2/year;0;4;43.9
+S1;FR;Production|Hydrogen|Share electrolysis over gas + electrolysis;%;0;23.39181287;80.55045872
+S1;FR;Production|Hydrogen|Fossil fuel refineries|Empty;TWh H2/year;0;0;1
+S2;FR;Efficiency|Hydrogen|Electrolyzer;%;61;65;72
+S2;FR;Production|Hydrogen|Transport|Steam methane reforming;TWh H2/year;0;0;0
+S2;FR;Production|Hydrogen|Fossil fuel refineries|Steam methane reforming;TWh H2/year;4.3;0;0
+S2;FR;Production|Hydrogen|Biofuel refineries|Steam methane reforming;TWh H2/year;0;0;0
+S2;FR;Production|Hydrogen|Power to liquid|Steam methane reforming;TWh H2/year;0;0;0
+S2;FR;Production|Hydrogen|Ammonia|Steam methane reforming;TWh H2/year;7.3;4.9;0
+S2;FR;Production|Hydrogen|Steel|Steam methane reforming;TWh H2/year;0;0;0
+S2;FR;Production|Hydrogen|Chemicals|Steam methane reforming;TWh H2/year;2.3;6.6;0
+S2;FR;Production|Hydrogen|Power to gas|Steam methane reforming;TWh H2/year;0;0;0
+S2;FR;Production|Hydrogen|Transport|Steam methane reforming with Carbone Capture and Storage;TWh H2/year;0;0;0
+S2;FR;Production|Hydrogen|Fossil fuel refineries|Steam methane reforming with Carbone Capture and Storage;TWh H2/year;0;0;0
+S2;FR;Production|Hydrogen|Biofuel refineries|Steam methane reforming with Carbone Capture and Storage;TWh H2/year;0;0;0
+S2;FR;Production|Hydrogen|Power to liquid|Steam methane reforming with Carbone Capture and Storage;TWh H2/year;0;0;0
+S2;FR;Production|Hydrogen|Ammonia|Steam methane reforming with Carbone Capture and Storage;TWh H2/year;0;0;0
+S2;FR;Production|Hydrogen|Steel|Steam methane reforming with Carbone Capture and Storage;TWh H2/year;0;0;0
+S2;FR;Production|Hydrogen|Chemicals|Steam methane reforming with Carbone Capture and Storage;TWh H2/year;0;0;0
+S2;FR;Production|Hydrogen|Power to gas|Steam methane reforming with Carbone Capture and Storage;TWh H2/year;0;0;0
+S2;FR;Production|Hydrogen|Transport|Electrolysis;TWh H2/year;0;3.4;19.8
+S2;FR;Production|Hydrogen|Fossil fuel refineries|Electrolysis;TWh H2/year;0;0;0
+S2;FR;Production|Hydrogen|Biofuel refineries|Electrolysis;TWh H2/year;0;0.3;1.3
+S2;FR;Production|Hydrogen|Power to liquid|Electrolysis;TWh H2/year;0;0;13
+S2;FR;Production|Hydrogen|Ammonia|Electrolysis;TWh H2/year;0;1.2;4.1
+S2;FR;Production|Hydrogen|Steel|Electrolysis;TWh H2/year;0;10.4;14.3
+S2;FR;Production|Hydrogen|Chemicals|Electrolysis;TWh H2/year;0;0;5.2
+S2;FR;Production|Hydrogen|Power to gas|Electrolysis;TWh H2/year;0;3.6;37.9
+S2;FR;Production|Hydrogen|Fossil fuel refineries|Co-produced|Oil refining;TWh H2/year;6.7;5;0
+S2;FR;Production|Hydrogen|Imported|Electrolysis;TWh H2/year;0;0;0
+S2;FR;Production|Hydrogen|Total;TWh H2/year;20.6;35.3;95.6
+S2;FR;Production|Hydrogen|Total from gas without co-produced from fossil fuels;TWh H2/year;13.9;11.5;0
+S2;FR;Production|Hydrogen|Total from electrolysis;TWh H2/year;0;18.8;95.6
+S2;FR;Production|Hydrogen|Share electrolysis over gas + electrolysis;%;0;62.04620462;100
+S2;FR;Production|Hydrogen|Fossil fuel refineries|Empty;TWh H2/year;0;0;1
+S3 Renew;FR;Efficiency|Hydrogen|Electrolyzer;%;61;65;72
+S3 Renew;FR;Production|Hydrogen|Transport|Steam methane reforming;TWh H2/year;0;0;0
+S3 Renew;FR;Production|Hydrogen|Fossil fuel refineries|Steam methane reforming;TWh H2/year;4.3;0;0
+S3 Renew;FR;Production|Hydrogen|Biofuel refineries|Steam methane reforming;TWh H2/year;0;0;0
+S3 Renew;FR;Production|Hydrogen|Power to liquid|Steam methane reforming;TWh H2/year;0;0;0
+S3 Renew;FR;Production|Hydrogen|Ammonia|Steam methane reforming;TWh H2/year;7.3;4.3;0
+S3 Renew;FR;Production|Hydrogen|Steel|Steam methane reforming;TWh H2/year;0;0;0
+S3 Renew;FR;Production|Hydrogen|Chemicals|Steam methane reforming;TWh H2/year;2.3;0;0
+S3 Renew;FR;Production|Hydrogen|Power to gas|Steam methane reforming;TWh H2/year;0;0;0
+S3 Renew;FR;Production|Hydrogen|Transport|Steam methane reforming with Carbone Capture and Storage;TWh H2/year;0;0;0
+S3 Renew;FR;Production|Hydrogen|Fossil fuel refineries|Steam methane reforming with Carbone Capture and Storage;TWh H2/year;0;0;0
+S3 Renew;FR;Production|Hydrogen|Biofuel refineries|Steam methane reforming with Carbone Capture and Storage;TWh H2/year;0;0;0
+S3 Renew;FR;Production|Hydrogen|Power to liquid|Steam methane reforming with Carbone Capture and Storage;TWh H2/year;0;0;0
+S3 Renew;FR;Production|Hydrogen|Ammonia|Steam methane reforming with Carbone Capture and Storage;TWh H2/year;0;0;0
+S3 Renew;FR;Production|Hydrogen|Steel|Steam methane reforming with Carbone Capture and Storage;TWh H2/year;0;0;0
+S3 Renew;FR;Production|Hydrogen|Chemicals|Steam methane reforming with Carbone Capture and Storage;TWh H2/year;0;0;0
+S3 Renew;FR;Production|Hydrogen|Power to gas|Steam methane reforming with Carbone Capture and Storage;TWh H2/year;0;0;0
+S3 Renew;FR;Production|Hydrogen|Transport|Electrolysis;TWh H2/year;0;3.2;12.5
+S3 Renew;FR;Production|Hydrogen|Fossil fuel refineries|Electrolysis;TWh H2/year;0;0;0
+S3 Renew;FR;Production|Hydrogen|Biofuel refineries|Electrolysis;TWh H2/year;0;2;3.2
+S3 Renew;FR;Production|Hydrogen|Power to liquid|Electrolysis;TWh H2/year;0;0;0
+S3 Renew;FR;Production|Hydrogen|Ammonia|Electrolysis;TWh H2/year;0;2.2;6
+S3 Renew;FR;Production|Hydrogen|Steel|Electrolysis;TWh H2/year;0;12.5;12.8
+S3 Renew;FR;Production|Hydrogen|Chemicals|Electrolysis;TWh H2/year;0;16.2;35.3
+S3 Renew;FR;Production|Hydrogen|Power to gas|Electrolysis;TWh H2/year;0;3.9;24.1
+S3 Renew;FR;Production|Hydrogen|Fossil fuel refineries|Co-produced|Oil refining;TWh H2/year;6.7;5.2;0
+S3 Renew;FR;Production|Hydrogen|Imported|Electrolysis;TWh H2/year;0;6;48
+S3 Renew;FR;Production|Hydrogen|Total;TWh H2/year;20.6;49.4;93.9
+S3 Renew;FR;Production|Hydrogen|Total from gas without co-produced from fossil fuels;TWh H2/year;13.9;4.3;0
+S3 Renew;FR;Production|Hydrogen|Total from electrolysis;TWh H2/year;0;39.9;93.9
+S3 Renew;FR;Production|Hydrogen|Share electrolysis over gas + electrolysis;%;0;90.27149321;100
+S3 Renew;FR;Production|Hydrogen|Fossil fuel refineries|Empty;TWh H2/year;0;0;1
+S3 Nuc;FR;Efficiency|Hydrogen|Electrolyzer;%;61;65;72
+S3 Nuc;FR;Production|Hydrogen|Transport|Steam methane reforming;TWh H2/year;0;0;0
+S3 Nuc;FR;Production|Hydrogen|Fossil fuel refineries|Steam methane reforming;TWh H2/year;4.3;0;0
+S3 Nuc;FR;Production|Hydrogen|Biofuel refineries|Steam methane reforming;TWh H2/year;0;0;0
+S3 Nuc;FR;Production|Hydrogen|Power to liquid|Steam methane reforming;TWh H2/year;0;0;0
+S3 Nuc;FR;Production|Hydrogen|Ammonia|Steam methane reforming;TWh H2/year;7.3;4.3;0
+S3 Nuc;FR;Production|Hydrogen|Steel|Steam methane reforming;TWh H2/year;0;0;0
+S3 Nuc;FR;Production|Hydrogen|Chemicals|Steam methane reforming;TWh H2/year;2.3;0;0
+S3 Nuc;FR;Production|Hydrogen|Power to gas|Steam methane reforming;TWh H2/year;0;0;0
+S3 Nuc;FR;Production|Hydrogen|Transport|Steam methane reforming with Carbone Capture and Storage;TWh H2/year;0;0;0
+S3 Nuc;FR;Production|Hydrogen|Fossil fuel refineries|Steam methane reforming with Carbone Capture and Storage;TWh H2/year;0;0;0
+S3 Nuc;FR;Production|Hydrogen|Biofuel refineries|Steam methane reforming with Carbone Capture and Storage;TWh H2/year;0;0;0
+S3 Nuc;FR;Production|Hydrogen|Power to liquid|Steam methane reforming with Carbone Capture and Storage;TWh H2/year;0;0;0
+S3 Nuc;FR;Production|Hydrogen|Ammonia|Steam methane reforming with Carbone Capture and Storage;TWh H2/year;0;0;0
+S3 Nuc;FR;Production|Hydrogen|Steel|Steam methane reforming with Carbone Capture and Storage;TWh H2/year;0;0;0
+S3 Nuc;FR;Production|Hydrogen|Chemicals|Steam methane reforming with Carbone Capture and Storage;TWh H2/year;0;0;0
+S3 Nuc;FR;Production|Hydrogen|Power to gas|Steam methane reforming with Carbone Capture and Storage;TWh H2/year;0;0;0
+S3 Nuc;FR;Production|Hydrogen|Transport|Electrolysis;TWh H2/year;0;3.2;12.5
+S3 Nuc;FR;Production|Hydrogen|Fossil fuel refineries|Electrolysis;TWh H2/year;0;0;0
+S3 Nuc;FR;Production|Hydrogen|Biofuel refineries|Electrolysis;TWh H2/year;0;2;3.2
+S3 Nuc;FR;Production|Hydrogen|Power to liquid|Electrolysis;TWh H2/year;0;0;0
+S3 Nuc;FR;Production|Hydrogen|Ammonia|Electrolysis;TWh H2/year;0;2.2;6
+S3 Nuc;FR;Production|Hydrogen|Steel|Electrolysis;TWh H2/year;0;12.5;12.8
+S3 Nuc;FR;Production|Hydrogen|Chemicals|Electrolysis;TWh H2/year;0;16.2;35.3
+S3 Nuc;FR;Production|Hydrogen|Power to gas|Electrolysis;TWh H2/year;0;3.9;24.1
+S3 Nuc;FR;Production|Hydrogen|Fossil fuel refineries|Co-produced|Oil refining;TWh H2/year;6.7;5.2;0
+S3 Nuc;FR;Production|Hydrogen|Imported|Electrolysis;TWh H2/year;0;6;48
+S3 Nuc;FR;Production|Hydrogen|Total;TWh H2/year;20.6;49.4;93.9
+S3 Nuc;FR;Production|Hydrogen|Total from gas without co-produced from fossil fuels;TWh H2/year;13.9;4.3;0
+S3 Nuc;FR;Production|Hydrogen|Total from electrolysis;TWh H2/year;0;39.9;93.9
+S3 Nuc;FR;Production|Hydrogen|Share electrolysis over gas + electrolysis;%;0;90.27149321;100
+S3 Nuc;FR;Production|Hydrogen|Fossil fuel refineries|Empty;TWh H2/year;0;0;1
+S4;FR;Efficiency|Hydrogen|Electrolyzer;%;61;65;72
+S4;FR;Production|Hydrogen|Transport|Steam methane reforming;TWh H2/year;4.3;0;0
+S4;FR;Production|Hydrogen|Fossil fuel refineries|Steam methane reforming;TWh H2/year;0;0;0
+S4;FR;Production|Hydrogen|Biofuel refineries|Steam methane reforming;TWh H2/year;0;0;0
+S4;FR;Production|Hydrogen|Power to liquid|Steam methane reforming;TWh H2/year;0;0;0
+S4;FR;Production|Hydrogen|Ammonia|Steam methane reforming;TWh H2/year;7.3;0;0
+S4;FR;Production|Hydrogen|Steel|Steam methane reforming;TWh H2/year;0;0;0
+S4;FR;Production|Hydrogen|Chemicals|Steam methane reforming;TWh H2/year;2.3;0;0
+S4;FR;Production|Hydrogen|Power to gas|Steam methane reforming;TWh H2/year;0;0;0
+S4;FR;Production|Hydrogen|Transport|Steam methane reforming with Carbone Capture and Storage;TWh H2/year;0;0;0
+S4;FR;Production|Hydrogen|Fossil fuel refineries|Steam methane reforming with Carbone Capture and Storage;TWh H2/year;0;0;0
+S4;FR;Production|Hydrogen|Biofuel refineries|Steam methane reforming with Carbone Capture and Storage;TWh H2/year;0;0;0
+S4;FR;Production|Hydrogen|Power to liquid|Steam methane reforming with Carbone Capture and Storage;TWh H2/year;0;0;0
+S4;FR;Production|Hydrogen|Ammonia|Steam methane reforming with Carbone Capture and Storage;TWh H2/year;0;6.4;6.2
+S4;FR;Production|Hydrogen|Steel|Steam methane reforming with Carbone Capture and Storage;TWh H2/year;0;0;0
+S4;FR;Production|Hydrogen|Chemicals|Steam methane reforming with Carbone Capture and Storage;TWh H2/year;0;7.1;5.8
+S4;FR;Production|Hydrogen|Power to gas|Steam methane reforming with Carbone Capture and Storage;TWh H2/year;0;0;0
+S4;FR;Production|Hydrogen|Transport|Electrolysis;TWh H2/year;0;1.5;5.8
+S4;FR;Production|Hydrogen|Fossil fuel refineries|Electrolysis;TWh H2/year;0;0;0
+S4;FR;Production|Hydrogen|Biofuel refineries|Electrolysis;TWh H2/year;0;2.5;4.3
+S4;FR;Production|Hydrogen|Power to liquid|Electrolysis;TWh H2/year;0;0;13.4
+S4;FR;Production|Hydrogen|Ammonia|Electrolysis;TWh H2/year;0;0;0
+S4;FR;Production|Hydrogen|Steel|Electrolysis;TWh H2/year;0;0;0
+S4;FR;Production|Hydrogen|Chemicals|Electrolysis;TWh H2/year;0;0;0
+S4;FR;Production|Hydrogen|Power to gas|Electrolysis;TWh H2/year;0;0;0
+S4;FR;Production|Hydrogen|Fossil fuel refineries|Co-produced|Oil refining;TWh H2/year;6.7;5.2;0
+S4;FR;Production|Hydrogen|Imported|Electrolysis;TWh H2/year;0;0;0
+S4;FR;Production|Hydrogen|Total;TWh H2/year;20.6;22.7;35.5
+S4;FR;Production|Hydrogen|Total from gas without co-produced from fossil fuels;TWh H2/year;13.9;13.5;12
+S4;FR;Production|Hydrogen|Total from electrolysis;TWh H2/year;0;4;23.5
+S4;FR;Production|Hydrogen|Share electrolysis over gas + electrolysis;%;0;22.85714286;66.1971831
+S4;FR;Production|Hydrogen|Fossil fuel refineries|Empty;TWh H2/year;0;0;1
+S1;FR;Production|Natural gas|Anaerobic digestion CIVE|Biogas;Nm3/year;1.50E+08;5.26E+08;5.22E+08
+S1;FR;Production|Natural gas|Anaerobic digestion dedicated crops|Biogas;Nm3/year;1.03E+08;2.17E+07;0.00E+00
+S1;FR;Production|Natural gas|Anaerobic digestion grass|Biogas;Nm3/year;1.35E+07;7.76E+07;4.91E+07
+S1;FR;Production|Natural gas|Anaerobic digestion biowaste|Biogas;Nm3/year;1.32E+08;0.00E+00;0.00E+00
+S1;FR;Production|Natural gas|Anaerobic digestion sewage sludge|Biogas;Nm3/year;0.00E+00;2.43E+07;2.03E+07
+S1;FR;Production|Natural gas|Anaerobic digestion agricultural residues|Biogas;Nm3/year;3.76E+07;2.07E+08;2.74E+08
+S1;FR;Production|Natural gas|Anaerobic digestion industrial wastewater|Biogas;Nm3/year;1.95E+08;7.53E+06;1.31E+06
+S1;FR;Production|Natural gas|Anaerobic digestion animal manure|Biogas;Nm3/year;4.50E+08;8.36E+07;4.73E+07
+S1;FR;Production|Natural gas|Pyrogasification|Renewable;Nm3/year;0;0;0
+S1;FR;Production|Natural gas|Pyrogasification|Fossil;Nm3/year;0;0;0
+S1;FR;Production|Natural gas|Pyrogasification with CCS|Renewable;Nm3/year;0;0;0
+S1;FR;Production|Natural gas|Power to gas;Nm3/year;0;271508379.9;3656312849
+S1;FR;Efficiency|Natural gas|Power to gas|Methanation;%;77;83;85
+S1;FR;Production|Natural gas|Imports|Fossil;Nm3/year;38430000000;21237000000;1807000000
+S1;FR;Production|Natural gas|Imports|Renewable;Nm3/year;0;0;0
+S1;FR;Production|Natural gas|Anaerobic digestion CIVE|Biogas to biomethane;Nm3/year;5.32E+07;2.12E+09;5.38E+09
+S1;FR;Production|Natural gas|Anaerobic digestion dedicated crops|Biogas to biomethane;Nm3/year;1.61E+07;8.73E+07;0.00E+00
+S1;FR;Production|Natural gas|Anaerobic digestion grass|Biogas to biomethane;Nm3/year;3.60E+06;3.11E+08;5.39E+08
+S1;FR;Production|Natural gas|Anaerobic digestion biowaste|Biogas to biomethane;Nm3/year;1.32E+07;9.72E+07;1.53E+08
+S1;FR;Production|Natural gas|Anaerobic digestion sewage sludge|Biogas to biomethane;Nm3/year;1.66E+07;7.89E+07;7.86E+07
+S1;FR;Production|Natural gas|Anaerobic digestion agricultural residues|Biogas to biomethane;Nm3/year;2.42E+07;8.29E+08;2.99E+09
+S1;FR;Production|Natural gas|Anaerobic digestion industrial wastewater|Biogas to biomethane;Nm3/year;3.53E+07;7.60E+07;3.28E+07
+S1;FR;Production|Natural gas|Anaerobic digestion animal manure|Biogas to biomethane;Nm3/year;6.66E+07;3.48E+08;5.05E+08
+S1;FR;Efficiency|Natural gas|Anaerobic digestion CIVE|Biogas to biomethane|Generic;%;1;1.007453416;1.025654923
+S1;FR;Efficiency|Natural gas|Anaerobic digestion CIVE|Biogas to biomethane|Biogenic CO2 emissions;%;1;1.043757562;1.162342757
+S1;FR;Efficiency|Natural gas|Anaerobic digestion CIVE|Biogas to biomethane|Biogenic CH4 emissions;%;1;1.331678875;5.800052533
+S1;FR;Efficiency|Natural gas|Anaerobic digestion dedicated crops|Biogas to biomethane|Generic;%;1;1.007453416;1.025654923
+S1;FR;Efficiency|Natural gas|Anaerobic digestion dedicated crops|Biogas to biomethane|Biogenic CO2 emissions;%;1;1.04386289;1.162776658
+S1;FR;Efficiency|Natural gas|Anaerobic digestion dedicated crops|Biogas to biomethane|Biogenic CH4 emissions;%;1;1.331678875;5.800052533
+S1;FR;Efficiency|Natural gas|Anaerobic digestion grass|Biogas to biomethane|Generic;%;1;1.007453416;1.025654923
+S1;FR;Efficiency|Natural gas|Anaerobic digestion grass|Biogas to biomethane|Biogenic CO2 emissions;%;1;1.043898849;1.162924849
+S1;FR;Efficiency|Natural gas|Anaerobic digestion grass|Biogas to biomethane|Biogenic CH4 emissions;%;1;1.331678875;5.800052533
+S1;FR;Efficiency|Natural gas|Anaerobic digestion biowaste|Biogas to biomethane|Generic;%;1;1.007453416;1.025654923
+S1;FR;Efficiency|Natural gas|Anaerobic digestion biowaste|Biogas to biomethane|Biogenic CO2 emissions;%;1;1.039315223;1.144255003
+S1;FR;Efficiency|Natural gas|Anaerobic digestion biowaste|Biogas to biomethane|Biogenic CH4 emissions;%;1;1.331678875;5.800052533
+S1;FR;Efficiency|Natural gas|Anaerobic digestion sewage sludge|Biogas to biomethane|Generic;%;1;1.007453416;1.025654923
+S1;FR;Efficiency|Natural gas|Anaerobic digestion sewage sludge|Biogas to biomethane|Biogenic CO2 emissions;%;1;1.039805202;1.146229863
+S1;FR;Efficiency|Natural gas|Anaerobic digestion sewage sludge|Biogas to biomethane|Biogenic CH4 emissions;%;1;1.331678875;5.800052533
+S1;FR;Efficiency|Natural gas|Anaerobic digestion agricultural residues|Biogas to biomethane|Generic;%;1;1.007453416;1.025654923
+S1;FR;Efficiency|Natural gas|Anaerobic digestion agricultural residues|Biogas to biomethane|Biogenic CO2 emissions;%;1;1.044007307;1.163371978
+S1;FR;Efficiency|Natural gas|Anaerobic digestion agricultural residues|Biogas to biomethane|Biogenic CH4 emissions;%;1;1.331678875;5.800052533
+S1;FR;Efficiency|Natural gas|Anaerobic digestion industrial wastewater|Biogas to biomethane|Generic;%;1;1.007453416;1.025654923
+S1;FR;Efficiency|Natural gas|Anaerobic digestion industrial wastewater|Biogas to biomethane|Biogenic CO2 emissions;%;1;1.042038231;1.155293139
+S1;FR;Efficiency|Natural gas|Anaerobic digestion industrial wastewater|Biogas to biomethane|Biogenic CH4 emissions;%;1;1.331678875;5.800052533
+S1;FR;Efficiency|Natural gas|Anaerobic digestion animal manure|Biogas to biomethane|Generic;%;1;1.007453416;1.025654923
+S1;FR;Efficiency|Natural gas|Anaerobic digestion animal manure|Biogas to biomethane|Biogenic CO2 emissions;%;1;1.044722075;1.166324966
+S1;FR;Efficiency|Natural gas|Anaerobic digestion animal manure|Biogas to biomethane|Biogenic CH4 emissions;%;1;1.331678875;5.800052533
+S1;FR;Production|Natural gas|Anaerobic digestion|Biogas to biomethane membrane;Nm3/year;1.93E+08;3.07E+09;4.77E+09
+S1;FR;Production|Natural gas|Anaerobic digestion|Biogas to biomethane chemical;Nm3/year;6.71E+06;1.07E+08;1.66E+08
+S1;FR;Production|Natural gas|Anaerobic digestion|Biogas to biomethane water;Nm3/year;6.71E+06;1.07E+08;1.66E+08
+S1;FR;Production|Natural gas|Anaerobic digestion|Biogas to biomethane PSA;Nm3/year;1.79E+07;2.85E+08;4.43E+08
+S1;FR;Production|Natural gas|Anaerobic digestion|Biogas to biomethane cryogenic;Nm3/year;4.48E+06;7.14E+07;1.11E+08
+S1;FR;Production|Natural gas|Anaerobic digestion|Biogas to biomethane membrane with CCS;Nm3/year;0.00E+00;2.58E+08;3.40E+09
+S1;FR;Production|Natural gas|Anaerobic digestion|Biogas to biomethane chemical with CCS;Nm3/year;0.00E+00;8.98E+06;1.18E+08
+S1;FR;Production|Natural gas|Anaerobic digestion|Biogas to biomethane water with CCS;Nm3/year;0.00E+00;8.98E+06;1.18E+08
+S1;FR;Production|Natural gas|Anaerobic digestion|Biogas to biomethane PSA with CCS;Nm3/year;0.00E+00;2.40E+07;3.16E+08
+S1;FR;Production|Natural gas|Anaerobic digestion|Biogas to biomethane cryogenic with CCS;Nm3/year;0.00E+00;6.00E+06;7.89E+07
+S1;FR;Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane membrane|Biogenic CO2 emissions;%;1;1;1.01
+S1;FR;Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane chemical|Biogenic CO2 emissions;%;1;1;1.001
+S1;FR;Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane water|Biogenic CO2 emissions;%;1;1;1.02
+S1;FR;Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane PSA|Biogenic CO2 emissions;%;1;1;1.03
+S1;FR;Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane cryogenic|Biogenic CO2 emissions;%;1;1;1.0005
+S1;FR;Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane purification|Biogenic CH4 emissions;%;1;1;1.00E+20
+S1;FR;Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane membrane|Electricity;%;1;1;1.009642426
+S1;FR;Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane chemical|Electricity;%;1;1;1.001
+S1;FR;Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane water|Electricity;%;1;1;1.018
+S1;FR;Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane PSA|Electricity;%;1;1;1.025
+S1;FR;Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane cryogenic|Electricity;%;1;1;1.001
+S2;FR;Production|Natural gas|Anaerobic digestion CIVE|Biogas;Nm3/year;1.50E+08;5.45E+08;5.36E+08
+S2;FR;Production|Natural gas|Anaerobic digestion dedicated crops|Biogas;Nm3/year;1.03E+08;2.30E+07;0.00E+00
+S2;FR;Production|Natural gas|Anaerobic digestion grass|Biogas;Nm3/year;1.35E+07;8.74E+07;6.23E+07
+S2;FR;Production|Natural gas|Anaerobic digestion biowaste|Biogas;Nm3/year;1.32E+08;0.00E+00;0.00E+00
+S2;FR;Production|Natural gas|Anaerobic digestion sewage sludge|Biogas;Nm3/year;0.00E+00;2.44E+07;2.03E+07
+S2;FR;Production|Natural gas|Anaerobic digestion agricultural residues|Biogas;Nm3/year;3.76E+07;1.84E+08;2.54E+08
+S2;FR;Production|Natural gas|Anaerobic digestion industrial wastewater|Biogas;Nm3/year;1.95E+08;8.36E+06;1.91E+06
+S2;FR;Production|Natural gas|Anaerobic digestion animal manure|Biogas;Nm3/year;4.50E+08;1.63E+08;5.23E+07
+S2;FR;Production|Natural gas|Pyrogasification|Renewable;Nm3/year;0;0;3.02E+08
+S2;FR;Production|Natural gas|Pyrogasification|Fossil;Nm3/year;0;0;2.01E+08
+S2;FR;Production|Natural gas|Power to gas;Nm3/year;0;3.00E+08;3.24E+09
+S2;FR;Production|Natural gas|Pyrogasification with CCS|Renewable;Nm3/year;0;0;0
+S2;FR;Efficiency|Natural gas|Power to gas|Methanation;%;77;83;85
+S2;FR;Production|Natural gas|Imports|Fossil;Nm3/year;38430000000;2.49E+10;2.52E+09
+S2;FR;Production|Natural gas|Imports|Renewable;Nm3/year;0;0.00E+00;0.00E+00
+S2;FR;Production|Natural gas|Anaerobic digestion CIVE|Biogas to biomethane;Nm3/year;5.32E+07;2.19E+09;5.53E+09
+S2;FR;Production|Natural gas|Anaerobic digestion dedicated crops|Biogas to biomethane;Nm3/year;1.61E+07;9.19E+07;0.00E+00
+S2;FR;Production|Natural gas|Anaerobic digestion grass|Biogas to biomethane;Nm3/year;3.60E+06;3.49E+08;6.77E+08
+S2;FR;Production|Natural gas|Anaerobic digestion biowaste|Biogas to biomethane;Nm3/year;1.32E+07;1.02E+08;1.57E+08
+S2;FR;Production|Natural gas|Anaerobic digestion sewage sludge|Biogas to biomethane;Nm3/year;1.66E+07;8.31E+07;8.05E+07
+S2;FR;Production|Natural gas|Anaerobic digestion agricultural residues|Biogas to biomethane;Nm3/year;2.42E+07;7.67E+08;2.78E+09
+S2;FR;Production|Natural gas|Anaerobic digestion industrial wastewater|Biogas to biomethane;Nm3/year;3.53E+07;8.14E+07;5.50E+07
+S2;FR;Production|Natural gas|Anaerobic digestion animal manure|Biogas to biomethane;Nm3/year;6.66E+07;6.76E+08;5.59E+08
+S2;FR;Efficiency|Natural gas|Anaerobic digestion CIVE|Biogas to biomethane|Generic;%;1;1.007453416;1.025654923
+S2;FR;Efficiency|Natural gas|Anaerobic digestion CIVE|Biogas to biomethane|Biogenic CO2 emissions;%;1;1.043757562;1.162342757
+S2;FR;Efficiency|Natural gas|Anaerobic digestion CIVE|Biogas to biomethane|Biogenic CH4 emissions;%;1;1.331678875;5.800052533
+S2;FR;Efficiency|Natural gas|Anaerobic digestion dedicated crops|Biogas to biomethane|Generic;%;1;1.007453416;1.025654923
+S2;FR;Efficiency|Natural gas|Anaerobic digestion dedicated crops|Biogas to biomethane|Biogenic CO2 emissions;%;1;1.04386289;1.162776658
+S2;FR;Efficiency|Natural gas|Anaerobic digestion dedicated crops|Biogas to biomethane|Biogenic CH4 emissions;%;1;1.331678875;5.800052533
+S2;FR;Efficiency|Natural gas|Anaerobic digestion grass|Biogas to biomethane|Generic;%;1;1.007453416;1.025654923
+S2;FR;Efficiency|Natural gas|Anaerobic digestion grass|Biogas to biomethane|Biogenic CO2 emissions;%;1;1.043898849;1.162924849
+S2;FR;Efficiency|Natural gas|Anaerobic digestion grass|Biogas to biomethane|Biogenic CH4 emissions;%;1;1.331678875;5.800052533
+S2;FR;Efficiency|Natural gas|Anaerobic digestion biowaste|Biogas to biomethane|Generic;%;1;1.007453416;1.025654923
+S2;FR;Efficiency|Natural gas|Anaerobic digestion biowaste|Biogas to biomethane|Biogenic CO2 emissions;%;1;1.039315223;1.144255003
+S2;FR;Efficiency|Natural gas|Anaerobic digestion biowaste|Biogas to biomethane|Biogenic CH4 emissions;%;1;1.331678875;5.800052533
+S2;FR;Efficiency|Natural gas|Anaerobic digestion sewage sludge|Biogas to biomethane|Generic;%;1;1.007453416;1.025654923
+S2;FR;Efficiency|Natural gas|Anaerobic digestion sewage sludge|Biogas to biomethane|Biogenic CO2 emissions;%;1;1.039805202;1.146229863
+S2;FR;Efficiency|Natural gas|Anaerobic digestion sewage sludge|Biogas to biomethane|Biogenic CH4 emissions;%;1;1.331678875;5.800052533
+S2;FR;Efficiency|Natural gas|Anaerobic digestion agricultural residues|Biogas to biomethane|Generic;%;1;1.007453416;1.025654923
+S2;FR;Efficiency|Natural gas|Anaerobic digestion agricultural residues|Biogas to biomethane|Biogenic CO2 emissions;%;1;1.044007307;1.163371978
+S2;FR;Efficiency|Natural gas|Anaerobic digestion agricultural residues|Biogas to biomethane|Biogenic CH4 emissions;%;1;1.331678875;5.800052533
+S2;FR;Efficiency|Natural gas|Anaerobic digestion industrial wastewater|Biogas to biomethane|Generic;%;1;1.007453416;1.025654923
+S2;FR;Efficiency|Natural gas|Anaerobic digestion industrial wastewater|Biogas to biomethane|Biogenic CO2 emissions;%;1;1.042038231;1.155293139
+S2;FR;Efficiency|Natural gas|Anaerobic digestion industrial wastewater|Biogas to biomethane|Biogenic CH4 emissions;%;1;1.331678875;5.800052533
+S2;FR;Efficiency|Natural gas|Anaerobic digestion animal manure|Biogas to biomethane|Generic;%;1;1.007453416;1.025654923
+S2;FR;Efficiency|Natural gas|Anaerobic digestion animal manure|Biogas to biomethane|Biogenic CO2 emissions;%;1;1.044722075;1.166324966
+S2;FR;Efficiency|Natural gas|Anaerobic digestion animal manure|Biogas to biomethane|Biogenic CH4 emissions;%;1;1.331678875;5.800052533
+S2;FR;Production|Natural gas|Anaerobic digestion|Biogas to biomethane membrane;Nm3/year;1.93E+08;3.37E+09;5.29E+09
+S2;FR;Production|Natural gas|Anaerobic digestion|Biogas to biomethane chemical;Nm3/year;6.71E+06;1.17E+08;1.84E+08
+S2;FR;Production|Natural gas|Anaerobic digestion|Biogas to biomethane water;Nm3/year;6.71E+06;1.17E+08;1.84E+08
+S2;FR;Production|Natural gas|Anaerobic digestion|Biogas to biomethane PSA;Nm3/year;1.79E+07;3.13E+08;4.91E+08
+S2;FR;Production|Natural gas|Anaerobic digestion|Biogas to biomethane cryogenic;Nm3/year;4.48E+06;7.83E+07;1.23E+08
+S2;FR;Production|Natural gas|Anaerobic digestion|Biogas to biomethane membrane with CCS;Nm3/year;0.00E+00;2.85E+08;3.01E+09
+S2;FR;Production|Natural gas|Anaerobic digestion|Biogas to biomethane chemical with CCS;Nm3/year;0.00E+00;9.92E+06;1.05E+08
+S2;FR;Production|Natural gas|Anaerobic digestion|Biogas to biomethane water with CCS;Nm3/year;0.00E+00;9.92E+06;1.05E+08
+S2;FR;Production|Natural gas|Anaerobic digestion|Biogas to biomethane PSA with CCS;Nm3/year;0.00E+00;2.65E+07;2.80E+08
+S2;FR;Production|Natural gas|Anaerobic digestion|Biogas to biomethane cryogenic with CCS;Nm3/year;0.00E+00;6.63E+06;6.99E+07
+S2;FR;Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane membrane|Biogenic CO2 emissions;%;1;1;1.01
+S2;FR;Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane chemical|Biogenic CO2 emissions;%;1;1;1.001
+S2;FR;Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane water|Biogenic CO2 emissions;%;1;1;1.02
+S2;FR;Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane PSA|Biogenic CO2 emissions;%;1;1;1.03
+S2;FR;Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane cryogenic|Biogenic CO2 emissions;%;1;1;1.0005
+S2;FR;Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane purification|Biogenic CH4 emissions;%;1;1;1.00E+20
+S2;FR;Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane membrane|Electricity;%;1;1;1.009642426
+S2;FR;Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane chemical|Electricity;%;1;1;1.001
+S2;FR;Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane water|Electricity;%;1;1;1.018
+S2;FR;Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane PSA|Electricity;%;1;1;1.025
+S2;FR;Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane cryogenic|Electricity;%;1;1;1.001
+S3 Renew;FR;Production|Natural gas|Anaerobic digestion CIVE|Biogas;Nm3/year;1.50E+08;6.16E+08;5.81E+08
+S3 Renew;FR;Production|Natural gas|Anaerobic digestion dedicated crops|Biogas;Nm3/year;1.03E+08;5.57E+07;1.02E+08
+S3 Renew;FR;Production|Natural gas|Anaerobic digestion grass|Biogas;Nm3/year;1.35E+07;8.61E+07;7.17E+07
+S3 Renew;FR;Production|Natural gas|Anaerobic digestion biowaste|Biogas;Nm3/year;1.32E+08;0.00E+00;0.00E+00
+S3 Renew;FR;Production|Natural gas|Anaerobic digestion sewage sludge|Biogas;Nm3/year;0.00E+00;2.43E+07;2.03E+07
+S3 Renew;FR;Production|Natural gas|Anaerobic digestion agricultural residues|Biogas;Nm3/year;3.76E+07;1.34E+08;2.24E+08
+S3 Renew;FR;Production|Natural gas|Anaerobic digestion industrial wastewater|Biogas;Nm3/year;1.95E+08;7.98E+06;1.97E+06
+S3 Renew;FR;Production|Natural gas|Anaerobic digestion animal manure|Biogas;Nm3/year;4.50E+08;1.70E+08;1.01E+08
+S3 Renew;FR;Production|Natural gas|Pyrogasification|Renewable;Nm3/year;0;4.30E+07;4848000000
+S3 Renew;FR;Production|Natural gas|Pyrogasification|Fossil;Nm3/year;0;0;1881000000
+S3 Renew;FR;Production|Natural gas|Pyrogasification with CCS|Renewable;Nm3/year;0;0;0
+S3 Renew;FR;Production|Natural gas|Power to gas;Nm3/year;0;326815642.5;2058435754
+S3 Renew;FR;Efficiency|Natural gas|Power to gas|Methanation;%;77;83;85
+S3 Renew;FR;Production|Natural gas|Imports|Fossil;Nm3/year;38430000000;29405000000;1518000000
+S3 Renew;FR;Production|Natural gas|Imports|Renewable;Nm3/year;0;0;0
+S3 Renew;FR;Production|Natural gas|Anaerobic digestion CIVE|Biogas to biomethane;Nm3/year;5.32E+07;2.56E+09;6.20E+09
+S3 Renew;FR;Production|Natural gas|Anaerobic digestion dedicated crops|Biogas to biomethane;Nm3/year;1.61E+07;2.30E+08;1.09E+09
+S3 Renew;FR;Production|Natural gas|Anaerobic digestion grass|Biogas to biomethane;Nm3/year;3.60E+06;3.56E+08;8.00E+08
+S3 Renew;FR;Production|Natural gas|Anaerobic digestion biowaste|Biogas to biomethane;Nm3/year;1.32E+07;1.00E+08;1.64E+08
+S3 Renew;FR;Production|Natural gas|Anaerobic digestion sewage sludge|Biogas to biomethane;Nm3/year;1.66E+07;8.12E+07;8.41E+07
+S3 Renew;FR;Production|Natural gas|Anaerobic digestion agricultural residues|Biogas to biomethane;Nm3/year;2.42E+07;5.81E+08;2.53E+09
+S3 Renew;FR;Production|Natural gas|Anaerobic digestion industrial wastewater|Biogas to biomethane;Nm3/year;3.53E+07;7.96E+07;5.89E+07
+S3 Renew;FR;Production|Natural gas|Anaerobic digestion animal manure|Biogas to biomethane;Nm3/year;6.66E+07;7.31E+08;1.12E+09
+S3 Renew;FR;Efficiency|Natural gas|Anaerobic digestion CIVE|Biogas to biomethane|Generic;%;1;1.007453416;1.025654923
+S3 Renew;FR;Efficiency|Natural gas|Anaerobic digestion CIVE|Biogas to biomethane|Biogenic CO2 emissions;%;1;1.043757562;1.162342757
+S3 Renew;FR;Efficiency|Natural gas|Anaerobic digestion CIVE|Biogas to biomethane|Biogenic CH4 emissions;%;1;1.331678875;5.800052533
+S3 Renew;FR;Efficiency|Natural gas|Anaerobic digestion dedicated crops|Biogas to biomethane|Generic;%;1;1.007453416;1.025654923
+S3 Renew;FR;Efficiency|Natural gas|Anaerobic digestion dedicated crops|Biogas to biomethane|Biogenic CO2 emissions;%;1;1.04386289;1.162776658
+S3 Renew;FR;Efficiency|Natural gas|Anaerobic digestion dedicated crops|Biogas to biomethane|Biogenic CH4 emissions;%;1;1.331678875;5.800052533
+S3 Renew;FR;Efficiency|Natural gas|Anaerobic digestion grass|Biogas to biomethane|Generic;%;1;1.007453416;1.025654923
+S3 Renew;FR;Efficiency|Natural gas|Anaerobic digestion grass|Biogas to biomethane|Biogenic CO2 emissions;%;1;1.043898849;1.162924849
+S3 Renew;FR;Efficiency|Natural gas|Anaerobic digestion grass|Biogas to biomethane|Biogenic CH4 emissions;%;1;1.331678875;5.800052533
+S3 Renew;FR;Efficiency|Natural gas|Anaerobic digestion biowaste|Biogas to biomethane|Generic;%;1;1.007453416;1.025654923
+S3 Renew;FR;Efficiency|Natural gas|Anaerobic digestion biowaste|Biogas to biomethane|Biogenic CO2 emissions;%;1;1.039315223;1.144255003
+S3 Renew;FR;Efficiency|Natural gas|Anaerobic digestion biowaste|Biogas to biomethane|Biogenic CH4 emissions;%;1;1.331678875;5.800052533
+S3 Renew;FR;Efficiency|Natural gas|Anaerobic digestion sewage sludge|Biogas to biomethane|Generic;%;1;1.007453416;1.025654923
+S3 Renew;FR;Efficiency|Natural gas|Anaerobic digestion sewage sludge|Biogas to biomethane|Biogenic CO2 emissions;%;1;1.039805202;1.146229863
+S3 Renew;FR;Efficiency|Natural gas|Anaerobic digestion sewage sludge|Biogas to biomethane|Biogenic CH4 emissions;%;1;1.331678875;5.800052533
+S3 Renew;FR;Efficiency|Natural gas|Anaerobic digestion agricultural residues|Biogas to biomethane|Generic;%;1;1.007453416;1.025654923
+S3 Renew;FR;Efficiency|Natural gas|Anaerobic digestion agricultural residues|Biogas to biomethane|Biogenic CO2 emissions;%;1;1.044007307;1.163371978
+S3 Renew;FR;Efficiency|Natural gas|Anaerobic digestion agricultural residues|Biogas to biomethane|Biogenic CH4 emissions;%;1;1.331678875;5.800052533
+S3 Renew;FR;Efficiency|Natural gas|Anaerobic digestion industrial wastewater|Biogas to biomethane|Generic;%;1;1.007453416;1.025654923
+S3 Renew;FR;Efficiency|Natural gas|Anaerobic digestion industrial wastewater|Biogas to biomethane|Biogenic CO2 emissions;%;1;1.042038231;1.155293139
+S3 Renew;FR;Efficiency|Natural gas|Anaerobic digestion industrial wastewater|Biogas to biomethane|Biogenic CH4 emissions;%;1;1.331678875;5.800052533
+S3 Renew;FR;Efficiency|Natural gas|Anaerobic digestion animal manure|Biogas to biomethane|Generic;%;1;1.007453416;1.025654923
+S3 Renew;FR;Efficiency|Natural gas|Anaerobic digestion animal manure|Biogas to biomethane|Biogenic CO2 emissions;%;1;1.044722075;1.166324966
+S3 Renew;FR;Efficiency|Natural gas|Anaerobic digestion animal manure|Biogas to biomethane|Biogenic CH4 emissions;%;1;1.331678875;5.800052533
+S3 Renew;FR;Production|Natural gas|Anaerobic digestion|Biogas to biomethane membrane;Nm3/year;1.93E+08;3.67E+09;8.25E+09
+S3 Renew;FR;Production|Natural gas|Anaerobic digestion|Biogas to biomethane chemical;Nm3/year;6.71E+06;1.27E+08;2.87E+08
+S3 Renew;FR;Production|Natural gas|Anaerobic digestion|Biogas to biomethane water;Nm3/year;6.71E+06;1.27E+08;2.87E+08
+S3 Renew;FR;Production|Natural gas|Anaerobic digestion|Biogas to biomethane PSA;Nm3/year;1.79E+07;3.41E+08;7.66E+08
+S3 Renew;FR;Production|Natural gas|Anaerobic digestion|Biogas to biomethane cryogenic;Nm3/year;4.48E+06;8.51E+07;1.92E+08
+S3 Renew;FR;Production|Natural gas|Anaerobic digestion|Biogas to biomethane membrane with CCS;Nm3/year;0.00E+00;3.11E+08;1.91E+09
+S3 Renew;FR;Production|Natural gas|Anaerobic digestion|Biogas to biomethane chemical with CCS;Nm3/year;0.00E+00;1.08E+07;6.65E+07
+S3 Renew;FR;Production|Natural gas|Anaerobic digestion|Biogas to biomethane water with CCS;Nm3/year;0.00E+00;1.08E+07;6.65E+07
+S3 Renew;FR;Production|Natural gas|Anaerobic digestion|Biogas to biomethane PSA with CCS;Nm3/year;0.00E+00;2.89E+07;1.78E+08
+S3 Renew;FR;Production|Natural gas|Anaerobic digestion|Biogas to biomethane cryogenic with CCS;Nm3/year;0.00E+00;7.23E+06;4.44E+07
+S3 Renew;FR;Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane membrane|Biogenic CO2 emissions;%;1;1;1.01
+S3 Renew;FR;Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane chemical|Biogenic CO2 emissions;%;1;1;1.001
+S3 Renew;FR;Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane water|Biogenic CO2 emissions;%;1;1;1.02
+S3 Renew;FR;Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane PSA|Biogenic CO2 emissions;%;1;1;1.03
+S3 Renew;FR;Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane cryogenic|Biogenic CO2 emissions;%;1;1;1.0005
+S3 Renew;FR;Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane purification|Biogenic CH4 emissions;%;1;1;1.00E+20
+S3 Renew;FR;Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane membrane|Electricity;%;1;1;1.009642426
+S3 Renew;FR;Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane chemical|Electricity;%;1;1;1.001
+S3 Renew;FR;Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane water|Electricity;%;1;1;1.018
+S3 Renew;FR;Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane PSA|Electricity;%;1;1;1.025
+S3 Renew;FR;Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane cryogenic|Electricity;%;1;1;1.001
+S3 Nuc;FR;Production|Natural gas|Anaerobic digestion CIVE|Biogas;Nm3/year;1.50E+08;6.16E+08;5.81E+08
+S3 Nuc;FR;Production|Natural gas|Anaerobic digestion dedicated crops|Biogas;Nm3/year;1.03E+08;5.57E+07;1.02E+08
+S3 Nuc;FR;Production|Natural gas|Anaerobic digestion grass|Biogas;Nm3/year;1.35E+07;8.61E+07;7.17E+07
+S3 Nuc;FR;Production|Natural gas|Anaerobic digestion biowaste|Biogas;Nm3/year;1.32E+08;0.00E+00;0.00E+00
+S3 Nuc;FR;Production|Natural gas|Anaerobic digestion sewage sludge|Biogas;Nm3/year;0.00E+00;2.43E+07;2.03E+07
+S3 Nuc;FR;Production|Natural gas|Anaerobic digestion agricultural residues|Biogas;Nm3/year;3.76E+07;1.34E+08;2.24E+08
+S3 Nuc;FR;Production|Natural gas|Anaerobic digestion industrial wastewater|Biogas;Nm3/year;1.95E+08;7.98E+06;1.97E+06
+S3 Nuc;FR;Production|Natural gas|Anaerobic digestion animal manure|Biogas;Nm3/year;4.50E+08;1.70E+08;1.01E+08
+S3 Nuc;FR;Production|Natural gas|Pyrogasification|Renewable;Nm3/year;0;43000000;4848000000
+S3 Nuc;FR;Production|Natural gas|Pyrogasification|Fossil;Nm3/year;0;0;1881000000
+S3 Nuc;FR;Production|Natural gas|Pyrogasification with CCS|Renewable;Nm3/year;0;0;0
+S3 Nuc;FR;Production|Natural gas|Power to gas;Nm3/year;0;326815642.5;2058435754
+S3 Nuc;FR;Efficiency|Natural gas|Power to gas|Methanation;%;77;83;85
+S3 Nuc;FR;Production|Natural gas|Imports|Fossil;Nm3/year;38430000000;29405000000;1518000000
+S3 Nuc;FR;Production|Natural gas|Imports|Renewable;Nm3/year;0;0;0
+S3 Nuc;FR;Production|Natural gas|Anaerobic digestion CIVE|Biogas to biomethane;Nm3/year;5.32E+07;2.56E+09;6.20E+09
+S3 Nuc;FR;Production|Natural gas|Anaerobic digestion dedicated crops|Biogas to biomethane;Nm3/year;1.61E+07;2.30E+08;1.09E+09
+S3 Nuc;FR;Production|Natural gas|Anaerobic digestion grass|Biogas to biomethane;Nm3/year;3.60E+06;3.56E+08;8.00E+08
+S3 Nuc;FR;Production|Natural gas|Anaerobic digestion biowaste|Biogas to biomethane;Nm3/year;1.32E+07;1.00E+08;1.64E+08
+S3 Nuc;FR;Production|Natural gas|Anaerobic digestion sewage sludge|Biogas to biomethane;Nm3/year;1.66E+07;8.12E+07;8.41E+07
+S3 Nuc;FR;Production|Natural gas|Anaerobic digestion agricultural residues|Biogas to biomethane;Nm3/year;2.42E+07;5.81E+08;2.53E+09
+S3 Nuc;FR;Production|Natural gas|Anaerobic digestion industrial wastewater|Biogas to biomethane;Nm3/year;3.53E+07;7.96E+07;5.89E+07
+S3 Nuc;FR;Production|Natural gas|Anaerobic digestion animal manure|Biogas to biomethane;Nm3/year;6.66E+07;7.31E+08;1.12E+09
+S3 Nuc;FR;Efficiency|Natural gas|Anaerobic digestion CIVE|Biogas to biomethane|Generic;%;1;1.007453416;1.025654923
+S3 Nuc;FR;Efficiency|Natural gas|Anaerobic digestion CIVE|Biogas to biomethane|Biogenic CO2 emissions;%;1;1.043757562;1.162342757
+S3 Nuc;FR;Efficiency|Natural gas|Anaerobic digestion CIVE|Biogas to biomethane|Biogenic CH4 emissions;%;1;1.331678875;5.800052533
+S3 Nuc;FR;Efficiency|Natural gas|Anaerobic digestion dedicated crops|Biogas to biomethane|Generic;%;1;1.007453416;1.025654923
+S3 Nuc;FR;Efficiency|Natural gas|Anaerobic digestion dedicated crops|Biogas to biomethane|Biogenic CO2 emissions;%;1;1.04386289;1.162776658
+S3 Nuc;FR;Efficiency|Natural gas|Anaerobic digestion dedicated crops|Biogas to biomethane|Biogenic CH4 emissions;%;1;1.331678875;5.800052533
+S3 Nuc;FR;Efficiency|Natural gas|Anaerobic digestion grass|Biogas to biomethane|Generic;%;1;1.007453416;1.025654923
+S3 Nuc;FR;Efficiency|Natural gas|Anaerobic digestion grass|Biogas to biomethane|Biogenic CO2 emissions;%;1;1.043898849;1.162924849
+S3 Nuc;FR;Efficiency|Natural gas|Anaerobic digestion grass|Biogas to biomethane|Biogenic CH4 emissions;%;1;1.331678875;5.800052533
+S3 Nuc;FR;Efficiency|Natural gas|Anaerobic digestion biowaste|Biogas to biomethane|Generic;%;1;1.007453416;1.025654923
+S3 Nuc;FR;Efficiency|Natural gas|Anaerobic digestion biowaste|Biogas to biomethane|Biogenic CO2 emissions;%;1;1.039315223;1.144255003
+S3 Nuc;FR;Efficiency|Natural gas|Anaerobic digestion biowaste|Biogas to biomethane|Biogenic CH4 emissions;%;1;1.331678875;5.800052533
+S3 Nuc;FR;Efficiency|Natural gas|Anaerobic digestion sewage sludge|Biogas to biomethane|Generic;%;1;1.007453416;1.025654923
+S3 Nuc;FR;Efficiency|Natural gas|Anaerobic digestion sewage sludge|Biogas to biomethane|Biogenic CO2 emissions;%;1;1.039805202;1.146229863
+S3 Nuc;FR;Efficiency|Natural gas|Anaerobic digestion sewage sludge|Biogas to biomethane|Biogenic CH4 emissions;%;1;1.331678875;5.800052533
+S3 Nuc;FR;Efficiency|Natural gas|Anaerobic digestion agricultural residues|Biogas to biomethane|Generic;%;1;1.007453416;1.025654923
+S3 Nuc;FR;Efficiency|Natural gas|Anaerobic digestion agricultural residues|Biogas to biomethane|Biogenic CO2 emissions;%;1;1.044007307;1.163371978
+S3 Nuc;FR;Efficiency|Natural gas|Anaerobic digestion agricultural residues|Biogas to biomethane|Biogenic CH4 emissions;%;1;1.331678875;5.800052533
+S3 Nuc;FR;Efficiency|Natural gas|Anaerobic digestion industrial wastewater|Biogas to biomethane|Generic;%;1;1.007453416;1.025654923
+S3 Nuc;FR;Efficiency|Natural gas|Anaerobic digestion industrial wastewater|Biogas to biomethane|Biogenic CO2 emissions;%;1;1.042038231;1.155293139
+S3 Nuc;FR;Efficiency|Natural gas|Anaerobic digestion industrial wastewater|Biogas to biomethane|Biogenic CH4 emissions;%;1;1.331678875;5.800052533
+S3 Nuc;FR;Efficiency|Natural gas|Anaerobic digestion animal manure|Biogas to biomethane|Generic;%;1;1.007453416;1.025654923
+S3 Nuc;FR;Efficiency|Natural gas|Anaerobic digestion animal manure|Biogas to biomethane|Biogenic CO2 emissions;%;1;1.044722075;1.166324966
+S3 Nuc;FR;Efficiency|Natural gas|Anaerobic digestion animal manure|Biogas to biomethane|Biogenic CH4 emissions;%;1;1.331678875;5.800052533
+S3 Nuc;FR;Production|Natural gas|Anaerobic digestion|Biogas to biomethane membrane;Nm3/year;1.93E+08;3.67E+09;8.25E+09
+S3 Nuc;FR;Production|Natural gas|Anaerobic digestion|Biogas to biomethane chemical;Nm3/year;6.71E+06;1.27E+08;2.87E+08
+S3 Nuc;FR;Production|Natural gas|Anaerobic digestion|Biogas to biomethane water;Nm3/year;6.71E+06;1.27E+08;2.87E+08
+S3 Nuc;FR;Production|Natural gas|Anaerobic digestion|Biogas to biomethane PSA;Nm3/year;1.79E+07;3.41E+08;7.66E+08
+S3 Nuc;FR;Production|Natural gas|Anaerobic digestion|Biogas to biomethane cryogenic;Nm3/year;4.48E+06;8.51E+07;1.92E+08
+S3 Nuc;FR;Production|Natural gas|Anaerobic digestion|Biogas to biomethane membrane with CCS;Nm3/year;0.00E+00;3.11E+08;1.91E+09
+S3 Nuc;FR;Production|Natural gas|Anaerobic digestion|Biogas to biomethane chemical with CCS;Nm3/year;0.00E+00;1.08E+07;6.65E+07
+S3 Nuc;FR;Production|Natural gas|Anaerobic digestion|Biogas to biomethane water with CCS;Nm3/year;0.00E+00;1.08E+07;6.65E+07
+S3 Nuc;FR;Production|Natural gas|Anaerobic digestion|Biogas to biomethane PSA with CCS;Nm3/year;0.00E+00;2.89E+07;1.78E+08
+S3 Nuc;FR;Production|Natural gas|Anaerobic digestion|Biogas to biomethane cryogenic with CCS;Nm3/year;0.00E+00;7.23E+06;4.44E+07
+S3 Nuc;FR;Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane membrane|Biogenic CO2 emissions;%;1;1;1.01
+S3 Nuc;FR;Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane chemical|Biogenic CO2 emissions;%;1;1;1.001
+S3 Nuc;FR;Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane water|Biogenic CO2 emissions;%;1;1;1.02
+S3 Nuc;FR;Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane PSA|Biogenic CO2 emissions;%;1;1;1.03
+S3 Nuc;FR;Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane cryogenic|Biogenic CO2 emissions;%;1;1;1.0005
+S3 Nuc;FR;Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane purification|Biogenic CH4 emissions;%;1;1;1.00E+20
+S3 Nuc;FR;Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane membrane|Electricity;%;1;1;1.009642426
+S3 Nuc;FR;Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane chemical|Electricity;%;1;1;1.001
+S3 Nuc;FR;Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane water|Electricity;%;1;1;1.018
+S3 Nuc;FR;Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane PSA|Electricity;%;1;1;1.025
+S3 Nuc;FR;Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane cryogenic|Electricity;%;1;1;1.001
+S4;FR;Production|Natural gas|Anaerobic digestion CIVE|Biogas;Nm3/year;1.50E+08;6.21E+08;6.34E+08
+S4;FR;Production|Natural gas|Anaerobic digestion dedicated crops|Biogas;Nm3/year;1.03E+08;8.45E+07;1.18E+08
+S4;FR;Production|Natural gas|Anaerobic digestion grass|Biogas;Nm3/year;1.35E+07;8.33E+07;6.55E+07
+S4;FR;Production|Natural gas|Anaerobic digestion biowaste|Biogas;Nm3/year;1.32E+08;0.00E+00;0.00E+00
+S4;FR;Production|Natural gas|Anaerobic digestion sewage sludge|Biogas;Nm3/year;0.00E+00;2.43E+07;2.03E+07
+S4;FR;Production|Natural gas|Anaerobic digestion agricultural residues|Biogas;Nm3/year;3.76E+07;1.24E+08;2.75E+08
+S4;FR;Production|Natural gas|Anaerobic digestion industrial wastewater|Biogas;Nm3/year;1.95E+08;7.91E+06;2.17E+06
+S4;FR;Production|Natural gas|Anaerobic digestion animal manure|Biogas;Nm3/year;4.50E+08;1.73E+08;1.01E+08
+S4;FR;Production|Natural gas|Pyrogasification|Renewable;Nm3/year;0;3.50E+07;1051870586
+S4;FR;Production|Natural gas|Pyrogasification|Fossil;Nm3/year;0;0;1123000000
+S4;FR;Production|Natural gas|Pyrogasification with CCS|Renewable;Nm3/year;0;0;632129414.1
+S4;FR;Production|Natural gas|Power to gas;Nm3/year;0;0;0
+S4;FR;Efficiency|Natural gas|Power to gas|Methanation;%;77;83;85
+S4;FR;Production|Natural gas|Imports|Fossil;Nm3/year;38430000000;39787000000;17045000000
+S4;FR;Production|Natural gas|Imports|Renewable;Nm3/year;0;0;4416000000
+S4;FR;Production|Natural gas|Anaerobic digestion CIVE|Biogas to biomethane;Nm3/year;5.32E+07;2.57E+09;6.75E+09
+S4;FR;Production|Natural gas|Anaerobic digestion dedicated crops|Biogas to biomethane;Nm3/year;1.61E+07;3.49E+08;1.25E+09
+S4;FR;Production|Natural gas|Anaerobic digestion grass|Biogas to biomethane;Nm3/year;3.60E+06;3.44E+08;7.31E+08
+S4;FR;Production|Natural gas|Anaerobic digestion biowaste|Biogas to biomethane;Nm3/year;1.32E+07;9.89E+07;1.59E+08
+S4;FR;Production|Natural gas|Anaerobic digestion sewage sludge|Biogas to biomethane;Nm3/year;1.66E+07;8.03E+07;8.20E+07
+S4;FR;Production|Natural gas|Anaerobic digestion agricultural residues|Biogas to biomethane;Nm3/year;2.42E+07;5.34E+08;3.09E+09
+S4;FR;Production|Natural gas|Anaerobic digestion industrial wastewater|Biogas to biomethane;Nm3/year;3.53E+07;7.87E+07;6.69E+07
+S4;FR;Production|Natural gas|Anaerobic digestion animal manure|Biogas to biomethane;Nm3/year;6.66E+07;7.42E+08;1.11E+09
+S4;FR;Efficiency|Natural gas|Anaerobic digestion CIVE|Biogas to biomethane|Generic;%;1;1.007453416;1.025654923
+S4;FR;Efficiency|Natural gas|Anaerobic digestion CIVE|Biogas to biomethane|Biogenic CO2 emissions;%;1;1.043757562;1.162342757
+S4;FR;Efficiency|Natural gas|Anaerobic digestion CIVE|Biogas to biomethane|Biogenic CH4 emissions;%;1;1.331678875;5.800052533
+S4;FR;Efficiency|Natural gas|Anaerobic digestion dedicated crops|Biogas to biomethane|Generic;%;1;1.007453416;1.025654923
+S4;FR;Efficiency|Natural gas|Anaerobic digestion dedicated crops|Biogas to biomethane|Biogenic CO2 emissions;%;1;1.04386289;1.162776658
+S4;FR;Efficiency|Natural gas|Anaerobic digestion dedicated crops|Biogas to biomethane|Biogenic CH4 emissions;%;1;1.331678875;5.800052533
+S4;FR;Efficiency|Natural gas|Anaerobic digestion grass|Biogas to biomethane|Generic;%;1;1.007453416;1.025654923
+S4;FR;Efficiency|Natural gas|Anaerobic digestion grass|Biogas to biomethane|Biogenic CO2 emissions;%;1;1.043898849;1.162924849
+S4;FR;Efficiency|Natural gas|Anaerobic digestion grass|Biogas to biomethane|Biogenic CH4 emissions;%;1;1.331678875;5.800052533
+S4;FR;Efficiency|Natural gas|Anaerobic digestion biowaste|Biogas to biomethane|Generic;%;1;1.007453416;1.025654923
+S4;FR;Efficiency|Natural gas|Anaerobic digestion biowaste|Biogas to biomethane|Biogenic CO2 emissions;%;1;1.039315223;1.144255003
+S4;FR;Efficiency|Natural gas|Anaerobic digestion biowaste|Biogas to biomethane|Biogenic CH4 emissions;%;1;1.331678875;5.800052533
+S4;FR;Efficiency|Natural gas|Anaerobic digestion sewage sludge|Biogas to biomethane|Generic;%;1;1.007453416;1.025654923
+S4;FR;Efficiency|Natural gas|Anaerobic digestion sewage sludge|Biogas to biomethane|Biogenic CO2 emissions;%;1;1.039805202;1.146229863
+S4;FR;Efficiency|Natural gas|Anaerobic digestion sewage sludge|Biogas to biomethane|Biogenic CH4 emissions;%;1;1.331678875;5.800052533
+S4;FR;Efficiency|Natural gas|Anaerobic digestion agricultural residues|Biogas to biomethane|Generic;%;1;1.007453416;1.025654923
+S4;FR;Efficiency|Natural gas|Anaerobic digestion agricultural residues|Biogas to biomethane|Biogenic CO2 emissions;%;1;1.044007307;1.163371978
+S4;FR;Efficiency|Natural gas|Anaerobic digestion agricultural residues|Biogas to biomethane|Biogenic CH4 emissions;%;1;1.331678875;5.800052533
+S4;FR;Efficiency|Natural gas|Anaerobic digestion industrial wastewater|Biogas to biomethane|Generic;%;1;1.007453416;1.025654923
+S4;FR;Efficiency|Natural gas|Anaerobic digestion industrial wastewater|Biogas to biomethane|Biogenic CO2 emissions;%;1;1.042038231;1.155293139
+S4;FR;Efficiency|Natural gas|Anaerobic digestion industrial wastewater|Biogas to biomethane|Biogenic CH4 emissions;%;1;1.331678875;5.800052533
+S4;FR;Efficiency|Natural gas|Anaerobic digestion animal manure|Biogas to biomethane|Generic;%;1;1.007453416;1.025654923
+S4;FR;Efficiency|Natural gas|Anaerobic digestion animal manure|Biogas to biomethane|Biogenic CO2 emissions;%;1;1.044722075;1.166324966
+S4;FR;Efficiency|Natural gas|Anaerobic digestion animal manure|Biogas to biomethane|Biogenic CH4 emissions;%;1;1.331678875;5.800052533
+S4;FR;Production|Natural gas|Anaerobic digestion|Biogas to biomethane membrane;Nm3/year;1.93E+08;4.05E+09;1.12E+10
+S4;FR;Production|Natural gas|Anaerobic digestion|Biogas to biomethane chemical;Nm3/year;6.71E+06;1.41E+08;3.88E+08
+S4;FR;Production|Natural gas|Anaerobic digestion|Biogas to biomethane water;Nm3/year;6.71E+06;1.41E+08;3.88E+08
+S4;FR;Production|Natural gas|Anaerobic digestion|Biogas to biomethane PSA;Nm3/year;1.79E+07;3.76E+08;1.04E+09
+S4;FR;Production|Natural gas|Anaerobic digestion|Biogas to biomethane cryogenic;Nm3/year;4.48E+06;9.41E+07;2.59E+08
+S4;FR;Production|Natural gas|Anaerobic digestion|Biogas to biomethane membrane with CCS;Nm3/year;0.00E+00;0.00E+00;0.00E+00
+S4;FR;Production|Natural gas|Anaerobic digestion|Biogas to biomethane chemical with CCS;Nm3/year;0.00E+00;0.00E+00;0.00E+00
+S4;FR;Production|Natural gas|Anaerobic digestion|Biogas to biomethane water with CCS;Nm3/year;0.00E+00;0.00E+00;0.00E+00
+S4;FR;Production|Natural gas|Anaerobic digestion|Biogas to biomethane PSA with CCS;Nm3/year;0.00E+00;0.00E+00;0.00E+00
+S4;FR;Production|Natural gas|Anaerobic digestion|Biogas to biomethane cryogenic with CCS;Nm3/year;0.00E+00;0.00E+00;0.00E+00
+S4;FR;Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane membrane|Biogenic CO2 emissions;%;1;1;1.01
+S4;FR;Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane chemical|Biogenic CO2 emissions;%;1;1;1.001
+S4;FR;Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane water|Biogenic CO2 emissions;%;1;1;1.02
+S4;FR;Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane PSA|Biogenic CO2 emissions;%;1;1;1.03
+S4;FR;Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane cryogenic|Biogenic CO2 emissions;%;1;1;1.0005
+S4;FR;Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane purification|Biogenic CH4 emissions;%;1;1;1.00E+20
+S4;FR;Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane membrane|Electricity;%;1;1;1.009642426
+S4;FR;Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane chemical|Electricity;%;1;1;1.001
+S4;FR;Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane water|Electricity;%;1;1;1.018
+S4;FR;Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane PSA|Electricity;%;1;1;1.025
+S4;FR;Efficiency|Natural gas|Anaerobic digestion|Biogas to biomethane cryogenic|Electricity;%;1;1;1.001
