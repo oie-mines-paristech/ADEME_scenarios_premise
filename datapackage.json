@@ -7,8 +7,7 @@
     "contributors":[
         {
             "title": "Joanna Schlesinger",
-            "email": "joanna.schlesinger@minesparis.psl.eu"
-           
+            "email": "joanna.schlesinger@minesparis.psl.eu"          
         },{
             "title": "Romain Sacchi",
              "email": "romain.sacchi@psi.ch"
@@ -21,6 +20,9 @@
 		},{
             "title": "Paula Perez-Lopez",
              "email": "paula;perez_lopez@minesparis.psl.eu"
+        },{
+            "title": "Gonzalo Puig-Samper",
+             "email": "gonzalo.puig-samper@list.lu"
         }
     ],
     "dependencies": {

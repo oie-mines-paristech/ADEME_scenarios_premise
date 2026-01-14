@@ -143,6 +143,7 @@ Authors of this data package
 * Juliana Steinbach 
 * Thomas Beaussier 
 * Paula Perez-Lopez
+* Gonzalo Puig-Samper
 
 
 Acknowledgements
