@@ -1487,15 +1487,6 @@ production pathways:
       reference product: biomethane, high pressure
       exists in original database: True
 
-  high_to_low_gas:
-    production volume:
-      variable: Production|Natural gas|High to low
-    ecoinvent alias:
-      name: market for natural gas, high pressure, Tr2050
-      reference product: natural gas, high pressure
-      exists in original database: False
-      new dataset: True 
-
 markets:
 
 #Electricity
@@ -2148,6 +2139,12 @@ markets:
 
       - name: market for natural gas, high pressure, vehicle grade
         product: natural gas, high pressure, vehicle grade
+
+      - name: market group for natural gas, high pressure
+        product: natural gas, high pressure
+
+      - name: market for natural gas, low pressure
+        product: natural gas, low pressure
 
     replaces in:
       - location: FR
