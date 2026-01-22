@@ -2164,43 +2164,43 @@ markets:
     is fuel:
       ad_biogas_purification_membrane:
           Carbon dioxide, fossil: 0.0
-          Carbon dioxide, non-fossil: 1.944
+          Carbon dioxide, non-fossil: 1.972
 
       ad_biogas_purification_water:
           Carbon dioxide, fossil: 0.0
-          Carbon dioxide, non-fossil: 1.944
+          Carbon dioxide, non-fossil: 1.972
 
       ad_biogas_purification_chemical:
           Carbon dioxide, fossil: 0.0
-          Carbon dioxide, non-fossil: 1.944
+          Carbon dioxide, non-fossil: 1.972
 
       ad_biogas_purification_psa:
           Carbon dioxide, fossil: 0.0
-          Carbon dioxide, non-fossil: 1.944
+          Carbon dioxide, non-fossil: 1.972
 
       ad_biogas_purification_cryogenic:
           Carbon dioxide, fossil: 0.0
-          Carbon dioxide, non-fossil: 1.944
+          Carbon dioxide, non-fossil: 1.972
 
       ad_biogas_purification_membrane_CCS:
           Carbon dioxide, fossil: 0.0
-          Carbon dioxide, non-fossil: 1.944
+          Carbon dioxide, non-fossil: 1.972
 
       ad_biogas_purification_water_CCS:
           Carbon dioxide, fossil: 0.0
-          Carbon dioxide, non-fossil: 1.944
+          Carbon dioxide, non-fossil: 1.972
 
       ad_biogas_purification_chemical_CCS:
           Carbon dioxide, fossil: 0.0
-          Carbon dioxide, non-fossil: 1.944
+          Carbon dioxide, non-fossil: 1.972
 
       ad_biogas_purification_psa_CCS:
           Carbon dioxide, fossil: 0.0
-          Carbon dioxide, non-fossil: 1.944
+          Carbon dioxide, non-fossil: 1.972
 
       ad_biogas_purification_cryogenic_CCS:
           Carbon dioxide, fossil: 0.0
-          Carbon dioxide, non-fossil: 1.944
+          Carbon dioxide, non-fossil: 1.972
 
       pyrogasification_wood:
           Carbon dioxide, fossil: 0.0
@@ -2216,7 +2216,7 @@ markets:
 
       power_to_gas_methanation:
           Carbon dioxide, fossil: 0.0
-          Carbon dioxide, non-fossil: 1.944 
+          Carbon dioxide, non-fossil: 1.972 
 
       natural_gas_imports_fossil:
           Carbon dioxide, fossil: 1.944
@@ -2224,25 +2224,4 @@ markets:
 
       renewable_gas_imports:
           Carbon dioxide, fossil: 0.0
-          Carbon dioxide, non-fossil: 1.944
-
-  - name: market for natural gas, low pressure, Tr2050
-    reference product: natural gas, low pressure
-    unit: cubic meter
-    includes:
-      - high_to_low_gas
-    add:
-      - name: pipeline construction, natural gas, low pressure distribution network
-        reference product: pipeline, natural gas, low pressure distribution network
-        amount: 1.430064e-07
-      
-      - name: natural gas, burned in gas turbine
-        reference product: natural gas, burned in gas turbine
-        amount: 0.04418 #consider constant LHV to be 36 MJ/Nm3
-
-    replaces:
-      - name: market for natural gas, low pressure
-        product: natural gas, low pressure
-
-    replaces in:
-      - location: FR
+          Carbon dioxide, non-fossil: 1.972
