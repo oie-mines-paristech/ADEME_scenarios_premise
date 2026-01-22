@@ -13,6 +13,18 @@ regionalize:
       reference product: heat, central or small-scale, biomethane
       exists in original database: True
 
+    - name: Farming of corn
+      reference product: corn, harvested
+      exists in original database: True
+
+    - name: biomethane AD transport
+      reference product: biomethane AD transport
+      exists in original database: True
+
+    - name: methane, from electrochemical methanation, transport
+      reference product: methane, from electrochemical methanation, transport
+      exists in original database: True
+
 production pathways:
 
 #Electricity
