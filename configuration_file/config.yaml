@@ -13,6 +13,18 @@ regionalize:
       reference product: heat, central or small-scale, biomethane
       exists in original database: True
 
+    - name: Farming of corn
+      reference product: corn, harvested
+      exists in original database: True
+
+    - name: biomethane AD transport
+      reference product: biomethane AD transport
+      exists in original database: True
+
+    - name: methane, from electrochemical methanation, transport
+      reference product: methane, from electrochemical methanation, transport
+      exists in original database: True
+
 production pathways:
 
 #Electricity
@@ -1487,15 +1499,6 @@ production pathways:
       reference product: biomethane, high pressure
       exists in original database: True
 
-  high_to_low_gas:
-    production volume:
-      variable: Production|Natural gas|High to low
-    ecoinvent alias:
-      name: market for natural gas, high pressure, Tr2050
-      reference product: natural gas, high pressure
-      exists in original database: False
-      new dataset: True 
-
 markets:
 
 #Electricity
@@ -1655,7 +1658,7 @@ markets:
         reference product: hydrogen storage
         unit: kilogram
         amount: 0.302074305
-      - name: market for electricity, low voltage
+      - name: market for electricity, low voltage, Tr2050
         reference product: electricity, low voltage
         unit: kilowatt hour
         amount: 1.82
@@ -1695,7 +1698,7 @@ markets:
         reference product: hydrogen storage
         unit: kilogram
         amount: 0.302074305
-      - name: market for electricity, low voltage
+      - name: market for electricity, low voltage, Tr2050
         reference product: electricity, low voltage
         unit: kilowatt hour
         amount: 1.82
@@ -1735,7 +1738,7 @@ markets:
         reference product: hydrogen storage
         unit: kilogram
         amount: 0.302074305
-      - name: market for electricity, low voltage
+      - name: market for electricity, low voltage, Tr2050
         reference product: electricity, low voltage
         unit: kilowatt hour
         amount: 1.82
@@ -1774,7 +1777,7 @@ markets:
         reference product: hydrogen storage
         unit: kilogram
         amount: 0.302074305
-      - name: market for electricity, low voltage
+      - name: market for electricity, low voltage, Tr2050
         reference product: electricity, low voltage
         unit: kilowatt hour
         amount: 1.82
@@ -1814,7 +1817,7 @@ markets:
         reference product: hydrogen storage
         unit: kilogram
         amount: 0.302074305
-      - name: market for electricity, low voltage
+      - name: market for electricity, low voltage, Tr2050
         reference product: electricity, low voltage
         unit: kilowatt hour
         amount: 1.82
@@ -1854,7 +1857,7 @@ markets:
         reference product: hydrogen storage
         unit: kilogram
         amount: 0.302074305
-      - name: market for electricity, low voltage
+      - name: market for electricity, low voltage, Tr2050
         reference product: electricity, low voltage
         unit: kilowatt hour
         amount: 1.82
@@ -1892,7 +1895,7 @@ markets:
         reference product: hydrogen storage
         unit: kilogram
         amount: 0.302074305
-      - name: market for electricity, low voltage
+      - name: market for electricity, low voltage, Tr2050
         reference product: electricity, low voltage
         unit: kilowatt hour
         amount: 1.82
@@ -1930,7 +1933,7 @@ markets:
         reference product: hydrogen storage
         unit: kilogram
         amount: 0.302074305
-      - name: market for electricity, low voltage
+      - name: market for electricity, low voltage, Tr2050
         reference product: electricity, low voltage
         unit: kilowatt hour
         amount: 1.82
@@ -2002,7 +2005,7 @@ markets:
         reference product: hydrogen storage
         unit: kilogram
         amount: 0.302074305
-      - name: market for electricity, low voltage
+      - name: market for electricity, low voltage, Tr2050
         reference product: electricity, low voltage
         unit: kilowatt hour
         amount: 1.82
@@ -2149,49 +2152,55 @@ markets:
       - name: market for natural gas, high pressure, vehicle grade
         product: natural gas, high pressure, vehicle grade
 
+      - name: market group for natural gas, high pressure
+        product: natural gas, high pressure
+
+      - name: market for natural gas, low pressure
+        product: natural gas, low pressure
+
     replaces in:
       - location: FR
       
     is fuel:
       ad_biogas_purification_membrane:
           Carbon dioxide, fossil: 0.0
-          Carbon dioxide, non-fossil: 1.944
+          Carbon dioxide, non-fossil: 1.972
 
       ad_biogas_purification_water:
           Carbon dioxide, fossil: 0.0
-          Carbon dioxide, non-fossil: 1.944
+          Carbon dioxide, non-fossil: 1.972
 
       ad_biogas_purification_chemical:
           Carbon dioxide, fossil: 0.0
-          Carbon dioxide, non-fossil: 1.944
+          Carbon dioxide, non-fossil: 1.972
 
       ad_biogas_purification_psa:
           Carbon dioxide, fossil: 0.0
-          Carbon dioxide, non-fossil: 1.944
+          Carbon dioxide, non-fossil: 1.972
 
       ad_biogas_purification_cryogenic:
           Carbon dioxide, fossil: 0.0
-          Carbon dioxide, non-fossil: 1.944
+          Carbon dioxide, non-fossil: 1.972
 
       ad_biogas_purification_membrane_CCS:
           Carbon dioxide, fossil: 0.0
-          Carbon dioxide, non-fossil: 1.944
+          Carbon dioxide, non-fossil: 1.972
 
       ad_biogas_purification_water_CCS:
           Carbon dioxide, fossil: 0.0
-          Carbon dioxide, non-fossil: 1.944
+          Carbon dioxide, non-fossil: 1.972
 
       ad_biogas_purification_chemical_CCS:
           Carbon dioxide, fossil: 0.0
-          Carbon dioxide, non-fossil: 1.944
+          Carbon dioxide, non-fossil: 1.972
 
       ad_biogas_purification_psa_CCS:
           Carbon dioxide, fossil: 0.0
-          Carbon dioxide, non-fossil: 1.944
+          Carbon dioxide, non-fossil: 1.972
 
       ad_biogas_purification_cryogenic_CCS:
           Carbon dioxide, fossil: 0.0
-          Carbon dioxide, non-fossil: 1.944
+          Carbon dioxide, non-fossil: 1.972
 
       pyrogasification_wood:
           Carbon dioxide, fossil: 0.0
@@ -2207,7 +2216,7 @@ markets:
 
       power_to_gas_methanation:
           Carbon dioxide, fossil: 0.0
-          Carbon dioxide, non-fossil: 1.944 
+          Carbon dioxide, non-fossil: 1.972 
 
       natural_gas_imports_fossil:
           Carbon dioxide, fossil: 1.944
@@ -2215,25 +2224,4 @@ markets:
 
       renewable_gas_imports:
           Carbon dioxide, fossil: 0.0
-          Carbon dioxide, non-fossil: 1.944
-
-  - name: market for natural gas, low pressure, Tr2050
-    reference product: natural gas, low pressure
-    unit: cubic meter
-    includes:
-      - high_to_low_gas
-    add:
-      - name: pipeline construction, natural gas, low pressure distribution network
-        reference product: pipeline, natural gas, low pressure distribution network
-        amount: 1.430064e-07
-      
-      - name: natural gas, burned in gas turbine
-        reference product: natural gas, burned in gas turbine
-        amount: 0.04418 #consider constant LHV to be 36 MJ/Nm3
-
-    replaces:
-      - name: market for natural gas, low pressure
-        product: natural gas, low pressure
-
-    replaces in:
-      - location: FR
+          Carbon dioxide, non-fossil: 1.972
