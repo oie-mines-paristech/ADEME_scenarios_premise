@@ -22,7 +22,7 @@ This data package is built using [`premise`](https://github.com/polca/premise) a
 WARNING ! Main difference with forked repository
 --------------------------------
 There is a second repository forked from this repository. The forked repository has an extended scope in terms of markets coverage but it integrates only narratives from scenario S1. It also runs with other versions of ecoinvent / premise.\
-The forked repository can be found [`there`](https://github.com/gpuigsamper/ADEME_scenarios_premise) and is related to the following publication:
+The forked repository can be found [`here`](https://github.com/gpuigsamper/ADEME_scenarios_premise) and is related to the following publication:
 **Decent living within planetary boundaries? A methodological framework for assessing prospective policy scenarios**
 Gonzalo Puig-Samper, Joanna Schlesinger-Martinat, Natacha Gondran, Julie Clavreul, Anne Prieur-Vernat, Mikołaj Owsianiak. (*Submitted*)
 
@@ -52,13 +52,13 @@ IAM scenario compatibility
 
 The user can couple each French scenario with a global scenario (IAM) provided by premise. The available IAM scenarios provided by premise can be explored [`here`](https://premisedash-6f5a0259c487.herokuapp.com/).\
 The choice of IAM scenario is under the responsability of the user of this repository. However, the authors highlight the facts that : 
-* the French scenarios modeled target French carbon neutrality in 2050 (at territorial scale, not footprint).
+* all the French scenarios modeled target French carbon neutrality in 2050 (at territorial scale, not footprint).
 * the absolute impacts of French prospective energy markets highly depends on the IAM scenario chosen. 
 
 The authors also strongly advice :
 * to read [`premise documentation on how to choose IAM scenarios`](https://premise.readthedocs.io/en/latest/introduction.html#choosing-the-right-iam)
 * to read 'Recommendations for an informed and responsible use of Integrated Assessment Models in prospective LCA', ([`Paris et al., 2026`](https://link.springer.com/article/10.1007/s11367-026-02659-4))
-* to keep in mind the key limitations of using IAMs presented in ([`de Bortoli et al., 2025`](https://doi.org/10.1016/j.rser.2025.115924)) and in premise documentation on that topic [`here`](https://github.com/polca/premise#disclaimer-on-the-use-of-iam-based-scenarios-in-premise) 
+* to keep in mind the key limitations of using IAMs presented in ([`de Bortoli et al., 2025`](https://doi.org/10.1016/j.rser.2025.115924)) and in premise documentation  [`here`](https://github.com/polca/premise#disclaimer-on-the-use-of-iam-based-scenarios-in-premise) 
 
 
 How is the repository organized ?
@@ -80,11 +80,13 @@ How to use this notebook ?
 1. **Install the python environment**
 ```python
 conda create -n name_env python=3.11
+conda activate name_env 
 pip install -r requirements.txt
 ```
 or 
 ```python
 conda create -n name_env python=3.11
+conda activate name_env
 pip install "premise[bw2]"==2.2.6
 ```
 See documentation on installation [`here`](https://github.com/polca/premise?tab=readme-ov-file#how-to-install-this-package).
