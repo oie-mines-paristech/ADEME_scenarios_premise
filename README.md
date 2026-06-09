@@ -1,30 +1,41 @@
 # Premise + French prospective scenarios : Transition(s) 2050 / ADEME
-Implementation of French prospective scenarios from ADEME study "Transition(s) 2050" into ecoinvent database with premise
-
+Implementation of the French prospective scenarios *Transition(s) 2050* from the French Ecological Transition Agency (ADEME) into the ecoinvent database.
 
 What does this repository do ?
 -----------
 ![boundaries map](https://github.com/oie-mines-paristech/ADEME_scenarios_premise/blob/main/assets/map.png?raw=true)
 
-This is a repository containing the implementation of prospective scenarios for France into ecoinvent. 
-The prospective scenarios are provided in the "Transition(s) 2050" study by the French Agency for Ecological Transition - ADEME.   
+This is a repository containing a data package that implements part of the narratives of *Transition(s) 2050* prospective scenarios for France into ecoinvent. 
 The scope of ADEME prospective study is metropolitan France, from now to 2050, and covers most of the economic sectors.
-This repository does not cover the whole scope of ADEME study and creates market-specific activities in the LCA database ecoinvent for the following sectors in France:
+This repository integrates prospective energy markets according to the narratives of the 5 scenarios provided by ADEME (S1, S2, S3Renew, S3Nuc, S4). It does not cover the whole scope of ADEME study but only the followinfg markets :  
 * electricity
 * hydrogen
-* gas
-
-The evolution at the world regional scale are modeled by coupling the French scenarios with a global scenario provided by an Integrated Assessment Model (IAM).
+* gas, biomethane, synthetic natural gas, biogas
 
 
+This data package is built using [`premise`](https://github.com/polca/premise) and can be coupled to global scenarios from integrated assessment models (IAM) in [`premise`](https://github.com/polca/premise) to capture projections outside the scope of *Transition(s) 2050* scenarios. 
 
-ADEME prospective study 
+
+Ecoinvent and premise version compatibility
+-----------
+This repository is compatible with **ecoinvent 3.9.1 cut-off** and with **premise version 2.2.6**. It should not require to much effort to make it compatible with more recent versions of ecoinvent and/or of premise. If you update it on your own, please do not hesitate to fork the repository to share updates with the community ! #OpenSource #CollectiveWork
+
+WARNING ! Main difference with forked repository
+--------------------------------
+
+There is a second repository forked from this repository. The forked repository has an extended scope in terms of markets coverage but it integrates only narratives from scenario S1. The forked repository can be found [`there`](https://github.com/gpuigsamper/ADEME_scenarios_premise) and is related to the following publication:
+**Decent living within planetary boundaries? A methodological framework for assessing prospective policy scenarios**
+Gonzalo Puig-Samper, Joanna Schlesinger-Martinat, Natacha Gondran, Julie Clavreul, Anne Prieur-Vernat, Mikołaj Owsianiak. (*Submitted*)
+
+
+ADEME prospective study and scenarios
 ------------------------
 
 Prospective scenarios are extracted from the study : Transition(s) 2050, ADEME, 2021\
 [`Website`](https://www.ademe.fr/les-futurs-en-transition/) \
 [`Full Report`](https://librairie.ademe.fr/recherche-et-innovation/5072-prospective-transitions-2050-rapport.html) \
 [`Data repository`](https://data-transitions2050.ademe.fr/)
+Informations about scenarios : [`here in French`](https://www.ademe.fr/les-futurs-en-transition/les-scenarios/)
 
 ADEME provides 5 scenarios : 
 * S1 : Frugal generation (Génération Frugale) > The transition is driven mostly by sobriety and constraint.
@@ -33,17 +44,11 @@ ADEME provides 5 scenarios :
 * S3 Nuc : Green technologies based on nuclear development (Technologies vertes) > The transition is based on innovation and development of low carbon technologies, especially nuclear energy.  
 * S4 : Repairing bet (Pari réparateur) > The transition relies highly on new technologies development, without any society lifestyle changes. 
 
-Informations about scenarios : [`here in French`](https://www.ademe.fr/les-futurs-en-transition/les-scenarios/)
 
 How is the repository organized ?
 -----------
 
 This repository is meant to be used with the open-source python library [`premise`](https://github.com/polca/premise), using the [`user-defined scenario functionnality`](https://premise.readthedocs.io/en/latest/user_scenarios.html).
-The data relating to the annual production volumes of different energy carriers 
-(e.g. electricity, hydrogen) for each scenario 
-have been formatted and organised in a data package defined by the Frictionless standards 
-(Walsh and Pollock, 2022). This data package is read and interpreted by `premise`. 
-We therefore store a number of scenarios in a single data package.
 
 This datapackage contains four files necessary to the scenarios implementation into the ecoinvent LCA database: 
 
@@ -51,8 +56,6 @@ This datapackage contains four files necessary to the scenarios implementation i
 * A **config.yaml** file which provides the correspondence between the scenario variables and the LCA datasets in the ecoinvent DB, as well as the additional "LCA datasets" when they are not available in the ecoinvent database. 
 * A tabular data file **scenario_data.xlsx** containing the time series for each variable in the set of scenarios. 
 * An optional Excel file **LCI-Tr2050.xlsx** containing the LCA inventories of the additional "LCA datasets" for any technology not initially present in the ecoinvent database. 
-
-Additionally, a pdf document called "supplementary information" presents the methodological choices that where made to build this model.
 
 
 How to use this notebook ?
@@ -115,44 +118,28 @@ How to use this notebook ?
 A prospective version of ecoinvent is generated for each combination of : Year x IAM model x IAM scenario x French scenario.
 The newly created market datasets are tagged with 'Tr2050', for example : `market for electricity, high voltage, Tr2050` (FR) or `market for hydrogen, gaseous, Tr2050` (FR)
 
-Ecoinvent database compatibility
---------------------------------
-ecoinvent 3.9.1 cut-off
 
 IAM scenario compatibility
 ---------------------------
-The user can couple each French scenario with a global scenario (IAM) provided by premise.\
-The available IAM scenarios provided by premise can be explored [`here`](https://premisedash-6f5a0259c487.herokuapp.com/)\
-The choice of IAM scenario is under the responsability of the user of this repository. However, the authors highlight the fact that the impact results highly depends on the IAM scenario chosen. The authors advice to couple the scenarios with RCP 4.5 scenarios or with scenarios whose temperature increase are similar to RCP 4.5 scenarios, as these scenarios are probably the most representative of the current trends. 
-
-List of French scenarios
---------------------------------
-| Tr2050 scenario                       |
-|----------------------------------------|
-| S1 - Frugal generation    |
-| S2 - Territorial cooperation    |
-| S3 Renew - Green technologies renewables   |
-| S3 Nuc - Green technologies nuclear   |
-| S4 - Repairing bet   |
-
+The user can couple each French scenario with a global scenario (IAM) provided by premise. The available IAM scenarios provided by premise can be explored [`here`](https://premisedash-6f5a0259c487.herokuapp.com/)\
+The choice of IAM scenario is under the responsability of the user of this repository. However, the authors  * highlight the fact that the absolute impacts of French prospective energy markets highly depends on the IAM scenario chosen.The authors also strongly advice to read :
+* to read [`premise documentation on how to choose IAM scenarios`](https://premise.readthedocs.io/en/latest/introduction.html#choosing-the-right-iam)
+* to read 'Recommendations for an informed and responsible use of Integrated Assessment Models in prospective LCA', ([`Paris et al., 2026`](https://link.springer.com/article/10.1007/s11367-026-02659-4))
+* to keep in mind the key limitations of using IAMs presented in ([`de Bortoli et al., 2025`](https://doi.org/10.1016/j.rser.2025.115924)) and in premise documentation on that topic [`here`](https://github.com/polca/premise#disclaimer-on-the-use-of-iam-based-scenarios-in-premise) 
 
 Authors of this data package
 ----------------------------
 * Joanna Schlesinger-Martinat
 * Gonzalo Puig-Samper
 
-
 Acknowledgements
 ----------------------------
 We would like to thank ADEME experts for providing datasets and explanations to understand scenarios and datasets, especially Jean-Michel Parrouffe for the multiple discussions.
 
-
 Funding
 -------
-This work is supported by the ADEME agency, in the context of
-the [`HYSPI project`](https://www.psi.ch/en/ta/projects/hyspi) and by ENGIE in the context of Gonzalo Puig-Sampers' PhD. 
-
-
+This work has been supported by the ADEME agency, in the context of
+the [`HYSPI project`](https://www.psi.ch/en/ta/projects/hyspi) [nr. 2197D0085] and by ENGIE in the context of Gonzalo Puig-Sampers' PhD (CIFRE individual fellowship [grant number 2022/0710]).
 
 
 
